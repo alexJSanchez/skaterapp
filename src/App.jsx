@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 
-import "./App.css";
 function App() {
 	const [weather, setWeather] = useState({});
 	const [city, setCity] = useState("");
@@ -60,8 +59,12 @@ function App() {
 
 	return (
 		<>
-			<div className="bg-[url('./assets/mobile/bg-image-daytime.jpg')] bg-cover ">
-				<h1>SKATE EVENT LOG</h1>
+			<div className="bg-[url('./assets/mobile/bg-image-daytime.jpg')] bg-cover opacity-70 ">
+				<p className="opacity-70">
+					“The science of operations, as derived from mathematics more
+					especially, is a science of itself, and has its own abstract truth and
+					value.”
+				</p>
 				<img></img>
 				<h2>Good</h2>
 				<p>{city}</p>
