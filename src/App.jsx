@@ -72,7 +72,7 @@ function App() {
 					{date.hours}:{date.minutes < 10 ? `0${date.minutes}` : date.minutes}:
 					{date.seconds < 10 ? `0${date.seconds}` : date.seconds}
 				</p>
-				<p className="text-red-700">{date.timeOfDay}</p>
+				<p className="text-grayish interfont">{date.timeOfDay}</p>
 			</div>
 		</>
 	);
