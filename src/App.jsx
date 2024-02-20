@@ -69,9 +69,10 @@ function App() {
 				<p>Temperature:{weather.temperature}</p>
 				<p>Wind Speed:{weather.wind}</p>
 				<p>
-					{date.hours}:{date.minutes}:{date.seconds}
+					{date.hours}:{date.minutes < 10 ? `0${date.minutes}` : date.minutes}:
+					{date.seconds < 10 ? `0${date.seconds}` : date.seconds}
 				</p>
-				<p>{date.timeOfDay}</p>
+				<p className="text-red-700">{date.timeOfDay}</p>
 			</div>
 		</>
 	);
