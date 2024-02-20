@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+const { geolib } = require("geolib");
 import "./App.css";
 
 function App() {
@@ -8,7 +9,11 @@ function App() {
 		if ("geolocation" in navigator) {
 			navigator.geolocation.getCurrentPosition((position) => {
 				const { latitude, longitude } = position.coords;
-				console.log("Latitude:", latitude, "Longitude:", longitude);
+				const address = geolib.reverseGeocode({
+					latitude: latitude,
+					longitude: longitude,
+				});
+				console.log(address);
 			});
 		} else {
 			console.log("no geo location");
