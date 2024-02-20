@@ -60,8 +60,8 @@ function App() {
 
 	return (
 		<>
-			<h1>SKATE EVENT LOG</h1>
-			<div>
+			<div className="bg-[url('./assets/mobile/bg-image-daytime.jpg')] bg-cover ">
+				<h1>SKATE EVENT LOG</h1>
 				<img></img>
 				<h2>Good</h2>
 				<p>{city}</p>
@@ -72,7 +72,7 @@ function App() {
 					{date.hours}:{date.minutes < 10 ? `0${date.minutes}` : date.minutes}:
 					{date.seconds < 10 ? `0${date.seconds}` : date.seconds}
 				</p>
-				<p className="text-grayish interfont">{date.timeOfDay}</p>
+				<p className="text-grayish inter-text">{date.timeOfDay}</p>
 			</div>
 		</>
 	);
