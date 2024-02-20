@@ -1,22 +1,60 @@
 import { useState, useEffect } from "react";
-const { geolib } = require("geolib");
-import "./App.css";
 
+import "./App.css";
 function App() {
-	const [state, setState] = useState({ title: "event name", image: "" });
+	const [weather, setWeather] = useState({});
+	const [city, setCity] = useState("");
+	const [state, setLocal] = useState("");
+	const [date, setDate] = useState({});
+
+	setInterval(() => {
+		let currentTime = new Date();
+		let timeOfDay = "";
+		const hours = currentTime.getHours();
+		const minutes = currentTime.getMinutes();
+		const seconds = currentTime.getSeconds();
+		if (hours >= 0 && hours < 6) {
+			timeOfDay = "Early Morning";
+		} else if (hours >= 6 && hours < 12) {
+			timeOfDay = "Morning";
+		} else if (hours >= 12 && hours < 18) {
+			timeOfDay = "Afternoon";
+		} else {
+			timeOfDay = "Evening";
+		}
+
+		setDate({
+			hours: hours,
+			minutes: minutes,
+			seconds: seconds,
+			timeOfDay: timeOfDay,
+		});
+		return () => clearInterval();
+	}, 1000);
 
 	useEffect(() => {
 		if ("geolocation" in navigator) {
 			navigator.geolocation.getCurrentPosition((position) => {
 				const { latitude, longitude } = position.coords;
-				const address = geolib.reverseGeocode({
-					latitude: latitude,
-					longitude: longitude,
-				});
-				console.log(address);
+				const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
+				fetch(geoApiUrl)
+					.then((res) => res.json())
+					.then((data) => {
+						console.log(data);
+						setCity(data.city);
+						setLocal(data.locality);
+					});
+				const apiKey = "f5d7f601d3073301b1ec26e017b93446";
+				const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
+				fetch(weatherUrl)
+					.then((res) => res.json())
+					.then((data) => {
+						setWeather({ temperature: data.main.temp, wind: data.wind.speed });
+						console.log(data);
+					});
 			});
 		} else {
-			console.log("no geo location");
+			console.log("Please accept location permission");
 		}
 	}, []);
 
@@ -25,8 +63,15 @@ function App() {
 			<h1>SKATE EVENT LOG</h1>
 			<div>
 				<img></img>
-				<h2>{state.title}</h2>
-				<p></p>
+				<h2>Good</h2>
+				<p>{city}</p>
+				<p>{state}</p>
+				<p>Temperature:{weather.temperature}</p>
+				<p>Wind Speed:{weather.wind}</p>
+				<p>
+					{date.hours}:{date.minutes}:{date.seconds}
+				</p>
+				<p>{date.timeOfDay}</p>
 			</div>
 		</>
 	);
