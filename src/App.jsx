@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import arrowDown from "./assets/desktop/icon-arrow-down.svg";
 
 function App() {
 	const [weather, setWeather] = useState({});
@@ -60,14 +61,13 @@ function App() {
 	return (
 		<>
 			<div className="bg-[url('./assets/mobile/bg-image-daytime.jpg')] bg-cover opacity-70 ">
-				<p className="opacity-70">
+				<p className="opacity-30">
 					“The science of operations, as derived from mathematics more
 					especially, is a science of itself, and has its own abstract truth and
 					value.”
 				</p>
 				<img></img>
-				<h2>Good</h2>
-				<p>{city}</p>
+				<p className="H-one">{city}</p>
 				<p>{state}</p>
 				<p>Temperature:{weather.temperature}</p>
 				<p>Wind Speed:{weather.wind}</p>
@@ -76,6 +76,16 @@ function App() {
 					{date.seconds < 10 ? `0${date.seconds}` : date.seconds}
 				</p>
 				<p className="text-grayish inter-text">{date.timeOfDay}</p>
+
+				<button
+					style={{ fontSize: "15px", letterSpacing: "5px" }}
+					className="button H-three"
+				>
+					More
+					<div className="flex justify-center items-center h-8 w-8 bg-grayish rounded-full">
+						<img className="h-2 w-3" src={arrowDown} alt="Arrow Down" />
+					</div>
+				</button>
 			</div>
 		</>
 	);
