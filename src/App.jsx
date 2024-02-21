@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import arrowDown from "./assets/desktop/icon-arrow-down.svg";
+import iconRefresh from "./assets/desktop/icon-refresh.svg";
 
 function App() {
 	const [weather, setWeather] = useState({});
@@ -60,35 +61,43 @@ function App() {
 
 	return (
 		<>
-			<div className="bg-[url('./assets/mobile/bg-image-daytime.jpg')] bg-cover opacity-70 ">
-				<p className="opacity-30">
-					“The science of operations, as derived from mathematics more
-					especially, is a science of itself, and has its own abstract truth and
-					value.”
-				</p>
-				<img></img>
-				<p className="H-one">{city}</p>
-				<p>{state}</p>
-				<p>Temperature:{weather.temperature}</p>
-				<p>Wind Speed:{weather.wind}</p>
-				<p>
-					{date.hours}:{date.minutes < 10 ? `0${date.minutes}` : date.minutes}:
-					{date.seconds < 10 ? `0${date.seconds}` : date.seconds}
-				</p>
-				<p className="text-grayish inter-text">{date.timeOfDay}</p>
-
-				<button
-					style={{ fontSize: "15px", letterSpacing: "5px" }}
-					className="button H-three"
-				>
-					More
-					<div className="flex justify-center items-center h-8 w-8 bg-grayish rounded-full">
-						<img className="h-2 w-3" src={arrowDown} alt="Arrow Down" />
-					</div>
-				</button>
+			<div className="relative bg-[url('./assets/mobile/bg-image-daytime.jpg')] bg-cover">
+				{/* Overlay with opacity */}
+				<div className="absolute inset-0 bg-black opacity-50"></div>
+				{/* Content */}
+				<div className="relative text-white p-6 flex gap-4">
+					<p className="opacity-70 text-[13px] text-white">
+						“The science of operations, as derived from mathematics more
+						especially, is a science of itself, and has its own abstract truth
+						and value.”
+					</p>
+					<img className="w-5 h-5" src={iconRefresh}></img>
+				</div>
 			</div>
 		</>
 	);
 }
 
 export default App;
+
+{
+	/* <p className="">{city}</p>
+<p>{state}</p>
+<p>Temperature:{weather.temperature}</p>
+<p>Wind Speed:{weather.wind}</p>
+<p>
+	{date.hours}:{date.minutes < 10 ? `0${date.minutes}` : date.minutes}
+	:{date.seconds < 10 ? `0${date.seconds}` : date.seconds}
+</p>
+<p className="text-grayish inter-text">{date.timeOfDay}</p>
+
+<button
+	style={{ fontSize: "15px", letterSpacing: "5px" }}
+	className="button H-three"
+>
+	More
+	<div className="flex justify-center items-center h-8 w-8 bg-[#303030] rounded-full">
+		<img className="h-2 w-3" src={arrowDown} alt="Arrow Down" />
+	</div>
+</button> */
+}
