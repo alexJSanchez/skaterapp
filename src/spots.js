@@ -33,6 +33,10 @@ import HoustonPark7 from "./assets/spots/HoustonPark/7.jpg";
 import HoustonPark8 from "./assets/spots/HoustonPark/8.jpg";
 import JacobRiisProjects0 from "./assets/spots/JacobRiisProjects/0.jpg";
 import JacobRiisProjects1 from "./assets/spots/JacobRiisProjects/1.jpg";
+import JacobRiisProjects2 from "./assets/spots/JacobRiisProjects/2.jpg";
+import LTrainCurbs0 from "./assets/spots/LTrainCurbs/0.jpg";
+import LTrainCurbs1 from "./assets/spots/LTrainCurbs/1.jpg";
+import LTrainCurbs2 from "./assets/spots/LTrainCurbs/2.jpg";
 
 const spots = [
 	{
@@ -239,14 +243,35 @@ const spots = [
 				"You will not get kicked out of here. The rollerbladers from the buildings might try to fight you though.",
 		},
 		location: {
-			latitude: "40.726552927492584",
-			longitude: "-73.97413152422563",
+			latitude: "40.72645535905913",
+			longitude: "-73.9742602711058",
 			text: "Between the buildings on 12th Street and Avenue D.",
 		},
 		images: {
-			0: HoustonPark0,
-			1: HoustonPark1,
-			2: HoustonPark2,
+			0: JacobRiisProjects0,
+			1: JacobRiisProjects1,
+			2: JacobRiisProjects2,
+		},
+	},
+	{
+		name: "L Train Curbs",
+		area: "Chinatown, East Village & L.E.S.",
+		summary:
+			"A manual pad and some curbs on a one-way roadway. Common meet-up spot when Tompkins is too packed.",
+		bust: {
+			level: 1,
+			status:
+				"No bust, but it’s an active roadway, so be careful because it is not a closed-off zone for skating.",
+		},
+		location: {
+			latitude: "40.7309219411747",
+			longitude: "-73.98037572890927",
+			text: "14th Street and Avenue A, across from the Trader Joe’s and outside of the L train.",
+		},
+		images: {
+			0: LTrainCurbs0,
+			1: LTrainCurbs1,
+			2: LTrainCurbs2,
 		},
 	},
 ];
