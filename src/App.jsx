@@ -50,8 +50,8 @@ function App() {
 				{/* Overlay with opacity */}
 				<div className="absolute inset-0 bg-black opacity-50"></div>
 				{/* Content */}
-				<div className="relative text-white py-10 px-6 gap-4 flex flex-col justify-between h-full">
-					<div>
+				<div className="relative text-white gap-4 flex flex-col justify-between h-full">
+					<div className=" py-10 px-6 ">
 						<div className="flex">
 							<p className="opacity-70 text-[13px] text-white">
 								“The science of operations, as derived from mathematics more
@@ -66,7 +66,7 @@ function App() {
 						</div>
 						<p className="inter-text text-[14px] mt-3">Ada Lovelace</p>
 					</div>
-					<div className="opacity-95 text-white  flex flex-col">
+					<div className="opacity-95 text-white  py-10 px-6   flex flex-col">
 						<Time />
 						<div>
 							<p>
@@ -91,6 +91,18 @@ function App() {
 							</button>
 						</div>
 					</div>
+					{!isUpsideDown ? (
+						""
+					) : (
+						<p className="lower-tab font-black">
+							<div>
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								Provident odit ipsa mollitia quam necessitatibus! Harum vitae
+								totam, aliquam accusamus atque labore eligendi hic impedit
+								voluptatem, adipisci est quisquam numquam cumque.
+							</div>
+						</p>
+					)}
 				</div>
 			</div>
 		</>
