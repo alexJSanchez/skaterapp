@@ -8,6 +8,9 @@ import CherryStreetLedge1 from "./assets/spots/Broome&Allen/1.jpg";
 import CherryStreetLedge2 from "./assets/spots/Broome&Allen/2.jpg";
 import ChinatownDoubleSet0 from "./assets/spots/ChinatownDoubleSet/0.jpg";
 import ChinatownDoubleSet1 from "./assets/spots/ChinatownDoubleSet/1.jpg";
+import ChinatownManualPad0 from "./assets/spots/ChinatownManualPad/0.jpg";
+import ChinatownManualPad1 from "./assets/spots/ChinatownManualPad/1.jpg";
+import ChinatownManualPad2 from "./assets/spots/ChinatownManualPad/2.jpg";
 const spots = [
 	{
 		name: "Avenue D Bump-To-Bar",
@@ -89,6 +92,27 @@ const spots = [
 		images: {
 			0: ChinatownDoubleSet0,
 			1: ChinatownDoubleSet1,
+		},
+	},
+	{
+		name: "Chinatown Manual Pad",
+		area: "Chinatown, East Village & L.E.S.",
+		summary:
+			"Long, foot-high marble manual pad on choppy ground.*Keep in mind that every manual trick in existence has already been done here.",
+		bust: {
+			level: 2,
+			status:
+				"The people from the adjacent school may tell you to leave, but that is only during school hours. The park may get crowded with kids during warmer months.",
+		},
+		location: {
+			latitude: "40.710515745132994",
+			longitude: "-73.99659141566778",
+			text: "Cherry Street and Catherine Street in the Lower East Side / Chinatown. The spot is just past Madison Street on the southern side of the block.",
+		},
+		images: {
+			0: ChinatownManualPad0,
+			1: ChinatownManualPad1,
+			2: ChinatownManualPad2,
 		},
 	},
 ];
