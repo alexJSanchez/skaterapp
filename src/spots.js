@@ -34,9 +34,29 @@ import HoustonPark8 from "./assets/spots/HoustonPark/8.jpg";
 import JacobRiisProjects0 from "./assets/spots/JacobRiisProjects/0.jpg";
 import JacobRiisProjects1 from "./assets/spots/JacobRiisProjects/1.jpg";
 import JacobRiisProjects2 from "./assets/spots/JacobRiisProjects/2.jpg";
-import LTrainCurbs0 from "./assets/spots/LTrainCurbs/0.jpg";
-import LTrainCurbs1 from "./assets/spots/LTrainCurbs/1.jpg";
-import LTrainCurbs2 from "./assets/spots/LTrainCurbs/2.jpg";
+import LTrainCurbs0 from "./assets/spots/LTrainCurbs/0.jpeg";
+import LTrainCurbs1 from "./assets/spots/LTrainCurbs/1.jpeg";
+import LTrainCurbs2 from "./assets/spots/LTrainCurbs/2.jpeg";
+import LESHubba0 from "./assets/spots/L.E.S.Hubba/0.jpeg";
+import LESHubba1 from "./assets/spots/L.E.S.Hubba/1.jpeg";
+import LESHubba2 from "./assets/spots/L.E.S.Hubba/2.jpeg";
+import LESHubba3 from "./assets/spots/L.E.S.Hubba/3.jpeg";
+import LilyPads0 from "./assets/spots/LilyPads/0.jpg";
+import LilyPads1 from "./assets/spots/LilyPads/1.jpg";
+import MuralLedge0 from "./assets/spots/MuralLedge/0.jpg";
+import MuralLedge1 from "./assets/spots/MuralLedge/1.jpg";
+import NewSeaport0 from "./assets/spots/NewSeaport/0.jpg";
+import NewSeaport1 from "./assets/spots/NewSeaport/1.jpg";
+import NewSeaport2 from "./assets/spots/NewSeaport/2.jpg";
+import NewSeaport3 from "./assets/spots/NewSeaport/3.jpg";
+import NewSeaport4 from "./assets/spots/NewSeaport/4.jpg";
+import PittPool0 from "./assets/spots/PittPool/0.jpeg";
+import PittPool1 from "./assets/spots/PittPool/1.jpeg";
+import PittPool2 from "./assets/spots/PittPool/2.jpeg";
+import PittPool3 from "./assets/spots/PittPool/3.jpeg";
+import PittPool4 from "./assets/spots/PittPool/4.jpeg";
+import PittPool5 from "./assets/spots/PittPool/5.jpeg";
+import PittPool6 from "./assets/spots/PittPool/6.jpeg";
 
 const spots = [
 	{
@@ -272,6 +292,115 @@ const spots = [
 			0: LTrainCurbs0,
 			1: LTrainCurbs1,
 			2: LTrainCurbs2,
+		},
+	},
+	{
+		name: "L.E.S. Hubba",
+		area: "Chinatown, East Village & L.E.S.",
+		summary:
+			"A crusty frontside-for-regular hubba down eight stairs next to a skatepark.",
+		bust: {
+			level: 1,
+			status:
+				"Nobody cares what you do here, but the fence may be randomly locked at times.",
+		},
+		location: {
+			latitude: "40.71147334645646",
+			longitude: "-73.99366554876471",
+			text: "Monroe Street and Market Street in the playground.",
+		},
+		images: {
+			0: LESHubba0,
+			1: LESHubba1,
+			2: LESHubba2,
+			3: LESHubba3,
+		},
+	},
+	{
+		name: "Lily Pads",
+		area: "Chinatown, East Village & L.E.S.",
+		summary:
+			"Rugged gap where you ollie up one ledge, and onto a lower platform down in a pit below. The runway is …bad.",
+		bust: {
+			level: 2,
+			status:
+				"You’re not allowed to skateboard here, but typically, nobody hassles you. On rare occasions, maintenance workers from the building may ask you to leave.",
+		},
+		location: {
+			latitude: "40.71704014222652",
+			longitude: "-73.98935884886036",
+			text: "Inside the building courtyard on Grand Street and Essex Street.",
+		},
+		images: {
+			0: LilyPads0,
+			1: LilyPads1,
+		},
+	},
+	{
+		name: "Mural Ledge",
+		area: "Chinatown, East Village & L.E.S.",
+		summary: "A rounded concrete ledge in a basketball court with good flat.",
+		bust: {
+			level: 1,
+			status:
+				"Nobody bothers you for skating here, though it does get crowded on warmer days. Respect the ballers.",
+		},
+		location: {
+			latitude: "40.71412555318414",
+			longitude: "-73.98144031778578",
+			text: "Henry Street and Grand Street in the Lower East Side.",
+		},
+		images: {
+			0: MuralLedge0,
+			1: MuralLedge1,
+		},
+	},
+	{
+		name: "New Seaport",
+		area: "Chinatown, East Village & L.E.S.",
+		summary:
+			"A backside for regular round rail down a nine stair (it’s too close to the wall for boardslides or lipslides) + some weird metal up-ledges and other wooden benches / manual pads across the grass.",
+		bust: {
+			level: 2,
+			status:
+				"You are not allowed to skate on the pier. If the Parks Department cruises by, they will tell you to leave.",
+		},
+		location: {
+			latitude: "40.70956179200391",
+			longitude: "-73.98851592411059",
+			text: "On Pier 35 on the East River, roughly between Clinton Street and Pike Street on South Street, along the water.",
+		},
+		images: {
+			0: NewSeaport0,
+			1: NewSeaport1,
+			2: NewSeaport2,
+			3: NewSeaport3,
+			4: NewSeaport4,
+		},
+	},
+	{
+		name: "Pitt Pool",
+		area: "Chinatown, East Village & L.E.S.",
+		summary:
+			"A concrete gap that is ~five-feet-long with a long three stair after it. Some concrete curbs and manual pads.",
+		bust: {
+			level: 2,
+			status:
+				"There’s a “No Skateboarding” sign posted at the entrance. The Parks Department will tell you to leave in the summer because the pool is open. They are slightly more lenient in the winter when the park is empty, but it all depends on how they feel that day. It’s really luck of the draw if they give you a hard time or not.",
+		},
+		location: {
+			latitude: "40.721078860378846",
+			longitude: "-73.98129272888588",
+			text: "Houston Street and Pitt Street in the Lower East Side. It’s on the south side of the street, bordered by a brick wall.",
+		},
+		images: {
+			0: PittPool0,
+			1: PittPool1,
+			2: PittPool2,
+			3: PittPool3,
+			4: PittPool4,
+			5: PittPool5,
+			6: PittPool6,
 		},
 	},
 ];
