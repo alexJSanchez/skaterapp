@@ -90,9 +90,7 @@
 .lower-tab {
 	color: #000;
 	position: relative;
-	left: 0;
-	bottom: 20%;
-	left: 0;
+	bottom: 15%;
 	width: 100%;
 	background-color: #fff;
 	animation: slideUp 0.1s ease forwards;

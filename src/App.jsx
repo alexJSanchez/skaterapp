@@ -80,7 +80,7 @@ function App() {
 								style={{ fontSize: "13px", letterSpacing: "5px" }}
 								className="button H-three"
 							>
-								More
+								{isUpsideDown ? "Less" : "More"}
 								<div className="flex justify-center items-center h-7 w-7 bg-[#303030] rounded-full">
 									<img
 										className={`h-2 w-3  ${isUpsideDown ? "rotate-180" : ""}`}
@@ -94,14 +94,26 @@ function App() {
 					{!isUpsideDown ? (
 						""
 					) : (
-						<p className="lower-tab font-black">
-							<div>
-								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-								Provident odit ipsa mollitia quam necessitatibus! Harum vitae
-								totam, aliquam accusamus atque labore eligendi hic impedit
-								voluptatem, adipisci est quisquam numquam cumque.
+						<div className="lower-tab font-black">
+							<div className="flex justify-between px-10 pt-10 pb-2">
+								<h4 className="text-nowrap">Trick of the day</h4>
+								<h4>nollie flip</h4>
 							</div>
-						</p>
+							<div className="flex justify-between  px-10 py-2">
+								<h4 className="text-nowrap ">Inspiration</h4>
+								<a>Link to vid</a>
+							</div>
+							<div className="flex justify-between px-10 py-2">
+								<h4 className="text-nowrap">Spot Check</h4>
+								<h4>SpotName</h4>
+							</div>
+							<div className="flex justify-between px-10 pb-14 pt-2">
+								<h4 className="text-nowrap">Upcoming event</h4>
+								<h4>
+									{state},{city}
+								</h4>
+							</div>
+						</div>
 					)}
 				</div>
 			</div>
