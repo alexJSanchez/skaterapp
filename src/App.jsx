@@ -66,7 +66,7 @@ function App() {
 						</div>
 						<p className="inter-text text-[14px] mt-3">Ada Lovelace</p>
 					</div>
-					<div className="opacity-95 text-white  py-10 px-6   flex flex-col">
+					<div className="opacity-95 text-white  py-10 px-6  flex flex-col">
 						<Time />
 						<div>
 							<p>

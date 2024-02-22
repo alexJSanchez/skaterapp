@@ -67,13 +67,33 @@
 	transition: transform 0.3s ease;
 }
 
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+	}
+	20% {
+		transform: translateY(90%);
+	}
+	40% {
+		transform: translateY(80%);
+	}
+	60% {
+		transform: translateY(70%);
+	}
+	80% {
+		transform: translateY(60%);
+	}
+	100% {
+		transform: translateY(50%);
+	}
+}
 .lower-tab {
 	color: #000;
 	position: relative;
+	left: 0;
 	bottom: 20%;
 	left: 0;
 	width: 100%;
 	background-color: #fff;
-	transform: translateY(100%);
-	transition: transform 0.5s ease-in;
+	animation: slideUp 0.1s ease forwards;
 }
