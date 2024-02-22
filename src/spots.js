@@ -11,6 +11,29 @@ import ChinatownDoubleSet1 from "./assets/spots/ChinatownDoubleSet/1.jpg";
 import ChinatownManualPad0 from "./assets/spots/ChinatownManualPad/0.jpg";
 import ChinatownManualPad1 from "./assets/spots/ChinatownManualPad/1.jpg";
 import ChinatownManualPad2 from "./assets/spots/ChinatownManualPad/2.jpg";
+import ColumbusPark0 from "./assets/spots/ColumbusPark/0.jpg";
+import ColumbusPark1 from "./assets/spots/ColumbusPark/1.jpg";
+import ColumbusPark2 from "./assets/spots/ColumbusPark/2.jpg";
+import ColumbusPark3 from "./assets/spots/ColumbusPark/3.jpg";
+import ColumbusPark4 from "./assets/spots/ColumbusPark/4.jpg";
+import ColumbusPark5 from "./assets/spots/ColumbusPark/5.jpg";
+import D70 from "./assets/spots/D7/0.jpg";
+import D71 from "./assets/spots/D7/1.jpg";
+import D72 from "./assets/spots/D7/2.jpg";
+import DivisionStreetTriangle0 from "./assets/spots/DivisionStreetTriangle/0.jpg";
+import DivisionStreetTriangle1 from "./assets/spots/DivisionStreetTriangle/1.jpg";
+import HoustonPark0 from "./assets/spots/HoustonPark/0.jpg";
+import HoustonPark1 from "./assets/spots/HoustonPark/1.jpg";
+import HoustonPark2 from "./assets/spots/HoustonPark/2.jpg";
+import HoustonPark3 from "./assets/spots/HoustonPark/3.jpg";
+import HoustonPark4 from "./assets/spots/HoustonPark/4.jpg";
+import HoustonPark5 from "./assets/spots/HoustonPark/5.jpg";
+import HoustonPark6 from "./assets/spots/HoustonPark/6.jpg";
+import HoustonPark7 from "./assets/spots/HoustonPark/7.jpg";
+import HoustonPark8 from "./assets/spots/HoustonPark/8.jpg";
+import JacobRiisProjects0 from "./assets/spots/JacobRiisProjects/0.jpg";
+import JacobRiisProjects1 from "./assets/spots/JacobRiisProjects/1.jpg";
+
 const spots = [
 	{
 		name: "Avenue D Bump-To-Bar",
@@ -113,6 +136,117 @@ const spots = [
 			0: ChinatownManualPad0,
 			1: ChinatownManualPad1,
 			2: ChinatownManualPad2,
+		},
+	},
+	{
+		name: "Columbus Park",
+		area: "Chinatown, East Village & L.E.S.",
+		summary:
+			"Chunky frontside for regular ledge that kinks down a two stair, as seen in every “Summer Trip to New York” clip ever. Gap over a ledge and down a two block. Eight-stair round rail with a sketchy runway.",
+		bust: {
+			level: 1,
+			status:
+				"The Parks Department usually does not hassle you for skating here, but it does get crowded with basketball players whenever it’s warm. Pitch black at night.",
+		},
+		location: {
+			latitude: "40.71421962684768",
+			longitude: "-73.99966901769767",
+			text: "Mulberry Street and Worth Street in Chinatown.",
+		},
+		images: {
+			0: ColumbusPark0,
+			1: ColumbusPark1,
+			2: ColumbusPark2,
+			3: ColumbusPark3,
+			4: ColumbusPark4,
+			5: ColumbusPark5,
+		},
+	},
+	{
+		name: "D7",
+		area: "Chinatown, East Village & L.E.S.",
+		summary:
+			"Huge six block equivalent to maybe ~12 stairs on a sidewalk runway.",
+		bust: {
+			level: 1,
+			status: "You’re not going to get kicked out of here.",
+		},
+		location: {
+			latitude: "40.72343563618858",
+			longitude: "-73.976708306756",
+			text: "Avenue D and East 7th Street in the East Village. The spot is in between the brick buildings at the corner.",
+		},
+		images: {
+			0: D70,
+			1: D71,
+			2: D72,
+		},
+	},
+	{
+		name: "Division Street Triangle",
+		area: "Chinatown, East Village & L.E.S.",
+		summary:
+			"Triangle curb-height manual pad in the middle of the street. Sorta like the nu-age Astor Place. Be mindful of cars, pedestrians, bikes, scooters, buses, lions, tigers, bears.",
+		bust: {
+			level: 1,
+			status:
+				"You don’t get booted, but the spot is in the middle of traffic, so better during off hours.",
+		},
+		location: {
+			latitude: "40.71438242064866",
+			longitude: "-73.99396958893718",
+			text: "Division Street and Eldridge Street in Chinatown.",
+		},
+		images: {
+			0: DivisionStreetTriangle0,
+			1: DivisionStreetTriangle1,
+		},
+	},
+	{
+		name: "Houston Park",
+		area: "Chinatown, East Village & L.E.S.",
+		summary:
+			"Low handicap rails going down a mellow ramp, and a Whole Foods next door with a lot of beautiful people walking by.A six stair that sucks for skateboarding, but is good to sit on and wind down the day down at. (Only really works when it’s warm.There’s also a bad (read: awful) ledge, and a good bump that people set trash cans up to towards Delancey Street. Bring your own debris.",
+		bust: {
+			level: 1,
+			status:
+				"The Parks Department normally does not hassle you for skating here.",
+		},
+		location: {
+			latitude: "40.72399406084945",
+			longitude: "-73.99119293315901",
+			text: "Houston and Christie Street / 2nd Avenue.",
+		},
+		images: {
+			0: HoustonPark0,
+			1: HoustonPark1,
+			2: HoustonPark2,
+			3: HoustonPark3,
+			4: HoustonPark4,
+			5: HoustonPark5,
+			6: HoustonPark6,
+			7: HoustonPark7,
+			8: HoustonPark8,
+		},
+	},
+	{
+		name: "Jacob Riis Projects",
+		area: "Chinatown, East Village & L.E.S.",
+		summary: "Curved concrete ledge and high ledges in a basketball court.",
+		bust: {
+			level: 1,
+			status:
+				"You will not get kicked out of here. The rollerbladers from the buildings might try to fight you though.",
+		},
+		location: {
+			latitude: "40.726552927492584",
+			longitude: "-73.97413152422563",
+			text: "Between the buildings on 12th Street and Avenue D.",
+		},
+		images: {
+			0: HoustonPark0,
+			1: HoustonPark1,
+			2: HoustonPark2,
 		},
 	},
 ];
