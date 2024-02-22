@@ -4,9 +4,6 @@
 
 .inter-text {
 	font-family: "Inter", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 400;
-	font-style: normal;
 }
 
 .H-one {
@@ -64,4 +61,8 @@
 	align-items: center;
 	gap: 4px;
 	border-radius: 32px;
+}
+.rotate-180 {
+	transform: rotate(180deg);
+	transition: transform 0.3s ease;
 }

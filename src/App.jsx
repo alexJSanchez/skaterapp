@@ -1,77 +1,96 @@
 import { useState, useEffect } from "react";
 import arrowDown from "./assets/desktop/icon-arrow-down.svg";
 import iconRefresh from "./assets/desktop/icon-refresh.svg";
+import arrowUp from "./assets/desktop/icon-arrow-up.svg";
+import Time from "./component/time";
 
 function App() {
-	const [weather, setWeather] = useState({});
-	const [city, setCity] = useState("");
-	const [state, setLocal] = useState("");
-	const [date, setDate] = useState({});
+	const [weather, setWeather] = useState({
+		temperature: "0.00",
+		wind: "0.00",
+	});
+	const [city, setCity] = useState("City");
+	const [state, setLocal] = useState("State");
 
-	setInterval(() => {
-		let currentTime = new Date();
-		let timeOfDay = "";
-		const hours = currentTime.getHours();
-		const minutes = currentTime.getMinutes();
-		const seconds = currentTime.getSeconds();
-		if (hours >= 0 && hours < 6) {
-			timeOfDay = "Early Morning";
-		} else if (hours >= 6 && hours < 12) {
-			timeOfDay = "Morning";
-		} else if (hours >= 12 && hours < 18) {
-			timeOfDay = "Afternoon";
-		} else {
-			timeOfDay = "Evening";
-		}
+	const [isUpsideDown, setIsUpsideDown] = useState(false);
 
-		setDate({
-			hours: hours,
-			minutes: minutes,
-			seconds: seconds,
-			timeOfDay: timeOfDay,
-		});
-		return () => clearInterval();
-	}, 1000);
+	const handleImageClick = () => {
+		setIsUpsideDown(!isUpsideDown);
+	};
 
 	useEffect(() => {
-		if ("geolocation" in navigator) {
-			navigator.geolocation.getCurrentPosition((position) => {
-				const { latitude, longitude } = position.coords;
-				const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
-				fetch(geoApiUrl)
-					.then((res) => res.json())
-					.then((data) => {
-						console.log(data);
-						setCity(data.city);
-						setLocal(data.locality);
-					});
-				const apiKey = "f5d7f601d3073301b1ec26e017b93446";
-				const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
-				fetch(weatherUrl)
-					.then((res) => res.json())
-					.then((data) => {
-						setWeather({ temperature: data.main.temp, wind: data.wind.speed });
-						console.log(data);
-					});
-			});
-		} else {
-			console.log("Please accept location permission");
-		}
+		// if ("geolocation" in navigator) {
+		// 	navigator.geolocation.getCurrentPosition((position) => {
+		// 		const { latitude, longitude } = position.coords;
+		// 		const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
+		// 		fetch(geoApiUrl)
+		// 			.then((res) => res.json())
+		// 			.then((data) => {
+		// 				console.log(data);
+		// 				setCity(data.city);
+		// 				setLocal(data.locality);
+		// 			});
+		// 		const apiKey = "f5d7f601d3073301b1ec26e017b93446";
+		// 		const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
+		// 		fetch(weatherUrl)
+		// 			.then((res) => res.json())
+		// 			.then((data) => {
+		// 				setWeather({ temperature: data.main.temp, wind: data.wind.speed });
+		// 				console.log(data);
+		// 			});
+		// 	});
+		// } else {
+		// 	console.log("Please accept location permission");
+		// }
 	}, []);
 
 	return (
 		<>
-			<div className="relative bg-[url('./assets/mobile/bg-image-daytime.jpg')] bg-cover">
+			<div className="relative bg-[url('./assets/mobile/bg-image-daytime.jpg')] h-screen bg-cover">
 				{/* Overlay with opacity */}
 				<div className="absolute inset-0 bg-black opacity-50"></div>
 				{/* Content */}
-				<div className="relative text-white p-6 flex gap-4">
-					<p className="opacity-70 text-[13px] text-white">
-						“The science of operations, as derived from mathematics more
-						especially, is a science of itself, and has its own abstract truth
-						and value.”
-					</p>
-					<img className="w-5 h-5" src={iconRefresh}></img>
+				<div className="relative text-white py-10 px-6 gap-4 flex flex-col justify-between h-full">
+					<div>
+						<div className="flex">
+							<p className="opacity-70 text-[13px] text-white">
+								“The science of operations, as derived from mathematics more
+								especially, is a science of itself, and has its own abstract
+								truth and value.”
+							</p>
+							<img
+								className="w-5 h-5"
+								src={iconRefresh}
+								alt="Refresh Icon"
+							></img>
+						</div>
+						<p className="inter-text text-[14px] mt-3">Ada Lovelace</p>
+					</div>
+					<div className="opacity-95 text-white  flex flex-col">
+						<Time />
+						<div>
+							<p>
+								{state}, {city}
+							</p>
+							<p>Temp: {weather.temperature} F</p>
+							<p>Wind: {weather.wind} Mph</p>
+						</div>
+						<div onClick={handleImageClick} className="mt-[30px]">
+							<button
+								style={{ fontSize: "13px", letterSpacing: "5px" }}
+								className="button H-three"
+							>
+								More
+								<div className="flex justify-center items-center h-7 w-7 bg-[#303030] rounded-full">
+									<img
+										className={`h-2 w-3  ${isUpsideDown ? "rotate-180" : ""}`}
+										src={arrowDown}
+										alt="Arrow Down"
+									/>
+								</div>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</>
