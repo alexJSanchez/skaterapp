@@ -1,73 +1,79 @@
-import AvenueDBumpToBar0 from "./assets/spots/AvenueDBumpToBar/0.jpg";
-import AvenueDBumpToBar1 from "./assets/spots/AvenueDBumpToBar/1.jpg";
-import BroomeAndAllen0 from "./assets/spots/Broome&Allen/0.jpg";
-import BroomeAndAllen1 from "./assets/spots/Broome&Allen/1.jpg";
-import BroomeAndAllen2 from "./assets/spots/Broome&Allen/2.jpg";
-import CherryStreetLedge0 from "./assets/spots/Broome&Allen/0.jpg";
-import CherryStreetLedge1 from "./assets/spots/Broome&Allen/1.jpg";
-import CherryStreetLedge2 from "./assets/spots/Broome&Allen/2.jpg";
-import ChinatownDoubleSet0 from "./assets/spots/ChinatownDoubleSet/0.jpg";
-import ChinatownDoubleSet1 from "./assets/spots/ChinatownDoubleSet/1.jpg";
-import ChinatownManualPad0 from "./assets/spots/ChinatownManualPad/0.jpg";
-import ChinatownManualPad1 from "./assets/spots/ChinatownManualPad/1.jpg";
-import ChinatownManualPad2 from "./assets/spots/ChinatownManualPad/2.jpg";
-import ColumbusPark0 from "./assets/spots/ColumbusPark/0.jpg";
-import ColumbusPark1 from "./assets/spots/ColumbusPark/1.jpg";
-import ColumbusPark2 from "./assets/spots/ColumbusPark/2.jpg";
-import ColumbusPark3 from "./assets/spots/ColumbusPark/3.jpg";
-import ColumbusPark4 from "./assets/spots/ColumbusPark/4.jpg";
-import ColumbusPark5 from "./assets/spots/ColumbusPark/5.jpg";
-import D70 from "./assets/spots/D7/0.jpg";
-import D71 from "./assets/spots/D7/1.jpg";
-import D72 from "./assets/spots/D7/2.jpg";
-import DivisionStreetTriangle0 from "./assets/spots/DivisionStreetTriangle/0.jpg";
-import DivisionStreetTriangle1 from "./assets/spots/DivisionStreetTriangle/1.jpg";
-import HoustonPark0 from "./assets/spots/HoustonPark/0.jpg";
-import HoustonPark1 from "./assets/spots/HoustonPark/1.jpg";
-import HoustonPark2 from "./assets/spots/HoustonPark/2.jpg";
-import HoustonPark3 from "./assets/spots/HoustonPark/3.jpg";
-import HoustonPark4 from "./assets/spots/HoustonPark/4.jpg";
-import HoustonPark5 from "./assets/spots/HoustonPark/5.jpg";
-import HoustonPark6 from "./assets/spots/HoustonPark/6.jpg";
-import HoustonPark7 from "./assets/spots/HoustonPark/7.jpg";
-import HoustonPark8 from "./assets/spots/HoustonPark/8.jpg";
-import JacobRiisProjects0 from "./assets/spots/JacobRiisProjects/0.jpg";
-import JacobRiisProjects1 from "./assets/spots/JacobRiisProjects/1.jpg";
-import JacobRiisProjects2 from "./assets/spots/JacobRiisProjects/2.jpg";
-import LTrainCurbs0 from "./assets/spots/LTrainCurbs/0.jpeg";
-import LTrainCurbs1 from "./assets/spots/LTrainCurbs/1.jpeg";
-import LTrainCurbs2 from "./assets/spots/LTrainCurbs/2.jpeg";
-import LESHubba0 from "./assets/spots/L.E.S.Hubba/0.jpeg";
-import LESHubba1 from "./assets/spots/L.E.S.Hubba/1.jpeg";
-import LESHubba2 from "./assets/spots/L.E.S.Hubba/2.jpeg";
-import LESHubba3 from "./assets/spots/L.E.S.Hubba/3.jpeg";
-import LilyPads0 from "./assets/spots/LilyPads/0.jpg";
-import LilyPads1 from "./assets/spots/LilyPads/1.jpg";
-import MuralLedge0 from "./assets/spots/MuralLedge/0.jpg";
-import MuralLedge1 from "./assets/spots/MuralLedge/1.jpg";
-import NewSeaport0 from "./assets/spots/NewSeaport/0.jpg";
-import NewSeaport1 from "./assets/spots/NewSeaport/1.jpg";
-import NewSeaport2 from "./assets/spots/NewSeaport/2.jpg";
-import NewSeaport3 from "./assets/spots/NewSeaport/3.jpg";
-import NewSeaport4 from "./assets/spots/NewSeaport/4.jpg";
-import PittPool0 from "./assets/spots/PittPool/0.jpg";
-import PittPool1 from "./assets/spots/PittPool/1.jpg";
-import PittPool2 from "./assets/spots/PittPool/2.jpg";
-import PittPool3 from "./assets/spots/PittPool/3.jpg";
-import PittPool4 from "./assets/spots/PittPool/4.jpg";
-import PittPool5 from "./assets/spots/PittPool/5.jpg";
-import PittPool6 from "./assets/spots/PittPool/6.jpg";
-import PopeyesLedge0 from "./assets/spots/PopeyesLedge/0.jpg";
-import PopeyesLedge1 from "./assets/spots/PopeyesLedge/1.jpg";
-import PopeyesLedge2 from "./assets/spots/PopeyesLedge/2.jpg";
-import PopeyesLedge3 from "./assets/spots/PopeyesLedge/3.jpg";
-import PopeyesLedge4 from "./assets/spots/PopeyesLedge/4.jpg";
-import PopeyesLedge5 from "./assets/spots/PopeyesLedge/5.jpg";
-import PopeyesLedge6 from "./assets/spots/PopeyesLedge/6.jpg";
-import SewardPark0 from "./assets/spots/SewardPark/0.jpeg";
-import SewardPark1 from "./assets/spots/SewardPark/1.jpeg";
-import SewardPark2 from "./assets/spots/SewardPark/2.jpeg";
-import SewardPark3 from "./assets/spots/SewardPark/3.jpeg";
+import AvenueDBumpToBar0 from "./AvenueDBumpToBar/0.jpg";
+import AvenueDBumpToBar1 from "./AvenueDBumpToBar/1.jpg";
+import BroomeAndAllen0 from "./Broome&Allen/0.jpg";
+import BroomeAndAllen1 from "./Broome&Allen/1.jpg";
+import BroomeAndAllen2 from "./Broome&Allen/2.jpg";
+import CherryStreetLedge0 from "./Broome&Allen/0.jpg";
+import CherryStreetLedge1 from "./Broome&Allen/1.jpg";
+import CherryStreetLedge2 from "./Broome&Allen/2.jpg";
+import ChinatownDoubleSet0 from "./ChinatownDoubleSet/0.jpg";
+import ChinatownDoubleSet1 from "./ChinatownDoubleSet/1.jpg";
+import ChinatownManualPad0 from "./ChinatownManualPad/0.jpg";
+import ChinatownManualPad1 from "./ChinatownManualPad/1.jpg";
+import ChinatownManualPad2 from "./ChinatownManualPad/2.jpg";
+import ColumbusPark0 from "./ColumbusPark/0.jpg";
+import ColumbusPark1 from "./ColumbusPark/1.jpg";
+import ColumbusPark2 from "./ColumbusPark/2.jpg";
+import ColumbusPark3 from "./ColumbusPark/3.jpg";
+import ColumbusPark4 from "./ColumbusPark/4.jpg";
+import ColumbusPark5 from "./ColumbusPark/5.jpg";
+import D70 from "./D7/0.jpg";
+import D71 from "./D7/1.jpg";
+import D72 from "./D7/2.jpg";
+import DivisionStreetTriangle0 from "./DivisionStreetTriangle/0.jpg";
+import DivisionStreetTriangle1 from "./DivisionStreetTriangle/1.jpg";
+import HoustonPark0 from "./HoustonPark/0.jpg";
+import HoustonPark1 from "./HoustonPark/1.jpg";
+import HoustonPark2 from "./HoustonPark/2.jpg";
+import HoustonPark3 from "./HoustonPark/3.jpg";
+import HoustonPark4 from "./HoustonPark/4.jpg";
+import HoustonPark5 from "./HoustonPark/5.jpg";
+import HoustonPark6 from "./HoustonPark/6.jpg";
+import HoustonPark7 from "./HoustonPark/7.jpg";
+import HoustonPark8 from "./HoustonPark/8.jpg";
+import JacobRiisProjects0 from "./JacobRiisProjects/0.jpg";
+import JacobRiisProjects1 from "./JacobRiisProjects/1.jpg";
+import JacobRiisProjects2 from "./JacobRiisProjects/2.jpg";
+import LTrainCurbs0 from "./LTrainCurbs/0.jpeg";
+import LTrainCurbs1 from "./LTrainCurbs/1.jpeg";
+import LTrainCurbs2 from "./LTrainCurbs/2.jpeg";
+import LESHubba0 from "./L.E.S.Hubba/0.jpeg";
+import LESHubba1 from "./L.E.S.Hubba/1.jpeg";
+import LESHubba2 from "./L.E.S.Hubba/2.jpeg";
+import LESHubba3 from "./L.E.S.Hubba/3.jpeg";
+import LilyPads0 from "./LilyPads/0.jpg";
+import LilyPads1 from "./LilyPads/1.jpg";
+import MuralLedge0 from "./MuralLedge/0.jpg";
+import MuralLedge1 from "./MuralLedge/1.jpg";
+import NewSeaport0 from "./NewSeaport/0.jpg";
+import NewSeaport1 from "./NewSeaport/1.jpg";
+import NewSeaport2 from "./NewSeaport/2.jpg";
+import NewSeaport3 from "./NewSeaport/3.jpg";
+import NewSeaport4 from "./NewSeaport/4.jpg";
+import PittPool0 from "./PittPool/0.jpg";
+import PittPool1 from "./PittPool/1.jpg";
+import PittPool2 from "./PittPool/2.jpg";
+import PittPool3 from "./PittPool/3.jpg";
+import PittPool4 from "./PittPool/4.jpg";
+import PittPool5 from "./PittPool/5.jpg";
+import PittPool6 from "./PittPool/6.jpg";
+import PopeyesLedge0 from "./PopeyesLedge/0.jpg";
+import PopeyesLedge1 from "./PopeyesLedge/1.jpg";
+import PopeyesLedge2 from "./PopeyesLedge/2.jpg";
+import PopeyesLedge3 from "./PopeyesLedge/3.jpg";
+import PopeyesLedge4 from "./PopeyesLedge/4.jpg";
+import PopeyesLedge5 from "./PopeyesLedge/5.jpg";
+import PopeyesLedge6 from "./PopeyesLedge/6.jpg";
+import SewardPark0 from "./SewardPark/0.jpeg";
+import SewardPark1 from "./SewardPark/1.jpeg";
+import SewardPark2 from "./SewardPark/2.jpeg";
+import SewardPark3 from "./SewardPark/3.jpeg";
+import TompkinsSquarePark0 from "./TompkinsSquarePark/0.jpg";
+import TompkinsSquarePark1 from "./TompkinsSquarePark/1.jpg";
+import TompkinsSquarePark2 from "./TompkinsSquarePark/2.jpg";
+import TompkinsMiddleSchoolBanks0 from "./TompkinsMiddleSchoolBanks/0.jpg";
+import TompkinsMiddleSchoolBanks1 from "./TompkinsMiddleSchoolBanks/1.jpg";
+import TompkinsMiddleSchoolBanks2 from "./TompkinsMiddleSchoolBanks/2.jpg";
 
 const spots = [
 	{
@@ -459,6 +465,47 @@ const spots = [
 			1: SewardPark1,
 			2: SewardPark2,
 			3: SewardPark3,
+		},
+	},
+	{
+		name: "Tompkins Square Park",
+		area: "Chinatown, East Village & L.E.S.",
+		summary:
+			"Flatground, conversation and an array of the city’s discarded junk floating through.Tompkins has free Wifi, which you can access via the “attwifi” network.",
+		bust: {
+			level: 1,
+			status:
+				"The courts are permitted for softball on some summer weekday evenings, and for street hockey on Sundays during warmer months. Otherwise, you can skate here all you want.",
+		},
+		location: {
+			latitude: "40.72760435328473",
+			longitude: "-73.98273010222503",
+			text: "East 9th Street and Avenue A in the East Village.",
+		},
+		images: {
+			0: TompkinsSquarePark0,
+			1: TompkinsSquarePark1,
+			2: TompkinsSquarePark2,
+		},
+	},
+	{
+		name: "Tompkins Middle School Banks",
+		area: "Chinatown, East Village & L.E.S.",
+		summary: "Two curb-height narrow banks on the sidewalk.",
+		bust: {
+			level: 2,
+			status:
+				"The banks are at a school, so you’re not allowed to skate there. Best during weekends and in the summer.",
+		},
+		location: {
+			latitude: "40.72433366947034",
+			longitude: "-73.98135440237382",
+			text: "E. 6th Street and Avenue B in the East Village.",
+		},
+		images: {
+			0: TompkinsMiddleSchoolBanks0,
+			1: TompkinsMiddleSchoolBanks1,
+			2: TompkinsMiddleSchoolBanks2,
 		},
 	},
 ];

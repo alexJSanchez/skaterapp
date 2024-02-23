@@ -3,6 +3,8 @@ import arrowDown from "./assets/desktop/icon-arrow-down.svg";
 import iconRefresh from "./assets/desktop/icon-refresh.svg";
 import arrowUp from "./assets/desktop/icon-arrow-up.svg";
 import Time from "./component/time";
+import lowerEastSideSpots from "./assets/lowerEastSideSpots/lowerEastSideSpotsData";
+import financialDistrictSpots from "./assets/financialDistrictSpots/financialDistrictSpotsData";
 
 function App() {
 	const [weather, setWeather] = useState({
