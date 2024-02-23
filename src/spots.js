@@ -50,13 +50,24 @@ import NewSeaport1 from "./assets/spots/NewSeaport/1.jpg";
 import NewSeaport2 from "./assets/spots/NewSeaport/2.jpg";
 import NewSeaport3 from "./assets/spots/NewSeaport/3.jpg";
 import NewSeaport4 from "./assets/spots/NewSeaport/4.jpg";
-import PittPool0 from "./assets/spots/PittPool/0.jpeg";
-import PittPool1 from "./assets/spots/PittPool/1.jpeg";
-import PittPool2 from "./assets/spots/PittPool/2.jpeg";
-import PittPool3 from "./assets/spots/PittPool/3.jpeg";
-import PittPool4 from "./assets/spots/PittPool/4.jpeg";
-import PittPool5 from "./assets/spots/PittPool/5.jpeg";
-import PittPool6 from "./assets/spots/PittPool/6.jpeg";
+import PittPool0 from "./assets/spots/PittPool/0.jpg";
+import PittPool1 from "./assets/spots/PittPool/1.jpg";
+import PittPool2 from "./assets/spots/PittPool/2.jpg";
+import PittPool3 from "./assets/spots/PittPool/3.jpg";
+import PittPool4 from "./assets/spots/PittPool/4.jpg";
+import PittPool5 from "./assets/spots/PittPool/5.jpg";
+import PittPool6 from "./assets/spots/PittPool/6.jpg";
+import PopeyesLedge0 from "./assets/spots/PopeyesLedge/0.jpg";
+import PopeyesLedge1 from "./assets/spots/PopeyesLedge/1.jpg";
+import PopeyesLedge2 from "./assets/spots/PopeyesLedge/2.jpg";
+import PopeyesLedge3 from "./assets/spots/PopeyesLedge/3.jpg";
+import PopeyesLedge4 from "./assets/spots/PopeyesLedge/4.jpg";
+import PopeyesLedge5 from "./assets/spots/PopeyesLedge/5.jpg";
+import PopeyesLedge6 from "./assets/spots/PopeyesLedge/6.jpg";
+import SewardPark0 from "./assets/spots/SewardPark/0.jpeg";
+import SewardPark1 from "./assets/spots/SewardPark/1.jpeg";
+import SewardPark2 from "./assets/spots/SewardPark/2.jpeg";
+import SewardPark3 from "./assets/spots/SewardPark/3.jpeg";
 
 const spots = [
 	{
@@ -401,6 +412,53 @@ const spots = [
 			4: PittPool4,
 			5: PittPool5,
 			6: PittPool6,
+		},
+	},
+	{
+		name: "Popeye’s Ledge",
+		area: "Chinatown, East Village & L.E.S.",
+		summary:
+			"A frontside for regular ledge that runs down a bike path, with a slappy curb alongside it. Manual pad at the end of the hill.The ledge has been described as grinding “like a soggy hot dog bun.”There is a good, albeit slightly oversized seven set at the northern end of the spot (a block up from the bike path.There’s a (you guessed it) Popeye’s across the street, though you should get rice balls from Yaya Tea a few doors down (51 Christie Street) if you don’t want to feel like death after.",
+		bust: {
+			level: 1,
+			status:
+				"The bike path is very crowded, especially during rush hours. It’s better during holidays or colder months. The Parks Department won’t hassle you, but there are usually police officers across the street at the Manhattan Bridge, and they might kick you out for fucking up the flow of the bike path.",
+		},
+		location: {
+			latitude: "40.71618567450264",
+			longitude: "-73.99491818667367",
+			text: " Canal Street and Christie Street. The seven set is on Hester and Christie.",
+		},
+		images: {
+			0: PopeyesLedge0,
+			1: PopeyesLedge1,
+			2: PopeyesLedge2,
+			3: PopeyesLedge3,
+			4: PopeyesLedge4,
+			5: PopeyesLedge5,
+			6: PopeyesLedge6,
+		},
+	},
+	{
+		name: "Seward Park",
+		area: "Chinatown, East Village & L.E.S.",
+		summary:
+			"Dual level recycled plastic ledges on basketball court ground, and a seven stair with smooth run-up in another basketball court.",
+		bust: {
+			level: 2,
+			status:
+				"The ledges are only open on weekdays or any time you’d expect school to be open. You are not allowed to skate there, but if the park doesn’t have school activities going on, usually, nobody bothers you. Seven stair is a go whenever.",
+		},
+		location: {
+			latitude: "40.715174358589174",
+			longitude: "-73.98923627112747",
+			text: "Hester Street and Essex Street.",
+		},
+		images: {
+			0: SewardPark0,
+			1: SewardPark1,
+			2: SewardPark2,
+			3: SewardPark3,
 		},
 	},
 ];
