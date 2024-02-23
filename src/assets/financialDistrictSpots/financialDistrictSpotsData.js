@@ -82,6 +82,22 @@ import Seaport2 from "./Seaport/2.jpg";
 import Seaport3 from "./Seaport/3.jpg";
 import Seaport4 from "./Seaport/4.jpg";
 import Seaport5 from "./Seaport/5.jpg";
+import StateBuilding0 from "./StateBuilding/0.jpg";
+import StateBuilding1 from "./StateBuilding/1.jpg";
+import VeteransPlaza0 from "./VeteransPlaza/0.jpg";
+import VeteransPlaza1 from "./VeteransPlaza/1.jpg";
+import VeteransPlaza2 from "./VeteransPlaza/2.jpg";
+import VeteransPlaza3 from "./VeteransPlaza/3.jpg";
+import VeteransPlaza4 from "./VeteransPlaza/4.jpg";
+import VeteransPlaza5 from "./VeteransPlaza/5.jpg";
+import VeteransPlaza6 from "./VeteransPlaza/6.jpg";
+import VeteransPlaza7 from "./VeteransPlaza/7.jpg";
+import WaterStreetBenches0 from "./WaterStreetBenches/0.jpg";
+import WaterStreetBenches1 from "./WaterStreetBenches/1.jpg";
+import WaterStreetBenches2 from "./WaterStreetBenches/2.jpg";
+import WaterStreetBenches3 from "./WaterStreetBenches/3.jpg";
+import WaterStreetBenches4 from "./WaterStreetBenches/4.jpg";
+
 const spots = [
 	{
 		name: "Battery Park",
@@ -447,6 +463,78 @@ const spots = [
 			3: Seaport3,
 			4: Seaport4,
 			5: Seaport5,
+		},
+	},
+	{
+		name: "State Building",
+		area: "Financial District",
+		summary:
+			"Old-world stone ledges on a sidewalk. They don’t make ’em like this anymore! One is higher than the other. Definitely one of the best ledge spots in the area.",
+		bust: {
+			level: 3,
+			status:
+				"You’re not allowed to skate here, and someone will come out to tell you to leave in under 15 minutes on most weekdays, when the area is really busy anyway. Better on weekends.",
+		},
+
+		location: {
+			latitude: "40.71474494644896",
+			longitude: "-74.00045227109806",
+			text: "Baxter Street and Worth Street, across the street from Columbus Park.",
+		},
+		images: {
+			0: StateBuilding0,
+			1: StateBuilding1,
+		},
+	},
+	{
+		name: "Veteran’s Plaza",
+		area: "Financial District",
+		summary:
+			"Sets of rugged 6, 7 and 12 stairs on bad ground that barely anyone skates, round marble ledges across the street, and a brick ledge that goes into a perpendicular bank.",
+		bust: {
+			level: 3,
+			status:
+				"Skateboarding is forbidden by plaza rules in both parks. You’ll get kicked out of the stair portion rather quickly if you go near the security window. The spot across the street is less of a hassle, but red hat downtown security may roll up and tell you to leave if they spot you.",
+		},
+
+		location: {
+			latitude: "40.70329947499594",
+			longitude: "-74.01159110222243",
+			text: "Water Street between Broad Street and Old Slip, at the S&P Building.",
+		},
+		images: {
+			0: VeteransPlaza0,
+			1: VeteransPlaza1,
+			2: VeteransPlaza2,
+			3: VeteransPlaza3,
+			4: VeteransPlaza4,
+			5: VeteransPlaza5,
+			6: VeteransPlaza6,
+			7: VeteransPlaza7,
+		},
+	},
+	{
+		name: "Water Street Benches",
+		area: "Financial District",
+		summary:
+			"Marble ledges on not-great ground. One runs backside for regular over a ~fifteen-foot dirt gap. Don’t skate it if it rained the night before unless you wanna get muddy.",
+		bust: {
+			level: 3,
+			status:
+				"There are “No Skateboarding” signs posted. Red hat downtown security frequents the spot, and will tell you to leave as soon as they spot you.",
+		},
+
+		location: {
+			latitude: "40.7046745354604",
+			longitude: "-74.0063546445033",
+			text: "South Street and Wall Street.",
+		},
+		images: {
+			0: WaterStreetBenches0,
+			1: WaterStreetBenches1,
+			2: WaterStreetBenches2,
+			3: WaterStreetBenches3,
+			4: WaterStreetBenches4,
 		},
 	},
 ];
