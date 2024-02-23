@@ -43,6 +43,14 @@ import CBenches1 from "./CBenches/1.jpg";
 import CBenches2 from "./CBenches/2.jpg";
 import Chase0 from "./Chase/0.jpg";
 import Chase1 from "./Chase/1.jpg";
+import CIALedge0 from "./CIALedge/0.jpg";
+import CIALedge1 from "./CIALedge/1.jpg";
+import CIALedge2 from "./CIALedge/2.jpg";
+import CourthouseDrop0 from "./CourthouseDrop/0.jpg";
+import CourthouseDrop1 from "./CourthouseDrop/1.jpg";
+import CourthouseDrop2 from "./CourthouseDrop/2.jpg";
+import CourthouseDrop3 from "./CourthouseDrop/3.jpg";
+import CourthouseDrop4 from "./CourthouseDrop/4.jpg";
 
 const spots = [
 	{
@@ -193,13 +201,59 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.70807498302475",
-			longitude: "-74.01009625325845",
+			latitude: "40.70804245127049",
+			longitude: "-74.01022500000249",
 			text: "Pine Street between Nassau Street and William Street in the Financial District.",
 		},
 		images: {
 			0: Chase0,
 			1: Chase1,
+		},
+	},
+	{
+		name: "CIA Ledge",
+		area: "Financial District",
+		summary:
+			"The best ledge downtown. Frontside for regular ledge that gets higher as it goes along a downhill sidewalk.",
+		bust: {
+			level: 3,
+			status:
+				"Even though this is at an office building and there are obviously “No Skateboarding” signs, the building security will sometimes look the other way if you stay on the sidewalk. If you go in front of the building, you will be kicked out in two seconds. It also gets crowded during the weekdays. Weekends are best.",
+		},
+
+		location: {
+			latitude: "40.70836298152374",
+			longitude: "-74.00801845778761",
+			text: "Maiden Lane and William Street in the Financial District.",
+		},
+		images: {
+			0: CIALedge0,
+			1: CIALedge1,
+			2: CIALedge2,
+		},
+	},
+	{
+		name: "Courthouse Drop",
+		area: "Financial District",
+		summary:
+			"A five foot drop into a bank, over a kink, and down another six feet with a ledge in the middle.An also-famous-but-not-as-famous kinked square rail down a seven-flat-two is directly behind the building as well.",
+		bust: {
+			level: 5,
+			status:
+				"Sometimes, the landing area is barricaded. If you try to move the barricades, Courts Police will roll up in a matter of minutes and ask for your ID. Don’t bother. It’s not worth going to jail over. You weren’t going pro anyway :)",
+		},
+
+		location: {
+			latitude: "40.71349142398793",
+			longitude: "-74.00415991554907",
+			text: "Centre Street and Worth Street.",
+		},
+		images: {
+			0: CourthouseDrop0,
+			1: CourthouseDrop1,
+			2: CourthouseDrop2,
+			3: CourthouseDrop3,
+			4: CourthouseDrop4,
 		},
 	},
 ];
