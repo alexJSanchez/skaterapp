@@ -51,7 +51,37 @@ import CourthouseDrop1 from "./CourthouseDrop/1.jpg";
 import CourthouseDrop2 from "./CourthouseDrop/2.jpg";
 import CourthouseDrop3 from "./CourthouseDrop/3.jpg";
 import CourthouseDrop4 from "./CourthouseDrop/4.jpg";
-
+import FamilyCourt0 from "./FamilyCourt/0.jpg";
+import FamilyCourt1 from "./FamilyCourt/1.jpg";
+import FourSeasons0 from "./FourSeasons/0.jpeg";
+import FourSeasons1 from "./FourSeasons/1.jpeg";
+import FourSeasons2 from "./FourSeasons/2.jpeg";
+import FourSeasons3 from "./FourSeasons/3.jpeg";
+import PineStreetBenches0 from "./PineStreetBenches/0.jpeg";
+import PineStreetBenches1 from "./PineStreetBenches/1.jpeg";
+import PineStreetBenches2 from "./PineStreetBenches/2.jpeg";
+import PineStreetBenches3 from "./PineStreetBenches/3.jpeg";
+import PineStreetBenches4 from "./PineStreetBenches/4.jpeg";
+import PolicePlaza0 from "./PolicePlaza/0.jpeg";
+import PolicePlaza1 from "./PolicePlaza/1.jpeg";
+import PolicePlaza2 from "./PolicePlaza/2.jpeg";
+import PolicePlaza3 from "./PolicePlaza/3.jpeg";
+import PolicePlaza4 from "./PolicePlaza/4.jpeg";
+import PolicePlaza5 from "./PolicePlaza/5.jpeg";
+import PolicePlaza6 from "./PolicePlaza/6.jpeg";
+import PyramidLedges0 from "./PyramidLedges/0.jpg";
+import PyramidLedges1 from "./PyramidLedges/1.jpg";
+import PyramidLedges2 from "./PyramidLedges/2.jpg";
+import PyramidLedges3 from "./PyramidLedges/3.jpg";
+import PyramidLedges4 from "./PyramidLedges/4.jpg";
+import PyramidLedges5 from "./PyramidLedges/5.jpg";
+import PyramidLedges6 from "./PyramidLedges/6.jpg";
+import Seaport0 from "./Seaport/0.jpg";
+import Seaport1 from "./Seaport/1.jpg";
+import Seaport2 from "./Seaport/2.jpg";
+import Seaport3 from "./Seaport/3.jpg";
+import Seaport4 from "./Seaport/4.jpg";
+import Seaport5 from "./Seaport/5.jpg";
 const spots = [
 	{
 		name: "Battery Park",
@@ -254,6 +284,169 @@ const spots = [
 			2: CourthouseDrop2,
 			3: CourthouseDrop3,
 			4: CourthouseDrop4,
+		},
+	},
+	{
+		name: "Family Court",
+		area: "Financial District",
+		summary: "High marble ledge / manual pad and a four stair.",
+		bust: {
+			level: 5,
+			status:
+				"Night and weekend spot. Courts Police may roll up on you and tell you to leave, or ask for ID if they get a complaint.",
+		},
+
+		location: {
+			latitude: "40.71704387859293",
+			longitude: "-74.00206754223524",
+			text: "Lafayette and Franklin Street.",
+		},
+		images: {
+			0: FamilyCourt0,
+			1: FamilyCourt1,
+		},
+	},
+	{
+		name: "Family Court",
+		area: "Financial District",
+		summary: "High marble ledge / manual pad and a four stair.",
+		bust: {
+			level: 3,
+			status:
+				"Night and weekend spot. Courts Police may roll up on you and tell you to leave, or ask for ID if they get a complaint.",
+		},
+
+		location: {
+			latitude: "40.71704387859293",
+			longitude: "-74.00206754223524",
+			text: "Lafayette and Franklin Street.",
+		},
+		images: {
+			0: FamilyCourt0,
+			1: FamilyCourt1,
+		},
+	},
+	{
+		name: "Four Seasons",
+		area: "Financial District",
+		summary: "Four slightly curved marble ledges and a couple of three sets.",
+		bust: {
+			level: 5,
+			status:
+				"Skateboarding is forbidden in the plaza, and you typically get kicked out fast.",
+		},
+
+		location: {
+			latitude: "40.713032356257145",
+			longitude: "-74.00824972885071",
+			text: "Park Place, between Church Street and Broadway, across from City Hall.",
+		},
+		images: {
+			0: FourSeasons0,
+			1: FourSeasons1,
+			2: FourSeasons2,
+			3: FourSeasons3,
+		},
+	},
+	{
+		name: "Pine Street Benches",
+		area: "Financial District",
+		summary:
+			"Three marble benches on sidewalk ground (cracks are fixed …for now) and a big grey wallride.",
+		bust: {
+			level: 3,
+			status:
+				"You are not allowed to skate here, but typically, nobody bothers you on weekends or evenings.",
+		},
+
+		location: {
+			latitude: "40.70557290799179",
+			longitude: "-74.00691568220938",
+			text: "Pine Street and Water Street in the Financial District.",
+		},
+		images: {
+			0: PineStreetBenches0,
+			1: PineStreetBenches1,
+			2: PineStreetBenches2,
+			3: PineStreetBenches3,
+			4: PineStreetBenches4,
+		},
+	},
+	{
+		name: "Police Plaza",
+		area: "Financial District",
+		summary:
+			"A platform that has two stairs up one side, and quickly four down the other. There are also a bunch of square rails down varying sets of steps, one of which leads into a weird wallride + some ledges out over past three stairs.",
+		bust: {
+			level: 4,
+			status:
+				"You will be shocked to learn that you are not allowed to skate here. Though it admittedly isn’t the two-second bust you’d expect it to be always, on account of the fact that plenty of people have gotten clips here over the years. More often than not, a cop is going to tell you to leave in under a minute though.",
+		},
+
+		location: {
+			latitude: "40.7122449795853",
+			longitude: "-74.00236354226426",
+			text: "Chambers and Centre Street, across from City Hall.",
+		},
+		images: {
+			0: PolicePlaza0,
+			1: PolicePlaza1,
+			2: PolicePlaza2,
+			3: PolicePlaza3,
+			4: PolicePlaza4,
+			5: PolicePlaza5,
+			6: PolicePlaza6,
+		},
+	},
+	{
+		name: "Pyramid Ledges",
+		area: "Financial District",
+		summary:
+			"One of the most famous skate spots in New York. Two ledges out past a three stair, with varying mindfuck issues to mess with you: the grate at where you pop, the depth-perception of the ledge, the iron fence on top, the crack in the middle of the ledge, the street shortly after you land, etc.",
+		bust: {
+			level: 3,
+			status:
+				"Skateboarding is forbidden in the plaza. Security will eventually come out and tell you to leave, or sometimes call the cops. Best to avoid this place during rush hour because there is a bus stop where the sidewalk is.",
+		},
+
+		location: {
+			latitude: "40.70474836662462",
+			longitude: "-74.00814009327195",
+			text: "Governour Lane and Water Street in the Financial District.",
+		},
+		images: {
+			0: PyramidLedges0,
+			1: PyramidLedges1,
+			2: PyramidLedges2,
+			3: PyramidLedges3,
+			4: PyramidLedges4,
+			5: PyramidLedges5,
+			6: PyramidLedges6,
+		},
+	},
+	{
+		name: "Seaport",
+		area: "Financial District",
+		summary:
+			"Former home to the best ledges to ever exist in New York until they knobbed the hell out of them. Portions of them will undergo temporary periods of liberation.Spot also still has a wooden wedge ramp with a metal edge and a low four-stair rail.",
+		bust: {
+			level: 3,
+			status:
+				"There are “No Skateboarding” signs posted. Parks cruises around and will tell you to leave if they spot you. Better on weekends.",
+		},
+
+		location: {
+			latitude: "40.706721322311736",
+			longitude: "-74.00315991564689",
+			text: "South Street and Fulton Street.",
+		},
+		images: {
+			0: Seaport0,
+			1: Seaport1,
+			2: Seaport2,
+			3: Seaport3,
+			4: Seaport4,
+			5: Seaport5,
 		},
 	},
 ];
