@@ -97,6 +97,33 @@ import WaterStreetBenches1 from "./WaterStreetBenches/1.jpg";
 import WaterStreetBenches2 from "./WaterStreetBenches/2.jpg";
 import WaterStreetBenches3 from "./WaterStreetBenches/3.jpg";
 import WaterStreetBenches4 from "./WaterStreetBenches/4.jpg";
+import WorldTrade0 from "./WorldTrade/0.jpg";
+import WorldTrade1 from "./WorldTrade/1.jpg";
+import WorldTrade2 from "./WorldTrade/2.jpg";
+import WorldTrade3 from "./WorldTrade/3.jpg";
+import WorldTrade4 from "./WorldTrade/4.jpg";
+import WorldTrade5 from "./WorldTrade/5.jpg";
+import WorldTrade6 from "./WorldTrade/6.jpg";
+import WorldTrade7 from "./WorldTrade/7.jpg";
+import WorldTrade8 from "./WorldTrade/8.jpg";
+import WorthPlaza0 from "./WorthPlaza/0.jpg";
+import WorthPlaza1 from "./WorthPlaza/1.jpg";
+import WorthPlaza2 from "./WorthPlaza/2.jpg";
+import WorthPlaza3 from "./WorthPlaza/3.jpg";
+import WorthPlaza4 from "./WorthPlaza/4.jpg";
+import ZuccottiPark0 from "./ZuccottiPark/0.jpg";
+import ZuccottiPark1 from "./ZuccottiPark/1.jpg";
+import ZuccottiPark2 from "./ZuccottiPark/2.jpg";
+import ZuccottiPark3 from "./ZuccottiPark/3.jpg";
+import ZuccottiPark4 from "./ZuccottiPark/4.jpg";
+import ZuccottiPark5 from "./ZuccottiPark/5.jpg";
+import ZuccottiPark6 from "./ZuccottiPark/6.jpg";
+import ZuccottiPark7 from "./ZuccottiPark/7.jpg";
+import ZuccottiPark8 from "./ZuccottiPark/8.jpg";
+import ZuccottiPark9 from "./ZuccottiPark/9.jpg";
+import ZuccottiPark10 from "./ZuccottiPark/10.jpg";
+import ZuccottiPark11 from "./ZuccottiPark/11.jpg";
+import ZuccottiPark12 from "./ZuccottiPark/12.jpg";
 
 const spots = [
 	{
@@ -535,6 +562,90 @@ const spots = [
 			2: WaterStreetBenches2,
 			3: WaterStreetBenches3,
 			4: WaterStreetBenches4,
+		},
+	},
+	{
+		name: "World Trade",
+		area: "Financial District",
+		summary:
+			"Stairs and manual pads going down a mellow hill, with sets of twos, fours and fives on the other side + a high frontside for regular round rail down seven stairs.",
+		bust: {
+			level: 4,
+			status:
+				"Skateboarding is forbidden by plaza rules. Cops are usually stationed at the bottom of the hill, and will tell you to leave as soon as they spot you. It is also at a massive shopping center + transit hub, so it gets busy during most reasonable hours of the day.",
+		},
+
+		location: {
+			latitude: "40.71119498247124",
+			longitude: "-74.0107736355684",
+			text: "Dey Street and Church Street in the Financial District.",
+		},
+		images: {
+			0: WorldTrade0,
+			1: WorldTrade1,
+			2: WorldTrade2,
+			3: WorldTrade3,
+			4: WorldTrade4,
+			5: WorldTrade5,
+			6: WorldTrade6,
+			7: WorldTrade7,
+			8: WorldTrade8,
+		},
+	},
+	{
+		name: "Worth Plaza",
+		area: "Financial District",
+		summary:
+			"Roughish marble ledges on roughish marble ground, e.g. they slide better than they grind.",
+		bust: {
+			level: 4,
+			status:
+				"Skateboarding is forbidden inside the plaza. The gate is also often locked (almost always on weekends.) Building security will typically tell you to leave in a matter of minutes.",
+		},
+
+		location: {
+			latitude: "40.71717948288673",
+			longitude: "-74.00625168221384",
+			text: "Church Street and Worth Street, behind the big windowless building.",
+		},
+		images: {
+			0: WorthPlaza0,
+			1: WorthPlaza1,
+			2: WorthPlaza2,
+			3: WorthPlaza3,
+			4: WorthPlaza4,
+		},
+	},
+	{
+		name: "Zuccotti Park",
+		area: "Financial District",
+		summary:
+			"Marble ledges everywhere, some of which are knobbed. One goes off a six stair and is backside for regular / frontside for goofy. A low manual pad. Everything sits on a mellow hill.",
+		bust: {
+			level: 4,
+			status:
+				"There are “No Skateboarding” signs posted. The building across the street on the northern end of the park owns the plaza. Their security window faces the spot, so they will tell you to leave as soon as they spot you. Better at night, but you’ll get kicked out regardless.",
+		},
+
+		location: {
+			latitude: "40.710034972310915",
+			longitude: "-74.0117401022677",
+			text: "Liberty Street and Trinity Place / Church Street (Trinity turns into Church.)",
+		},
+		images: {
+			0: ZuccottiPark0,
+			1: ZuccottiPark1,
+			2: ZuccottiPark2,
+			3: ZuccottiPark3,
+			4: ZuccottiPark4,
+			5: ZuccottiPark5,
+			6: ZuccottiPark6,
+			7: ZuccottiPark7,
+			8: ZuccottiPark8,
+			9: ZuccottiPark9,
+			10: ZuccottiPark10,
+			11: ZuccottiPark11,
+			12: ZuccottiPark12,
 		},
 	},
 ];
