@@ -5,6 +5,7 @@ import arrowUp from "./assets/desktop/icon-arrow-up.svg";
 import Time from "./component/time";
 import lowerEastSideSpots from "./assets/lowerEastSideSpots/lowerEastSideSpotsData";
 import financialDistrictSpots from "./assets/financialDistrictSpots/financialDistrictSpotsData";
+import westVillageTribecaData from "./assets/westVillageTribecaSpots/westVillageTribecaData.js";
 
 function App() {
 	const [weather, setWeather] = useState({
