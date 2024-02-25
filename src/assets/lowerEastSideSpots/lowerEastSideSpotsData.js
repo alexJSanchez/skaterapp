@@ -87,8 +87,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.719631",
-			longitude: "-73.977509",
+			latitude: 40.719631,
+			longitude: -73.977509,
 			text: "Houston Street, just east of Avenue D, on the north side of the street at the school.",
 		},
 		images: {
@@ -107,8 +107,8 @@ const spots = [
 				"This is a median in the middle of the street, so nobody cares what you do here. Just ensure you have spotters because everything there is to skate here lands in traffic.",
 		},
 		location: {
-			latitude: "40.718280",
-			longitude: "-73.990710",
+			latitude: 40.71828,
+			longitude: -73.99071,
 			text: "Broome Street and Allen Street in the Lower East Side.",
 		},
 		images: {
@@ -128,8 +128,8 @@ const spots = [
 				"It is at a school, so you are not allowed to skate here. Come on weekends or in evenings and nobody should bother you.",
 		},
 		location: {
-			latitude: "40.711500",
-			longitude: "-73.985850",
+			latitude: 40.7115,
+			longitude: -73.98585,
 			text: "Cherry Street between Montgomery and Clinton Streets, in front of the school.",
 		},
 		images: {
@@ -149,8 +149,8 @@ const spots = [
 				"You should not get kicked out of here, but there are typically police cars at the end of the sidewalk. The park gets crowded during warmer months, so it is best to go later in the day or when it is cold.",
 		},
 		location: {
-			latitude: "40.715530",
-			longitude: "-74.000540",
+			latitude: 40.71553,
+			longitude: -74.00054,
 			text: "Baxter and Bayard Street in Chinatown.",
 		},
 		images: {
@@ -169,8 +169,8 @@ const spots = [
 				"The people from the adjacent school may tell you to leave, but that is only during school hours. The park may get crowded with kids during warmer months.",
 		},
 		location: {
-			latitude: "40.710515745132994",
-			longitude: "-73.99659141566778",
+			latitude: 40.710515745132994,
+			longitude: -73.99659141566778,
 			text: "Cherry Street and Catherine Street in the Lower East Side / Chinatown. The spot is just past Madison Street on the southern side of the block.",
 		},
 		images: {
@@ -190,8 +190,8 @@ const spots = [
 				"The Parks Department usually does not hassle you for skating here, but it does get crowded with basketball players whenever it’s warm. Pitch black at night.",
 		},
 		location: {
-			latitude: "40.71421962684768",
-			longitude: "-73.99966901769767",
+			latitude: 40.71421962684768,
+			longitude: -73.99966901769767,
 			text: "Mulberry Street and Worth Street in Chinatown.",
 		},
 		images: {
@@ -213,8 +213,8 @@ const spots = [
 			status: "You’re not going to get kicked out of here.",
 		},
 		location: {
-			latitude: "40.72343563618858",
-			longitude: "-73.976708306756",
+			latitude: 40.72343563618858,
+			longitude: -73.976708306756,
 			text: "Avenue D and East 7th Street in the East Village. The spot is in between the brick buildings at the corner.",
 		},
 		images: {
@@ -234,8 +234,8 @@ const spots = [
 				"You don’t get booted, but the spot is in the middle of traffic, so better during off hours.",
 		},
 		location: {
-			latitude: "40.71438242064866",
-			longitude: "-73.99396958893718",
+			latitude: 40.71438242064866,
+			longitude: -73.99396958893718,
 			text: "Division Street and Eldridge Street in Chinatown.",
 		},
 		images: {
@@ -254,8 +254,8 @@ const spots = [
 				"The Parks Department normally does not hassle you for skating here.",
 		},
 		location: {
-			latitude: "40.72399406084945",
-			longitude: "-73.99119293315901",
+			latitude: 40.72399406084945,
+			longitude: -73.99119293315901,
 			text: "Houston and Christie Street / 2nd Avenue.",
 		},
 		images: {
@@ -280,8 +280,8 @@ const spots = [
 				"You will not get kicked out of here. The rollerbladers from the buildings might try to fight you though.",
 		},
 		location: {
-			latitude: "40.72645535905913",
-			longitude: "-73.9742602711058",
+			latitude: 40.72645535905913,
+			longitude: -73.9742602711058,
 			text: "Between the buildings on 12th Street and Avenue D.",
 		},
 		images: {
@@ -301,8 +301,8 @@ const spots = [
 				"No bust, but it’s an active roadway, so be careful because it is not a closed-off zone for skating.",
 		},
 		location: {
-			latitude: "40.7309219411747",
-			longitude: "-73.98037572890927",
+			latitude: 40.7309219411747,
+			longitude: -73.98037572890927,
 			text: "14th Street and Avenue A, across from the Trader Joe’s and outside of the L train.",
 		},
 		images: {
@@ -322,8 +322,8 @@ const spots = [
 				"Nobody cares what you do here, but the fence may be randomly locked at times.",
 		},
 		location: {
-			latitude: "40.71147334645646",
-			longitude: "-73.99366554876471",
+			latitude: 40.71147334645646,
+			longitude: -73.99366554876471,
 			text: "Monroe Street and Market Street in the playground.",
 		},
 		images: {
@@ -344,8 +344,8 @@ const spots = [
 				"You’re not allowed to skateboard here, but typically, nobody hassles you. On rare occasions, maintenance workers from the building may ask you to leave.",
 		},
 		location: {
-			latitude: "40.71704014222652",
-			longitude: "-73.98935884886036",
+			latitude: 40.71704014222652,
+			longitude: -73.98935884886036,
 			text: "Inside the building courtyard on Grand Street and Essex Street.",
 		},
 		images: {
@@ -363,8 +363,8 @@ const spots = [
 				"Nobody bothers you for skating here, though it does get crowded on warmer days. Respect the ballers.",
 		},
 		location: {
-			latitude: "40.71412555318414",
-			longitude: "-73.98144031778578",
+			latitude: 40.71412555318414,
+			longitude: -73.98144031778578,
 			text: "Henry Street and Grand Street in the Lower East Side.",
 		},
 		images: {
@@ -383,8 +383,8 @@ const spots = [
 				"You are not allowed to skate on the pier. If the Parks Department cruises by, they will tell you to leave.",
 		},
 		location: {
-			latitude: "40.70956179200391",
-			longitude: "-73.98851592411059",
+			latitude: 40.70956179200391,
+			longitude: -73.98851592411059,
 			text: "On Pier 35 on the East River, roughly between Clinton Street and Pike Street on South Street, along the water.",
 		},
 		images: {
@@ -406,8 +406,8 @@ const spots = [
 				"There’s a “No Skateboarding” sign posted at the entrance. The Parks Department will tell you to leave in the summer because the pool is open. They are slightly more lenient in the winter when the park is empty, but it all depends on how they feel that day. It’s really luck of the draw if they give you a hard time or not.",
 		},
 		location: {
-			latitude: "40.721078860378846",
-			longitude: "-73.98129272888588",
+			latitude: 40.721078860378846,
+			longitude: -73.98129272888588,
 			text: "Houston Street and Pitt Street in the Lower East Side. It’s on the south side of the street, bordered by a brick wall.",
 		},
 		images: {
@@ -431,8 +431,8 @@ const spots = [
 				"The bike path is very crowded, especially during rush hours. It’s better during holidays or colder months. The Parks Department won’t hassle you, but there are usually police officers across the street at the Manhattan Bridge, and they might kick you out for fucking up the flow of the bike path.",
 		},
 		location: {
-			latitude: "40.71618567450264",
-			longitude: "-73.99491818667367",
+			latitude: 40.71618567450264,
+			longitude: -73.99491818667367,
 			text: " Canal Street and Christie Street. The seven set is on Hester and Christie.",
 		},
 		images: {
@@ -456,8 +456,8 @@ const spots = [
 				"The ledges are only open on weekdays or any time you’d expect school to be open. You are not allowed to skate there, but if the park doesn’t have school activities going on, usually, nobody bothers you. Seven stair is a go whenever.",
 		},
 		location: {
-			latitude: "40.715174358589174",
-			longitude: "-73.98923627112747",
+			latitude: 40.715174358589174,
+			longitude: -73.98923627112747,
 			text: "Hester Street and Essex Street.",
 		},
 		images: {
@@ -478,8 +478,8 @@ const spots = [
 				"The courts are permitted for softball on some summer weekday evenings, and for street hockey on Sundays during warmer months. Otherwise, you can skate here all you want.",
 		},
 		location: {
-			latitude: "40.72760435328473",
-			longitude: "-73.98273010222503",
+			latitude: 40.72760435328473,
+			longitude: -73.98273010222503,
 			text: "East 9th Street and Avenue A in the East Village.",
 		},
 		images: {
@@ -498,8 +498,8 @@ const spots = [
 				"The banks are at a school, so you’re not allowed to skate there. Best during weekends and in the summer.",
 		},
 		location: {
-			latitude: "40.72433366947034",
-			longitude: "-73.98135440237382",
+			latitude: 40.72433366947034,
+			longitude: -73.98135440237382,
 			text: "E. 6th Street and Avenue B in the East Village.",
 		},
 		images: {
