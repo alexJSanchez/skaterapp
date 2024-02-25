@@ -18,7 +18,7 @@ import BronxCourthouse16 from "./BronxCourthouse/16.jpg";
 import BronxCourthouse17 from "./BronxCourthouse/17.jpg";
 import BronxCourthouse18 from "./BronxCourthouse/18.jpg";
 import BronxCourthouse19 from "./BronxCourthouse/19.jpg";
-import BronxCourthouse20 from "./BronxCourthouse/20.jpg";
+import BronxCourthouse20 from "./BronxCourthouse/20.png";
 import BronxTerminalMall0 from "./BronxTerminalMall/0.jpg";
 import BronxTerminalMall1 from "./BronxTerminalMall/1.jpg";
 import BronxTerminalMall2 from "./BronxTerminalMall/2.jpg";

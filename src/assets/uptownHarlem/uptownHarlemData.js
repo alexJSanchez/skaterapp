@@ -1,5 +1,5 @@
-import HundredthStreetBump0 from "./HundredthStreetBump/0.jpg";
-import HundredthStreetBump1 from "./HundredthStreetBump/1.jpg";
+import HundredthStreetBump0 from "./HundredthStreetBump/0.jpeg";
+import HundredthStreetBump1 from "./HundredthStreetBump/1.jpeg";
 import AmsterdamRail0 from "./AmsterdamRail/0.jpg";
 import AmsterdamRail1 from "./AmsterdamRail/1.jpg";
 import AmsterdamRail2 from "./AmsterdamRail/2.jpg";
@@ -12,13 +12,13 @@ import ColumbiaUniversity5 from "./ColumbiaUniversity/5.jpg";
 import ColumbiaUniversity6 from "./ColumbiaUniversity/6.jpg";
 import ColumbiaUniversity7 from "./ColumbiaUniversity/7.jpg";
 import ColumbiaUniversity8 from "./ColumbiaUniversity/8.jpg";
-import GrantsTomb0 from "./GrantsTomb/0.jpg";
-import GrantsTomb1 from "./GrantsTomb/1.jpg";
-import GrantsTomb2 from "./GrantsTomb/2.jpg";
-import GrantsTomb3 from "./GrantsTomb/3.jpg";
-import JerryLedge0 from "./JerryLedge/0.jpg";
-import JerryLedge1 from "./JerryLedge/1.jpg";
-import JerryLedge2 from "./JerryLedge/2.jpg";
+import GrantsTomb0 from "./GrantsTomb/0.jpeg";
+import GrantsTomb1 from "./GrantsTomb/1.jpeg";
+import GrantsTomb2 from "./GrantsTomb/2.jpeg";
+import GrantsTomb3 from "./GrantsTomb/3.jpeg";
+import JerryLedge0 from "./JerryLedge/0.jpeg";
+import JerryLedge1 from "./JerryLedge/1.jpeg";
+import JerryLedge2 from "./JerryLedge/2.jpeg";
 import MarcusGarveyPark0 from "./MarcusGarveyPark/0.jpg";
 import MarcusGarveyPark1 from "./MarcusGarveyPark/1.jpg";
 import MarcusGarveyPark2 from "./MarcusGarveyPark/2.jpg";
@@ -28,20 +28,17 @@ import LenoxLedges2 from "./LenoxLedges/2.jpg";
 import MedianLedge0 from "./MedianLedge/0.jpg";
 import MedianLedge1 from "./MedianLedge/1.jpg";
 import MedianLedge2 from "./MedianLedge/2.jpg";
-import TheMonument0 from "./TheMonument/0.jpg";
-import TheMonument1 from "./TheMonument/1.jpg";
-import TheMonument2 from "./TheMonument/2.jpg";
-import TheMonument3 from "./TheMonument/3.jpg";
-import TheMonument4 from "./TheMonument/4.jpg";
-import TheMonument5 from "./TheMonument/5.jpg";
-import TheMonument6 from "./TheMonument/6.jpg";
-import QTrainLedge0 from "./QTrainLedge/0.jpg";
-import QTrainLedge1 from "./QTrainLedge/1.jpg";
-import QTrainLedge2 from "./QTrainLedge/2.jpg";
-import QTrainLedge3 from "./QTrainLedge/3.jpg";
-import QTrainLedge4 from "./QTrainLedge/4.jpg";
-import QTrainLedge5 from "./QTrainLedge/5.jpg";
-import QTrainLedge6 from "./QTrainLedge/6.jpg";
+import TheMonument0 from "./TheMonument/0.jpeg";
+import TheMonument1 from "./TheMonument/1.jpeg";
+import TheMonument2 from "./TheMonument/2.jpeg";
+import TheMonument3 from "./TheMonument/3.jpeg";
+import TheMonument4 from "./TheMonument/4.jpeg";
+import TheMonument5 from "./TheMonument/5.jpeg";
+import TheMonument6 from "./TheMonument/6.jpeg";
+import QTrainLedge0 from "./QTrainLedge/0.jpeg";
+import QTrainLedge1 from "./QTrainLedge/1.jpeg";
+import QTrainLedge2 from "./QTrainLedge/2.jpeg";
+import QTrainLedge3 from "./QTrainLedge/3.jpeg";
 import RiverbankStatePark0 from "./RiverbankStatePark/0.jpg";
 import RiverbankStatePark1 from "./RiverbankStatePark/1.jpg";
 import RiverbankStatePark2 from "./RiverbankStatePark/2.jpg";
@@ -245,9 +242,6 @@ const spots = [
 			1: QTrainLedge1,
 			2: QTrainLedge2,
 			3: QTrainLedge3,
-			4: QTrainLedge4,
-			5: QTrainLedge5,
-			6: QTrainLedge6,
 		},
 	},
 	{

@@ -3,9 +3,15 @@ import arrowDown from "./assets/desktop/icon-arrow-down.svg";
 import iconRefresh from "./assets/desktop/icon-refresh.svg";
 import arrowUp from "./assets/desktop/icon-arrow-up.svg";
 import Time from "./component/time";
-import lowerEastSideSpots from "./assets/lowerEastSideSpots/lowerEastSideSpotsData";
-import financialDistrictSpots from "./assets/financialDistrictSpots/financialDistrictSpotsData";
-import westVillageTribecaData from "./assets/westVillageTribecaSpots/westVillageTribecaData.js";
+import Bronx from "./assets/bronx/bronx.js";
+import Brooklyn from "./assets/brooklyn/brooklyn.js";
+import LowerEastSideSpots from "./assets/lowerEastSideSpots/lowerEastSideSpotsData";
+import FinancialDistrictSpots from "./assets/financialDistrictSpots/financialDistrictSpotsData";
+import WestVillageTribecaData from "./assets/westVillageTribecaSpots/westVillageTribecaData.js";
+import Midtown from "./assets/midTown/midTownData.js";
+import Queens from "./assets/queens/queensData.js";
+import StatenIsland from "./assets/statenIsland/statenIslandData.js";
+import UptownHarlem from "./assets/uptownHarlem/uptownHarlemData.js";
 
 function App() {
 	const [weather, setWeather] = useState({
@@ -22,6 +28,18 @@ function App() {
 	};
 
 	useEffect(() => {
+		console.log(
+			Bronx,
+			LowerEastSideSpots,
+			FinancialDistrictSpots,
+			WestVillageTribecaData,
+			Midtown,
+			Queens,
+			Brooklyn,
+			StatenIsland,
+			UptownHarlem
+		);
+
 		// if ("geolocation" in navigator) {
 		// 	navigator.geolocation.getCurrentPosition((position) => {
 		// 		const { latitude, longitude } = position.coords;

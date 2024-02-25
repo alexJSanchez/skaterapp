@@ -1,63 +1,63 @@
-import AthensPark0 from "./AthensPark/0.jpg";
-import AthensPark1 from "./AthensPark/1.jpg";
-import AthensPark2 from "./AthensPark/2.jpg";
-import AthensPark3 from "./AthensPark/3.jpg";
-import AthensPark4 from "./AthensPark/4.jpg";
-import BroadwayPark0 from "./BroadwayPark/0.jpg";
-import BroadwayPark1 from "./BroadwayPark/1.jpg";
-import BroadwayPark2 from "./BroadwayPark/2.jpg";
-import BroadwayPark3 from "./BroadwayPark/3.jpg";
-import BroadwayPark4 from "./BroadwayPark/4.jpg";
-import CemeteryCurbs0 from "./CemeteryCurbs/0.jpg";
-import CemeteryCurbs1 from "./CemeteryCurbs/1.jpg";
-import CemeteryCurbs2 from "./CemeteryCurbs/2.jpg";
-import CemeteryCurbs3 from "./CemeteryCurbs/3.jpg";
-import CemeteryCurbs4 from "./CemeteryCurbs/4.jpg";
-import CemeteryCurbs5 from "./CemeteryCurbs/5.jpg";
-import CemeteryCurbs6 from "./CemeteryCurbs/6.jpg";
-import CemeteryCurbs7 from "./CemeteryCurbs/7.jpg";
-import CemeteryCurbs8 from "./CemeteryCurbs/8.jpg";
-import CitiFieldBenches0 from "./CitiFieldBenches/0.jpg";
-import CitiFieldBenches1 from "./CitiFieldBenches/1.jpg";
-import CitiFieldBenches2 from "./CitiFieldBenches/2.jpg";
-import CitiFieldBenches3 from "./CitiFieldBenches/3.jpg";
+import AthensPark0 from "./AthensPark/0.jpeg";
+import AthensPark1 from "./AthensPark/1.jpeg";
+import AthensPark2 from "./AthensPark/2.jpeg";
+import AthensPark3 from "./AthensPark/3.jpeg";
+import AthensPark4 from "./AthensPark/4.jpeg";
+import BroadwayPark0 from "./BroadwayPark/0.jpeg";
+import BroadwayPark1 from "./BroadwayPark/1.jpeg";
+import BroadwayPark2 from "./BroadwayPark/2.jpeg";
+import BroadwayPark3 from "./BroadwayPark/3.jpeg";
+import BroadwayPark4 from "./BroadwayPark/4.jpeg";
+import CementaryCurbs0 from "./CementaryCurbs/0.jpg";
+import CementaryCurbs1 from "./CementaryCurbs/1.jpg";
+import CementaryCurbs2 from "./CementaryCurbs/2.jpg";
+import CementaryCurbs3 from "./CementaryCurbs/3.jpg";
+import CementaryCurbs4 from "./CementaryCurbs/4.jpg";
+import CementaryCurbs5 from "./CementaryCurbs/5.jpg";
+import CementaryCurbs6 from "./CementaryCurbs/6.jpg";
+import CementaryCurbs7 from "./CementaryCurbs/7.jpeg";
+import CementaryCurbs8 from "./CementaryCurbs/8.jpeg";
+import CitiFieldBenches0 from "./CitiFieldsBenches/0.jpg";
+import CitiFieldBenches1 from "./CitiFieldsBenches/1.jpg";
+import CitiFieldBenches2 from "./CitiFieldsBenches/2.jpg";
+import CitiFieldBenches3 from "./CitiFieldsBenches/3.jpg";
 import ConEdisonBanks0 from "./ConEdisonBanks/0.jpg";
 import ConEdisonBanks1 from "./ConEdisonBanks/1.jpg";
 import ConEdisonBanks2 from "./ConEdisonBanks/2.jpg";
 import ConEdisonBanks3 from "./ConEdisonBanks/3.jpg";
 import ConEdisonBanks4 from "./ConEdisonBanks/4.jpg";
 import ConEdisonBanks5 from "./ConEdisonBanks/5.jpg";
-import FlushingMeadowsPark0 from "./FlushingMeadowsPark/0.jpg";
-import FlushingMeadowsPark1 from "./FlushingMeadowsPark/1.jpg";
-import FlushingMeadowsPark2 from "./FlushingMeadowsPark/2.jpg";
-import FlushingMeadowsPark3 from "./FlushingMeadowsPark/3.jpg";
-import FlushingMeadowsPark4 from "./FlushingMeadowsPark/4.jpg";
-import FlushingMeadowsPark5 from "./FlushingMeadowsPark/5.jpg";
-import FlushingMeadowsPark6 from "./FlushingMeadowsPark/6.jpg";
-import FlushingMeadowsPark7 from "./FlushingMeadowsPark/7.jpg";
-import FlushingMeadowsPark8 from "./FlushingMeadowsPark/8.jpg";
-import FlushingMeadowsPark9 from "./FlushingMeadowsPark/9.jpg";
-import FlushingMeadowsPark10 from "./FlushingMeadowsPark/10.jpg";
-import FlushingMeadowsPark11 from "./FlushingMeadowsPark/11.jpg";
-import HillcrestHighSchool0 from "./HillcrestHighSchool/0.jpg";
-import HillcrestHighSchool1 from "./HillcrestHighSchool/1.jpg";
-import HillcrestHighSchool2 from "./HillcrestHighSchool/2.jpg";
-import HillcrestHighSchool3 from "./HillcrestHighSchool/3.jpg";
-import HillcrestHighSchool4 from "./HillcrestHighSchool/4.jpg";
-import LongIslandCityWaterfront0 from "./LongIslandCityWaterfront/0.jpg";
-import LongIslandCityWaterfront1 from "./LongIslandCityWaterfront/1.jpg";
-import LongIslandCityWaterfront2 from "./LongIslandCityWaterfront/2.jpg";
-import LongIslandCityWaterfront3 from "./LongIslandCityWaterfront/3.jpg";
-import LongIslandCityWaterfront4 from "./LongIslandCityWaterfront/4.jpg";
-import LongIslandCityWaterfront5 from "./LongIslandCityWaterfront/5.jpg";
-import LongIslandCityWaterfront6 from "./LongIslandCityWaterfront/6.jpg";
-import LongIslandCityWaterfront7 from "./LongIslandCityWaterfront/7.jpg";
-import LongIslandCityWaterfront8 from "./LongIslandCityWaterfront/8.jpg";
-import LongIslandCityWaterfront9 from "./LongIslandCityWaterfront/9.jpg";
-import LongIslandCityWaterfront10 from "./LongIslandCityWaterfront/10.jpg";
-import LongIslandCityWaterfront11 from "./LongIslandCityWaterfront/11.jpg";
-import LongIslandCityWaterfront12 from "./LongIslandCityWaterfront/12.jpg";
-import LongIslandCityWaterfront13 from "./LongIslandCityWaterfront/13.jpg";
+import FlushingMeadowsPark0 from "./FlushingMeadowsPark/0.jpeg";
+import FlushingMeadowsPark1 from "./FlushingMeadowsPark/1.jpeg";
+import FlushingMeadowsPark2 from "./FlushingMeadowsPark/2.jpeg";
+import FlushingMeadowsPark3 from "./FlushingMeadowsPark/3.jpeg";
+import FlushingMeadowsPark4 from "./FlushingMeadowsPark/4.jpeg";
+import FlushingMeadowsPark5 from "./FlushingMeadowsPark/5.jpeg";
+import FlushingMeadowsPark6 from "./FlushingMeadowsPark/6.jpeg";
+import FlushingMeadowsPark7 from "./FlushingMeadowsPark/7.jpeg";
+import FlushingMeadowsPark8 from "./FlushingMeadowsPark/8.jpeg";
+import FlushingMeadowsPark9 from "./FlushingMeadowsPark/9.jpeg";
+import FlushingMeadowsPark10 from "./FlushingMeadowsPark/10.jpeg";
+import FlushingMeadowsPark11 from "./FlushingMeadowsPark/11.jpeg";
+import HillcrestHighSchool0 from "./HillCrestHighSchool/0.jpg";
+import HillcrestHighSchool1 from "./HillCrestHighSchool/1.jpg";
+import HillcrestHighSchool2 from "./HillCrestHighSchool/2.jpg";
+import HillcrestHighSchool3 from "./HillCrestHighSchool/3.jpg";
+import HillcrestHighSchool4 from "./HillCrestHighSchool/4.jpg";
+import LongIslandCityWaterfront0 from "./LongIslandCityWaterfront/0.jpeg";
+import LongIslandCityWaterfront1 from "./LongIslandCityWaterfront/1.jpeg";
+import LongIslandCityWaterfront2 from "./LongIslandCityWaterfront/2.jpeg";
+import LongIslandCityWaterfront3 from "./LongIslandCityWaterfront/3.jpeg";
+import LongIslandCityWaterfront4 from "./LongIslandCityWaterfront/4.jpeg";
+import LongIslandCityWaterfront5 from "./LongIslandCityWaterfront/5.jpeg";
+import LongIslandCityWaterfront6 from "./LongIslandCityWaterfront/6.jpeg";
+import LongIslandCityWaterfront7 from "./LongIslandCityWaterfront/7.jpeg";
+import LongIslandCityWaterfront8 from "./LongIslandCityWaterfront/8.jpeg";
+import LongIslandCityWaterfront9 from "./LongIslandCityWaterfront/9.jpeg";
+import LongIslandCityWaterfront10 from "./LongIslandCityWaterfront/10.jpeg";
+import LongIslandCityWaterfront11 from "./LongIslandCityWaterfront/11.jpeg";
+import LongIslandCityWaterfront12 from "./LongIslandCityWaterfront/12.jpeg";
+import LongIslandCityWaterfront13 from "./LongIslandCityWaterfront/13.jpeg";
 import JFKBanks0 from "./JFKBanks/0.jpg";
 import JFKBanks1 from "./JFKBanks/1.jpg";
 import JFKBanks2 from "./JFKBanks/2.jpg";
@@ -66,35 +66,35 @@ import JFKBanks4 from "./JFKBanks/4.jpg";
 import JFKBanks5 from "./JFKBanks/5.jpg";
 import JFKBanks6 from "./JFKBanks/6.jpg";
 import JFKBanks7 from "./JFKBanks/7.jpg";
-import MosquitoBeach0 from "./MosquitoBeach/0.jpg";
-import MosquitoBeach1 from "./MosquitoBeach/1.jpg";
-import MosquitoBeach2 from "./MosquitoBeach/2.jpg";
-import MosquitoBeach3 from "./MosquitoBeach/3.jpg";
-import MosquitoBeach4 from "./MosquitoBeach/4.jpg";
-import MosquitoBeach5 from "./MosquitoBeach/5.jpg";
-import MosquitoBeach6 from "./MosquitoBeach/6.jpg";
-import PS2390 from "./PS239/0.jpg";
-import PS2391 from "./PS239/1.jpg";
-import PS2392 from "./PS239/2.jpg";
-import PS2393 from "./PS239/3.jpg";
-import RockawayRails0 from "/RockawayRails/0.jpg";
-import RockawayRails1 from "/RockawayRails/1.jpg";
-import RockawayRails2 from "/RockawayRails/2.jpg";
-import RockawayRails3 from "/RockawayRails/3.jpg";
-import RooseveltIslandLedge0 from "/RooseveltIslandLedge/0.jpg";
-import RooseveltIslandLedge1 from "/RooseveltIslandLedge/1.jpg";
-import RooseveltIslandLedge2 from "/RooseveltIslandLedge/2.jpg";
-import TheSombrero0 from "/TheSombrero/0.jpg";
-import TheSombrero1 from "/TheSombrero/1.jpg";
-import TheSombrero2 from "/TheSombrero/2.jpg";
-import TheSombrero3 from "/TheSombrero/3.jpg";
-import TheSombrero4 from "/TheSombrero/4.jpg";
-import VernonJackson0 from "/VernonJackson/0.jpg";
-import VernonJackson1 from "/VernonJackson/1.jpg";
-import VernonJackson2 from "/VernonJackson/2.jpg";
-import VernonJackson3 from "/VernonJackson/3.jpg";
-import VernonJackson4 from "/VernonJackson/4.jpg";
-import VernonJackson5 from "/VernonJackson/5.jpg";
+import MosquitoBeach0 from "./MosquitoBeach/0.jpeg";
+import MosquitoBeach1 from "./MosquitoBeach/1.jpeg";
+import MosquitoBeach2 from "./MosquitoBeach/2.jpeg";
+import MosquitoBeach3 from "./MosquitoBeach/3.jpeg";
+import MosquitoBeach4 from "./MosquitoBeach/4.jpeg";
+import MosquitoBeach5 from "./MosquitoBeach/5.jpeg";
+import MosquitoBeach6 from "./MosquitoBeach/6.jpeg";
+import PS2390 from "./PS239/0.jpeg";
+import PS2391 from "./PS239/1.jpeg";
+import PS2392 from "./PS239/2.jpeg";
+import PS2393 from "./PS239/3.jpeg";
+import RockawayRails0 from "./RockawayRails/0.jpg";
+import RockawayRails1 from "./RockawayRails/1.jpg";
+import RockawayRails2 from "./RockawayRails/2.jpg";
+import RockawayRails3 from "./RockawayRails/3.jpg";
+import RooseveltIslandLedge0 from "./RooseveltIslandLedge/0.jpg";
+import RooseveltIslandLedge1 from "./RooseveltIslandLedge/1.jpg";
+import RooseveltIslandLedge2 from "./RooseveltIslandLedge/2.jpg";
+import TheSombrero0 from "./TheSombrero/0.jpg";
+import TheSombrero1 from "./TheSombrero/1.jpg";
+import TheSombrero2 from "./TheSombrero/2.jpg";
+import TheSombrero3 from "./TheSombrero/3.jpg";
+import TheSombrero4 from "./TheSombrero/4.jpg";
+import VernonJackson0 from "./VernonJackson/0.jpeg";
+import VernonJackson1 from "./VernonJackson/1.jpeg";
+import VernonJackson2 from "./VernonJackson/2.jpeg";
+import VernonJackson3 from "./VernonJackson/3.jpeg";
+import VernonJackson4 from "./VernonJackson/4.jpeg";
+import VernonJackson5 from "./VernonJackson/5.jpeg";
 
 const spots = [
 	{
@@ -158,15 +158,15 @@ const spots = [
 			text: "Laurel Hill Boulevard and 54th Road, essentially right over the Queens side of the Kosciuszko Bridge.",
 		},
 		images: {
-			0: CemeteryCurbs0,
-			1: CemeteryCurbs1,
-			2: CemeteryCurbs2,
-			3: CemeteryCurbs3,
-			4: CemeteryCurbs4,
-			5: CemeteryCurbs5,
-			6: CemeteryCurbs6,
-			7: CemeteryCurbs7,
-			8: CemeteryCurbs8,
+			0: CementaryCurbs0,
+			1: CementaryCurbs1,
+			2: CementaryCurbs2,
+			3: CementaryCurbs3,
+			4: CementaryCurbs4,
+			5: CementaryCurbs5,
+			6: CementaryCurbs6,
+			7: CementaryCurbs7,
+			8: CementaryCurbs8,
 		},
 	},
 	{

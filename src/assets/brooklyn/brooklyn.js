@@ -1,192 +1,200 @@
-import BAMS0 from "./BAMS0.jpg";
-import BAMS1 from "./BAMS1.jpg";
-import BAMS2 from "./BAMS2.jpg";
-import BAMS3 from "./BAMS3.jpg";
-import BlueParkS0 from "./BlueParkS0.jpg";
-import BlueParkS1 from "./BlueParkS1.jpg";
-import BlueParkS2 from "./BlueParkS2.jpg";
-import BlueParkS3 from "./BlueParkS3.jpg";
-import BlueParkS4 from "./BlueParkS4.jpg";
-import BlueParkS5 from "./BlueParkS5.jpg";
-import BoroughHallS0 from "./BoroughHallS0.jpg";
-import BoroughHallS1 from "./BoroughHallS1.jpg";
-import BoroughHallS2 from "./BoroughHallS2.jpg";
-import BrooklynArmyTerminal0 from "./BrooklynArmyTerminal/0.jpg";
-import BrooklynArmyTerminal1 from "./BrooklynArmyTerminal/1.jpg";
-import BrooklynArmyTerminal2 from "./BrooklynArmyTerminal/2.jpg";
-import BrooklynBridgePark0 from "./BrooklynArmyTerminal/0.jpg";
-import BrooklynBridgePark1 from "./BrooklynArmyTerminal/1.jpg";
-import BrooklynBridgePark2 from "./BrooklynArmyTerminal/2.jpg";
-import BrooklynBridgePark3 from "./BrooklynArmyTerminal/3.jpg";
-import BrowerPark0 from "./BrowerPark0.jpg";
-import BrowerPark1 from "./BrowerPark1.jpg";
-import BrowerPark2 from "./BrowerPark2.jpg";
-import BrowerPark3 from "./BrowerPark3.jpg";
-import BrowerPark4 from "./BrowerPark4.jpg";
-import BrowerPark5 from "./BrowerPark5.jpg";
-import BrowerPark6 from "./BrowerPark6.jpg";
-import ButterBenches0 from "./ButterBenches0.jpg";
-import ButterBenches1 from "./ButterBenches1.jpg";
-import CadmanPlaza0 from "./CadmanPlaza0.jpg";
-import CadmanPlaza1 from "./CadmanPlaza1.jpg";
-import CadmanPlaza2 from "./CadmanPlaza2.jpg";
-import CadmanPlaza3 from "./CadmanPlaza3.jpg";
-import CadmanPlaza4 from "./CadmanPlaza4.jpg";
-import CadmanPlaza5 from "./CadmanPlaza5.jpg";
-import CadmanPlaza6 from "./CadmanPlaza6.jpg";
-import CadmanPlaza7 from "./CadmanPlaza7.jpg";
-import CadmanPlaza8 from "./CadmanPlaza8.jpg";
-import CadmanPlaza9 from "./CadmanPlaza9.jpg";
-import CadmanPlaza10 from "./CadmanPlaza10.jpg";
-import CarrollManualPad0 from "./CarrollManualPad0.jpg";
-import CarrollManualPad1 from "./CarrollManualPad1.jpg";
-import ChaunceyLedges0 from "./ChaunceyLedges0.jpg";
-import ChaunceyLedges1 from "./ChaunceyLedges1.jpg";
-import ChaunceyLedges2 from "./ChaunceyLedges2.jpg";
-import ChaunceyLedges3 from "./ChaunceyLedges3.jpg";
-import CommodoreBarryPark0 from "./CommodoreBarryPark0.jpg";
-import CommodoreBarryPark1 from "./CommodoreBarryPark1.jpg";
-import CommodoreBarryPark2 from "./CommodoreBarryPark2.jpg";
-import CommodoreBarryPark3 from "./CommodoreBarryPark3.jpg";
-import CommodoreBarryPark4 from "./CommodoreBarryPark4.jpg";
-import CrownHeightsBanks0 from "./CrownHeightsBanks0.jpg";
-import CrownHeightsBanks1 from "./CrownHeightsBanks1.jpg";
-import CrownHeightsBanks2 from "./CrownHeightsBanks2.jpg";
-import DeweyHighSchool0 from "./DeweyHighSchool0.jpg";
-import DeweyHighSchool1 from "./DeweyHighSchool1.jpg";
-import DeweyHighSchool2 from "./DeweyHighSchool2.jpg";
-import DeweyHighSchool3 from "./DeweyHighSchool3.jpg";
-import DeweyHighSchool4 from "./DeweyHighSchool4.jpg";
-import DeweyHighSchool5 from "./DeweyHighSchool5.jpg";
-import DeweyHighSchool6 from "./DeweyHighSchool6.jpg";
-import DeweyHighSchool7 from "./DeweyHighSchool7.jpg";
-import DeweyHighSchool8 from "./DeweyHighSchool8.jpg";
-import ExpandingBrainBanks0 from "./ExpandingBrainBanks0.jpg";
-import ExpandingBrainBanks1 from "./ExpandingBrainBanks1.jpg";
-import FishGap0 from "./FishGap0.jpg";
-import FishGap1 from "./FishGap1.jpg";
-import FishGap2 from "./FishGap2.jpg";
-import FarragutLedges0 from "./FarragutLedges0.jpg";
-import FarragutLedges1 from "./FarragutLedges1.jpg";
-import FarragutLedges2 from "./FarragutLedges2.jpg";
-import FarragutLedges3 from "./FarragutLedges3.jpg";
-import FortGreenePark0 from "./FortGreenePark0.jpg";
-import FortGreenePark1 from "./FortGreenePark1.jpg";
-import FortGreenePark2 from "./FortGreenePark2.jpg";
-import FortGreenePark3 from "./FortGreenePark3.jpg";
-import FortGreenePark4 from "./FortGreenePark4.jpg";
-import FortGreenePark5 from "./FortGreenePark5.jpg";
-import FortGreenePark6 from "./FortGreenePark6.jpg";
-import FortGreenePark7 from "./FortGreenePark7.jpg";
-import FrontStreetLedge0 from "./FrontStreetLedge0.jpg";
-import FrontStreetLedge1 from "./FrontStreetLedge1.jpg";
-import FrontStreetLedge2 from "./FrontStreetLedge2.jpg";
-import FrontStreetLedge3 from "./FrontStreetLedge3.jpg";
-import HumboldtStreetYMCA0 from "./HumboldtStreetYMCA0.jpg";
-import HumboldtStreetYMCA1 from "./HumboldtStreetYMCA1.jpg";
-import HumboldtStreetYMCA2 from "./HumboldtStreetYMCA2.jpg";
-import HumboldtStreetYMCA3 from "./HumboldtStreetYMCA3.jpg";
-import HumboldtStreetYMCA4 from "./HumboldtStreetYMCA4.jpg";
-import HumboldtStreetYMCA5 from "./HumboldtStreetYMCA5.jpg";
-import KBridgePark0 from "./KBridgePark0.jpg";
-import KBridgePark1 from "./KBridgePark1.jpg";
-import KBridgePark2 from "./KBridgePark2.jpg";
-import KBridgePark3 from "./KBridgePark3.jpg";
-import KBridgePark4 from "./KBridgePark4.jpg";
-import KBridgePark5 from "./KBridgePark5.jpg";
-import KBridgePark6 from "./KBridgePark6.jpg";
-import KBridgePark7 from "./KBridgePark7.jpg";
-import KBridgePark8 from "./KBridgePark8.jpg";
-import KBridgePark9 from "./KBridgePark9.jpg";
-import KBridgePark10 from "./KBridgePark10.jpg";
-import KBridgePark11 from "./KBridgePark11.jpg";
-import KBridgePark12 from "./KBridgePark12.jpg";
-import KBridgePark13 from "./KBridgePark13.jpg";
-import KBridgePark14 from "./KBridgePark14.jpg";
-import KBridgePark15 from "./KBridgePark15.jpg";
-import MamboBar0 from "./MamboBar0.jpg";
-import MamboBar1 from "./MamboBar1.jpg";
-import MamboBar2 from "./MamboBar2.jpg";
-import MamboBar3 from "./MamboBar3.jpg";
-import MariaHernandezPark0 from "./MariaHernandezPark0.jpg";
-import MariaHernandezPark1 from "./MariaHernandezPark1.jpg";
-import McCarrenPark0 from "./McCarrenPark0.jpg";
-import McCarrenPark1 from "./McCarrenPark1.jpg";
-import McCarrenPark2 from "./McCarrenPark2.jpg";
-import McCarrenPark3 from "./McCarrenPark3.jpg";
-import McGolrickPark0 from "./McGolrickPark0.jpg";
-import McGolrickPark1 from "./McGolrickPark1.jpg";
-import McGolrickPark2 from "./McGolrickPark2.jpg";
-import McGolrickPark3 from "./McGolrickPark3.jpg";
-import McGolrickPark4 from "./McGolrickPark4.jpg";
-import PolishPark0 from "./PolishPark0.jpg";
-import PolishPark1 from "./PolishPark1.jpg";
-import PolishPark2 from "./PolishPark2.jpg";
-import PolishPark3 from "./PolishPark3.jpg";
-import PolishPark4 from "./PolishPark4.jpg";
-import Pratt0 from "./Pratt0.jpg";
-import Pratt1 from "./Pratt1.jpg";
-import ReggaetonLedges0 from "./ReggaetonLedges0.jpg";
-import ReggaetonLedges1 from "./ReggaetonLedges1.jpg";
-import ReggaetonLedges2 from "./ReggaetonLedges2.jpg";
-import ReggaetonLedges3 from "./ReggaetonLedges3.jpg";
-import ReggaetonLedges4 from "./ReggaetonLedges4.jpg";
-import ReggaetonLedges5 from "./ReggaetonLedges5.jpg";
-import ReggaetonLedges6 from "./ReggaetonLedges6.jpg";
-import ReggaetonLedges7 from "./ReggaetonLedges7.jpg";
-import ShellLedge0 from "./ShellLedge0.jpg";
-import ShellLedge1 from "./ShellLedge1.jpg";
-import ShitRail0 from "./ShitRail0.jpg";
-import ShitRail1 from "./ShitRail1.jpg";
-import ShitRail2 from "./ShitRail2.jpg";
-import SlipperyPark0 from "./SlipperyPark0.jpg";
-import SlipperyPark1 from "./SlipperyPark1.jpg";
-import SlipperyPark2 from "./SlipperyPark2.jpg";
-import SlipperyPark3 from "./SlipperyPark3.jpg";
-import SlipperyPark4 from "./SlipperyPark4.jpg";
-import SlipperyPark5 from "./SlipperyPark5.jpg";
-import StroudLedges0 from "./StroudLedges0.jpg";
-import StroudLedges1 from "./StroudLedges1.jpg";
-import StroudLedges2 from "./StroudLedges2.jpg";
-import StroudLedges3 from "./StroudLedges3.jpg";
-import StroudLedges4 from "./StroudLedges4.jpg";
-import StroudLedges5 from "./StroudLedges5.jpg";
-import StroudLedges6 from "./StroudLedges6.jpg";
-import SunsetPark0 from "./SunsetPark0.jpg";
-import SunsetPark1 from "./SunsetPark1.jpg";
-import SunsetPark2 from "./SunsetPark2.jpg";
-import SunsetPark3 from "./SunsetPark3.jpg";
-import SunsetPark4 from "./SunsetPark4.jpg";
-import SunsetPark5 from "./SunsetPark5.jpg";
-import SunsetPark6 from "./SunsetPark6.jpg";
-import TekashiTen0 from "./TekashiTen0.jpg";
-import TekashiTen1 from "./TekashiTen1.jpg";
-import ThomasGreenePark0 from "./ThomasGreenePark0.jpg";
-import ThomasGreenePark1 from "./ThomasGreenePark1.jpg";
-import ThomasGreenePark2 from "./ThomasGreenePark2.jpg";
-import ThomasGreenePark3 from "./ThomasGreenePark3.jpg";
-import ThomasGreenePark4 from "./ThomasGreenePark4.jpg";
-import TompkinsPark0 from "./TompkinsPark0.jpg";
-import TompkinsPark1 from "./TompkinsPark1.jpg";
-import TompkinsPark2 from "./TompkinsPark2.jpg";
-import TompkinsPark3 from "./TompkinsPark3.jpg";
-import TompkinsPark4 from "./TompkinsPark4.jpg";
-import WilliamsburgMonument0 from "./WilliamsburgMonument0.jpg";
-import WilliamsburgMonument1 from "./WilliamsburgMonument1.jpg";
-import WilliamsburgMonument2 from "./WilliamsburgMonument2.jpg";
-import WilliamsburgMonument3 from "./WilliamsburgMonument3.jpg";
-import WilliamsburgMonument4 from "./WilliamsburgMonument4.jpg";
-import WilliamsburgMonument5 from "./WilliamsburgMonument5.jpg";
-import WilliamsburgMonument6 from "./WilliamsburgMonument6.jpg";
-import WilliamsburgMonument7 from "./WilliamsburgMonument7.jpg";
-import WilliamsburgMonument8 from "./WilliamsburgMonument8.jpg";
-import WilliamsburgMonument9 from "./WilliamsburgMonument9.jpg";
-import WilliamsburgMonument10 from "./WilliamsburgMonument10.jpg";
-import WoodhullHospital0 from "./WoodhullHospital0.jpg";
-import WoodhullHospital1 from "./WoodhullHospital1.jpg";
-import WoodhullHospital2 from "./WoodhullHospital2.jpg";
-import WoodhullHospital3 from "./WoodhullHospital3.jpg";
-import WoodhullHospital4 from "./WoodhullHospital4.jpg";
+import BAMS0 from "./Bam/0.jpg";
+import BAMS1 from "./Bam/1.jpg";
+import BAMS2 from "./Bam/2.jpg";
+import BAMS3 from "./Bam/3.jpg";
+import BlueParkS0 from "./BluePark/0.jpg";
+import BlueParkS1 from "./BluePark/1.jpg";
+import BlueParkS2 from "./BluePark/2.jpg";
+import BlueParkS3 from "./BluePark/3.jpg";
+import BlueParkS4 from "./BluePark/4.jpg";
+import BlueParkS5 from "./BluePark/5.jpg";
+import BoroughHallS0 from "./BoroughHall/0.jpg";
+import BoroughHallS1 from "./BoroughHall/1.jpg";
+import BoroughHallS2 from "./BoroughHall/2.jpg";
+import BrooklynArmyTerminal0 from "./BrooklynArmyTerminal/0.jpeg";
+import BrooklynArmyTerminal1 from "./BrooklynArmyTerminal/1.jpeg";
+import BrooklynArmyTerminal2 from "./BrooklynArmyTerminal/2.jpeg";
+import BrooklynBridgePark0 from "./BrooklynArmyTerminal/0.jpeg";
+import BrooklynBridgePark1 from "./BrooklynArmyTerminal/1.jpeg";
+import BrooklynBridgePark2 from "./BrooklynArmyTerminal/2.jpeg";
+import BrooklynBridgePark3 from "./BrooklynArmyTerminal/3.jpeg";
+import BrowerPark0 from "./BrowerPark/0.jpg";
+import BrowerPark1 from "./BrowerPark/1.jpg";
+import BrowerPark2 from "./BrowerPark/2.jpg";
+import BrowerPark3 from "./BrowerPark/3.jpg";
+import BrowerPark4 from "./BrowerPark/4.jpg";
+import BrowerPark5 from "./BrowerPark/5.jpg";
+import BrowerPark6 from "./BrowerPark/6.jpg";
+import ButterBenches0 from "./ButterBenches/0.jpg";
+import ButterBenches1 from "./ButterBenches/1.jpg";
+import CadmanPlaza0 from "./CadmanPlaza/0.jpeg";
+import CadmanPlaza1 from "./CadmanPlaza/1.jpeg";
+import CadmanPlaza2 from "./CadmanPlaza/2.jpeg";
+import CadmanPlaza3 from "./CadmanPlaza/3.jpeg";
+import CadmanPlaza4 from "./CadmanPlaza/4.jpeg";
+import CadmanPlaza5 from "./CadmanPlaza/5.jpeg";
+import CadmanPlaza6 from "./CadmanPlaza/6.jpeg";
+import CadmanPlaza7 from "./CadmanPlaza/7.jpeg";
+import CadmanPlaza8 from "./CadmanPlaza/8.jpeg";
+import CadmanPlaza9 from "./CadmanPlaza/9.jpeg";
+import CadmanPlaza10 from "./CadmanPlaza/10.jpeg";
+import CarrolManualPad0 from "./CarrolManualPad/0.jpg";
+import CarrolManualPad1 from "./CarrolManualPad/1.jpg";
+import ChaunceyLedges0 from "./ChaunceyLedges/0.jpg";
+import ChaunceyLedges1 from "./ChaunceyLedges/1.jpg";
+import ChaunceyLedges2 from "./ChaunceyLedges/2.jpg";
+import ChaunceyLedges3 from "./ChaunceyLedges/3.jpg";
+import CommodoreBarryPark0 from "./CommodoreBarryPark/0.jpg";
+import CommodoreBarryPark1 from "./CommodoreBarryPark/1.jpg";
+import CommodoreBarryPark2 from "./CommodoreBarryPark/2.jpg";
+import CommodoreBarryPark3 from "./CommodoreBarryPark/3.jpg";
+import CommodoreBarryPark4 from "./CommodoreBarryPark/4.jpg";
+import CrownHeightsBanks0 from "./CrownHeightsBanks/0.jpg";
+import CrownHeightsBanks1 from "./CrownHeightsBanks/1.jpg";
+import CrownHeightsBanks2 from "./CrownHeightsBanks/2.jpg";
+import DeweyHighSchool0 from "./DeweyHighSchool/0.jpg";
+import DeweyHighSchool1 from "./DeweyHighSchool/1.jpg";
+import DeweyHighSchool2 from "./DeweyHighSchool/2.jpg";
+import DeweyHighSchool3 from "./DeweyHighSchool/3.jpg";
+import DeweyHighSchool4 from "./DeweyHighSchool/4.jpg";
+import DeweyHighSchool5 from "./DeweyHighSchool/5.jpg";
+import DeweyHighSchool6 from "./DeweyHighSchool/6.jpg";
+import DeweyHighSchool7 from "./DeweyHighSchool/7.jpg";
+import DeweyHighSchool8 from "./DeweyHighSchool/8.jpg";
+import ExpandingBrainBanks0 from "./ExpandingBrainBanks/0.jpg";
+import ExpandingBrainBanks1 from "./ExpandingBrainBanks/1.jpg";
+import FishGap0 from "./FishGap/0.jpg";
+import FishGap1 from "./FishGap/1.jpg";
+import FishGap2 from "./FishGap/2.jpg";
+import FarragutLedges0 from "./FarragutLedges/0.jpg";
+import FarragutLedges1 from "./FarragutLedges/1.jpg";
+import FarragutLedges2 from "./FarragutLedges/2.jpg";
+import FarragutLedges3 from "./FarragutLedges/3.jpg";
+import FortGreenePark0 from "./FortGreenePark/0.jpg";
+import FortGreenePark1 from "./FortGreenePark/1.jpg";
+import FortGreenePark2 from "./FortGreenePark/2.jpg";
+import FortGreenePark3 from "./FortGreenePark/3.jpg";
+import FortGreenePark4 from "./FortGreenePark/4.jpg";
+import FortGreenePark5 from "./FortGreenePark/5.jpg";
+import FortGreenePark6 from "./FortGreenePark/6.jpg";
+import FortGreenePark7 from "./FortGreenePark/7.jpg";
+import FrontStreetLedge0 from "./FrontStreetLedge/0.jpg";
+import FrontStreetLedge1 from "./FrontStreetLedge/1.jpg";
+import FrontStreetLedge2 from "./FrontStreetLedge/2.jpg";
+import FrontStreetLedge3 from "./FrontStreetLedge/3.jpg";
+import HumboldtStreetYMCA0 from "./HumboldtStreetYMCA/0.jpg";
+import HumboldtStreetYMCA1 from "./HumboldtStreetYMCA/1.jpg";
+import HumboldtStreetYMCA2 from "./HumboldtStreetYMCA/2.jpg";
+import HumboldtStreetYMCA3 from "./HumboldtStreetYMCA/3.jpg";
+import HumboldtStreetYMCA4 from "./HumboldtStreetYMCA/4.jpg";
+import HumboldtStreetYMCA5 from "./HumboldtStreetYMCA/5.jpg";
+import KBridgePark0 from "./KBridgePark/0.jpeg";
+import KBridgePark1 from "./KBridgePark/1.jpeg";
+import KBridgePark2 from "./KBridgePark/2.jpeg";
+import KBridgePark3 from "./KBridgePark/3.jpeg";
+import KBridgePark4 from "./KBridgePark/4.jpeg";
+import KBridgePark5 from "./KBridgePark/5.jpeg";
+import KBridgePark6 from "./KBridgePark/6.jpeg";
+import KBridgePark7 from "./KBridgePark/7.jpeg";
+import KBridgePark8 from "./KBridgePark/8.jpeg";
+import KBridgePark9 from "./KBridgePark/9.jpeg";
+import KBridgePark10 from "./KBridgePark/10.jpeg";
+import KBridgePark11 from "./KBridgePark/11.jpeg";
+import KBridgePark12 from "./KBridgePark/12.jpeg";
+import KBridgePark13 from "./KBridgePark/13.jpeg";
+import KBridgePark14 from "./KBridgePark/14.jpeg";
+import KBridgePark15 from "./KBridgePark/15.jpeg";
+import MamboBar0 from "./MamboBar/0.jpeg";
+import MamboBar1 from "./MamboBar/1.jpeg";
+import MamboBar2 from "./MamboBar/2.jpeg";
+import MamboBar3 from "./MamboBar/3.jpeg";
+import MariaHernandezPark0 from "./MariaHernandezPark/0.jpg";
+import MariaHernandezPark1 from "./MariaHernandezPark/1.jpg";
+import McCarrenPark0 from "./McCarrenPark/0.jpeg";
+import McCarrenPark1 from "./McCarrenPark/1.jpeg";
+import McCarrenPark2 from "./McCarrenPark/2.jpeg";
+import McCarrenPark3 from "./McCarrenPark/3.jpeg";
+import McGolrickPark0 from "./McGolrickPark/0.jpeg";
+import McGolrickPark1 from "./McGolrickPark/1.jpeg";
+import McGolrickPark2 from "./McGolrickPark/2.jpeg";
+import McGolrickPark3 from "./McGolrickPark/3.jpeg";
+import McGolrickPark4 from "./McGolrickPark/4.jpeg";
+import PolishPark0 from "./PolishPark/0.jpg";
+import PolishPark1 from "./PolishPark/1.jpg";
+import PolishPark2 from "./PolishPark/2.jpg";
+import PolishPark3 from "./PolishPark/3.jpg";
+import PolishPark4 from "./PolishPark/4.jpg";
+import Pratt0 from "./Pratt/0.jpg";
+import Pratt1 from "./Pratt/1.jpg";
+import ReggaetonLedges0 from "./ReggaetonLedges/0.jpg";
+import ReggaetonLedges1 from "./ReggaetonLedges/1.jpg";
+import ReggaetonLedges2 from "./ReggaetonLedges/2.jpg";
+import ReggaetonLedges3 from "./ReggaetonLedges/3.jpg";
+import ReggaetonLedges4 from "./ReggaetonLedges/4.jpg";
+import ReggaetonLedges5 from "./ReggaetonLedges/5.jpg";
+import ReggaetonLedges6 from "./ReggaetonLedges/6.jpg";
+import ReggaetonLedges7 from "./ReggaetonLedges/7.jpg";
+import ShellLedge0 from "./ShellLedge/0.jpeg";
+import ShellLedge1 from "./ShellLedge/1.jpeg";
+import ShitRail0 from "./ShitRail/0.jpg";
+import ShitRail1 from "./ShitRail/1.jpg";
+import ShitRail2 from "./ShitRail/2.jpg";
+import SlipperyPark0 from "./SlipperyPark/0.jpg";
+import SlipperyPark1 from "./SlipperyPark/1.jpg";
+import SlipperyPark2 from "./SlipperyPark/2.jpg";
+import SlipperyPark3 from "./SlipperyPark/3.jpg";
+import SlipperyPark4 from "./SlipperyPark/4.jpg";
+import SlipperyPark5 from "./SlipperyPark/5.jpg";
+import StroudLedges0 from "./StroudLedges/0.jpg";
+import StroudLedges1 from "./StroudLedges/1.jpg";
+import StroudLedges2 from "./StroudLedges/2.jpg";
+import StroudLedges3 from "./StroudLedges/3.jpg";
+import StroudLedges4 from "./StroudLedges/4.jpg";
+import StroudLedges5 from "./StroudLedges/5.jpg";
+import StroudLedges6 from "./StroudLedges/6.jpg";
+import SunsetPark0 from "./SunsetPark/0.jpg";
+import SunsetPark1 from "./SunsetPark/1.jpg";
+import SunsetPark2 from "./SunsetPark/2.jpg";
+import SunsetPark3 from "./SunsetPark/3.jpg";
+import SunsetPark4 from "./SunsetPark/4.jpg";
+import SunsetPark5 from "./SunsetPark/5.jpg";
+import SunsetPark6 from "./SunsetPark/6.jpg";
+import TekashiTen0 from "./Tekashi10/0.jpg";
+import TekashiTen1 from "./Tekashi10/1.jpg";
+import ThomasGreenePark0 from "./ThomasGreenePark/0.jpeg";
+import ThomasGreenePark1 from "./ThomasGreenePark/1.jpeg";
+import ThomasGreenePark2 from "./ThomasGreenePark/2.jpeg";
+import ThomasGreenePark3 from "./ThomasGreenePark/3.jpeg";
+import ThomasGreenePark4 from "./ThomasGreenePark/4.jpeg";
+import TompkinsPark0 from "./TompkinsPark/0.jpg";
+import TompkinsPark1 from "./TompkinsPark/1.jpg";
+import TompkinsPark2 from "./TompkinsPark/2.jpg";
+import TompkinsPark3 from "./TompkinsPark/3.jpg";
+import TompkinsPark4 from "./TompkinsPark/4.jpg";
+import WilliamsburgMonument0 from "./WilliamsburgMonument/0.jpg";
+import WilliamsburgMonument1 from "./WilliamsburgMonument/1.jpg";
+import WilliamsburgMonument2 from "./WilliamsburgMonument/2.jpg";
+import WilliamsburgMonument3 from "./WilliamsburgMonument/3.jpg";
+import WilliamsburgMonument4 from "./WilliamsburgMonument/4.jpg";
+import WilliamsburgMonument5 from "./WilliamsburgMonument/5.jpg";
+import WilliamsburgMonument6 from "./WilliamsburgMonument/6.jpg";
+import WilliamsburgMonument7 from "./WilliamsburgMonument/7.jpg";
+import WilliamsburgMonument8 from "./WilliamsburgMonument/8.jpg";
+import WilliamsburgMonument9 from "./WilliamsburgMonument/9.jpg";
+import WilliamsburgMonument10 from "./WilliamsburgMonument/10.jpg";
+import WilliamsburgWaterfront0 from "./WilliamsburgWaterfront/0.jpeg";
+import WilliamsburgWaterfront1 from "./WilliamsburgWaterfront/1.jpeg";
+import WilliamsburgWaterfront2 from "./WilliamsburgWaterfront/2.jpeg";
+import WilliamsburgWaterfront3 from "./WilliamsburgWaterfront/3.jpeg";
+import WilliamsburgWaterfront4 from "./WilliamsburgWaterfront/4.jpeg";
+import WilliamsburgWaterfront5 from "./WilliamsburgWaterfront/5.jpeg";
+import WilliamsburgWaterfront6 from "./WilliamsburgWaterfront/6.jpeg";
+import WilliamsburgWaterfront7 from "./WilliamsburgWaterfront/7.jpeg";
+import WoodhullHospital0 from "./WoodhullHospital/0.jpg";
+import WoodhullHospital1 from "./WoodhullHospital/1.jpg";
+import WoodhullHospital2 from "./WoodhullHospital/2.jpg";
+import WoodhullHospital3 from "./WoodhullHospital/3.jpg";
+import WoodhullHospital4 from "./WoodhullHospital/4.jpg";
 
 const spots = [
 	{
@@ -387,8 +395,8 @@ const spots = [
 			text: "Union and Hoyt Street in Carroll Gardens / Boerum Hill.",
 		},
 		images: {
-			0: CarrollManualPad0,
-			1: CarrollManualPad1,
+			0: CarrolManualPad0,
+			1: CarrolManualPad1,
 		},
 	},
 	{
@@ -1004,6 +1012,32 @@ const spots = [
 			8: WilliamsburgMonument8,
 			9: WilliamsburgMonument9,
 			10: WilliamsburgMonument10,
+		},
+	},
+	{
+		name: "Williamsburg Waterfront",
+		area: "Brooklyn",
+		summary:
+			"A wooden manny pad, three-stair out ledge, a small A-frame ledge + a giant, sketchy rainbow rail and a kinked rail that Ishod and them have skated.",
+		bust: {
+			level: 2,
+			status:
+				"Skateboarding is forbidden in the plaza, and security will tell you to leave if they see you.",
+		},
+		location: {
+			latitude: 40.72038443140939,
+			longitude: -73.96416082215217,
+			text: "The zone around N 5th and the East River in Williamsburg. The kinked rail is at Bushwick inlet pier, a bit more north of the main zone.",
+		},
+		images: {
+			0: WilliamsburgWaterfront0,
+			1: WilliamsburgWaterfront1,
+			2: WilliamsburgWaterfront2,
+			3: WilliamsburgWaterfront3,
+			4: WilliamsburgWaterfront4,
+			5: WilliamsburgWaterfront5,
+			6: WilliamsburgWaterfront6,
+			7: WilliamsburgWaterfront7,
 		},
 	},
 	{
