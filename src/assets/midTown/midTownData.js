@@ -114,8 +114,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.74088747977921",
-			longitude: "-73.9790578132715",
+			latitude: 40.74088747977921,
+			longitude: -73.9790578132715,
 			text: "27th Street and Second Avenue in Kips Bay.",
 		},
 		images: {
@@ -139,8 +139,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.747341960924686",
-			longitude: "-73.98961368221164",
+			latitude: 40.747341960924686,
+			longitude: -73.98961368221164,
 			text: "30th Street between 6th and 7th Avenues, though much closer to 6th.",
 		},
 		images: {
@@ -164,8 +164,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.75310448877658",
-			longitude: "-73.96988521267978",
+			latitude: 40.75310448877658,
+			longitude: -73.96988521267978,
 			text: "47th Street, in between 2nd Avenue and 3rd Avenue.",
 		},
 		images: {
@@ -190,8 +190,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.753856858769325",
-			longitude: "-73.98094264448864",
+			latitude: 40.753856858769325,
+			longitude: -73.98094264448864,
 			text: "42nd Street, in between 5th Avenue and 6th Avenue.",
 		},
 		images: {
@@ -218,8 +218,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.76493313377015",
-			longitude: "-73.99804331778756",
+			latitude: 40.76493313377015,
+			longitude: -73.99804331778756,
 			text: "47th Street and the Westside Highway.",
 		},
 		images: {
@@ -238,8 +238,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.761456551336046",
-			longitude: "-73.97954718664414",
+			latitude: 40.761456551336046,
+			longitude: -73.97954718664414,
 			text: "There are “No Skateboarding” signs posted. Security from the building will often tell you to leave in ten minutes or less. Also gets crowded because the MoMA is across the street.",
 		},
 		images: {
@@ -266,8 +266,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.768229903612664",
-			longitude: "-73.9815434577936",
+			latitude: 40.768229903612664,
+			longitude: -73.9815434577936,
 			text: "Eighth Avenue and 59th Street.",
 		},
 		images: {
@@ -292,8 +292,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.73979432525542",
-			longitude: "-73.97667354218774",
+			latitude: 40.73979432525542,
+			longitude: -73.97667354218774,
 			text: "27th Street and First Avenue in Gramercy / Kips Bay.",
 		},
 		images: {
@@ -314,8 +314,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.73979432525542",
-			longitude: "-73.97667354218774",
+			latitude: 40.73979432525542,
+			longitude: -73.97667354218774,
 			text: "27th Street and First Avenue in Gramercy / Kips Bay.",
 		},
 		images: {
@@ -336,8 +336,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.755668958332855",
-			longitude: "-73.97546545776302",
+			latitude: 40.755668958332855,
+			longitude: -73.97546545776302,
 			text: "47th Street and Park Avenue.",
 		},
 		images: {

@@ -52,8 +52,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.72693683388261",
-			longitude: "-73.99417564442155",
+			latitude: 40.72693683388261,
+			longitude: -73.99417564442155,
 			text: "Bond Street in between Lafayette Street and Broadway. It is in the middle of the block, near the art supply store.",
 		},
 		images: {
@@ -74,8 +74,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.73479147972851",
-			longitude: "-74.01024996157227",
+			latitude: 40.73479147972851,
+			longitude: -74.01024996157227,
 			text: "The spot covers quite a bit of ground along the promenade, running from Horatio Street and the Westside Highway down to around West 10th Street in the West Village.",
 		},
 		images: {
@@ -102,8 +102,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.7223111673676",
-			longitude: "-74.00539118669411",
+			latitude: 40.7223111673676,
+			longitude: -74.00539118669411,
 			text: "Canal Street and Sixth Avenue, on the south side of the street.",
 		},
 		images: {
@@ -125,8 +125,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.72270216514375",
-			longitude: "-73.99714527110174",
+			latitude: 40.72270216514375,
+			longitude: -73.99714527110174,
 			text: "Spring Street and Lafayette Street.",
 		},
 		images: {
@@ -147,8 +147,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.72860927154267",
-			longitude: "-74.00231368221282",
+			latitude: 40.72860927154267,
+			longitude: -74.00231368221282,
 			text: "Sixth Avenue and Houston Street.",
 		},
 		images: {
@@ -168,8 +168,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.725570886944524",
-			longitude: "-74.01123781330287",
+			latitude: 40.725570886944524,
+			longitude: -74.01123781330287,
 			text: "Canal Street and the Westside Highway / The Hudson River.",
 		},
 		images: {
@@ -191,8 +191,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.73685258083574",
-			longitude: "-73.99037337361156",
+			latitude: 40.73685258083574,
+			longitude: -73.99037337361156,
 			text: "14th Street and Broadway.",
 		},
 		images: {
@@ -218,8 +218,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.73121733515821",
-			longitude: "-73.99740710223978",
+			latitude: 40.73121733515821,
+			longitude: -73.99740710223978,
 			text: "Fifth Avenue and Waverly Place / Washington Square North..",
 		},
 		images: {
