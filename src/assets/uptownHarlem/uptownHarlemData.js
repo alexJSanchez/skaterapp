@@ -59,8 +59,8 @@ const spots = [
 			status: "Usually nobody hassles you, but avoid during peak park hours.",
 		},
 		location: {
-			latitude: 40.79899272676698,
-			longitude: -73.97336518669046,
+			latitude: 40.7989,
+			longitude: -73.9734,
 			text: "100th Street and Riverside Drive.",
 		},
 		images: { 0: HundredthStreetBump0, 1: HundredthStreetBump1 },
@@ -76,8 +76,8 @@ const spots = [
 				"You won’t get hassled here after school hours, but there may be kids running around everywhere on warm days, making the spot hectic to skate.",
 		},
 		location: {
-			latitude: 40.7995044801525,
-			longitude: -73.96664027111308,
+			latitude: 40.7995,
+			longitude: -73.9666,
 			text: "105th Street and Amsterdam Avenue, next to the school in the park.",
 		},
 		images: { 0: AmsterdamRail0, 1: AmsterdamRail1, 2: AmsterdamRail2 },
@@ -93,8 +93,8 @@ const spots = [
 				"Skateboarding is forbidden on campus property. Your chances are better during holidays or summer, but there is security on campus 24/7. They’ll escort you out to the street the second they spot you, which normally does not take very long.",
 		},
 		location: {
-			latitude: 40.80715595447327,
-			longitude: -73.96108518667509,
+			latitude: 40.8072,
+			longitude: -73.9611,
 			text: "116th Street and Broadway or Amsterdam. Some entrances are mellower than others (Amsterdam usually grants better luck), but you’ll get kicked out regardless.",
 		},
 		images: {
@@ -120,8 +120,8 @@ const spots = [
 				"There are “No Skateboarding” signs posted. They’ll tell you to leave if you throw your board down near the ledges, and they typically don’t leave until 6 P.M. or so. The monument is closed on Mondays and Tuesdays though.",
 		},
 		location: {
-			latitude: 40.81296592532449,
-			longitude: -73.96304918667097,
+			latitude: 40.813,
+			longitude: -73.963,
 			text: "122nd Street and Riverside Drive.",
 		},
 		images: { 0: GrantsTomb0, 1: GrantsTomb1, 2: GrantsTomb2, 3: GrantsTomb3 },
@@ -137,8 +137,8 @@ const spots = [
 				"Nobody bothers you here and the bike path is typically mellow. It is really cold and depressing in the winter though.",
 		},
 		location: {
-			latitude: 40.81144758637934,
-			longitude: -73.93441963556363,
+			latitude: 40.8114,
+			longitude: -73.9344,
 			text: "135th Street and the Harlem River bike path. Take 135th all the way east, over the footbridge that goes over Harlem River Drive, and make a right once you’re on the water.",
 		},
 		images: { 0: JerryLedge0, 1: JerryLedge1, 2: JerryLedge2 },
@@ -153,8 +153,8 @@ const spots = [
 			status: "Nobody hassles you here. Respect the locals.",
 		},
 		location: {
-			latitude: 40.798600997387936,
-			longitude: -73.95256764445159,
+			latitude: 40.7986,
+			longitude: -73.9526,
 			text: "110th Street and Lenox Avenue / Malcolm X Boulevard.",
 		},
 		images: { 0: LenoxLedges0, 1: LenoxLedges1, 2: LenoxLedges2 },
@@ -170,8 +170,8 @@ const spots = [
 				"You’re not allowed to skateboard inside the park, and if the Parks Department sees you, they may issue you a summons. Also, the locals here (older people hanging, playing chess, etc.) may try and tell you to leave.",
 		},
 		location: {
-			latitude: 40.804726481961794,
-			longitude: -73.94375227112064,
+			latitude: 40.8047,
+			longitude: -73.9438,
 			text: "122nd Street and Madison Avenue.",
 		},
 		images: {
@@ -191,8 +191,8 @@ const spots = [
 				"Sometimes, people from the neighborhood plant flowers right alongside the ledge, so they may yell at you for skating here (“I KNOW YOU’RE NOT MESSING UP THOSE FLOWERS!”) If they tell you to go — it’s their neighborhood — be respectful and leave.",
 		},
 		location: {
-			latitude: 40.80044147500089,
-			longitude: -73.95496818669011,
+			latitude: 40.8004,
+			longitude: -73.955,
 			text: "111th Street and Seventh Avenue / Adam Clayton Powell Jr. Boulevard. It’s in the middle of the street.",
 		},
 		images: { 0: MedianLedge0, 1: MedianLedge1, 2: MedianLedge2 },
@@ -208,8 +208,8 @@ const spots = [
 				"Skateboarding is forbidden in the plaza, but the Parks Department doesn’t always hassle you. There’s an elderly crowd in this neighborhood, so be careful when skating here.",
 		},
 		location: {
-			latitude: 40.792101275466706,
-			longitude: -73.97872418667951,
+			latitude: 40.7921,
+			longitude: -73.9787,
 			text: "89th Street and Riverside Drive.",
 		},
 		images: {
@@ -233,8 +233,8 @@ const spots = [
 				"Skateboarding is forbidden on building property, and you will typically get booted in 20-30 minutes. Hectic around rush hour because it is right outside the 96th Street subway station.",
 		},
 		location: {
-			latitude: 40.78432053409931,
-			longitude: -73.94740590670115,
+			latitude: 40.7843,
+			longitude: -73.9474,
 			text: "96th Street and Second Avenue on the Upper East Side.",
 		},
 		images: {
@@ -255,8 +255,8 @@ const spots = [
 				"Skateboarding is forbidden by park rules. The Parks Department will tell you to leave if they see you. Sometimes, they won’t even let you into the park with a skateboard.",
 		},
 		location: {
-			latitude: 40.827411852850695,
-			longitude: -73.95193827111174,
+			latitude: 40.8274,
+			longitude: -73.9519,
 			text: "145th Street and Riverside Drive. The spot is towards the water, inside the park.",
 		},
 		images: {
@@ -278,8 +278,8 @@ const spots = [
 				"You should not get kicked out of here, but the park is crowded with kids during warm days. Better in the fall or winter.",
 		},
 		location: {
-			latitude: 40.853456722079656,
-			longitude: -73.92728918666417,
+			latitude: 40.8535,
+			longitude: -73.9273,
 			text: "189th Street and Amsterdam Avenue.",
 		},
 		images: { 0: SupaBump0, 1: SupaBump1 },
@@ -295,8 +295,8 @@ const spots = [
 				"Come after school hours or on weekends and nobody will hassle you.",
 		},
 		location: {
-			latitude: 40.78616130665615,
-			longitude: -73.94294956004651,
+			latitude: 40.7862,
+			longitude: -73.9429,
 			text: "100th Street and First Avenue in the schoolyard.",
 		},
 		images: { 0: TFNorth0, 1: TFNorth1 },
