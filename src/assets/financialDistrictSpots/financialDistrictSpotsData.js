@@ -138,8 +138,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.70326409766042",
-			longitude: "-74.01528548923497",
+			latitude: 40.70326409766042,
+			longitude: -74.01528548923497,
 			text: " The entire waterfront at the southernmost tip of Manhattan. Take the 1 to South Ferry, or the R or W to Whitehall Street and skate towards the water.",
 		},
 		images: {
@@ -168,8 +168,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.711534575706594",
-			longitude: "-74.01591465664228",
+			latitude: 40.711534575706594,
+			longitude: -74.01591465664228,
 			text: "Alongside the Hudson River promenade behind the World Financial Center, but essentially spanning from Rector Street to Chambers Street.",
 		},
 		images: {
@@ -204,8 +204,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.714854185891376",
-			longitude: "-74.0024619999999",
+			latitude: 40.714854185891376,
+			longitude: -74.0024619999999,
 			text: "Centre Street and Duane Street, directly between the Federal Building and the State Supreme Court House.",
 		},
 		images: {
@@ -226,8 +226,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.709818176818565",
-			longitude: "-74.00170191553794",
+			latitude: 40.709818176818565,
+			longitude: -74.00170191553794,
 			text: "Parallel to Frankfort Street, under the Brooklyn Bridge on/off ramps between Police Plaza and Pace University.",
 		},
 		images: {
@@ -252,8 +252,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.70622905913376",
-			longitude: "-74.00547308437535",
+			latitude: 40.70622905913376,
+			longitude: -74.00547308437535,
 			text: "Front Street and Maiden Lane.",
 		},
 		images: {
@@ -274,8 +274,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.70804245127049",
-			longitude: "-74.01022500000249",
+			latitude: 40.70804245127049,
+			longitude: -74.01022500000249,
 			text: "Pine Street between Nassau Street and William Street in the Financial District.",
 		},
 		images: {
@@ -295,8 +295,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.70836298152374",
-			longitude: "-74.00801845778761",
+			latitude: 40.70836298152374,
+			longitude: -74.00801845778761,
 			text: "Maiden Lane and William Street in the Financial District.",
 		},
 		images: {
@@ -317,8 +317,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.71349142398793",
-			longitude: "-74.00415991554907",
+			latitude: 40.71349142398793,
+			longitude: -74.00415991554907,
 			text: "Centre Street and Worth Street.",
 		},
 		images: {
@@ -340,8 +340,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.71704387859293",
-			longitude: "-74.00206754223524",
+			latitude: 40.71704387859293,
+			longitude: -74.00206754223524,
 			text: "Lafayette and Franklin Street.",
 		},
 		images: {
@@ -360,8 +360,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.71704387859293",
-			longitude: "-74.00206754223524",
+			latitude: 40.71704387859293,
+			longitude: -74.00206754223524,
 			text: "Lafayette and Franklin Street.",
 		},
 		images: {
@@ -380,8 +380,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.713032356257145",
-			longitude: "-74.00824972885071",
+			latitude: 40.713032356257145,
+			longitude: -74.00824972885071,
 			text: "Park Place, between Church Street and Broadway, across from City Hall.",
 		},
 		images: {
@@ -403,8 +403,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.70557290799179",
-			longitude: "-74.00691568220938",
+			latitude: 40.70557290799179,
+			longitude: -74.00691568220938,
 			text: "Pine Street and Water Street in the Financial District.",
 		},
 		images: {
@@ -427,8 +427,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.7122449795853",
-			longitude: "-74.00236354226426",
+			latitude: 40.7122449795853,
+			longitude: -74.00236354226426,
 			text: "Chambers and Centre Street, across from City Hall.",
 		},
 		images: {
@@ -453,8 +453,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.70474836662462",
-			longitude: "-74.00814009327195",
+			latitude: 40.70474836662462,
+			longitude: -74.00814009327195,
 			text: "Governour Lane and Water Street in the Financial District.",
 		},
 		images: {
@@ -479,8 +479,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.706721322311736",
-			longitude: "-74.00315991564689",
+			latitude: 40.706721322311736,
+			longitude: -74.00315991564689,
 			text: "South Street and Fulton Street.",
 		},
 		images: {
@@ -504,8 +504,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.71474494644896",
-			longitude: "-74.00045227109806",
+			latitude: 40.71474494644896,
+			longitude: -74.00045227109806,
 			text: "Baxter Street and Worth Street, across the street from Columbus Park.",
 		},
 		images: {
@@ -525,8 +525,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.70329947499594",
-			longitude: "-74.01159110222243",
+			latitude: 40.70329947499594,
+			longitude: -74.01159110222243,
 			text: "Water Street between Broad Street and Old Slip, at the S&P Building.",
 		},
 		images: {
@@ -552,8 +552,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.7046745354604",
-			longitude: "-74.0063546445033",
+			latitude: 40.7046745354604,
+			longitude: -74.0063546445033,
 			text: "South Street and Wall Street.",
 		},
 		images: {
@@ -576,8 +576,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.71119498247124",
-			longitude: "-74.0107736355684",
+			latitude: 40.71119498247124,
+			longitude: -74.0107736355684,
 			text: "Dey Street and Church Street in the Financial District.",
 		},
 		images: {
@@ -604,8 +604,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.71717948288673",
-			longitude: "-74.00625168221384",
+			latitude: 40.71717948288673,
+			longitude: -74.00625168221384,
 			text: "Church Street and Worth Street, behind the big windowless building.",
 		},
 		images: {
@@ -628,8 +628,8 @@ const spots = [
 		},
 
 		location: {
-			latitude: "40.710034972310915",
-			longitude: "-74.0117401022677",
+			latitude: 40.710034972310915,
+			longitude: -74.0117401022677,
 			text: "Liberty Street and Trinity Place / Church Street (Trinity turns into Church.)",
 		},
 		images: {

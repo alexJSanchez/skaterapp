@@ -2,12 +2,16 @@ import BAMS0 from "./Bam/0.jpg";
 import BAMS1 from "./Bam/1.jpg";
 import BAMS2 from "./Bam/2.jpg";
 import BAMS3 from "./Bam/3.jpg";
-import BlueParkS0 from "./BluePark/0.jpg";
-import BlueParkS1 from "./BluePark/1.jpg";
-import BlueParkS2 from "./BluePark/2.jpg";
-import BlueParkS3 from "./BluePark/3.jpg";
-import BlueParkS4 from "./BluePark/4.jpg";
-import BlueParkS5 from "./BluePark/5.jpg";
+import BAM20 from "./Bam2/0.jpg";
+import BAM21 from "./Bam2/1.jpg";
+import BAM22 from "./Bam2/2.jpg";
+import BAM23 from "./Bam2/3.jpg";
+import BluePark0 from "./BluePark/0.jpg";
+import BluePark1 from "./BluePark/1.jpg";
+import BluePark2 from "./BluePark/2.jpg";
+import BluePark3 from "./BluePark/3.jpg";
+import BluePark4 from "./BluePark/4.jpg";
+import BluePark5 from "./BluePark/5.jpg";
 import BoroughHallS0 from "./BoroughHall/0.jpg";
 import BoroughHallS1 from "./BoroughHall/1.jpg";
 import BoroughHallS2 from "./BoroughHall/2.jpg";
@@ -198,7 +202,7 @@ import WoodhullHospital4 from "./WoodhullHospital/4.jpg";
 
 const spots = [
 	{
-		name: "BAM Spots: Brooklyn",
+		name: "BAM",
 		area: "Brooklyn",
 		summary:
 			"A long ledge on top of a platform of four stairs. Some of the bottom steps are waxed, and the flat is good.",
@@ -208,8 +212,8 @@ const spots = [
 				"There are “No Skateboarding” signs posted. Security will sometimes come outside and tell you to leave. Gets crowded with people during lunch hour and on warm days in general.",
 		},
 		location: {
-			latitude: 40.686909320285224,
-			longitude: -73.97937709330326,
+			latitude: 40.6869,
+			longitude: -73.9793,
 			text: "Flatbush Avenue and Lafayette Avenue across from the Brooklyn Academy of Music.",
 		},
 		images: {
@@ -220,7 +224,7 @@ const spots = [
 		},
 	},
 	{
-		name: "BAM 2 Spots: Brooklyn",
+		name: "BAM 2",
 		area: "Brooklyn",
 		summary:
 			"Curved marble ledges on a slight hill (you have to avoid the bench at the end) and a marble curb against a fence. Also a low-ish round handicap ramp rail (frontside for regular) at the other side of the park.",
@@ -230,17 +234,39 @@ const spots = [
 				"This section of the park is often empty. Nobody really hassles you for skating here, just be careful your board doesn’t shoot out into the street.",
 		},
 		location: {
-			latitude: 40.69624697258172,
-			longitude: -73.98459172888185,
+			latitude: 40.6962,
+			longitude: -73.9846,
 			text: "Tillary Street and Flatbush Avenue in downtown Brooklyn. The first spot you see when you cross into Brooklyn via the Manhattan Bridge, actually. “Welcome to Brooklyn, here’s this fucking ledge.”",
 		},
 		images: {
-			0: BlueParkS0,
-			1: BlueParkS1,
-			2: BlueParkS2,
-			3: BlueParkS3,
-			4: BlueParkS4,
-			5: BlueParkS5,
+			0: BAM20,
+			1: BAM21,
+			2: BAM22,
+			3: BAM23,
+		},
+	},
+	{
+		name: "Blue Park",
+		area: "Brooklyn",
+		summary:
+			"The T.F. of Bushwick. Manual pads of different shapes and sizes in a basketball court, along with supplementary obstacles that often make an appearance.",
+		bust: {
+			level: 1,
+			status:
+				"This place is a sanctioned area for skateboarding. You will not get kicked out.",
+		},
+		location: {
+			latitude: 40.7089909780517,
+			longitude: -73.94520010225673,
+			text: "Manhattan Avenue and Scholes Street.",
+		},
+		images: {
+			0: BluePark0,
+			1: BluePark1,
+			2: BluePark2,
+			3: BluePark3,
+			4: BluePark4,
+			5: BluePark5,
 		},
 	},
 	{
