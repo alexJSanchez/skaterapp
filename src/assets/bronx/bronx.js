@@ -28,6 +28,26 @@ import HuntsPointStation0 from "./HuntsPointStation/0.jpg";
 import HuntsPointStation1 from "./HuntsPointStation/1.jpg";
 import HuntsPointStation2 from "./HuntsPointStation/2.jpg";
 import HuntsPointStation3 from "./HuntsPointStation/3.jpg";
+import JeromeAvenueBanks0 from "./JeromeAvenueBanks/0.jpg";
+import JeromeAvenueBanks1 from "./JeromeAvenueBanks/1.jpg";
+import JeromeAvenueBanks2 from "./JeromeAvenueBanks/2.jpg";
+import JeromeAvenueBanks3 from "./JeromeAvenueBanks/3.jpg";
+import JeromeAvenueBanks4 from "./JeromeAvenueBanks/4.jpg";
+import JeromeAvenueBanks5 from "./JeromeAvenueBanks/5.jpg";
+import JeromeAvenueBanks6 from "./JeromeAvenueBanks/6.jpg";
+import MosholuPlaygroundBank0 from "./MosholuPlaygroundBank/0.jpg";
+import MosholuPlaygroundBank1 from "./MosholuPlaygroundBank/1.jpg";
+import OgdenBankToLedge0 from "./OgdenBankToLedge/0.jpg";
+import OgdenBankToLedge1 from "./OgdenBankToLedge/1.jpg";
+import OgdenBankToLedge2 from "./OgdenBankToLedge/2.jpg";
+import TiffanyBanks0 from "./TiffanyBanks/0.jpg";
+import TiffanyBanks1 from "./TiffanyBanks/1.jpg";
+import TiffanyBanks2 from "./TiffanyBanks/2.jpg";
+import TiffanyBanks3 from "./TiffanyBanks/3.jpg";
+import TrianglePark0 from "./TrianglePark/0.jpg";
+import TrianglePark1 from "./TrianglePark/1.jpg";
+import TrianglePark2 from "./TrianglePark/2.jpg";
+import TrianglePark3 from "./TrianglePark/3.jpg";
 const spots = [
 	{
 		name: "Bronx Courthouse",
@@ -126,6 +146,111 @@ const spots = [
 			1: HuntsPointStation1,
 			2: HuntsPointStation2,
 			3: HuntsPointStation3,
+		},
+	},
+	{
+		name: "Jerome Avenue Banks",
+		area: "The Bronx",
+		summary:
+			"A handrail off of which people gap over into a bank. Famous spot seen in countless videos.",
+		bust: {
+			level: 1,
+			status: "Nobody bothers you here.",
+		},
+		location: {
+			latitude: 40.846777725358905,
+			longitude: -73.91319555103459,
+			text: "Jerome Avenue and Clifford Place, between the buildings.",
+		},
+		images: {
+			0: JeromeAvenueBanks0,
+			1: JeromeAvenueBanks1,
+			2: JeromeAvenueBanks2,
+			3: JeromeAvenueBanks3,
+			4: JeromeAvenueBanks4,
+			5: JeromeAvenueBanks5,
+			6: JeromeAvenueBanks6,
+		},
+	},
+	{
+		name: "Mosholu Playground Bank",
+		area: "The Bronx",
+		summary: "Crust.",
+		bust: {
+			level: 1,
+			status:
+				"You’re not allowed to skate inside the playground, but typically, nobody says anything. Just be mindful if it is crowded with kids.",
+		},
+		location: {
+			latitude: 40.872605851632215,
+			longitude: -73.88287072889455,
+			text: "Bainbridge Avenue and East Mosholu Parkway, way up in The Bronx.",
+		},
+		images: {
+			0: MosholuPlaygroundBank0,
+			1: MosholuPlaygroundBank1,
+		},
+	},
+	{
+		name: "Ogden Bank to Ledge",
+		area: "Harlem & The Bronx",
+		summary:
+			"Concreted-over cobblestone bank to crusty hubba-ish ledge against a fence, as seen in every skate video since the mid-2010s.",
+		bust: {
+			level: 1,
+			status:
+				"Typically nobody bothers you here. It’s pitch black at night, so don’t even bother.",
+		},
+		location: {
+			latitude: 40.83988825773314,
+			longitude: -73.92697027109591,
+			text: "Ogden Avenue and 168th Street in the handball court.",
+		},
+		images: {
+			0: OgdenBankToLedge0,
+			1: OgdenBankToLedge1,
+			2: OgdenBankToLedge2,
+		},
+	},
+	{
+		name: "Tiffany Banks",
+		area: "Harlem & The Bronx",
+		summary: "Steep-ish bank with a rainbow curb and crusty ledge on it.",
+		bust: {
+			level: 2,
+			status: "Just not during school hours. Weekends and summers are good.",
+		},
+		location: {
+			latitude: 40.82132888336184,
+			longitude: -73.89494218666867,
+			text: "Tiffany Street between Westchester Avenue and 163rd Street in The Bronx.",
+		},
+		images: {
+			0: TiffanyBanks0,
+			1: TiffanyBanks1,
+			2: TiffanyBanks2,
+			3: TiffanyBanks3,
+		},
+	},
+	{
+		name: "Triangle Park",
+		area: "Harlem & The Bronx",
+		summary:
+			"Crusty ledges on choppy brick ground, including a backside for regular out ledge over a bench below.",
+		bust: {
+			level: 1,
+			status: "Nobody bothers you here.",
+		},
+		location: {
+			latitude: 40.82663733073621,
+			longitude: -73.88882172889629,
+			text: "Westchester Avenue and Bryant Street in The Bronx.",
+		},
+		images: {
+			0: TrianglePark0,
+			1: TrianglePark1,
+			2: TrianglePark2,
+			3: TrianglePark3,
 		},
 	},
 ];
