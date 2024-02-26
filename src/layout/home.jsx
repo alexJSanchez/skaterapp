@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import arrowDown from "../assets/desktop/icon-arrow-down.svg";
 import iconRefresh from "../assets/desktop/icon-refresh.svg";
-
+import Nav from "../component/nav";
 import Time from "../component/time";
 
 function Home() {
@@ -57,11 +57,12 @@ function Home() {
 								especially, is a science of itself, and has its own abstract
 								truth and value.”
 							</p>
-							<img
+							{/* <img
 								className="w-5 h-5"
 								src={iconRefresh}
 								alt="Refresh Icon"
-							></img>
+							></img> */}
+							<Nav />
 						</div>
 						<p className="inter-text text-[14px] mt-3">Ada Lovelace</p>
 					</div>
