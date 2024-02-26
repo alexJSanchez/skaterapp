@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import spots from "../Data";
 import starIcon from "../assets/star_fill_icon.png";
+import gripTape from "../assets/griptape.jpg";
 function Bronx() {
 	useEffect(() => {
 		console.log("initial render:", spots.Bronx[0]);
@@ -9,10 +10,18 @@ function Bronx() {
 		return <div>Loading...</div>; // You can replace this with any loading indicator
 	}
 	return (
-		<div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 text-center p-4">
+		<div
+			className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 text-center p-4 "
+			style={{ backgroundImage: `url(${gripTape})` }}
+		>
 			{spots.Bronx.map((res, index) => (
-				<div key={index} className="bg-white rounded-lg shadow-md p-4">
-					<h1 className="text-2xl font-bold text-gray-800">{res.name}</h1>
+				<div
+					key={index}
+					className="flex flex-col items-center rounded-lg shadow-md p-4 bg-white "
+				>
+					<h1 className="text-2xl font-bold text-gray-800 uppercase">
+						{res.name}
+					</h1>
 					<div className="flex justify-center">
 						{[...Array(res.bust.level)].map((_, index) => (
 							<img
@@ -23,10 +32,11 @@ function Bronx() {
 							/>
 						))}
 					</div>
-
 					<h2 className="text-lg font-semibold text-gray-700">Wanted</h2>
-					<p className="text-gray-600">Status: {res.bust.status}</p>
-					<p className="mt-2 text-gray-700">{res.summary}</p>
+					<p className="text-gray-600 font-bold text-sm">
+						Status: {res.bust.status}
+					</p>
+					<p className="mt-2 text-gray-700 font-bold">{res.summary}</p>
 					<img src={res.images[0]} />
 				</div>
 			))}
