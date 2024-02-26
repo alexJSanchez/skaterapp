@@ -3,13 +3,14 @@ import arrowDown from "../assets/desktop/icon-arrow-down.svg";
 import iconRefresh from "../assets/desktop/icon-refresh.svg";
 import Nav from "../component/nav";
 import Time from "../component/time";
-import { calculateDistance, deg2rad } from "../utils/";
+import SpotLocator from "../component/spotLocator";
 
 function Home() {
 	const [weather, setWeather] = useState({
 		temperature: "0.00",
 		wind: "0.00",
 	});
+	const [coord, setCoord] = useState({});
 	const [city, setCity] = useState("City");
 	const [state, setLocal] = useState("State");
 
@@ -20,42 +21,30 @@ function Home() {
 	};
 
 	useEffect(() => {
-		// if ("geolocation" in navigator) {
-		// 	navigator.geolocation.getCurrentPosition((position) => {
-		// 		const { latitude, longitude } = position.coords;
-		// 		const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
-		// 		fetch(geoApiUrl)
-		// 			.then((res) => res.json())
-		// 			.then((data) => {
-		// 				console.log(data);
-		// 				setCity(data.city);
-		// 				setLocal(data.locality);
-		// 			});
-		// 		const apiKey = "f5d7f601d3073301b1ec26e017b93446";
-		// 		const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
-		// 		fetch(weatherUrl)
-		// 			.then((res) => res.json())
-		// 			.then((data) => {
-		// 				setWeather({ temperature: data.main.temp, wind: data.wind.speed });
-		// 				console.log(data);
-		// 			});
-		// 	});
-		// } else {
-		// 	console.log("Please accept location permission");
-		// }
-
-		locations.forEach((location) => {
-			const distance = calculateDistance(
-				clientLatitude,
-				clientLongitude,
-				location.latitude,
-				location.longitude
-			);
-			if (distance < closestDistance) {
-				closestDistance = distance;
-				closestLocation = location;
-			}
-		});
+		if ("geolocation" in navigator) {
+			navigator.geolocation.getCurrentPosition((position) => {
+				const { latitude, longitude } = position.coords;
+				const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
+				fetch(geoApiUrl)
+					.then((res) => res.json())
+					.then((data) => {
+						console.log(data);
+						setCity(data.city);
+						setLocal(data.locality);
+						setCoord({ latitude: latitude, longitude: longitude });
+					});
+				const apiKey = "f5d7f601d3073301b1ec26e017b93446";
+				const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
+				fetch(weatherUrl)
+					.then((res) => res.json())
+					.then((data) => {
+						setWeather({ temperature: data.main.temp, wind: data.wind.speed });
+						console.log(data);
+					});
+			});
+		} else {
+			console.log("Please accept location permission");
+		}
 	}, []);
 
 	return (
@@ -81,7 +70,8 @@ function Home() {
 						</div>
 						<p className="inter-text text-[14px] mt-3">Ada Lovelace</p>
 					</div>
-					<div className="opacity-95 text-white  py-10 px-6  flex flex-col">
+					<SpotLocator Latitude={coord.latitude} Longitude={coord.longitude} />
+					<div className="opacity-95 text-white py-10 px-6 flex flex-col">
 						<Time />
 						<div>
 							<p>
