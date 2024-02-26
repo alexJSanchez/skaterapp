@@ -12,7 +12,7 @@ function Home() {
 		temperature: "0.00",
 		wind: "0.00",
 	});
-	const [cordinates, setCoord] = useState({
+	const [coordinates, setCoord] = useState({
 		latitude: 40.82741480009463,
 		longitude: -73.92286018670906,
 	});
@@ -73,10 +73,14 @@ function Home() {
 						</div>
 						<p className="inter-text text-[14px] mt-3">Ada Lovelace</p>
 					</div>
-					<SpotLocator
-						Latitude={cordinates.latitude}
-						Longitude={cordinates.longitude}
-					/>
+					{!isUpsideDown ? (
+						<SpotLocator
+							Latitude={coordinates.latitude}
+							Longitude={coordinates.longitude}
+						/>
+					) : (
+						<div></div>
+					)}
 					<div className="opacity-95 text-white py-10 px-6 flex flex-col">
 						<Time />
 						<div>
