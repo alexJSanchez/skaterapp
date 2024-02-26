@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+.custom-dotted-border {
+	border-style: solid;
+	border-width: 1px;
+	border-image-source: url("./assets/skateboard-icon.png");
+	border-image-slice: 1 fill;
+	border-image-repeat: repeat;
+}
+
 .inter-text {
 	font-family: "Inter", sans-serif;
 }

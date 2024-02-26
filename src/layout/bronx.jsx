@@ -1,7 +1,10 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 import spots from "../Data";
 import starIcon from "../assets/star_fill_icon.png";
 import gripTape from "../assets/griptape.jpg";
+import skateIcon from "../assets/skateboard-icon.png";
+import ImageSlider from "../component/slider";
 function Bronx() {
 	useEffect(() => {
 		console.log("initial render:", spots.Bronx[0]);
@@ -10,37 +13,48 @@ function Bronx() {
 		return <div>Loading...</div>; // You can replace this with any loading indicator
 	}
 	return (
-		<div
-			className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 text-center p-4 "
-			style={{ backgroundImage: `url(${gripTape})` }}
-		>
-			{spots.Bronx.map((res, index) => (
-				<div
-					key={index}
-					className="flex flex-col items-center rounded-lg shadow-md p-4 bg-white "
-				>
-					<h1 className="text-2xl font-bold text-gray-800 uppercase">
-						{res.name}
-					</h1>
-					<div className="flex justify-center">
-						{[...Array(res.bust.level)].map((_, index) => (
-							<img
-								className="w-5"
-								key={index}
-								src={`${starIcon}`}
-								alt={`Image ${index + 1}`}
-							/>
-						))}
+		<>
+			<Link to="/">back home</Link>
+			<div
+				className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 text-center p-4 "
+				style={{ backgroundImage: `url(${gripTape})` }}
+			>
+				{spots.Bronx.map((res, index) => (
+					<div
+						key={index}
+						className="flex flex-col items-center rounded-lg shadow-md p-4 bg-white "
+					>
+						<h1 className="text-2xl font-bold text-gray-800 uppercase">
+							{res.name}
+						</h1>
+						<div className="flex justify-center">
+							{[...Array(res.bust.level)].map((_, index) => (
+								<img
+									className="w-5"
+									key={index}
+									src={`${starIcon}`}
+									alt={`Image ${index + 1}`}
+								/>
+							))}
+						</div>
+						<h2 className="text-lg font-semibold text-gray-700">Wanted</h2>
+						<p className="text-gray-600 font-bold text-sm">
+							Status: {res.bust.status}
+						</p>
+						<img src={skateIcon} />
+						<p className=" text-gray-700 font-bold">{res.summary}</p>
+						<div
+							style={{
+								borderStyle: "dotted",
+								borderWidth: "1px",
+							}}
+							className="w-full my-4"
+						></div>
+						<ImageSlider images={res.images} />
 					</div>
-					<h2 className="text-lg font-semibold text-gray-700">Wanted</h2>
-					<p className="text-gray-600 font-bold text-sm">
-						Status: {res.bust.status}
-					</p>
-					<p className="mt-2 text-gray-700 font-bold">{res.summary}</p>
-					<img src={res.images[0]} />
-				</div>
-			))}
-		</div>
+				))}
+			</div>
+		</>
 	);
 }
 
