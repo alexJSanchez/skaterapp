@@ -4,15 +4,17 @@ import iconRefresh from "../assets/desktop/icon-refresh.svg";
 import Nav from "../component/nav";
 import Time from "../component/time";
 import SpotLocator from "../component/spotLocator";
+import spots from "../Data";
 
 function Home() {
+	console.log(spots);
 	const [weather, setWeather] = useState({
 		temperature: "0.00",
 		wind: "0.00",
 	});
 	const [cordinates, setCoord] = useState({
-		latitude: 40.79732336023169,
-		longitude: -73.94613107246796,
+		latitude: 40.82741480009463,
+		longitude: -73.92286018670906,
 	});
 	const [city, setCity] = useState("City");
 	const [state, setLocal] = useState("State");
@@ -31,7 +33,6 @@ function Home() {
 		// 		fetch(geoApiUrl)
 		// 			.then((res) => res.json())
 		// 			.then((data) => {
-		// 				console.log(data);
 		// 				setCity(data.city);
 		// 				setLocal(data.locality);
 		// 				setCoord({ latitude: latitude, longitude: longitude });
@@ -42,7 +43,6 @@ function Home() {
 		// 			.then((res) => res.json())
 		// 			.then((data) => {
 		// 				setWeather({ temperature: data.main.temp, wind: data.wind.speed });
-		// 				console.log(data);
 		// 			});
 		// 	});
 		// } else {
