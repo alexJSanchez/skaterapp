@@ -1,9 +1,14 @@
-import React from "react";
-import { useEffect, useState } from "react";
-import { calculateDistance, deg2rad } from "../utils/distanceTracker";
+import {
+	calculateDistance,
+	findClosestLocation,
+} from "../utils/distanceTracker";
+
+import location from "../Coord.js";
 
 function SpotLocator({ Latitude, Longitude }) {
-	console.log(Latitude, Longitude);
+	const closestLocation = findClosestLocation(Latitude, Longitude, location);
+	console.log("Closest location:", closestLocation);
+
 	return <div></div>;
 }
 

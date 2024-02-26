@@ -1,18 +1,33 @@
 export function calculateDistance(lat1, lon1, lat2, lon2) {
 	const R = 6371; // Radius of the earth in km
-	const dLat = deg2rad(lat2 - lat1);
-	const dLon = deg2rad(lon2 - lon1);
+	const dLat = (lat2 - lat1) * (Math.PI / 180); // deg2rad below
+	const dLon = (lon2 - lon1) * (Math.PI / 180);
 	const a =
-		Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-		Math.cos(deg2rad(lat1)) *
-			Math.cos(deg2rad(lat2)) *
-			Math.sin(dLon / 2) *
-			Math.sin(dLon / 2);
-	const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-	const d = R * c; // Distance in km
-	return d;
-}
+		0.5 -
+		Math.cos(dLat) / 2 +
+		(Math.cos(lat1 * (Math.PI / 180)) *
+			Math.cos(lat2 * (Math.PI / 180)) *
+			(1 - Math.cos(dLon))) /
+			2;
 
-export function deg2rad(deg) {
-	return deg * (Math.PI / 180);
+	return R * 2 * Math.asin(Math.sqrt(a)); // Distance in km
+}
+export function findClosestLocation(userLat, userLon, locations) {
+	let closestLocation = null;
+	let closestDistance = Infinity;
+
+	locations.forEach((location) => {
+		const distance = calculateDistance(
+			userLat,
+			userLon,
+			location.latitude,
+			location.longitude
+		);
+		if (distance < closestDistance) {
+			closestDistance = distance;
+			closestLocation = location;
+		}
+	});
+
+	return closestLocation;
 }
