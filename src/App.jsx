@@ -2,6 +2,8 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./layout/home";
 import Bronx from "./layout/bronx";
+import Brooklyn from "./layout/brooklyn";
+import Queens from "./layout/queens";
 
 function App() {
 	return (
@@ -9,6 +11,8 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/bronx" element={<Bronx />} />
+				<Route path="/brooklyn" element={<Brooklyn />} />
+				<Route path="/queens" element={<Queens />} />
 			</Routes>
 		</BrowserRouter>
 	);

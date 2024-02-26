@@ -59,6 +59,14 @@ export default function Nav() {
 									Brooklyn
 								</Link>
 							</li>
+							<li>
+								<Link
+									to="/queens"
+									style={{ textDecoration: "none", color: "lightblue" }}
+								>
+									Queens
+								</Link>
+							</li>
 						</ul>
 					</div>
 				)}
