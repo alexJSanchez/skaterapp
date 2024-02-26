@@ -1,9 +1,14 @@
-import { useState, useEffect } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./layout/home";
 import Bronx from "./layout/bronx";
 import Brooklyn from "./layout/brooklyn";
+import FinancialDistrict from "./layout/financialDistrict";
+import LowerEastSide from "./layout/lowerEastSide";
+import MidTown from "./layout/midTown";
 import Queens from "./layout/queens";
+import StatenIsland from "./layout/statenIsland";
+import UptownHarlem from "./layout/uptownHarlem";
+import WestVillageTribeca from "./layout/westVillageTribeca";
 
 function App() {
 	return (
@@ -12,7 +17,13 @@ function App() {
 				<Route path="/" element={<Home />} />
 				<Route path="/bronx" element={<Bronx />} />
 				<Route path="/brooklyn" element={<Brooklyn />} />
+				<Route path="/financialDistrict" element={<FinancialDistrict />} />
+				<Route path="/lowerEastSide" element={<LowerEastSide />} />
 				<Route path="/queens" element={<Queens />} />
+				<Route path="/midTown" element={<MidTown />} />
+				<Route path="/statenIsland" element={<StatenIsland />} />
+				<Route path="/uptownHarlem" element={<UptownHarlem />} />
+				<Route path="/westVillageTribeca" element={<WestVillageTribeca />} />
 			</Routes>
 		</BrowserRouter>
 	);

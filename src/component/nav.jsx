@@ -1,6 +1,7 @@
 import { useState } from "react";
 import menu from "../assets/menu_icon.png";
 import { Link } from "react-router-dom";
+import gripTape from "../assets/griptape.jpg";
 
 export default function Nav() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -10,24 +11,18 @@ export default function Nav() {
 	};
 	return (
 		<div>
-			<div
-				className="dropdown"
-				style={{
-					display: "flex",
-					justifyContent: "center",
-				}}
-			>
+			<div className="dropdown" style={{}}>
 				<div onClick={toggleMenu} className="dropdown-toggle">
-					<img src={menu} style={{ width: "30px" }}></img>
+					<img src={menu} style={{ width: "70px" }}></img>
 				</div>
 				{isOpen && (
 					<div
-						className="dropdown-menu"
+						className="dropdown-menu rounded-lg shadow-md p-4 bg-white"
 						style={{
 							position: "absolute",
 							textAlign: "center",
 							width: "100%",
-							top: "20%",
+							top: "40%",
 							left: "50%",
 							transform: "translate(-50%, -50%)",
 							zIndex: "1000",
@@ -36,11 +31,14 @@ export default function Nav() {
 						<ul
 							style={{
 								color: "lightblue",
-								backgroundColor: "#453823",
 								listStyle: "none",
 								padding: "10px 0px",
 								fontSize: "25px",
+								display: "flex",
+								flexDirection: "column",
+								gap: "10px",
 							}}
+							className="bg-[url('./assets/griptape.jpg')]"
 							onClick={() => setIsOpen(false)}
 						>
 							<li>
@@ -61,10 +59,58 @@ export default function Nav() {
 							</li>
 							<li>
 								<Link
+									to="/financialDistrict"
+									style={{ textDecoration: "none", color: "lightblue" }}
+								>
+									financialDistrict
+								</Link>
+							</li>
+							<li>
+								<Link
+									to="/lowerEastSide"
+									style={{ textDecoration: "none", color: "lightblue" }}
+								>
+									lowerEastSide
+								</Link>
+							</li>
+							<li>
+								<Link
+									to="/midTown"
+									style={{ textDecoration: "none", color: "lightblue" }}
+								>
+									midTown
+								</Link>
+							</li>
+							<li>
+								<Link
 									to="/queens"
 									style={{ textDecoration: "none", color: "lightblue" }}
 								>
 									Queens
+								</Link>
+							</li>
+							<li>
+								<Link
+									to="/statenIsland"
+									style={{ textDecoration: "none", color: "lightblue" }}
+								>
+									Stanten Island
+								</Link>
+							</li>
+							<li>
+								<Link
+									to="/uptownHarlem"
+									style={{ textDecoration: "none", color: "lightblue" }}
+								>
+									Uptown Harlem
+								</Link>
+							</li>
+							<li>
+								<Link
+									to="/westVillageTribeca"
+									style={{ textDecoration: "none", color: "lightblue" }}
+								>
+									West Village Tribeca
 								</Link>
 							</li>
 						</ul>

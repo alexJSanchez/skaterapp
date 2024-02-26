@@ -5,7 +5,7 @@ import starIcon from "../assets/star_fill_icon.png";
 import gripTape from "../assets/griptape.jpg";
 import skateIcon from "../assets/skateboard-icon.png";
 import ImageSlider from "../component/slider";
-function Bronx() {
+function Queens() {
 	useEffect(() => {
 		console.log("initial render:", spots.Queens[0]);
 	}, []);
@@ -58,4 +58,4 @@ function Bronx() {
 	);
 }
 
-export default Bronx;
+export default Queens;

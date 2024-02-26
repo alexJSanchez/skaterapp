@@ -3,6 +3,7 @@ import arrowDown from "../assets/desktop/icon-arrow-down.svg";
 import iconRefresh from "../assets/desktop/icon-refresh.svg";
 import Nav from "../component/nav";
 import Time from "../component/time";
+import { calculateDistance, deg2rad } from "../utils/";
 
 function Home() {
 	const [weather, setWeather] = useState({
@@ -17,6 +18,7 @@ function Home() {
 	const handleImageClick = () => {
 		setIsUpsideDown(!isUpsideDown);
 	};
+
 	useEffect(() => {
 		// if ("geolocation" in navigator) {
 		// 	navigator.geolocation.getCurrentPosition((position) => {
@@ -41,6 +43,19 @@ function Home() {
 		// } else {
 		// 	console.log("Please accept location permission");
 		// }
+
+		locations.forEach((location) => {
+			const distance = calculateDistance(
+				clientLatitude,
+				clientLongitude,
+				location.latitude,
+				location.longitude
+			);
+			if (distance < closestDistance) {
+				closestDistance = distance;
+				closestLocation = location;
+			}
+		});
 	}, []);
 
 	return (
@@ -49,7 +64,7 @@ function Home() {
 				{/* Overlay with opacity */}
 				<div className="absolute inset-0 bg-black opacity-50"></div>
 				{/* Content */}
-				<div className="relative text-white gap-4 flex flex-col justify-between h-full">
+				<div className="relative text-white gap-4 flex flex-col  justify-between h-full">
 					<div className=" py-10 px-6 ">
 						<div className="flex">
 							<p className="opacity-70 text-[13px] text-white">

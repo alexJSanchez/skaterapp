@@ -5,11 +5,11 @@ import starIcon from "../assets/star_fill_icon.png";
 import gripTape from "../assets/griptape.jpg";
 import skateIcon from "../assets/skateboard-icon.png";
 import ImageSlider from "../component/slider";
-function Brooklyn() {
+function LowerEastSide() {
 	useEffect(() => {
-		console.log("initial render:", spots.Brooklyn[0]);
+		console.log("initial render:", spots.LowerEastSide[0]);
 	}, []);
-	if (!spots.Brooklyn) {
+	if (!spots.LowerEastSide) {
 		return <div>Loading...</div>; // You can replace this with any loading indicator
 	}
 	return (
@@ -19,7 +19,7 @@ function Brooklyn() {
 				className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 text-center p-4 "
 				style={{ backgroundImage: `url(${gripTape})` }}
 			>
-				{spots.Brooklyn.map((res, index) => (
+				{spots.LowerEastSide.map((res, index) => (
 					<div
 						key={index}
 						className="flex flex-col items-center rounded-lg shadow-md p-4 bg-white "
@@ -58,4 +58,4 @@ function Brooklyn() {
 	);
 }
 
-export default Brooklyn;
+export default LowerEastSide;
