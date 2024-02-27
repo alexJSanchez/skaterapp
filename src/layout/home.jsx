@@ -7,7 +7,6 @@ import SpotLocator from "../component/spotLocator";
 import spots from "../Data";
 
 function Home() {
-	console.log(spots);
 	const [weather, setWeather] = useState({
 		temperature: "0.00",
 		wind: "0.00",
@@ -115,7 +114,7 @@ function Home() {
 								<h4 className="text-nowrap">Trick of the day</h4>
 								<h4>nollie flip</h4>
 							</div>
-							<div className="flex justify-between  px-10 py-2">
+							<div className="flex justify-between px-10 py-1">
 								<h4 className="text-nowrap ">Inspiration</h4>
 								<a>Link to vid</a>
 							</div>
@@ -123,7 +122,7 @@ function Home() {
 								<h4 className="text-nowrap">Spot Check</h4>
 								<h4>SpotName</h4>
 							</div>
-							<div className="flex justify-between px-10 pb-14 pt-2">
+							<div className="flex justify-between px-10 pb-6 pt-2">
 								<h4 className="text-nowrap">Upcoming event</h4>
 								<h4>
 									{state},{city}
