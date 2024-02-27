@@ -10,6 +10,7 @@ import Queens from "./layout/queens";
 import StatenIsland from "./layout/statenIsland";
 import UptownHarlem from "./layout/uptownHarlem";
 import WestVillageTribeca from "./layout/westVillageTribeca";
+import Loading from "./component/loading";
 
 function App() {
 	const [weather, setWeather] = useState({
@@ -63,34 +64,40 @@ function App() {
 		}
 	}, []);
 
-	if (loading) {
-		return <div>Loading...</div>; // Render loading indicator while fetching data
-	}
 	return (
-		<BrowserRouter>
-			<Routes>
-				<Route
-					path="/"
-					element={
-						<Home
-							Weather={weather}
-							City={city}
-							State={state}
-							Coord={coordinates}
+		<>
+			{loading ? (
+				<Loading />
+			) : (
+				<BrowserRouter>
+					<Routes>
+						<Route
+							path="/"
+							element={
+								<Home
+									Weather={weather}
+									City={city}
+									State={state}
+									Coord={coordinates}
+								/>
+							}
 						/>
-					}
-				/>
-				<Route path="/bronx" element={<Bronx />} />
-				<Route path="/brooklyn" element={<Brooklyn />} />
-				<Route path="/financialDistrict" element={<FinancialDistrict />} />
-				<Route path="/lowerEastSide" element={<LowerEastSide />} />
-				<Route path="/queens" element={<Queens />} />
-				<Route path="/midTown" element={<MidTown />} />
-				<Route path="/statenIsland" element={<StatenIsland />} />
-				<Route path="/uptownHarlem" element={<UptownHarlem />} />
-				<Route path="/westVillageTribeca" element={<WestVillageTribeca />} />
-			</Routes>
-		</BrowserRouter>
+						<Route path="/bronx" element={<Home />} />
+						<Route path="/brooklyn" element={<Brooklyn />} />
+						<Route path="/financialDistrict" element={<FinancialDistrict />} />
+						<Route path="/lowerEastSide" element={<LowerEastSide />} />
+						<Route path="/queens" element={<Queens />} />
+						<Route path="/midTown" element={<MidTown />} />
+						<Route path="/statenIsland" element={<StatenIsland />} />
+						<Route path="/uptownHarlem" element={<UptownHarlem />} />
+						<Route
+							path="/westVillageTribeca"
+							element={<WestVillageTribeca />}
+						/>
+					</Routes>
+				</BrowserRouter>
+			)}
+		</>
 	);
 }
 
