@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
 import Home from "./layout/home";
 import Bronx from "./layout/bronx";
 import Brooklyn from "./layout/brooklyn";
@@ -11,6 +12,42 @@ import UptownHarlem from "./layout/uptownHarlem";
 import WestVillageTribeca from "./layout/westVillageTribeca";
 
 function App() {
+	useEffect(() => {
+		if ("geolocation" in navigator) {
+			navigator.geolocation.getCurrentPosition((position) => {
+				const { latitude, longitude } = position.coords;
+				const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
+				fetch(geoApiUrl)
+					.then((res) => res.json())
+					.then((data) => {
+						localStorage.setItem("city", data.city);
+						localStorage.setItem("local", data.locality);
+						localStorage.setItem(
+							"coord",
+							JSON.stringify({
+								latitude: data.latitude,
+								longitude: data.longitude,
+							})
+						);
+					});
+				const apiKey = "f5d7f601d3073301b1ec26e017b93446";
+				const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
+				fetch(weatherUrl)
+					.then((res) => res.json())
+					.then((data) => {
+						localStorage.setItem(
+							"weather",
+							JSON.stringify({
+								temperature: data.main.temp,
+								wind: data.wind.speed,
+							})
+						);
+					});
+			});
+		} else {
+			console.log("Please accept location permission");
+		}
+	}, []);
 	return (
 		<BrowserRouter>
 			<Routes>

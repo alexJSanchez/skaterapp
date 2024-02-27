@@ -24,31 +24,6 @@ function Home() {
 		setIsUpsideDown(!isUpsideDown);
 	};
 
-	useEffect(() => {
-		// if ("geolocation" in navigator) {
-		// 	navigator.geolocation.getCurrentPosition((position) => {
-		// 		const { latitude, longitude } = position.coords;
-		// 		const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
-		// 		fetch(geoApiUrl)
-		// 			.then((res) => res.json())
-		// 			.then((data) => {
-		// 				setCity(data.city);
-		// 				setLocal(data.locality);
-		// 				setCoord({ latitude: latitude, longitude: longitude });
-		// 			});
-		// 		const apiKey = "f5d7f601d3073301b1ec26e017b93446";
-		// 		const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
-		// 		fetch(weatherUrl)
-		// 			.then((res) => res.json())
-		// 			.then((data) => {
-		// 				setWeather({ temperature: data.main.temp, wind: data.wind.speed });
-		// 			});
-		// 	});
-		// } else {
-		// 	console.log("Please accept location permission");
-		// }
-	}, []);
-
 	return (
 		<>
 			<div className="relative bg-[url('./assets/mobile/bg-image-daytime.jpg')] h-screen bg-cover">
