@@ -6,24 +6,23 @@ import Time from "../component/time";
 import SpotLocator from "../component/spotLocator";
 import spots from "../Data";
 
-function Home() {
-	const [weather, setWeather] = useState({
-		temperature: "0.00",
-		wind: "0.00",
-	});
-	const [coordinates, setCoord] = useState({
-		latitude: 40.82741480009463,
-		longitude: -73.92286018670906,
-	});
-	const [city, setCity] = useState("City");
-	const [state, setLocal] = useState("State");
+function Home({ Weather, Coord, City, State }) {
+	const [weather, setWeather] = useState(Weather);
+	const [coordinates, setCoord] = useState(Coord);
+	const [city, setCity] = useState(City);
+	const [state, setLocal] = useState(State);
 
 	const [isUpsideDown, setIsUpsideDown] = useState(false);
 
 	const handleImageClick = () => {
 		setIsUpsideDown(!isUpsideDown);
 	};
-
+	useEffect(() => {
+		setCity(City);
+		setCoord(Coord);
+		setLocal(State);
+		setWeather(Weather);
+	}, []);
 	return (
 		<>
 			<div className="relative bg-[url('./assets/mobile/bg-image-daytime.jpg')] h-screen bg-cover">

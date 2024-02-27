@@ -11,7 +11,6 @@ import location from "../Coord.js";
 
 function SpotLocator({ Latitude, Longitude, IsUpsideDown }) {
 	const closestLocation = findClosestLocation(Latitude, Longitude, location);
-	console.log("Closest location:", closestLocation);
 	const spotInfo = findSpotByName(allSpots, closestLocation.name);
 	if (!closestLocation) {
 		return <div>....loading</div>;
