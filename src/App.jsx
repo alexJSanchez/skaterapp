@@ -27,40 +27,36 @@ function App() {
 
 	useEffect(() => {
 		setLoading(true); // Set loading to true when starting geolocation lookup
-		if ("geolocation" in navigator) {
-			navigator.geolocation.getCurrentPosition(
-				(position) => {
-					const { latitude, longitude } = position.coords;
-					const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
-					fetch(geoApiUrl)
-						.then((res) => res.json())
-						.then((data) => {
-							setCity(data.city);
-							setLocal(data.locality);
-							setCoord(position.coords); // Use position.coords directly
-						});
-					const apiKey = "f5d7f601d3073301b1ec26e017b93446";
-					const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
-					fetch(weatherUrl)
-						.then((res) => res.json())
-						.then((data) => {
-							console.log(data);
-							setWeather({
-								temperature: data.main.temp,
-								wind: data.wind.speed,
-							});
-							setLoading(false); // Set loading to false when data is fetched
-						});
-				},
-				(error) => {
-					console.error("Error fetching geolocation:", error);
-					setLoading(false); // Set loading to false if there's an error
-				}
-			);
-		} else {
-			console.log("Please accept location permission");
-			setLoading(false); // Set loading to false if geolocation is not supported
-		}
+		const fetchData = async () => {
+			try {
+				const position = await new Promise((resolve, reject) => {
+					navigator.geolocation.getCurrentPosition(resolve, reject);
+				});
+				const { latitude, longitude } = position.coords;
+				const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
+				const geoResponse = await fetch(geoApiUrl);
+				const geoData = await geoResponse.json();
+				setCity(geoData.city);
+				setLocal(geoData.locality);
+				setCoord(position.coords); // Use position.coords directly
+
+				const apiKey = "f5d7f601d3073301b1ec26e017b93446";
+				const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
+				const weatherResponse = await fetch(weatherUrl);
+				const weatherData = await weatherResponse.json();
+				console.log(weatherData);
+				setWeather({
+					temperature: weatherData.main.temp,
+					wind: weatherData.wind.speed,
+				});
+				setLoading(false); // Set loading to false when data is fetched
+			} catch (error) {
+				console.error("Error fetching geolocation:", error);
+				setLoading(false); // Set loading to false if there's an error
+			}
+		};
+
+		fetchData();
 	}, []);
 
 	return (
