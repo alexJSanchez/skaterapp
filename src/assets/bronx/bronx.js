@@ -1,4 +1,4 @@
-import BronxCourthouse0 from "../bronx/BronxCourthouse/0,jpg";
+import BronxCourthouse0 from "./BronxCourthouse/0,jpg";
 import BronxCourthouse1 from "./BronxCourthouse/1.jpg";
 import BronxCourthouse2 from "./BronxCourthouse/2.jpg";
 import BronxCourthouse3 from "./BronxCourthouse/3.jpg";
