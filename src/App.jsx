@@ -30,6 +30,9 @@ function App() {
 		if ("geolocation" in navigator) {
 			navigator.geolocation.getCurrentPosition(
 				(position) => {
+					if (!position) {
+						console.log("no gps");
+					}
 					const { latitude, longitude } = position.coords;
 					const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
 					fetch(geoApiUrl)
@@ -61,7 +64,7 @@ function App() {
 			console.log("Please accept location permission");
 			setLoading(false); // Set loading to false if geolocation is not supported
 		}
-	}, []);
+	}, [city]);
 
 	return (
 		<>
