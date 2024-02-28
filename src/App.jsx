@@ -71,6 +71,7 @@ function App() {
 				console.log("Please accept location permission");
 				setLoading(false); // Set loading to false if geolocation is not supported
 			}
+		} else {
 		}
 	}, []);
 
