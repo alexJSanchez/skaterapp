@@ -50,6 +50,9 @@ function App() {
 								wind: data.wind.speed,
 							});
 							setLoading(false); // Set loading to false when data is fetched
+							localStorage.setItem("DataStorage", {
+								name: "this name here",
+							});
 						});
 				},
 				(error) => {
@@ -61,9 +64,6 @@ function App() {
 			console.log("Please accept location permission");
 			setLoading(false); // Set loading to false if geolocation is not supported
 		}
-		localStorage.setItem("DataStorage", {
-			name: "this name here",
-		});
 	}, []);
 
 	return (
