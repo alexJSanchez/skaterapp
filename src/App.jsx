@@ -82,7 +82,7 @@ function App() {
 								/>
 							}
 						/>
-						<Route path="/bronx" element={<Home />} />
+						<Route path="/bronx" element={<Bronx />} />
 						<Route path="/brooklyn" element={<Brooklyn />} />
 						<Route path="/financialDistrict" element={<FinancialDistrict />} />
 						<Route path="/lowerEastSide" element={<LowerEastSide />} />

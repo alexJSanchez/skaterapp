@@ -9,7 +9,6 @@ import BatteryPark7 from "./BatteryPark/7.jpg";
 import BatteryPark8 from "./BatteryPark/8.jpg";
 import BatteryPark9 from "./BatteryPark/9.jpg";
 import BatteryPark10 from "./BatteryPark/10.jpg";
-
 import BatteryParkCity0 from "./BatteryParkCity/0.jpg";
 import BatteryParkCity1 from "./BatteryParkCity/1.jpg";
 import BatteryParkCity2 from "./BatteryParkCity/2.jpg";
