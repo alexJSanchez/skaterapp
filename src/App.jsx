@@ -28,7 +28,7 @@ function App() {
 	useEffect(() => {
 		setLoading(true); // Set loading to true when starting geolocation lookup
 		const storedData = JSON.parse(localStorage.getItem("DataStorage"));
-		if (!storedData || shouldUpdateData(storedData)) {
+		if (!storedData) {
 			if ("geolocation" in navigator) {
 				navigator.geolocation.getCurrentPosition(
 					(position) => {
@@ -90,10 +90,6 @@ function App() {
 	}, []);
 
 	// Helper function to determine if stored data needs to be updated
-	const shouldUpdateData = (storedData) => {
-		// Add your logic to determine if data needs to be updated
-		return false; // Return true if data needs to be updated
-	};
 
 	return (
 		<>
