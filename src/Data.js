@@ -1,12 +1,12 @@
 import Bronx from "../public/bronx/bronx.js";
-import Brooklyn from "./assets/brooklyn/brooklyn.js";
-import LowerEastSide from "./assets/lowerEastSideSpots/lowerEastSideSpotsData";
-import FinancialDistrict from "./assets/financialDistrictSpots/financialDistrictSpotsData";
-import WestVillageTribeca from "./assets/westVillageTribecaSpots/westVillageTribecaData.js";
-import Midtown from "./assets/midTown/midTownData.js";
-import Queens from "./assets/queens/queensData.js";
-import StatenIsland from "./assets/statenIsland/statenIslandData.js";
-import UptownHarlem from "./assets/uptownHarlem/uptownHarlemData.js";
+import Brooklyn from "../public/brooklyn/brooklyn.js";
+import LowerEastSide from "../public/lowerEastSideSpots/lowerEastSideSpotsData";
+import FinancialDistrict from "../public/financialDistrictSpots/financialDistrictSpotsData";
+import WestVillageTribeca from "../public/westVillageTribecaSpots/westVillageTribecaData.js";
+import Midtown from "../public/midTown/midTownData.js";
+import Queens from "../public/queens/queensData.js";
+import StatenIsland from "../public/statenIsland/statenIslandData.js";
+import UptownHarlem from "../public/uptownHarlem/uptownHarlemData.js";
 
 const spots = {
 	Bronx: Bronx,
