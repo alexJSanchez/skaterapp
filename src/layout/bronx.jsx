@@ -7,7 +7,7 @@ import skateIcon from "../assets/skateboard-icon.png";
 import ImageSlider from "../component/slider";
 function Bronx() {
 	useEffect(() => {
-		console.log("initial render:", spots.Bronx[0]);
+		console.log("initial render:", spots);
 	}, []);
 	if (!spots.Bronx) {
 		return <div>Loading...</div>; // You can replace this with any loading indicator

@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import arrowDown from "../assets/desktop/icon-arrow-down.svg";
-import iconRefresh from "../assets/desktop/icon-refresh.svg";
 import Nav from "../component/nav";
 import Time from "../component/time";
 import SpotLocator from "../component/spotLocator";
-import spots from "../Data";
 
 function Home({ Weather, Coord, City, State }) {
 	const [weather, setWeather] = useState(Weather);
@@ -46,6 +44,7 @@ function Home({ Weather, Coord, City, State }) {
 						</div>
 						<p className="inter-text text-[14px] mt-3">Ada Lovelace</p>
 					</div>
+
 					{!isUpsideDown ? (
 						<SpotLocator
 							Latitude={coordinates.latitude}
@@ -98,9 +97,7 @@ function Home({ Weather, Coord, City, State }) {
 							</div>
 							<div className="flex justify-between px-10 pb-6 pt-2">
 								<h4 className="text-nowrap">Upcoming event</h4>
-								<h4>
-									{state},{city}
-								</h4>
+								<h4>event name</h4>
 							</div>
 						</div>
 					)}

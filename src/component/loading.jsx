@@ -1,4 +1,3 @@
-import React from "react";
 import kickflipSamich from "../assets/kickflipSamich.png";
 import griptape from "../assets/griptape.jpg";
 function Loading() {
