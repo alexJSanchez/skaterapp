@@ -57,6 +57,9 @@ function App() {
 					setLoading(false); // Set loading to false if there's an error
 				}
 			);
+			localStorage.setItem("DataStorage", {
+				name: "this name here",
+			});
 		} else {
 			console.log("Please accept location permission");
 			setLoading(false); // Set loading to false if geolocation is not supported
