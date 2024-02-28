@@ -20,7 +20,7 @@ function Home({ Weather, Coord, City, State }) {
 		setCoord(Coord);
 		setLocal(State);
 		setWeather(Weather);
-	}, [city]);
+	}, [setCity]);
 	return (
 		<>
 			<div className="relative bg-[url('./assets/mobile/bg-image-daytime.jpg')] h-screen bg-cover">
