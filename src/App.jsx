@@ -39,11 +39,14 @@ function App() {
 								setCity(data.city);
 								setLocal(data.locality);
 								setCoord(position.coords); // Use position.coords directly
-								localStorage.setItem("DataStorage", JSON.stringify({
-									city: data.city,
-									state: data.locality,
-									coord: position.coords,
-								}));
+								localStorage.setItem(
+									"DataStorage",
+									JSON.stringify({
+										city: data.city,
+										state: data.locality,
+										coord: position.coords,
+									})
+								);
 							});
 						const apiKey = "f5d7f601d3073301b1ec26e017b93446";
 						const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
@@ -72,8 +75,8 @@ function App() {
 				setLoading(false); // Set loading to false if geolocation is not supported
 			}
 		} else {
-			console.log(localStorage)
-			setCity(localStorage.)
+			console.log(localStorage.DataStorage);
+			console.log(localStorage.Weather);
 		}
 	}, []);
 
