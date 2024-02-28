@@ -38,14 +38,6 @@ function App() {
 							setCity(data.city);
 							setLocal(data.locality);
 							setCoord(position.coords); // Use position.coords directly
-							localStorage.setItem(
-								"DataStorage",
-								JSON.stringify({
-									city: data.city,
-									state: data.locality,
-									coord: position.coords,
-								})
-							);
 						});
 					const apiKey = "f5d7f601d3073301b1ec26e017b93446";
 					const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
@@ -57,13 +49,6 @@ function App() {
 								temperature: data.main.temp,
 								wind: data.wind.speed,
 							});
-							localStorage.setItem(
-								"Weather",
-								JSON.stringify({
-									temperature: data.main.temp,
-									wind: data.wind.speed,
-								})
-							);
 							setLoading(false); // Set loading to false when data is fetched
 						});
 				},
