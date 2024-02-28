@@ -27,42 +27,50 @@ function App() {
 
 	useEffect(() => {
 		setLoading(true); // Set loading to true when starting geolocation lookup
-		if ("geolocation" in navigator) {
-			navigator.geolocation.getCurrentPosition(
-				(position) => {
-					const { latitude, longitude } = position.coords;
-					const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
-					fetch(geoApiUrl)
-						.then((res) => res.json())
-						.then((data) => {
-							setCity(data.city);
-							setLocal(data.locality);
-							setCoord(position.coords); // Use position.coords directly
-						});
-					const apiKey = "f5d7f601d3073301b1ec26e017b93446";
-					const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
-					fetch(weatherUrl)
-						.then((res) => res.json())
-						.then((data) => {
-							console.log(data);
-							setWeather({
-								temperature: data.main.temp,
-								wind: data.wind.speed,
+		if (!localStorage.getItem("DataStorage")) {
+			if ("geolocation" in navigator) {
+				navigator.geolocation.getCurrentPosition(
+					(position) => {
+						const { latitude, longitude } = position.coords;
+						const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
+						fetch(geoApiUrl)
+							.then((res) => res.json())
+							.then((data) => {
+								setCity(data.city);
+								setLocal(data.locality);
+								setCoord(position.coords); // Use position.coords directly
+								localStorage.setItem("DataStorage", {
+									city: data.city,
+									state: data.locality,
+									coord: position.coords,
+								});
 							});
-							setLoading(false); // Set loading to false when data is fetched
-							localStorage.setItem("DataStorage", {
-								name: "this name here",
+						const apiKey = "f5d7f601d3073301b1ec26e017b93446";
+						const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
+						fetch(weatherUrl)
+							.then((res) => res.json())
+							.then((data) => {
+								console.log(data);
+								setWeather({
+									temperature: data.main.temp,
+									wind: data.wind.speed,
+								});
+								localStorage.setItem("Weather", {
+									temperature: data.main.temp,
+									wind: data.wind.speed,
+								});
+								setLoading(false); // Set loading to false when data is fetched
 							});
-						});
-				},
-				(error) => {
-					console.error("Error fetching geolocation:", error);
-					setLoading(false); // Set loading to false if there's an error
-				}
-			);
-		} else {
-			console.log("Please accept location permission");
-			setLoading(false); // Set loading to false if geolocation is not supported
+					},
+					(error) => {
+						console.error("Error fetching geolocation:", error);
+						setLoading(false); // Set loading to false if there's an error
+					}
+				);
+			} else {
+				console.log("Please accept location permission");
+				setLoading(false); // Set loading to false if geolocation is not supported
+			}
 		}
 	}, []);
 
