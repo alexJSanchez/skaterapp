@@ -27,7 +27,8 @@ function App() {
 
 	useEffect(() => {
 		setLoading(true); // Set loading to true when starting geolocation lookup
-		if (!localStorage.getItem("DataStorage")) {
+		const storedData = JSON.parse(localStorage.getItem("DataStorage"));
+		if (!storedData || shouldUpdateData(storedData)) {
 			if ("geolocation" in navigator) {
 				navigator.geolocation.getCurrentPosition(
 					(position) => {
@@ -58,10 +59,13 @@ function App() {
 									temperature: data.main.temp,
 									wind: data.wind.speed,
 								});
-								localStorage.setItem("Weather", {
-									temperature: data.main.temp,
-									wind: data.wind.speed,
-								});
+								localStorage.setItem(
+									"Weather",
+									JSON.stringify({
+										temperature: data.main.temp,
+										wind: data.wind.speed,
+									})
+								);
 								setLoading(false); // Set loading to false when data is fetched
 							});
 					},
@@ -75,10 +79,21 @@ function App() {
 				setLoading(false); // Set loading to false if geolocation is not supported
 			}
 		} else {
-			console.log(localStorage.DataStorage);
-			console.log(localStorage.Weather);
+			console.log(storedData);
+			console.log(JSON.parse(localStorage.getItem("Weather")));
+			setCity(storedData.city);
+			setLocal(storedData.state);
+			setCoord(storedData.coord);
+			setWeather(JSON.parse(localStorage.getItem("Weather")));
+			setLoading(false); // Set loading to false when data is fetched from localStorage
 		}
 	}, []);
+
+	// Helper function to determine if stored data needs to be updated
+	const shouldUpdateData = (storedData) => {
+		// Add your logic to determine if data needs to be updated
+		return false; // Return true if data needs to be updated
+	};
 
 	return (
 		<>
