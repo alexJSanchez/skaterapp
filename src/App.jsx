@@ -27,69 +27,56 @@ function App() {
 
 	useEffect(() => {
 		setLoading(true); // Set loading to true when starting geolocation lookup
-		const storedData = JSON.parse(localStorage.getItem("DataStorage"));
-		if (!storedData) {
-			if ("geolocation" in navigator) {
-				navigator.geolocation.getCurrentPosition(
-					(position) => {
-						const { latitude, longitude } = position.coords;
-						const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
-						fetch(geoApiUrl)
-							.then((res) => res.json())
-							.then((data) => {
-								setCity(data.city);
-								setLocal(data.locality);
-								setCoord(position.coords); // Use position.coords directly
-								localStorage.setItem(
-									"DataStorage",
-									JSON.stringify({
-										city: data.city,
-										state: data.locality,
-										coord: position.coords,
-									})
-								);
+		if ("geolocation" in navigator) {
+			navigator.geolocation.getCurrentPosition(
+				(position) => {
+					const { latitude, longitude } = position.coords;
+					const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
+					fetch(geoApiUrl)
+						.then((res) => res.json())
+						.then((data) => {
+							setCity(data.city);
+							setLocal(data.locality);
+							setCoord(position.coords); // Use position.coords directly
+							localStorage.setItem(
+								"DataStorage",
+								JSON.stringify({
+									city: data.city,
+									state: data.locality,
+									coord: position.coords,
+								})
+							);
+						});
+					const apiKey = "f5d7f601d3073301b1ec26e017b93446";
+					const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
+					fetch(weatherUrl)
+						.then((res) => res.json())
+						.then((data) => {
+							console.log(data);
+							setWeather({
+								temperature: data.main.temp,
+								wind: data.wind.speed,
 							});
-						const apiKey = "f5d7f601d3073301b1ec26e017b93446";
-						const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
-						fetch(weatherUrl)
-							.then((res) => res.json())
-							.then((data) => {
-								console.log(data);
-								setWeather({
+							localStorage.setItem(
+								"Weather",
+								JSON.stringify({
 									temperature: data.main.temp,
 									wind: data.wind.speed,
-								});
-								localStorage.setItem(
-									"Weather",
-									JSON.stringify({
-										temperature: data.main.temp,
-										wind: data.wind.speed,
-									})
-								);
-								setLoading(false); // Set loading to false when data is fetched
-							});
-					},
-					(error) => {
-						console.error("Error fetching geolocation:", error);
-						setLoading(false); // Set loading to false if there's an error
-					}
-				);
-			} else {
-				console.log("Please accept location permission");
-				setLoading(false); // Set loading to false if geolocation is not supported
-			}
+								})
+							);
+							setLoading(false); // Set loading to false when data is fetched
+						});
+				},
+				(error) => {
+					console.error("Error fetching geolocation:", error);
+					setLoading(false); // Set loading to false if there's an error
+				}
+			);
 		} else {
-			console.log(storedData);
-			console.log(JSON.parse(localStorage.getItem("Weather")));
-			setCity(storedData.city);
-			setLocal(storedData.state);
-			setCoord(storedData.coord);
-			setWeather(JSON.parse(localStorage.getItem("Weather")));
-			setLoading(false); // Set loading to false when data is fetched from localStorage
+			console.log("Please accept location permission");
+			setLoading(false); // Set loading to false if geolocation is not supported
 		}
 	}, []);
-
-	// Helper function to determine if stored data needs to be updated
 
 	return (
 		<>
