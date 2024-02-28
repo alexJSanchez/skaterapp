@@ -1,4 +1,4 @@
-import Bronx from "./assets/bronx/bronx.js";
+import Bronx from "../public/bronx/bronx.js";
 import Brooklyn from "./assets/brooklyn/brooklyn.js";
 import LowerEastSide from "./assets/lowerEastSideSpots/lowerEastSideSpotsData";
 import FinancialDistrict from "./assets/financialDistrictSpots/financialDistrictSpotsData";
