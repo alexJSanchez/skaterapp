@@ -26,6 +26,7 @@ function App() {
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
+		setLoading(true); // Set loading to true when starting geolocation lookup
 		if ("geolocation" in navigator) {
 			navigator.geolocation.getCurrentPosition(
 				(position) => {
@@ -36,16 +37,14 @@ function App() {
 						.then((data) => {
 							setCity(data.city);
 							setLocal(data.locality);
-							setCoord({
-								latitude: latitude,
-								longitude: longitude,
-							});
+							setCoord(position.coords); // Use position.coords directly
 						});
 					const apiKey = "f5d7f601d3073301b1ec26e017b93446";
 					const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 					fetch(weatherUrl)
 						.then((res) => res.json())
 						.then((data) => {
+							console.log(data);
 							setWeather({
 								temperature: data.main.temp,
 								wind: data.wind.speed,
