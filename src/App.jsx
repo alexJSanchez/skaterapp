@@ -17,7 +17,7 @@ function App() {
 		temperature: "0.00",
 		wind: "0.00",
 	});
-	const [coordinates, setCoord] = useState({
+	const [coord, setCoord] = useState({
 		latitude: null,
 		longitude: null,
 	});
@@ -51,12 +51,10 @@ function App() {
 				const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 				const weatherResponse = await fetch(weatherUrl);
 				const weatherData = await weatherResponse.json();
-
 				setWeather({
 					temperature: weatherData.main.temp,
 					wind: weatherData.wind.speed,
 				});
-
 				localStorage.setItem(
 					"weatherData",
 					JSON.stringify({
@@ -70,7 +68,18 @@ function App() {
 				setLoading(false); // Set loading to false if there's an error
 			}
 		};
-
+		const storedWeatherData = localStorage.getItem("weatherData");
+		const storedGeoData = localStorage.getItem("geoData");
+		if (!storedWeatherData || !storedGeoData) {
+			fetchData();
+		} else {
+			setWeather(JSON.parse(storedWeatherData));
+			const parsedGeoData = JSON.parse(storedGeoData);
+			setCity(parsedGeoData.city);
+			setLocal(parsedGeoData.wind);
+			setCoord(parsedGeoData.coord);
+			setLoading(false);
+		}
 		fetchData();
 	}, []);
 
@@ -88,7 +97,7 @@ function App() {
 									Weather={weather}
 									City={city}
 									State={state}
-									Coord={coordinates}
+									Coord={coord}
 								/>
 							}
 						/>
