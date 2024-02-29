@@ -22,7 +22,7 @@ function App() {
 		longitude: null,
 	});
 	const [city, setCity] = useState("City");
-	const [state, setLocal] = useState("State");
+	const [locality, setLocality] = useState("State");
 	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
@@ -37,15 +37,14 @@ function App() {
 				const geoResponse = await fetch(geoApiUrl);
 				const geoData = await geoResponse.json();
 				setCity(geoData.city);
-				setLocal(geoData.locality);
-				setCoord(position.coords); // Use position.coords directly
-				console.log("geoData", geoData);
+				setLocality(geoData.locality);
+				setCoord({ latitude: geoData.latitude, longitude: geoData.longitude }); // Use position.coords directly
 				localStorage.setItem(
 					"geoData",
 					JSON.stringify({
-						city: geoData.city,
-						wind: geoData.locality,
-						coord: position.coords,
+						city: city,
+						locality: locality,
+						coord: { latitude: geoData.latitude, longitude: geoData.longitude },
 					})
 				);
 				const apiKey = "f5d7f601d3073301b1ec26e017b93446";
@@ -71,14 +70,14 @@ function App() {
 		};
 		const storedWeatherData = localStorage.getItem("weatherData");
 		const storedGeoData = localStorage.getItem("geoData");
-		console.log(city, state, weather, storedWeatherData, storedGeoData);
+		console.log(city, locality, weather, storedWeatherData, storedGeoData);
 		if (!storedWeatherData || !storedGeoData) {
 			fetchData();
 		} else {
 			setWeather(JSON.parse(storedWeatherData));
 			const parsedGeoData = JSON.parse(storedGeoData);
 			setCity(parsedGeoData.city);
-			setLocal(parsedGeoData.wind);
+			setLocality(parsedGeoData.locality);
 			setCoord(parsedGeoData.coord);
 			setLoading(false);
 		}
@@ -98,7 +97,7 @@ function App() {
 								<Home
 									Weather={weather}
 									City={city}
-									State={state}
+									State={locality}
 									Coord={coord}
 								/>
 							}
