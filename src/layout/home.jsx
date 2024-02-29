@@ -4,12 +4,7 @@ import Nav from "../component/nav";
 import Time from "../component/time";
 import SpotLocator from "../component/spotLocator";
 
-function Home({ Weather, Coord, City, State }) {
-	const [weather, setWeather] = useState(Weather);
-	const [coordinates, setCoord] = useState(Coord);
-	const [city, setCity] = useState(City);
-	const [state, setLocal] = useState(State);
-
+function Home(props) {
 	const [isUpsideDown, setIsUpsideDown] = useState(false);
 
 	const handleImageClick = () => {
@@ -47,8 +42,8 @@ function Home({ Weather, Coord, City, State }) {
 
 					{!isUpsideDown ? (
 						<SpotLocator
-							Latitude={coordinates.latitude}
-							Longitude={coordinates.longitude}
+							Latitude={props.coord.Latitude}
+							Longitude={Coord.longitude}
 						/>
 					) : (
 						<div></div>

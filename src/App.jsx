@@ -39,6 +39,7 @@ function App() {
 				setCity(geoData.city);
 				setLocal(geoData.locality);
 				setCoord(position.coords); // Use position.coords directly
+				console.log("geoData", geoData);
 				localStorage.setItem(
 					"geoData",
 					JSON.stringify({
@@ -70,6 +71,7 @@ function App() {
 		};
 		const storedWeatherData = localStorage.getItem("weatherData");
 		const storedGeoData = localStorage.getItem("geoData");
+		console.log(city, state, weather, storedWeatherData, storedGeoData);
 		if (!storedWeatherData || !storedGeoData) {
 			fetchData();
 		} else {
