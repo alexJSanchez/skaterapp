@@ -9,6 +9,7 @@ import Popup from "./popup.jsx";
 
 function SpotLocator({ Latitude, Longitude, IsUpsideDown }) {
 	const closestLocation = findClosestLocation(Latitude, Longitude, location);
+
 	const spotInfo = findSpotByName(allSpots, closestLocation.name);
 	const [displayPopup, setDisplayPopup] = useState(false);
 
