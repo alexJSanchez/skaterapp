@@ -16,6 +16,7 @@ function App() {
 	const [weather, setWeather] = useState({
 		temperature: "0.00",
 		wind: "0.00",
+		forcast: "forcast",
 	});
 	const [coord, setCoord] = useState({
 		latitude: null,
@@ -51,15 +52,18 @@ function App() {
 				const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 				const weatherResponse = await fetch(weatherUrl);
 				const weatherData = await weatherResponse.json();
+				console.log(weatherData);
 				setWeather({
 					temperature: weatherData.main.temp,
 					wind: weatherData.wind.speed,
+					forcast: weatherData.weather,
 				});
 				localStorage.setItem(
 					"weatherData",
 					JSON.stringify({
 						temperature: weatherData.main.temp,
 						wind: weatherData.wind.speed,
+						forcast: weatherData.weather,
 					})
 				);
 				setLoading(false); // Set loading to false when data is fetched

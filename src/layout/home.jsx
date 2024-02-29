@@ -5,22 +5,11 @@ import Time from "../component/time";
 import SpotLocator from "../component/spotLocator";
 
 function Home({ Weather, Coord, City, State }) {
-	const [weather, setWeather] = useState(Weather);
-	const [coord, setCoord] = useState(Coord);
-	const [city, setCity] = useState(City);
-	const [state, setLocal] = useState(State);
-
 	const [isUpsideDown, setIsUpsideDown] = useState(false);
 
 	const handleImageClick = () => {
 		setIsUpsideDown(!isUpsideDown);
 	};
-	useEffect(() => {
-		setCity(City);
-		setCoord(Coord);
-		setLocal(State);
-		setWeather(Weather);
-	}, []);
 	return (
 		<>
 			<div className="relative bg-[url('./assets/mobile/bg-image-daytime.jpg')] h-screen bg-cover">
@@ -55,12 +44,14 @@ function Home({ Weather, Coord, City, State }) {
 					)}
 					<div className="opacity-95 text-white py-10 px-6 flex flex-col">
 						<Time />
+
 						<div>
 							<p>
 								{State}, {City}
 							</p>
-							<p>Temp: {weather.temperature} F</p>
-							<p>Wind: {weather.wind} Mph</p>
+							<p>Forcast: {Weather.forcast[0].description}</p>
+							<p>Temp: {Weather.temperature} F</p>
+							<p>Wind: {Weather.wind} Mph</p>
 						</div>
 						<div onClick={handleImageClick} className="mt-[30px]">
 							<button

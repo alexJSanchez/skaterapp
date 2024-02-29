@@ -6,9 +6,6 @@ import gripTape from "../assets/griptape.jpg";
 import skateIcon from "../assets/skateboard-icon.png";
 import ImageSlider from "../component/slider";
 function LowerEastSide() {
-	useEffect(() => {
-		console.log("initial render:", spots.LowerEastSide[0]);
-	}, []);
 	if (!spots.LowerEastSide) {
 		return <div>Loading...</div>; // You can replace this with any loading indicator
 	}
