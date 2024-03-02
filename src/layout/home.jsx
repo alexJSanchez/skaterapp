@@ -9,11 +9,11 @@ import { Link } from "react-router-dom";
 
 function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 	const [isUpsideDown, setIsUpsideDown] = useState(false);
+
 	const spotFound = findSpotByName(allSpots, RandomLocation);
 
 	const [createUrl, setCreateUrl] = useState({
 		name: spotFound.name.replace(/\s+/g, ""),
-		area: spotFound.area,
 		url: spotFound.urlPath,
 	});
 	console.log(RandomLocation, createUrl);
