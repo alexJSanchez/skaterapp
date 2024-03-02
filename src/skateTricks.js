@@ -6,8 +6,7 @@ const trickList = {
 		"varialflip",
 		"varialheel",
 		"treflip",
-		"FSpopshovit",
-		"BSpopshovit",
+		"popshovit",
 		" ",
 	],
 	spins: ["", "180", "360"],
@@ -16,7 +15,8 @@ const trickList = {
 const getTricks = (trickList) => {
 	const randomFlip = Math.floor(Math.random() * trickList.flips.length);
 	const randomSpin = Math.floor(Math.random() * trickList.spins.length);
-	console.log(trickList.flips[randomFlip], trickList.spins[randomSpin]);
+	const randomStance = Math.floor(Math.random() * trickList.stance.length);
+	return `${trickList.stance[randomStance]} ${trickList.spins[randomSpin]} ${trickList.flips[randomFlip]}`;
 };
 
 export { trickList, getTricks };

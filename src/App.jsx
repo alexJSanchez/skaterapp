@@ -19,7 +19,7 @@ function App() {
 		wind: "0.00",
 		forcast: "forcast",
 	});
-	const [trick, setTrick] = useState("kickflip");
+	const [trick, setTrick] = useState(null);
 	const [coord, setCoord] = useState({
 		latitude: null,
 		longitude: null,
@@ -32,7 +32,6 @@ function App() {
 		setLoading(true); // Set loading to true when starting geolocation lookup
 		const fetchData = async () => {
 			try {
-				setTrick(getTricks(trickList));
 				const position = await new Promise((resolve, reject) => {
 					navigator.geolocation.getCurrentPosition(resolve, reject);
 				});
@@ -50,12 +49,6 @@ function App() {
 						city: geoData.city,
 						locality: geoData.locality,
 						coord: { latitude: geoData.latitude, longitude: geoData.longitude },
-					})
-				);
-				localStorage.setItem(
-					"trickData",
-					JSON.stringify({
-						trick: trick,
 					})
 				);
 
@@ -77,7 +70,15 @@ function App() {
 						forcast: weatherData.weather,
 					})
 				);
-
+				const chosenTrick = getTricks(trickList);
+				setTrick(chosenTrick);
+				console.log("trick chosen:", chosenTrick);
+				localStorage.setItem(
+					"trickData",
+					JSON.stringify({
+						trick: chosenTrick,
+					})
+				);
 				setLoading(false); // Set loading to false when data is fetched
 			} catch (error) {
 				console.error("Error fetching geolocation:", error);
@@ -86,21 +87,21 @@ function App() {
 		};
 		const storedWeatherData = localStorage.getItem("weatherData");
 		const storedGeoData = localStorage.getItem("geoData");
-		const storedTrickData = localStorage.getItem("trickData");
+		const storeTrickData = localStorage.getItem("trickData");
 		if (!storedWeatherData || !storedGeoData) {
 			fetchData();
 		} else {
 			setLoading(true);
 			setWeather(JSON.parse(storedWeatherData));
 			const parsedGeoData = JSON.parse(storedGeoData);
-			const parsedTrickData = JSON.parse(storedTrickData);
-			console.log("geo data", parsedGeoData, storedTrickData);
+			const parseStoredData = JSON.parse(storeTrickData);
+			console.log("geo data", parsedGeoData, storeTrickData);
 			setCity(parsedGeoData.city);
 			setLocality(parsedGeoData.State);
 			setLocality(parsedGeoData.locality);
 			setCoord(parsedGeoData.coord);
 			setLoading(false);
-			setTrick(parsedTrickData);
+			setTrick(parseStoredData.trick);
 		}
 	}, []);
 
