@@ -52,6 +52,7 @@ const spots = [
 	{
 		name: "100th Street Bump",
 		area: "Uptown & Harlem",
+		urlPath: "uptownHarlem",
 		summary:
 			"Tyshawn Jones via Hardies. A mellow “bump” over a low bar on smooth ground.",
 		bust: {
@@ -68,6 +69,7 @@ const spots = [
 	{
 		name: "Amsterdam Rail",
 		area: "Uptown & Harlem",
+		urlPath: "uptownHarlem",
 		summary:
 			"Tyshawn Jones via what feels like eons ago… Nine stair round rail with sidewalk runway.",
 		bust: {
@@ -85,6 +87,7 @@ const spots = [
 	{
 		name: "Columbia University",
 		area: "Uptown & Harlem",
+		urlPath: "uptownHarlem",
 		summary:
 			"Yaje Popson via Riddles in Mathematics. There’s a ton on campus, but you get kicked out of most it right away. The main things recognizable from videos are two round ledges running against a wall, over a brick bank. There are rails, steps, etc. all throughout campus, but lurking around will increase your chances of being booted.",
 		bust: {
@@ -112,6 +115,7 @@ const spots = [
 	{
 		name: "Grants Tomb",
 		area: "Uptown & Harlem",
+		urlPath: "uptownHarlem",
 		summary:
 			"Justin Henry via Quasi’s Mother Video. Two ledges over four stairs, and a ledge into a kinked bank.",
 		bust: {
@@ -129,6 +133,7 @@ const spots = [
 	{
 		name: "Jerry Ledge",
 		area: "Uptown & Harlem",
+		urlPath: "uptownHarlem",
 		summary:
 			"Justin Drysen via Jenkem. A cement bench with angle iron on the side of a bank.",
 		bust: {
@@ -146,6 +151,7 @@ const spots = [
 	{
 		name: "Lenox Ledges",
 		area: "Uptown & Harlem",
+		urlPath: "uptownHarlem",
 		summary:
 			"Ishod Wair by Zach Malfa-Kowalski. Five low ledges in a row and a curb.",
 		bust: {
@@ -162,6 +168,7 @@ const spots = [
 	{
 		name: "Marcus Garvey Park",
 		area: "Uptown & Harlem",
+		urlPath: "uptownHarlem",
 		summary:
 			"Shane O’Neill via “Quartersnacks For Nike SB“. Low, round flat rails with no ends on good ground.",
 		bust: {
@@ -183,6 +190,7 @@ const spots = [
 	{
 		name: "Median Ledge",
 		area: "Uptown & Harlem",
+		urlPath: "uptownHarlem",
 		summary:
 			"Jordan Trahan via Tombo. A low median ledge made out of perfect granite. Sort of nerve-racking to skate due to the traffic.",
 		bust: {
@@ -200,6 +208,7 @@ const spots = [
 	{
 		name: "The Monument",
 		area: "Uptown & Harlem",
+		urlPath: "uptownHarlem",
 		summary:
 			"Some curbs on good ground and some benches on bad ground. Popular local spot for people from the Upper West Side.",
 		bust: {
@@ -225,6 +234,7 @@ const spots = [
 	{
 		name: "Q Train Ledge",
 		area: "Uptown & Harlem",
+		urlPath: "uptownHarlem",
 		summary:
 			"Zac Gavin via Blue Couch’s Group Chat. Curved marble ledge on good ground and some other ledges scattered about.",
 		bust: {
@@ -247,6 +257,7 @@ const spots = [
 	{
 		name: "Riverbank State Park",
 		area: "Uptown & Harlem",
+		urlPath: "uptownHarlem",
 		summary:
 			"Antonio Durao via Quartersnacks For Spitfire. Sorta choppy, steep banks with some waxed edges.",
 		bust: {
@@ -270,6 +281,7 @@ const spots = [
 	{
 		name: "Supa Bump",
 		area: "Uptown & Harlem",
+		urlPath: "uptownHarlem",
 		summary:
 			"Danny Supa via EST 3. Hard to skate bump in the middle of a playground. Can’t skate it in the summer because it becomes a fountain.",
 		bust: {
@@ -287,6 +299,7 @@ const spots = [
 	{
 		name: "T.F. North",
 		area: "Uptown & Harlem",
+		urlPath: "uptownHarlem",
 		summary:
 			"Gavin Nolan via QS Company iPhone. Low recycled manual pad on basketball court ground. Great spot for warming up or ending the day off.",
 		bust: {

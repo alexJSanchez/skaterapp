@@ -21,6 +21,7 @@ function Queens() {
 			>
 				{spots.Queens.map((res, index) => (
 					<div
+						id={res.name}
 						key={index}
 						className="flex flex-col items-center rounded-lg shadow-md p-4 bg-white "
 					>

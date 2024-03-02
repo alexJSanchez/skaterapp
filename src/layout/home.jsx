@@ -4,10 +4,20 @@ import arrowDown from "../assets/desktop/icon-arrow-down.svg";
 import Nav from "../component/nav";
 import Time from "../component/time";
 import SpotLocator from "../component/spotLocator";
+import { findSpotByName, allSpots } from "../utils/locationDisplay";
+import { Link } from "react-router-dom";
 
 function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 	const [isUpsideDown, setIsUpsideDown] = useState(false);
+	const spotFound = findSpotByName(allSpots, RandomLocation);
 
+	const [createUrl, setCreateUrl] = useState({
+		name: spotFound.name.replace(/\s+/g, ""),
+		area: spotFound.area,
+		url: spotFound.urlPath,
+	});
+	console.log(RandomLocation, createUrl);
+	console.log(createUrl);
 	const handleImageClick = () => {
 		setIsUpsideDown(!isUpsideDown);
 	};
@@ -95,7 +105,9 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 							</div>
 							<div className="flex justify-between px-10 py-2">
 								<h4 className="text-nowrap">Spot Check</h4>
-								<h4>{RandomLocation}</h4>
+								<Link to={`/${createUrl.url}#${createUrl.name}`}>
+									<h4>{RandomLocation}</h4>
+								</Link>
 							</div>
 							<div className="flex justify-between px-10 pb-6 pt-2">
 								<h4 className="text-nowrap">Upcoming event</h4>

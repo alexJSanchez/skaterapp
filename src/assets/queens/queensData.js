@@ -100,6 +100,7 @@ const spots = [
 	{
 		name: "Athens Park",
 		area: "Queens",
+		urlPath: "queens",
 		summary: "A couple of three-stair sets with low ledges running over them.",
 		bust: {
 			level: 1,
@@ -122,6 +123,7 @@ const spots = [
 	{
 		name: "Broadway Park",
 		area: "Queens",
+		urlPath: "queens",
 		summary:
 			"A three-flat-three with ample runway + a three-block and some low ledges.",
 		bust: {
@@ -145,6 +147,7 @@ const spots = [
 	{
 		name: "Cemetery Curbs",
 		area: "Queens",
+		urlPath: "queens",
 		summary:
 			"A bunch of curbs, a random asphalt hip, and a small bank-to-curb on a mellow hill.",
 		bust: {
@@ -172,6 +175,7 @@ const spots = [
 	{
 		name: "Citi Field Benches",
 		area: "Queens",
+		urlPath: "queens",
 		summary:
 			"A couple of benches on decent ground. Usually a back-up plan for when the Globe is a bust or the fountains are on.",
 		bust: {
@@ -194,6 +198,7 @@ const spots = [
 	{
 		name: "Con-Edison Banks",
 		area: "Queens",
+		urlPath: "queens",
 		summary:
 			"Rough brick banks on even rougher ground, and broken glass everywhere. Also, a ledge between two of those banks. Having big wheels would definitely help your cause. Bring wax.",
 		bust: {
@@ -217,6 +222,7 @@ const spots = [
 	{
 		name: "Flushing Meadows Park",
 		area: "Queens",
+		urlPath: "queens",
 		summary:
 			"One of the most famous skate spots in New York. Ledges and a grate gap. Manual pad down a long six stair.",
 		bust: {
@@ -247,6 +253,7 @@ const spots = [
 	{
 		name: "Hillcrest High School",
 		area: "Queens",
+		urlPath: "queens",
 		summary: "Brick banks and a low ledge over a six stair.",
 		bust: {
 			level: 2,
@@ -268,6 +275,7 @@ const spots = [
 	{
 		name: "Long Island City Waterfront",
 		area: "Queens",
+		urlPath: "queens",
 		summary:
 			"Wooden benches that can be skated as banks you ollie up to, weird cement ledges, long triangular flat rails, big concrete wallrides on a wooden platform — a lot of different stuff with varying bust levels.",
 		bust: {
@@ -300,6 +308,7 @@ const spots = [
 	{
 		name: "JFK Banks",
 		area: "Queens",
+		urlPath: "queens",
 		summary:
 			"Cement banks with a ledge on top and hips at the end. Seen in videos as far back as the 1980s.",
 		bust: {
@@ -326,6 +335,7 @@ const spots = [
 	{
 		name: "Mosquito Beach",
 		area: "Queens",
+		urlPath: "queens",
 		summary:
 			"Constantly evolving concrete D.I.Y. spot with banks, transitions and ledges.",
 		bust: {
@@ -350,6 +360,7 @@ const spots = [
 	{
 		name: "P.S. 239",
 		area: "Queens",
+		urlPath: "queens",
 		summary:
 			"A three-stair Philly step and a curved ledge / platform on basketball court ground.",
 		bust: {
@@ -372,6 +383,7 @@ const spots = [
 	{
 		name: "Rockaway Rails",
 		spots: "Queens",
+		urlPath: "queens",
 		summary:
 			"The best handrail spot in New York. Fat square rails down seven big steps.",
 		bust: {
@@ -394,6 +406,7 @@ const spots = [
 	{
 		name: "Roosevelt Island Ledge",
 		spots: "Queens",
+		urlPath: "queens",
 		summary:
 			"Photogenic spot that you’ve seen a million photos at. Backside for regular marble ledge over a long three stair. Wooden landing.",
 		bust: {
@@ -415,6 +428,7 @@ const spots = [
 	{
 		name: "The Sombrero",
 		area: "Queens",
+		urlPath: "queens",
 		summary:
 			"Big sombrero-shaped piece of concrete that people wallie up to and do manuals / ledge tricks on + a couple chunky concrete ledges.",
 		bust: {
@@ -438,6 +452,7 @@ const spots = [
 	{
 		name: "Vernon-Jackson",
 		area: "Queens",
+		urlPath: "queens",
 		summary:
 			"High frontside for regular out-ledge over a four, some metal benches, and a metal bench (frontside for regular also) over a ledge gap.",
 		bust: {

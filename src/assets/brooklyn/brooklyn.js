@@ -204,6 +204,7 @@ const spots = [
 	{
 		name: "BAM",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"A long ledge on top of a platform of four stairs. Some of the bottom steps are waxed, and the flat is good.",
 		bust: {
@@ -226,6 +227,7 @@ const spots = [
 	{
 		name: "BAM 2",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Curved marble ledges on a slight hill (you have to avoid the bench at the end) and a marble curb against a fence. Also a low-ish round handicap ramp rail (frontside for regular) at the other side of the park.",
 		bust: {
@@ -248,6 +250,7 @@ const spots = [
 	{
 		name: "Blue Park",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"The T.F. of Bushwick. Manual pads of different shapes and sizes in a basketball court, along with supplementary obstacles that often make an appearance.",
 		bust: {
@@ -272,6 +275,7 @@ const spots = [
 	{
 		name: "Borough Hall",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Marble curbs, a grate gap, and perfect flatground. Good meet-up spot to get stuck at all day.",
 		bust: {
@@ -292,8 +296,8 @@ const spots = [
 	},
 	{
 		name: "Brooklyn Army Terminal",
-		spots: "Brooklyn",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Asphalt pieces of sashimi that are hard to skate, weird recycled benches that have a bank-like edge + a stack of recycled plastic manny pads that people sometimes set picnic tables off of.",
 		bust: {
@@ -315,6 +319,7 @@ const spots = [
 	{
 		name: "Brooklyn Bridge Park",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary: "A three-block on wooden ground.",
 		bust: {
 			level: 5,
@@ -336,6 +341,7 @@ const spots = [
 	{
 		name: "Brower Park",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"A bunch of beveled, painted concrete ledges in a basketball court. There’s also a four-flat-five double set with a high rail out past a five stair after it that you can skate if you’re Brandon Westgate, Mason Silva or something.",
 		bust: {
@@ -361,6 +367,7 @@ const spots = [
 	{
 		name: "Butter Benches",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"A couple recycled plastic benches on smooth ground in a basketball court.",
 		bust: {
@@ -381,6 +388,7 @@ const spots = [
 	{
 		name: "Cadman Plaza",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Curbs running off a six stair, an ascending frontside-for-regular three-stair Philly step, a bigass handicap rail over a long two, and some curbs on asphalt.",
 		bust: {
@@ -410,6 +418,7 @@ const spots = [
 	{
 		name: "Carroll Manual Pad",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary: "Two-stair marble manual pad.",
 		bust: {
 			level: 5,
@@ -428,6 +437,7 @@ const spots = [
 	{
 		name: "Chauncey Ledges",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary: "Concrete ledges with no ends in a basketball court.",
 		bust: {
 			level: 1,
@@ -448,6 +458,7 @@ const spots = [
 	{
 		name: "Commodore Barry Park",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"A couple recycled plastic benches on good ground. Don’t bother on hot days because the ground gets soft.",
 		bust: {
@@ -471,6 +482,7 @@ const spots = [
 	{
 		name: "Crown Heights Banks",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Brick banks with a two-up, two-down between them. Can’t really do bluntslides or noseblunts here because the fence is too close to the lip of the bank.",
 		bust: {
@@ -492,6 +504,7 @@ const spots = [
 	{
 		name: "Dewey High School",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"A bunch of low handicap handrails, a long three, a bank you need to ollie up onto, some wooden benches, and a bunch of high concrete ledges.",
 		bust: {
@@ -519,6 +532,7 @@ const spots = [
 	{
 		name: "Expanding Brain Banks",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary: "This is where the last Mensa conference was held.",
 		bust: {
 			level: 5,
@@ -538,6 +552,7 @@ const spots = [
 	{
 		name: "Fish Gap",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Truck-width gap off a loading dock, onto a concrete platform. Seen in tons of videos.",
 		bust: {
@@ -559,6 +574,7 @@ const spots = [
 	{
 		name: "Farragut Ledges",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary: "Low banked planter ledges and a three stair.",
 		bust: {
 			level: 1,
@@ -580,6 +596,7 @@ const spots = [
 	{
 		name: "Fort Greene Park",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Set of high-ish ledges on top of a big platform with gaps in it. Exhausting to skate after a while. There are also two narrow banks with bars across them that people will use to do quick set-up tricks on.",
 		bust: {
@@ -606,6 +623,7 @@ const spots = [
 	{
 		name: "Front Street Ledge",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"A banked ledge that runs alongside a ledge that slopes down. Seen in many skate videos. Backside for regular. Bring wax.",
 		bust: {
@@ -628,6 +646,7 @@ const spots = [
 	{
 		name: "Humboldt Street YMCA",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"A sloped manual pad down some oversized steps, which can also be used as a curb-height hubba. Some up-ledges and a three block.",
 		bust: {
@@ -652,6 +671,7 @@ const spots = [
 	{
 		name: "K Bridge Park",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Cement ledges — some with rounded metal lips — on asphalt ground. There’s a couple gaps and a small seven-set as well, in addition to an up-ledge out front. People also bring tons of loose obstacles like boxes, flatbars, and quarterpipes to leave here.",
 		bust: {
@@ -686,6 +706,7 @@ const spots = [
 	{
 		name: "Mambo Bar",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"A classic piece of a Brooklyn crust. A chunky backside-for-regular cement ledge into a cellar door.",
 		bust: {
@@ -708,6 +729,7 @@ const spots = [
 	{
 		name: "Maria Hernandez Park",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"A low metal ledge / manual pad. Kind of like a really big curb :)",
 		bust: {
@@ -728,6 +750,7 @@ const spots = [
 	{
 		name: "McCarren Park",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary: "A gigantic hubba down a four set.",
 		bust: {
 			level: 1,
@@ -748,6 +771,7 @@ const spots = [
 	{
 		name: "McGolrick Park",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"A narrow street gap, some curbs, and a higher double-sided curb that’s been rub-bricked.",
 		bust: {
@@ -770,6 +794,7 @@ const spots = [
 	{
 		name: "Polish Park",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Low, chunky ledges, one of which you can gap to. A gap off a narrow ledge over a pillar.",
 		bust: {
@@ -792,6 +817,7 @@ const spots = [
 	{
 		name: "Pratt",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary: "A backside-for-regular wooden bench into a small brick bank.",
 		bust: {
 			level: 5,
@@ -811,6 +837,7 @@ const spots = [
 	{
 		name: "Reggaeton Ledges",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Ledges against a fence made out of nice material, a four stair, plus some chunky concrete ledges in a basketball court. Ground on the bottom level is better than ground up top.",
 		bust: {
@@ -837,6 +864,7 @@ const spots = [
 	{
 		name: "Shell Ledge",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"A ride-on ledge against a fence off a bank-type thing. Backside for regular, and quite crusty. Bring wax.",
 		bust: {
@@ -856,6 +884,7 @@ const spots = [
 	{
 		name: "Shit Rail",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"A low, frontside for regular square rail that goes out past six stairs. The runway is choppy, the landing is choppier.",
 		bust: {
@@ -877,6 +906,7 @@ const spots = [
 	{
 		name: "Slippery Park",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Granite ledges and low concrete ledges in a basketball court, behind a skatepark.",
 		bust: {
@@ -901,6 +931,7 @@ const spots = [
 	{
 		name: "Stroud Ledges",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Concrete ledges in a basketball court + a four-stair. Better in the winter.",
 		bust: {
@@ -926,6 +957,7 @@ const spots = [
 	{
 		name: "Sunset Park",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Five stair with a nine stair rail after it. There are some other steps in the park too.",
 		bust: {
@@ -951,6 +983,7 @@ const spots = [
 	{
 		name: "Tekashi Ten",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary: "A ten stair with a curb before it. Good luck.",
 		bust: {
 			level: 1,
@@ -969,6 +1002,7 @@ const spots = [
 	{
 		name: "Thomas Greene Park",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"A manual pad, a ledge, and a weird A-frame thing built by California Skateparks and put in this basketball court.",
 		bust: {
@@ -992,6 +1026,7 @@ const spots = [
 	{
 		name: "Tompkins Park",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Ledge to ledge gaps, and a kinda sketchy flatbar off a ledge. Not to be confused with Tompkins Square Park.",
 		bust: {
@@ -1015,6 +1050,7 @@ const spots = [
 	{
 		name: "Williamsburg Monument",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Curbs, a bunch of three sets (some with rails running off the sides of them), a few plastic benches, and chunky concrete ledges across the street.",
 		bust: {
@@ -1043,6 +1079,7 @@ const spots = [
 	{
 		name: "Williamsburg Waterfront",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"A wooden manny pad, three-stair out ledge, a small A-frame ledge + a giant, sketchy rainbow rail and a kinked rail that Ishod and them have skated.",
 		bust: {
@@ -1069,6 +1106,7 @@ const spots = [
 	{
 		name: "Woodhull Hospital",
 		area: "Brooklyn",
+		urlPath: "brooklyn",
 		summary:
 			"Steep brick banks leading up to a wall that grow in size as they run down a hill. Also a weird banked ledge thing that is insanely hard to skate.",
 		bust: {

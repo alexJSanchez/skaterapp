@@ -43,6 +43,7 @@ const spots = [
 	{
 		name: "Bond Street Gap",
 		area: "Financial District",
+		urlPath: "westVillageTribeca",
 		summary:
 			"Car-width street gap with sidewalk runway that Tyshawn fakie flipped. The side you ollie from is slightly higher than where you land.",
 		bust: {
@@ -65,6 +66,7 @@ const spots = [
 	{
 		name: "Hudson River Park",
 		area: "Financial District",
+		urlPath: "westVillageTribeca",
 		summary:
 			"A high frontside for regular ledge running down a hill, a few more random cutty ledges, a six-stair with a high backside for regular round rail down it, a smooth rock bank you need to ollie up to, and a handicap rail off a three-stair.",
 		bust: {
@@ -93,6 +95,7 @@ const spots = [
 	{
 		name: "Max Palmer Park",
 		area: "Financial District",
+		urlPath: "westVillageTribeca",
 		summary:
 			"A marble fountain with gaps inside that look like miniature steps. The bigger one has ledges running over it. Only skateable during cooler seasons because the fountain gets filled during the summer.",
 		bust: {
@@ -116,6 +119,7 @@ const spots = [
 	{
 		name: "Soho Curbs",
 		area: "Financial District",
+		urlPath: "westVillageTribeca",
 		summary:
 			"Marble curbs on a street often closed off for outdoor dining. Common meet-up or end of the day spot.",
 		bust: {
@@ -138,6 +142,7 @@ const spots = [
 	{
 		name: "T.F. West",
 		area: "Financial District",
+		urlPath: "westVillageTribeca",
 		summary:
 			"Flatground and trash cans. Sometimes there will be a box or a flatbar, but usually not (e.g. the things in these pictures have already been thrown out.)",
 		bust: {
@@ -159,6 +164,7 @@ const spots = [
 	{
 		name: "Three Up Three Down",
 		area: "Financial District",
+		urlPath: "westVillageTribeca",
 		summary:
 			"As you have probably figured out, this spot is a smooth three up three down, which can be used as a platform for tricks up/down the steps or for manuals. Further south on the pier is a weird, outwardly curved, frontside for regular round rail.",
 		bust: {
@@ -182,6 +188,7 @@ const spots = [
 	{
 		name: "Union Square",
 		area: "Financial District",
+		urlPath: "westVillageTribeca",
 		summary:
 			"Two sets of four, some curbs that rarely stay waxed, and a handicap rail people do tricks over — that a few brave ones have actually grinded or slid through. Park is usually crowded during any reasonable time of the day.",
 		bust: {
@@ -209,6 +216,7 @@ const spots = [
 	{
 		name: "Washington Square Park",
 		area: "Financial District",
+		urlPath: "westVillageTribeca",
 		summary:
 			"A two-stair Philly step, four stair, round marble ledges, and some pillars to do tricks over. Always crowded with people, except maybe in the dead of winter.",
 		bust: {

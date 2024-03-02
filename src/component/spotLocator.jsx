@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { findClosestLocation } from "../utils/distanceTracker";
 import starIcon from "../assets/star_fill_icon.png";
-import ImageSlider from "./slider.jsx";
+
 import { findSpotByName, allSpots } from "../utils/locationDisplay.js";
 import location from "../Coord.js";
 import Popup from "./popup.jsx";

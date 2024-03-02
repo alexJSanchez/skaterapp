@@ -128,6 +128,7 @@ const spots = [
 	{
 		name: "Battery Park",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"Apart from the short grey ledges, everything inside this part of the park has been demolished for renovation. Benches across the street, mini doubles, etc. are all still good.",
 		bust: {
@@ -158,6 +159,7 @@ const spots = [
 	{
 		name: "Battery Park City",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"Marble ledges and steps everywhere, a ledge to flatbar (backside for regular)",
 		bust: {
@@ -194,6 +196,7 @@ const spots = [
 	{
 		name: "Black Hubba",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"Common spot seen in every skate video. Round, kinked marble hubba ledge down six stairs.",
 		bust: {
@@ -217,6 +220,7 @@ const spots = [
 	{
 		name: "Brooklyn Banks",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"The city is in the midst of a multi-phase plan to restore three sections of the Brooklyn Banks as sanctioned zones for skateboarding.Currently, only phase 1 has been completed, which is the area by the nine stairs, which includes the nine and a round handrail, two curbs going down it, and brick banks descending down the sides.",
 		bust: {
@@ -242,6 +246,7 @@ const spots = [
 	{
 		name: "C-Benches",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"Round marble benches that people sometimes skate as kinked manual pads.",
 		bust: {
@@ -264,6 +269,7 @@ const spots = [
 	{
 		name: "Chase",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"Marble two stairs up one side, five stairs down the other. Recognizable from a million skate videos.",
 		bust: {
@@ -285,6 +291,7 @@ const spots = [
 	{
 		name: "CIA Ledge",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"The best ledge downtown. Frontside for regular ledge that gets higher as it goes along a downhill sidewalk.",
 		bust: {
@@ -307,6 +314,7 @@ const spots = [
 	{
 		name: "Courthouse Drop",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"A five foot drop into a bank, over a kink, and down another six feet with a ledge in the middle.An also-famous-but-not-as-famous kinked square rail down a seven-flat-two is directly behind the building as well.",
 		bust: {
@@ -331,6 +339,7 @@ const spots = [
 	{
 		name: "Family Court",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary: "High marble ledge / manual pad and a four stair.",
 		bust: {
 			level: 5,
@@ -351,6 +360,7 @@ const spots = [
 	{
 		name: "Family Court",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary: "High marble ledge / manual pad and a four stair.",
 		bust: {
 			level: 3,
@@ -371,6 +381,7 @@ const spots = [
 	{
 		name: "Four Seasons",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary: "Four slightly curved marble ledges and a couple of three sets.",
 		bust: {
 			level: 5,
@@ -393,6 +404,7 @@ const spots = [
 	{
 		name: "Pine Street Benches",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"Three marble benches on sidewalk ground (cracks are fixed …for now) and a big grey wallride.",
 		bust: {
@@ -417,6 +429,7 @@ const spots = [
 	{
 		name: "Police Plaza",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"A platform that has two stairs up one side, and quickly four down the other. There are also a bunch of square rails down varying sets of steps, one of which leads into a weird wallride + some ledges out over past three stairs.",
 		bust: {
@@ -443,6 +456,7 @@ const spots = [
 	{
 		name: "Pyramid Ledges",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"One of the most famous skate spots in New York. Two ledges out past a three stair, with varying mindfuck issues to mess with you: the grate at where you pop, the depth-perception of the ledge, the iron fence on top, the crack in the middle of the ledge, the street shortly after you land, etc.",
 		bust: {
@@ -469,6 +483,7 @@ const spots = [
 	{
 		name: "Seaport",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"Former home to the best ledges to ever exist in New York until they knobbed the hell out of them. Portions of them will undergo temporary periods of liberation.Spot also still has a wooden wedge ramp with a metal edge and a low four-stair rail.",
 		bust: {
@@ -494,6 +509,7 @@ const spots = [
 	{
 		name: "State Building",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"Old-world stone ledges on a sidewalk. They don’t make ’em like this anymore! One is higher than the other. Definitely one of the best ledge spots in the area.",
 		bust: {
@@ -515,6 +531,7 @@ const spots = [
 	{
 		name: "Veteran’s Plaza",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"Sets of rugged 6, 7 and 12 stairs on bad ground that barely anyone skates, round marble ledges across the street, and a brick ledge that goes into a perpendicular bank.",
 		bust: {
@@ -542,6 +559,7 @@ const spots = [
 	{
 		name: "Water Street Benches",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"Marble ledges on not-great ground. One runs backside for regular over a ~fifteen-foot dirt gap. Don’t skate it if it rained the night before unless you wanna get muddy.",
 		bust: {
@@ -566,6 +584,7 @@ const spots = [
 	{
 		name: "World Trade",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"Stairs and manual pads going down a mellow hill, with sets of twos, fours and fives on the other side + a high frontside for regular round rail down seven stairs.",
 		bust: {
@@ -594,6 +613,7 @@ const spots = [
 	{
 		name: "Worth Plaza",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"Roughish marble ledges on roughish marble ground, e.g. they slide better than they grind.",
 		bust: {
@@ -618,6 +638,7 @@ const spots = [
 	{
 		name: "Zuccotti Park",
 		area: "Financial District",
+		urlPath: "financialDistrict",
 		summary:
 			"Marble ledges everywhere, some of which are knobbed. One goes off a six stair and is backside for regular / frontside for goofy. A low manual pad. Everything sits on a mellow hill.",
 		bust: {

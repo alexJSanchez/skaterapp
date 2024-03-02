@@ -8,6 +8,7 @@ const spots = [
 	{
 		name: "ABC Ledges",
 		area: "Staten Island",
+		urlPath: "statenIsland",
 		summary:
 			"Four double-sided concrete ledges in a schoolyard on parking lot-esque ground. They’ve been skated for two decades at this point, so they’ve seen better days.",
 		bust: {

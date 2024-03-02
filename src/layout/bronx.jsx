@@ -21,10 +21,15 @@ function Bronx() {
 			>
 				{spots.Bronx.map((res, index) => (
 					<div
+						id={res.name.replace(/\s+/g, "")}
 						key={index}
 						className="flex flex-col items-center rounded-lg shadow-md p-4 bg-white "
 					>
-						<h1 className="text-2xl font-bold text-gray-800 uppercase">
+						{console.log(res.name)}
+						<h1
+							id={res.name}
+							className="text-2xl font-bold text-gray-800 uppercase"
+						>
 							{res.name}
 						</h1>
 						<div className="flex justify-center">

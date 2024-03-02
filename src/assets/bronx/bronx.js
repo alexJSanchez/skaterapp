@@ -52,6 +52,7 @@ const spots = [
 	{
 		name: "Bronx Courthouse",
 		area: "Harlem & The Bronx",
+		urlPath: "bronx",
 		summary:
 			"Stairs of all shapes and sizes, and manual pads / ledges into kinked banks that you’ve seen in millions of skate videos.",
 		bust: {
@@ -86,6 +87,7 @@ const spots = [
 	{
 		name: "Middle Earth",
 		area: "Harlem & The Bronx",
+		urlPath: "bronx",
 		summary: "6 set 7 set 6set, and manual pads / ledges.",
 		bust: {
 			level: 1,
@@ -107,6 +109,8 @@ const spots = [
 	{
 		name: "Bronx Terminal Mall",
 		area: "The Bronx",
+		urlPath: "bronx",
+
 		summary:
 			"Metal benches on a sidewalk, and a low square rail over a long three stair.",
 		bust: {
@@ -130,6 +134,8 @@ const spots = [
 	{
 		name: "Hunts Point Station",
 		area: "Harlem & The Bronx",
+		urlPath: "bronx",
+
 		summary:
 			"UPDATE — Summer 2023: Spot has been demolished. A foot high manual pad that you can gap out onto from a three-stair above, and a bad two-stair Philly step. Nine times out of ten, there is broken glass scattered about, so be careful.",
 		bust: {
@@ -151,6 +157,8 @@ const spots = [
 	{
 		name: "Jerome Avenue Banks",
 		area: "The Bronx",
+		urlPath: "bronx",
+
 		summary:
 			"A handrail off of which people gap over into a bank. Famous spot seen in countless videos.",
 		bust: {
@@ -175,6 +183,8 @@ const spots = [
 	{
 		name: "Mosholu Playground Bank",
 		area: "The Bronx",
+		urlPath: "bronx",
+
 		summary: "Crust.",
 		bust: {
 			level: 1,
@@ -194,6 +204,8 @@ const spots = [
 	{
 		name: "Ogden Bank to Ledge",
 		area: "Harlem & The Bronx",
+		urlPath: "bronx",
+
 		summary:
 			"Concreted-over cobblestone bank to crusty hubba-ish ledge against a fence, as seen in every skate video since the mid-2010s.",
 		bust: {
@@ -215,6 +227,8 @@ const spots = [
 	{
 		name: "Tiffany Banks",
 		area: "Harlem & The Bronx",
+		urlPath: "bronx",
+
 		summary: "Steep-ish bank with a rainbow curb and crusty ledge on it.",
 		bust: {
 			level: 2,
@@ -235,6 +249,8 @@ const spots = [
 	{
 		name: "Triangle Park",
 		area: "Harlem & The Bronx",
+		urlPath: "bronx",
+
 		summary:
 			"Crusty ledges on choppy brick ground, including a backside for regular out ledge over a bench below.",
 		bust: {

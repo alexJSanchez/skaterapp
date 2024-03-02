@@ -79,6 +79,7 @@ const spots = [
 	{
 		name: "Avenue D Bump-To-Bar",
 		area: "Chinatown, East Village & L.E.S",
+		urlPath: "lowerEastSide",
 		summary: "Probably the most famous bump-to-bar spot in New York.",
 		bust: {
 			level: 1,
@@ -99,6 +100,7 @@ const spots = [
 	{
 		name: "Broome & Allen",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"It’s a ~six-foot dirt gap into the street, a weird wedge people use to wallie over the gap from the street, and a ride-on ledge.",
 		bust: {
@@ -120,6 +122,7 @@ const spots = [
 	{
 		name: "Cherry Street Ledge",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"It’s a chunky, backside for regular drop down ledge on a sidewalk that gets repainted every once in a while to hide the hell at its surface.",
 		bust: {
@@ -141,6 +144,7 @@ const spots = [
 	{
 		name: "Chinatown Double Set",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"The best double-set in Manhattan. Four-flat-four with a long, smooth runway and a sidewalk landing, which then leads into a mellow street.",
 		bust: {
@@ -161,6 +165,7 @@ const spots = [
 	{
 		name: "Chinatown Manual Pad",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"Long, foot-high marble manual pad on choppy ground.*Keep in mind that every manual trick in existence has already been done here.",
 		bust: {
@@ -182,6 +187,7 @@ const spots = [
 	{
 		name: "Columbus Park",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"Chunky frontside for regular ledge that kinks down a two stair, as seen in every “Summer Trip to New York” clip ever. Gap over a ledge and down a two block. Eight-stair round rail with a sketchy runway.",
 		bust: {
@@ -206,6 +212,7 @@ const spots = [
 	{
 		name: "D7",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"Huge six block equivalent to maybe ~12 stairs on a sidewalk runway.",
 		bust: {
@@ -226,6 +233,7 @@ const spots = [
 	{
 		name: "Division Street Triangle",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"Triangle curb-height manual pad in the middle of the street. Sorta like the nu-age Astor Place. Be mindful of cars, pedestrians, bikes, scooters, buses, lions, tigers, bears.",
 		bust: {
@@ -246,6 +254,7 @@ const spots = [
 	{
 		name: "Houston Park",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"Low handicap rails going down a mellow ramp, and a Whole Foods next door with a lot of beautiful people walking by.A six stair that sucks for skateboarding, but is good to sit on and wind down the day down at. (Only really works when it’s warm.There’s also a bad (read: awful) ledge, and a good bump that people set trash cans up to towards Delancey Street. Bring your own debris.",
 		bust: {
@@ -273,6 +282,7 @@ const spots = [
 	{
 		name: "Jacob Riis Projects",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary: "Curved concrete ledge and high ledges in a basketball court.",
 		bust: {
 			level: 1,
@@ -293,6 +303,7 @@ const spots = [
 	{
 		name: "L Train Curbs",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"A manual pad and some curbs on a one-way roadway. Common meet-up spot when Tompkins is too packed.",
 		bust: {
@@ -314,6 +325,7 @@ const spots = [
 	{
 		name: "L.E.S. Hubba",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"A crusty frontside-for-regular hubba down eight stairs next to a skatepark.",
 		bust: {
@@ -336,6 +348,7 @@ const spots = [
 	{
 		name: "Lily Pads",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"Rugged gap where you ollie up one ledge, and onto a lower platform down in a pit below. The runway is …bad.",
 		bust: {
@@ -356,6 +369,7 @@ const spots = [
 	{
 		name: "Mural Ledge",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary: "A rounded concrete ledge in a basketball court with good flat.",
 		bust: {
 			level: 1,
@@ -375,6 +389,7 @@ const spots = [
 	{
 		name: "New Seaport",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"A backside for regular round rail down a nine stair (it’s too close to the wall for boardslides or lipslides) + some weird metal up-ledges and other wooden benches / manual pads across the grass.",
 		bust: {
@@ -398,6 +413,7 @@ const spots = [
 	{
 		name: "Pitt Pool",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"A concrete gap that is ~five-feet-long with a long three stair after it. Some concrete curbs and manual pads.",
 		bust: {
@@ -423,6 +439,7 @@ const spots = [
 	{
 		name: "Popeye’s Ledge",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"A frontside for regular ledge that runs down a bike path, with a slappy curb alongside it. Manual pad at the end of the hill.The ledge has been described as grinding “like a soggy hot dog bun.”There is a good, albeit slightly oversized seven set at the northern end of the spot (a block up from the bike path.There’s a (you guessed it) Popeye’s across the street, though you should get rice balls from Yaya Tea a few doors down (51 Christie Street) if you don’t want to feel like death after.",
 		bust: {
@@ -448,6 +465,7 @@ const spots = [
 	{
 		name: "Seward Park",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"Dual level recycled plastic ledges on basketball court ground, and a seven stair with smooth run-up in another basketball court.",
 		bust: {
@@ -470,6 +488,7 @@ const spots = [
 	{
 		name: "Tompkins Square Park",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary:
 			"Flatground, conversation and an array of the city’s discarded junk floating through.Tompkins has free Wifi, which you can access via the “attwifi” network.",
 		bust: {
@@ -491,6 +510,7 @@ const spots = [
 	{
 		name: "Tompkins Middle School Banks",
 		area: "Chinatown, East Village & L.E.S.",
+		urlPath: "lowerEastSide",
 		summary: "Two curb-height narrow banks on the sidewalk.",
 		bust: {
 			level: 2,

@@ -105,6 +105,7 @@ const spots = [
 	{
 		name: "Bellevue Park",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"Three consecutive sets of five stairs with kinked rails down them, low handicap ramp rails, and the occasional pile of human excrement.",
 		bust: {
@@ -130,6 +131,7 @@ const spots = [
 	{
 		name: "Big Screen Ledges",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"Marble ledges everywhere on amazing ground, two of which go out past a three stair. One of the best spots in New York, by far. Spot is now knobbed",
 		bust: {
@@ -155,6 +157,7 @@ const spots = [
 	{
 		name: "Brick 9",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"Two sets of nine stairs, the second of which has thin square handrail. Also an eight stair with a 45-degree handrail going down the middle of it.",
 		bust: {
@@ -181,6 +184,7 @@ const spots = [
 	{
 		name: "Bryant Park",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"Some steps, a beveled up-ledge, and a round frontside-for-regular rail down seven stairs.",
 		bust: {
@@ -209,6 +213,7 @@ const spots = [
 	{
 		name: "Car Wash Bump",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"Probably the second most famous bump-to-bar spot in New York, after the one on Avenue D.",
 		bust: {
@@ -230,6 +235,7 @@ const spots = [
 	{
 		name: "CBS",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"A close colleague described this spot as “New York good” — it looks like Europe in footage, but then you show up, and it’s definitely New York.The ledges are rougher than they seem, the ground has some rugged patches, and the stone never stays broken in, e.g. they need to be re-waxed every time you skate here. That being said, it is a block-wide marble plaza full of ledges, and one of the funnest skate spots in New York.",
 		bust: {
@@ -257,6 +263,7 @@ const spots = [
 	{
 		name: "Columbus Circle",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"Up-ledges that are hard to skate, some low ledges, and pillars to do tricks over. All the ground is good.",
 		bust: {
@@ -283,6 +290,7 @@ const spots = [
 	{
 		name: "Fake Barcelona Ledge",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"New York’s smaller version of the defunct keyhole ledge at MACBA in Barcelona. Backside for regular and not wide enough for tailslides.",
 		bust: {
@@ -305,6 +313,7 @@ const spots = [
 	{
 		name: "Fake Barcelona Ledge",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"New York’s smaller version of the defunct keyhole ledge at MACBA in Barcelona. Backside for regular and not wide enough for tailslides.",
 		bust: {
@@ -327,6 +336,7 @@ const spots = [
 	{
 		name: "FedEx",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"Sets of six, three, four and two in consecutive order + marble ledges. Manual pads off steps in front that are a two-second bust.",
 		bust: {
@@ -356,6 +366,7 @@ const spots = [
 	{
 		name: "Five Then Three",
 		area: "Midtown Manhattan",
+		urlPath: "midTown",
 		summary: "A stone five stair, with a three stair immediately after.",
 		bust: {
 			level: 1,
@@ -372,6 +383,7 @@ const spots = [
 	{
 		name: "IBM Ledge",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary: "Ian Twa via YouTube. High metal ledge on marble ground.",
 		bust: {
 			level: 4,
@@ -388,6 +400,7 @@ const spots = [
 	{
 		name: "John Jay Step",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"Mark Suciu via “Blue Dog” part. A low backside-for-regular Philly step into a mellow hill.",
 		bust: {
@@ -405,6 +418,7 @@ const spots = [
 	{
 		name: "Paine Webber",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"Josh Velez via “Djosh Unchained“. Marble benches on marble ground.",
 		bust: {
@@ -422,6 +436,7 @@ const spots = [
 	{
 		name: "Queensboro Bridge Ledges",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"josh-ty. Beveled concrete ledge against a fence that goes down a hill. Backside for regular. There’s an inactive overpass across the street that has low metal ledges against a wall / down a hill on bad ground, plus some fun metal curbs.",
 		bust: {
@@ -450,6 +465,7 @@ const spots = [
 	{
 		name: "Seagram",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"Brendan Carroll via Bronze 56k’s It’s Time. Two three-foot-long marble step-up ledges. The backside for regular side has a lil’ drop; the frontside for regular side has a big drop. Also a long manual pad and home of the world’s cutest fire hydrant ♥",
 		bust: {
@@ -467,6 +483,7 @@ const spots = [
 	{
 		name: "Suarez Rail",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"Brad Cromer via “HUF 002“. A round handrail against a wall that is backside for regular and down a handicap ramp + a rail parallel to it that people will do tricks over into the ramp. Also a five-stair.",
 		bust: {
@@ -484,6 +501,7 @@ const spots = [
 	{
 		name: "Times Square",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"Connor Champion via The Gram. Black marble ledges in the midst of thousands of tourists.",
 		bust: {
@@ -507,6 +525,7 @@ const spots = [
 	{
 		name: "U.N. Hubba",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"Mark Suciu via “Blue Dog” part. A low-ish, frontside-for-regular hubba down ten steps, that runs into another ledge. Narrow runway.",
 		bust: {
@@ -524,6 +543,7 @@ const spots = [
 	{
 		name: "Virtual Reality Bump",
 		area: "Midtown",
+		urlPath: "midTown",
 		summary:
 			"Wade Fyfe via “Last Part“. The greatest spot in New York. Landing a trick here has been equated to 7/8ths of an orgasm.",
 		bust: {
