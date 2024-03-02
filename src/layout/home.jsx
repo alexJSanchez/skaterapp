@@ -3,6 +3,7 @@ import arrowDown from "../assets/desktop/icon-arrow-down.svg";
 import Nav from "../component/nav";
 import Time from "../component/time";
 import SpotLocator from "../component/spotLocator";
+import { getTricks, tricksList } from "../skateTricks";
 
 function Home({ Weather, Coord, City, State }) {
 	const [isUpsideDown, setIsUpsideDown] = useState(false);
@@ -10,6 +11,7 @@ function Home({ Weather, Coord, City, State }) {
 	const handleImageClick = () => {
 		setIsUpsideDown(!isUpsideDown);
 	};
+	getTricks(tricksList);
 	return (
 		<>
 			<div className="relative bg-[url('./assets/mobile/bg-image-daytime.jpg')] h-screen bg-cover">
