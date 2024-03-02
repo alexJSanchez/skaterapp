@@ -103,6 +103,7 @@ function App() {
 			setWeather(JSON.parse(storedWeatherData));
 			const parsedGeoData = JSON.parse(storedGeoData);
 			const parseTrickData = JSON.parse(storeTrickData);
+
 			setCity(parsedGeoData.city);
 			setLocality(parsedGeoData.State);
 			setLocality(parsedGeoData.locality);

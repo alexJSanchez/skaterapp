@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import { useState } from "react";
 import arrowDown from "../assets/desktop/icon-arrow-down.svg";
 import Nav from "../component/nav";
 import Time from "../component/time";
@@ -10,7 +11,7 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 	const handleImageClick = () => {
 		setIsUpsideDown(!isUpsideDown);
 	};
-	console.log(RandomLocation);
+
 	return (
 		<>
 			<div className="relative bg-[url('./assets/mobile/bg-image-daytime.jpg')] h-screen bg-cover">
@@ -50,14 +51,16 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 							<p>
 								{State}, {City}
 							</p>
-							{Weather.forcast.map((res, index) => {
-								return (
-									<div key={index} className="flex gap-1">
-										<p>Forcast:</p>
-										<p className="capitalize">{res.description}</p>
-									</div>
-								);
-							})}
+							<div className="flex gap-1">
+								<p>Forcast:</p>
+								{Weather.forcast.map((res, index) => {
+									return (
+										<p key={index} className="capitalize">
+											{res.description},
+										</p>
+									);
+								})}
+							</div>
 							<p>Temp: {Weather.temperature} F</p>
 							<p>Wind: {Weather.wind} Mph</p>
 						</div>
@@ -106,4 +109,12 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 	);
 }
 
+Home.propTypes = {
+	Weather: PropTypes.object.isRequired,
+	City: PropTypes.string.isRequired,
+	State: PropTypes.string.isRequired,
+	Coord: PropTypes.object.isRequired,
+	Trick: PropTypes.string.isRequired,
+	RandomLocation: PropTypes.string.isRequired,
+};
 export default Home;
