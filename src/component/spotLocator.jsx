@@ -27,7 +27,7 @@ function SpotLocator({ Latitude, Longitude, IsUpsideDown }) {
 			<div>
 				<div
 					onClick={PopupHandler}
-					className="flex flex-col items-center rounded-lg shadow-md p-4 relative"
+					className="flex flex-col items-center text-center rounded-lg shadow-md p-4 relative"
 				>
 					<div className="absolute inset-0 bg-black opacity-10 rounded-lg"></div>
 					<h1 className="text-2xl font-bold text-gray-300 uppercase">
@@ -46,8 +46,6 @@ function SpotLocator({ Latitude, Longitude, IsUpsideDown }) {
 					</div>
 					<h2 className="text-lg font-semibold text-gray-300">Wanted</h2>
 				</div>
-
-				{/* <ImageSlider images={spotInfo.images} /> */}
 			</div>
 			{displayPopup ? (
 				<Popup

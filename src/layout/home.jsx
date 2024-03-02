@@ -49,7 +49,14 @@ function Home({ Weather, Coord, City, State }) {
 							<p>
 								{State}, {City}
 							</p>
-							<p>Forcast: {Weather.forcast[0].description}</p>
+							{Weather.forcast.map((res, index) => {
+								return (
+									<div key={index} className="flex gap-1">
+										<p>Forcast:</p>
+										<p className="capitalize">{res.description}</p>
+									</div>
+								);
+							})}
 							<p>Temp: {Weather.temperature} F</p>
 							<p>Wind: {Weather.wind} Mph</p>
 						</div>

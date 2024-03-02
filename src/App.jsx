@@ -37,14 +37,15 @@ function App() {
 				const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
 				const geoResponse = await fetch(geoApiUrl);
 				const geoData = await geoResponse.json();
+				console.log("above parsed", geoData);
 				setCity(geoData.city);
 				setLocality(geoData.locality);
 				setCoord({ latitude: geoData.latitude, longitude: geoData.longitude }); // Use position.coords directly
 				localStorage.setItem(
 					"geoData",
 					JSON.stringify({
-						city: city,
-						locality: locality,
+						city: geoData.city,
+						locality: geoData.locality,
 						coord: { latitude: geoData.latitude, longitude: geoData.longitude },
 					})
 				);
@@ -52,7 +53,7 @@ function App() {
 				const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 				const weatherResponse = await fetch(weatherUrl);
 				const weatherData = await weatherResponse.json();
-				console.log(weatherData);
+
 				setWeather({
 					temperature: weatherData.main.temp,
 					wind: weatherData.wind.speed,
@@ -74,18 +75,19 @@ function App() {
 		};
 		const storedWeatherData = localStorage.getItem("weatherData");
 		const storedGeoData = localStorage.getItem("geoData");
-		console.log(city, locality, weather, storedWeatherData, storedGeoData);
 		if (!storedWeatherData || !storedGeoData) {
 			fetchData();
 		} else {
+			setLoading(true);
 			setWeather(JSON.parse(storedWeatherData));
 			const parsedGeoData = JSON.parse(storedGeoData);
+			console.log("geo data", parsedGeoData);
 			setCity(parsedGeoData.city);
+			setLocality(parsedGeoData.State);
 			setLocality(parsedGeoData.locality);
 			setCoord(parsedGeoData.coord);
 			setLoading(false);
 		}
-		fetchData();
 	}, []);
 
 	return (
