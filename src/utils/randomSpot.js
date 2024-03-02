@@ -1,6 +1,7 @@
-const getLocations = (locations) => {
+function getLocations(locations) {
 	const randomArrayNumber = Math.floor(Math.random() * locations.length);
-	return locations[randomArrayNumber];
-};
+	const result = locations[randomArrayNumber].name;
+	return result;
+}
 
-export default getLocations;
+export { getLocations };

@@ -10,7 +10,7 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 	const handleImageClick = () => {
 		setIsUpsideDown(!isUpsideDown);
 	};
-
+	console.log(RandomLocation);
 	return (
 		<>
 			<div className="relative bg-[url('./assets/mobile/bg-image-daytime.jpg')] h-screen bg-cover">
