@@ -19,6 +19,7 @@ function App() {
 		wind: "0.00",
 		forcast: "forcast",
 	});
+	const [trick, setTrick] = useState("kickflip");
 	const [coord, setCoord] = useState({
 		latitude: null,
 		longitude: null,
@@ -31,6 +32,7 @@ function App() {
 		setLoading(true); // Set loading to true when starting geolocation lookup
 		const fetchData = async () => {
 			try {
+				setTrick(getTricks(trickList));
 				const position = await new Promise((resolve, reject) => {
 					navigator.geolocation.getCurrentPosition(resolve, reject);
 				});
@@ -50,6 +52,13 @@ function App() {
 						coord: { latitude: geoData.latitude, longitude: geoData.longitude },
 					})
 				);
+				localStorage.setItem(
+					"trickData",
+					JSON.stringify({
+						trick: trick,
+					})
+				);
+
 				const apiKey = "f5d7f601d3073301b1ec26e017b93446";
 				const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 				const weatherResponse = await fetch(weatherUrl);
@@ -68,7 +77,7 @@ function App() {
 						forcast: weatherData.weather,
 					})
 				);
-				getTricks(trickList);
+
 				setLoading(false); // Set loading to false when data is fetched
 			} catch (error) {
 				console.error("Error fetching geolocation:", error);
@@ -77,18 +86,21 @@ function App() {
 		};
 		const storedWeatherData = localStorage.getItem("weatherData");
 		const storedGeoData = localStorage.getItem("geoData");
+		const storedTrickData = localStorage.getItem("trickData");
 		if (!storedWeatherData || !storedGeoData) {
 			fetchData();
 		} else {
 			setLoading(true);
 			setWeather(JSON.parse(storedWeatherData));
 			const parsedGeoData = JSON.parse(storedGeoData);
-			console.log("geo data", parsedGeoData);
+			const parsedTrickData = JSON.parse(storedTrickData);
+			console.log("geo data", parsedGeoData, storedTrickData);
 			setCity(parsedGeoData.city);
 			setLocality(parsedGeoData.State);
 			setLocality(parsedGeoData.locality);
 			setCoord(parsedGeoData.coord);
 			setLoading(false);
+			setTrick(parsedTrickData);
 		}
 	}, []);
 
@@ -107,6 +119,7 @@ function App() {
 									City={city}
 									State={locality}
 									Coord={coord}
+									Trick={trick}
 								/>
 							}
 						/>

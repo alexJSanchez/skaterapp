@@ -8,8 +8,9 @@ const trickList = {
 		"treflip",
 		"FSpopshovit",
 		"BSpopshovit",
+		" ",
 	],
-	spins: ["180", "360"],
+	spins: ["", "180", "360"],
 };
 
 const getTricks = (trickList) => {
