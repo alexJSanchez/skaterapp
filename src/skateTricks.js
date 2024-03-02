@@ -12,9 +12,10 @@ const trickList = {
 	spins: ["180", "360"],
 };
 
-function getTricks(trickList) {
-	const random = Math.floor(Math.random() * trickList.flips.length);
-	console.log(random, trickList.flips[random]);
-}
+const getTricks = (trickList) => {
+	const randomFlip = Math.floor(Math.random() * trickList.flips.length);
+	const randomSpin = Math.floor(Math.random() * trickList.spins.length);
+	console.log(trickList.flips[randomFlip], trickList.spins[randomSpin]);
+};
 
-export default { trickList, getTricks };
+export { trickList, getTricks };

@@ -11,6 +11,7 @@ import StatenIsland from "./layout/statenIsland";
 import UptownHarlem from "./layout/uptownHarlem";
 import WestVillageTribeca from "./layout/westVillageTribeca";
 import Loading from "./component/loading";
+import { getTricks, trickList } from "./skateTricks";
 
 function App() {
 	const [weather, setWeather] = useState({
@@ -67,6 +68,7 @@ function App() {
 						forcast: weatherData.weather,
 					})
 				);
+				getTricks(trickList);
 				setLoading(false); // Set loading to false when data is fetched
 			} catch (error) {
 				console.error("Error fetching geolocation:", error);
