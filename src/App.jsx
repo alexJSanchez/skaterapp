@@ -11,7 +11,9 @@ import StatenIsland from "./layout/statenIsland";
 import UptownHarlem from "./layout/uptownHarlem";
 import WestVillageTribeca from "./layout/westVillageTribeca";
 import Loading from "./component/loading";
-import { getTricks, trickList } from "./skateTricks";
+import { getTricks, trickList } from "./utils/randomSkateTricks";
+import getLocations from "./utils/randomSpot";
+import locations from "./Coord";
 
 function App() {
 	const [weather, setWeather] = useState({
@@ -27,6 +29,7 @@ function App() {
 	const [city, setCity] = useState("City");
 	const [locality, setLocality] = useState("State");
 	const [loading, setLoading] = useState(true);
+	const [randomLocation, setRandomLocation] = useState("");
 
 	useEffect(() => {
 		setLoading(true); // Set loading to true when starting geolocation lookup
@@ -79,6 +82,15 @@ function App() {
 						trick: chosenTrick,
 					})
 				);
+				console.log(getLocations(locations));
+				const chosenRandomLocation = getLocations(locations);
+				setRandomLocation(chosenRandomLocation.name);
+				localStorage.setItem(
+					"randomLocation",
+					JSON.stringify({
+						name: randomLocation,
+					})
+				);
 				setLoading(false); // Set loading to false when data is fetched
 			} catch (error) {
 				console.error("Error fetching geolocation:", error);
@@ -88,20 +100,22 @@ function App() {
 		const storedWeatherData = localStorage.getItem("weatherData");
 		const storedGeoData = localStorage.getItem("geoData");
 		const storeTrickData = localStorage.getItem("trickData");
+		const storeRandomLocations = localStorage.getItem("randomLocation");
 		if (!storedWeatherData || !storedGeoData) {
 			fetchData();
 		} else {
 			setLoading(true);
 			setWeather(JSON.parse(storedWeatherData));
 			const parsedGeoData = JSON.parse(storedGeoData);
-			const parseStoredData = JSON.parse(storeTrickData);
-			console.log("geo data", parsedGeoData, storeTrickData);
+			const parseTrickData = JSON.parse(storeTrickData);
+			const parseRandomLocations = JSON.parse(storeRandomLocations);
 			setCity(parsedGeoData.city);
 			setLocality(parsedGeoData.State);
 			setLocality(parsedGeoData.locality);
 			setCoord(parsedGeoData.coord);
 			setLoading(false);
-			setTrick(parseStoredData.trick);
+			setTrick(parseTrickData.trick);
+			setRandomLocation(parseRandomLocations.name);
 		}
 	}, []);
 
@@ -121,6 +135,7 @@ function App() {
 									State={locality}
 									Coord={coord}
 									Trick={trick}
+									RandomLocation={randomLocation}
 								/>
 							}
 						/>

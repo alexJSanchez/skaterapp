@@ -4,7 +4,7 @@ import Nav from "../component/nav";
 import Time from "../component/time";
 import SpotLocator from "../component/spotLocator";
 
-function Home({ Weather, Coord, City, State, Trick }) {
+function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 	const [isUpsideDown, setIsUpsideDown] = useState(false);
 
 	const handleImageClick = () => {
@@ -92,7 +92,7 @@ function Home({ Weather, Coord, City, State, Trick }) {
 							</div>
 							<div className="flex justify-between px-10 py-2">
 								<h4 className="text-nowrap">Spot Check</h4>
-								<h4>SpotName</h4>
+								<h4>{RandomLocation}</h4>
 							</div>
 							<div className="flex justify-between px-10 pb-6 pt-2">
 								<h4 className="text-nowrap">Upcoming event</h4>
