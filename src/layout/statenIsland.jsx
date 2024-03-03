@@ -21,7 +21,7 @@ function StatenIsland() {
 			>
 				{spots.StatenIsland.map((res, index) => (
 					<div
-						id={res.name}
+						id={`${res.name.replace(/\s+/g, "")}`}
 						key={index}
 						className="flex flex-col items-center rounded-lg shadow-md p-4 bg-white "
 					>

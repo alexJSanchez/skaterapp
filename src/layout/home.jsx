@@ -17,7 +17,7 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 		url: spotFound.urlPath,
 	});
 	console.log(RandomLocation, createUrl);
-	console.log(createUrl);
+	console.log("url creation:", createUrl);
 	const handleImageClick = () => {
 		setIsUpsideDown(!isUpsideDown);
 	};
@@ -105,9 +105,14 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 							</div>
 							<div className="flex justify-between px-10 py-2">
 								<h4 className="text-nowrap">Spot Check</h4>
-								<Link to={`/${createUrl.url}#${createUrl.name}`}>
+								<Link to={`/${createUrl?.url}#${createUrl?.name}`}>
 									<h4>{RandomLocation}</h4>
 								</Link>
+								<a
+									href={`http://127.0.0.1:5173/${createUrl?.url}/#${createUrl?.name}`}
+								>
+									click me
+								</a>
 							</div>
 							<div className="flex justify-between px-10 pb-6 pt-2">
 								<h4 className="text-nowrap">Upcoming event</h4>

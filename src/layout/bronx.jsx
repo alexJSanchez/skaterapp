@@ -5,6 +5,7 @@ import starIcon from "../assets/star_fill_icon.png";
 import gripTape from "../assets/griptape.jpg";
 import skateIcon from "../assets/skateboard-icon.png";
 import ImageSlider from "../component/slider";
+
 function Bronx() {
 	useEffect(() => {
 		console.log("initial render:", spots);
@@ -21,15 +22,12 @@ function Bronx() {
 			>
 				{spots.Bronx.map((res, index) => (
 					<div
-						id={res.name.replace(/\s+/g, "")}
+						id={`${res.name.replace(/\s+/g, "")}`}
 						key={index}
 						className="flex flex-col items-center rounded-lg shadow-md p-4 bg-white "
 					>
-						{console.log(res.name)}
-						<h1
-							id={res.name}
-							className="text-2xl font-bold text-gray-800 uppercase"
-						>
+						{console.log(res.name.replace(/\s+/g, ""))}
+						<h1 className="text-2xl font-bold text-gray-800 uppercase">
 							{res.name}
 						</h1>
 						<div className="flex justify-center">
