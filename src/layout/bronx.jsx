@@ -8,7 +8,13 @@ import ImageSlider from "../component/slider";
 
 function Bronx() {
 	useEffect(() => {
-		console.log("initial render:", spots);
+		const hash = window.location.hash.substring(1);
+		if (hash) {
+			const element = document.getElementById(hash);
+			if (element) {
+				element.scrollIntoView({ behavior: "smooth", block: "start" });
+			}
+		}
 	}, []);
 	if (!spots.Bronx) {
 		return <div>Loading...</div>; // You can replace this with any loading indicator
