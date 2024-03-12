@@ -105,7 +105,6 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 								<h4 className="text-nowrap">Spot Check</h4>
 
 								<a href={`/queens#scrolltome`}>click here</a>
-								<p>work here</p>
 							</div>
 							<div className="flex justify-between px-10 pb-6 pt-2">
 								<h4 className="text-nowrap">Upcoming event</h4>
