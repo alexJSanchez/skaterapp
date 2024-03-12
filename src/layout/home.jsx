@@ -16,8 +16,6 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 		name: spotFound.name.replace(/\s+/g, ""),
 		url: spotFound.urlPath,
 	});
-	console.log(RandomLocation, createUrl);
-	console.log("url creation:", createUrl);
 	const handleImageClick = () => {
 		setIsUpsideDown(!isUpsideDown);
 	};
