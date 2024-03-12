@@ -11,7 +11,7 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 	const [isUpsideDown, setIsUpsideDown] = useState(false);
 
 	const spotFound = findSpotByName(allSpots, RandomLocation);
-
+	console.log(RandomLocation);
 	const [createUrl, setCreateUrl] = useState({
 		name: spotFound.name.replace(/\s+/g, ""),
 		url: spotFound.urlPath,
@@ -103,12 +103,19 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 							</div>
 							<div className="flex justify-between px-10 py-2">
 								<h4 className="text-nowrap">Spot Check</h4>
-								<Link
-									to={`/${createUrl?.url}#${createUrl?.name}`}
-									onClick={() => window.location}
+
+								<a
+									href={`/${createUrl?.url}#${createUrl?.name}`}
+									onClick={(e) => {
+										// Prevent the default behavior of the link
+										const element = document.getElementById(createUrl?.name);
+										if (element) {
+											element.scrollIntoView({ behavior: "smooth" }); // Scroll to the element smoothly
+										}
+									}}
 								>
-									<h4>{RandomLocation}</h4>
-								</Link>
+									click here
+								</a>
 							</div>
 							<div className="flex justify-between px-10 pb-6 pt-2">
 								<h4 className="text-nowrap">Upcoming event</h4>
