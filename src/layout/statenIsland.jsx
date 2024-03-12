@@ -6,9 +6,7 @@ import gripTape from "../assets/griptape.jpg";
 import skateIcon from "../assets/skateboard-icon.png";
 import ImageSlider from "../component/slider";
 function StatenIsland() {
-	useEffect(() => {
-		console.log("initial render:", spots.StatenIsland[0]);
-	}, []);
+	useEffect(() => {}, []);
 	if (!spots.StatenIsland) {
 		return <div>Loading...</div>; // You can replace this with any loading indicator
 	}

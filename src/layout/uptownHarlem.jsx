@@ -6,9 +6,7 @@ import gripTape from "../assets/griptape.jpg";
 import skateIcon from "../assets/skateboard-icon.png";
 import ImageSlider from "../component/slider";
 function UptownHarlem() {
-	useEffect(() => {
-		console.log("initial render:", spots.UptownHarlem[0]);
-	}, []);
+	useEffect(() => {}, []);
 	if (!spots.UptownHarlem) {
 		return <div>Loading...</div>; // You can replace this with any loading indicator
 	}

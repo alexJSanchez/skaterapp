@@ -6,9 +6,7 @@ import gripTape from "../assets/griptape.jpg";
 import skateIcon from "../assets/skateboard-icon.png";
 import ImageSlider from "../component/slider";
 function Queens() {
-	useEffect(() => {
-		console.log("initial render:", spots.Queens[0]);
-	}, []);
+	useEffect(() => {}, []);
 	if (!spots.Queens) {
 		return <div>Loading...</div>; // You can replace this with any loading indicator
 	}
@@ -25,7 +23,6 @@ function Queens() {
 						key={index}
 						className="flex flex-col items-center rounded-lg shadow-md p-4 bg-white "
 					>
-						{console.log(res.name.replace(/\s+/g, ""))}
 						<h1 className="text-2xl font-bold text-gray-800 uppercase">
 							{res.name}
 						</h1>

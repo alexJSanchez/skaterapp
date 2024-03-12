@@ -111,7 +111,6 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 								>
 									<h4>{RandomLocation}</h4>
 								</Link>
-								{console.log(createUrl.url, createUrl.name)}
 							</div>
 							<div className="flex justify-between px-10 pb-6 pt-2">
 								<h4 className="text-nowrap">Upcoming event</h4>
