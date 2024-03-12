@@ -44,6 +44,7 @@ function Queens() {
 						<img src={skateIcon} />
 						<p className=" text-gray-700 font-bold">{res.summary}</p>
 						<div
+							id="scrolltome"
 							style={{
 								borderStyle: "dotted",
 								borderWidth: "1px",

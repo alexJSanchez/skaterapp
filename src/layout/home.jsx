@@ -104,18 +104,7 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 							<div className="flex justify-between px-10 py-2">
 								<h4 className="text-nowrap">Spot Check</h4>
 
-								<a
-									href={`/${createUrl?.url}#${createUrl?.name}`}
-									onClick={(e) => {
-										// Prevent the default behavior of the link
-										const element = document.getElementById(createUrl?.name);
-										if (element) {
-											element.scrollIntoView({ behavior: "smooth" }); // Scroll to the element smoothly
-										}
-									}}
-								>
-									click here
-								</a>
+								<a href={`/queens#scrolltome`}>click here</a>
 							</div>
 							<div className="flex justify-between px-10 pb-6 pt-2">
 								<h4 className="text-nowrap">Upcoming event</h4>
