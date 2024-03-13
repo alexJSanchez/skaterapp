@@ -23,7 +23,6 @@ function Queens() {
 						key={index}
 						className="flex flex-col items-center rounded-lg shadow-md p-4 bg-white "
 					>
-						{console.log(res.name.replace(/\s+/g, ""))}
 						<h1 className="text-2xl font-bold text-gray-800 uppercase">
 							{res.name}
 						</h1>
@@ -44,7 +43,6 @@ function Queens() {
 						<img src={skateIcon} />
 						<p className=" text-gray-700 font-bold">{res.summary}</p>
 						<div
-							id="scrolltome"
 							style={{
 								borderStyle: "dotted",
 								borderWidth: "1px",
@@ -55,6 +53,7 @@ function Queens() {
 					</div>
 				))}
 			</div>
+			<div id="scrolltome">scroll here</div>
 		</>
 	);
 }

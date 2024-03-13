@@ -7,11 +7,19 @@ import SpotLocator from "../component/spotLocator";
 import { findSpotByName, allSpots } from "../utils/locationDisplay";
 import { Link } from "react-router-dom";
 
-function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
+function Home({
+	Weather,
+	Coord,
+	City,
+	State,
+	Trick,
+	RandomLocation,
+	QuoteJoke,
+}) {
 	const [isUpsideDown, setIsUpsideDown] = useState(false);
 
 	const spotFound = findSpotByName(allSpots, RandomLocation);
-	console.log(RandomLocation);
+
 	const [createUrl, setCreateUrl] = useState({
 		name: spotFound.name.replace(/\s+/g, ""),
 		url: spotFound.urlPath,
@@ -29,11 +37,7 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 				<div className="relative text-white gap-4 flex flex-col  justify-between h-full">
 					<div className=" py-10 px-6 ">
 						<div className="flex">
-							<p className="opacity-70 text-[13px] text-white">
-								“The science of operations, as derived from mathematics more
-								especially, is a science of itself, and has its own abstract
-								truth and value.”
-							</p>
+							<p className="opacity-70 text-[13px] text-white">{QuoteJoke}</p>
 							{/* <img
 								className="w-5 h-5"
 								src={iconRefresh}
@@ -41,7 +45,7 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 							></img> */}
 							<Nav />
 						</div>
-						<p className="inter-text text-[14px] mt-3">Ada Lovelace</p>
+						<p className="inter-text text-[14px] mt-1">ChuckNorris</p>
 					</div>
 
 					{!isUpsideDown ? (
@@ -103,8 +107,9 @@ function Home({ Weather, Coord, City, State, Trick, RandomLocation }) {
 							</div>
 							<div className="flex justify-between px-10 py-2">
 								<h4 className="text-nowrap">Spot Check</h4>
-
-								<a href={`/queens#scrolltome`}>click here</a>
+								<a href={`/${createUrl?.url}#${createUrl?.name}`}>
+									{createUrl.name}
+								</a>
 							</div>
 							<div className="flex justify-between px-10 pb-6 pt-2">
 								<h4 className="text-nowrap">Upcoming event</h4>
@@ -125,5 +130,6 @@ Home.propTypes = {
 	Coord: PropTypes.object.isRequired,
 	Trick: PropTypes.string.isRequired,
 	RandomLocation: PropTypes.string.isRequired,
+	QuoteJoke: PropTypes.string.isRequired,
 };
 export default Home;

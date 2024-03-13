@@ -4,6 +4,7 @@ function Time() {
 	const [date, setDate] = useState({
 		hours: "0",
 		minutes: "0",
+		seconds: "",
 		timeOfDay: "time of day",
 	});
 	setInterval(() => {
@@ -21,9 +22,9 @@ function Time() {
 		} else {
 			timeOfDay = "Good Evening";
 		}
-
+		const convertedHours = hours % 12 || 12;
 		setDate({
-			hours: hours,
+			hours: convertedHours,
 			minutes: minutes,
 			seconds: seconds,
 			timeOfDay: timeOfDay,

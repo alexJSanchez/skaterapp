@@ -30,11 +30,27 @@ function App() {
 	const [locality, setLocality] = useState("State");
 	const [loading, setLoading] = useState(true);
 	const [randomLocation, setRandomLocation] = useState("");
+	const [funnyQuote, setFunnyQuote] = useState("");
 
 	useEffect(() => {
 		setLoading(true); // Set loading to true when starting geolocation lookup
 		const fetchData = async () => {
 			try {
+				const quoteKey = "G1kyJrGrI4+J/DcXopZOGw==nUTt7gAjlLQ9nNC3";
+				const url = "https://api.api-ninjas.com/v1/chucknorris";
+				const response = await fetch(url, {
+					method: "GET",
+					headers: {
+						"X-Api-Key": quoteKey,
+					},
+				});
+				if (!response.ok) {
+					throw new Error(`http error! status: ${response.status}`);
+				}
+				const quoteData = await response.json();
+				setFunnyQuote(quoteData.joke);
+				localStorage.setItem("quote", quoteData.joke);
+
 				const position = await new Promise((resolve, reject) => {
 					navigator.geolocation.getCurrentPosition(resolve, reject);
 				});
@@ -95,6 +111,7 @@ function App() {
 		const storedGeoData = localStorage.getItem("geoData");
 		const storeTrickData = localStorage.getItem("trickData");
 		const storeRandomLocations = localStorage.getItem("randomLocation");
+		const storeQuote = localStorage.getItem("quote");
 
 		if (!storedWeatherData || !storedGeoData) {
 			fetchData();
@@ -104,6 +121,7 @@ function App() {
 			const parsedGeoData = JSON.parse(storedGeoData);
 			const parseTrickData = JSON.parse(storeTrickData);
 
+			setFunnyQuote(storeQuote);
 			setCity(parsedGeoData.city);
 			setLocality(parsedGeoData.State);
 			setLocality(parsedGeoData.locality);
@@ -131,6 +149,7 @@ function App() {
 									Coord={coord}
 									Trick={trick}
 									RandomLocation={randomLocation}
+									QuoteJoke={funnyQuote}
 								/>
 							}
 						/>
