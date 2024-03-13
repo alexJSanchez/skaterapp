@@ -57,12 +57,11 @@ function Home({
 						<div></div>
 					)}
 					<div className="opacity-95 text-white py-10 px-6 flex flex-col">
-						<Time />
-
+						<Time State={State} City={City} />
+						<p>
+							{State}, {City}
+						</p>
 						<div>
-							<p>
-								{State}, {City}
-							</p>
 							<div className="flex gap-1">
 								<p>Forcast:</p>
 								{Weather.forcast.map((res, index) => {

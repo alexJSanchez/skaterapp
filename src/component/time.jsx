@@ -1,6 +1,7 @@
 import { useState } from "react";
 import sunIcon from "../assets/desktop/icon-sun.svg";
-function Time() {
+import moonIcon from "../assets/desktop/icon-moon.svg";
+function Time({ State, City }) {
 	const [date, setDate] = useState({
 		hours: "0",
 		minutes: "0",
@@ -38,10 +39,13 @@ function Time() {
 				<img className="w-5 h-5" src={sunIcon} alt="Sun Icon"></img>
 				<p className="text-grayish inter-text">{date.timeOfDay}</p>
 			</div>
-			<div>
-				<p className="inter-text text-[100px] font-bold">
+			<div style={{ display: "flex", flexDirection: "column" }}>
+				<p className=" text-[100px] font-bold">
 					{date.hours}:{date.minutes < 10 ? `0${date.minutes}` : date.minutes}
 					<span className="text-sm">{date.hours > 12 ? `Pm` : "Am"}</span>
+				</p>
+				<p>
+					{State}, {City}
 				</p>
 			</div>
 		</>
