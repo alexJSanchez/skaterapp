@@ -5,7 +5,10 @@ import Nav from "../component/nav";
 import Time from "../component/time";
 import SpotLocator from "../component/spotLocator";
 import { findSpotByName, allSpots } from "../utils/locationDisplay";
+import GetTime from "../utils/getTime";
 import { Link } from "react-router-dom";
+import dayBgImage from "../assets/desktop/bg-image-daytime.jpg";
+import nightBgImage from "../assets/desktop/bg-image-nighttime.jpg";
 
 function Home({
 	Weather,
@@ -20,6 +23,8 @@ function Home({
 
 	const spotFound = findSpotByName(allSpots, RandomLocation);
 
+	const { isDaytime } = GetTime();
+
 	const [createUrl, setCreateUrl] = useState({
 		name: spotFound.name.replace(/\s+/g, ""),
 		url: spotFound.urlPath,
@@ -30,7 +35,12 @@ function Home({
 
 	return (
 		<>
-			<div className="relative bg-[url('./assets/mobile/bg-image-daytime.jpg')] h-screen bg-cover">
+			<div
+				style={{
+					backgroundImage: `url(${isDaytime ? dayBgImage : nightBgImage})`,
+				}}
+				className="relative bg-[url('./assets/mobile/bg-image-daytime.jpg')] h-screen bg-cover"
+			>
 				{/* Overlay with opacity */}
 				<div className="absolute inset-0 bg-black opacity-50"></div>
 				{/* Content */}

@@ -1,30 +1,18 @@
 import { useState } from "react";
 import sunIcon from "../assets/desktop/icon-sun.svg";
 import moonIcon from "../assets/desktop/icon-moon.svg";
+import GetTime from "../utils/getTime";
 function Time({ State, City }) {
 	const [date, setDate] = useState({
 		hours: "0",
 		minutes: "0",
 		seconds: "",
-		timeOfDay: "time of day",
+		isDaytime: true,
+		timeOfDay: true,
 	});
 	setInterval(() => {
-		let currentTime = new Date();
-		let timeOfDay = "";
-		const hours = currentTime.getHours();
-		const minutes = currentTime.getMinutes();
-		const seconds = currentTime.getSeconds();
-		if (hours >= 0 && hours < 6) {
-			timeOfDay = "Good Morning";
-		} else if (hours >= 6 && hours < 12) {
-			timeOfDay = "Good Morning";
-		} else if (hours >= 12 && hours < 18) {
-			timeOfDay = "Good Afternoon";
-		} else {
-			timeOfDay = "Good Evening";
-		}
-		const convertedHours = hours % 12 || 12;
-		const isDaytime = hours >= 6 && hours < 18;
+		const { convertedHours, isDaytime, minutes, seconds, timeOfDay } =
+			GetTime();
 		setDate({
 			hours: convertedHours,
 			isDaytime: isDaytime,
