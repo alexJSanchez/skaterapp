@@ -1,5 +1,5 @@
 import { useState } from "react";
-import menu from "../assets/menu_icon.png";
+import menu from "../assets/menuwhite.svg";
 import { Link } from "react-router-dom";
 import gripTape from "../assets/griptape.jpg";
 
