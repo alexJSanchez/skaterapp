@@ -1,5 +1,6 @@
 import { useState } from "react";
-import menu from "../assets/menuwhite.svg";
+import menuWhite from "../assets/menuwhite.svg";
+import menuGreen from "../assets/menugreen.svg";
 import { Link } from "react-router-dom";
 import gripTape from "../assets/griptape.jpg";
 
@@ -13,7 +14,11 @@ export default function Nav() {
 		<div>
 			<div className="dropdown" style={{}}>
 				<div onClick={toggleMenu} className="dropdown-toggle">
-					<img src={menu} style={{ width: "70px" }}></img>
+					{isOpen ? (
+						<img src={menuGreen} style={{ width: "100px" }}></img>
+					) : (
+						<img src={menuWhite} style={{ width: "100px" }}></img>
+					)}
 				</div>
 				{isOpen && (
 					<div
