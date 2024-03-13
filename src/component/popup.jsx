@@ -42,7 +42,7 @@ Popup.propTypes = {
 	Bust: PropTypes.number.isRequired,
 	Summary: PropTypes.string.isRequired,
 	Status: PropTypes.string.isRequired,
-	Images: PropTypes.arrayOf(PropTypes.string).isRequired,
+	Images: PropTypes.objectOf(PropTypes.string).isRequired,
 	Star: PropTypes.string.isRequired,
 	HandlePopup: PropTypes.func.isRequired,
 };

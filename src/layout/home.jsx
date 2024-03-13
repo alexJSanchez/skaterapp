@@ -1,12 +1,14 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import arrowDown from "../assets/desktop/icon-arrow-down.svg";
 import Nav from "../component/nav";
 import Time from "../component/time";
+import Popup from "../component/popup";
 import SpotLocator from "../component/spotLocator";
 import { findSpotByName, allSpots } from "../utils/locationDisplay";
 import GetTime from "../utils/getTime";
 import { Link } from "react-router-dom";
+import starIcon from "../assets/star_fill_icon.png";
 import dayBgImage from "../assets/desktop/bg-image-daytime.jpg";
 import nightBgImage from "../assets/desktop/bg-image-nighttime.jpg";
 
@@ -20,15 +22,21 @@ function Home({
 	QuoteJoke,
 }) {
 	const [isUpsideDown, setIsUpsideDown] = useState(false);
-
+	const [popup, setPopup] = useState(true);
+	const [randomCoords, setRandomCoords] = useState({
+		longitude: 0,
+		latitude: 0,
+	});
 	const spotFound = findSpotByName(allSpots, RandomLocation);
-
+	console.log(popup);
 	const { isDaytime } = GetTime();
-
 	const [createUrl, setCreateUrl] = useState({
 		name: spotFound.name.replace(/\s+/g, ""),
 		url: spotFound.urlPath,
 	});
+	const handlePopup = () => {
+		setPopup(!popup);
+	};
 	const handleImageClick = () => {
 		setIsUpsideDown(!isUpsideDown);
 	};
@@ -57,11 +65,23 @@ function Home({
 						</div>
 						<Nav />
 					</div>
-
 					{!isUpsideDown ? (
 						<SpotLocator
 							Latitude={Coord.latitude}
 							Longitude={Coord.longitude}
+						/>
+					) : (
+						<div></div>
+					)}
+					{!popup ? (
+						<Popup
+							Name={spotFound.name}
+							Star={starIcon}
+							Images={spotFound.images}
+							Bust={spotFound.bust.level}
+							Status={spotFound.bust.status}
+							Summary={spotFound.summary}
+							HandlePopup={handlePopup}
 						/>
 					) : (
 						<div></div>
@@ -98,7 +118,6 @@ function Home({
 							</button>
 						</div>
 					</div>
-
 					{!isUpsideDown ? (
 						""
 					) : (
@@ -111,11 +130,12 @@ function Home({
 								<h4 className="text-nowrap ">Inspiration</h4>
 								<a>Link to vid</a>
 							</div>
-							<div className="flex justify-between px-10 py-2">
+							<div
+								onClick={handlePopup}
+								className="flex justify-between px-10 py-2"
+							>
 								<h4 className="text-nowrap">Spot Check</h4>
-								<a href={`/${createUrl?.url}#${createUrl?.name}`}>
-									{createUrl.name}
-								</a>
+								<p>{spotFound.name}</p>
 							</div>
 							<div className="flex justify-between px-10 pb-6 pt-2">
 								<h4 className="text-nowrap">Upcoming event</h4>
@@ -139,3 +159,5 @@ Home.propTypes = {
 	QuoteJoke: PropTypes.string.isRequired,
 };
 export default Home;
+
+// <a href={`/${createUrl?.url}#${createUrl?.name}`}>{createUrl.name}</a>//
