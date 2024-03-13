@@ -28,7 +28,7 @@ function Home({
 		latitude: 0,
 	});
 	const spotFound = findSpotByName(allSpots, RandomLocation);
-	console.log(popup);
+
 	const { isDaytime } = GetTime();
 	const [createUrl, setCreateUrl] = useState({
 		name: spotFound.name.replace(/\s+/g, ""),

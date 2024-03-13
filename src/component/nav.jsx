@@ -15,9 +15,9 @@ export default function Nav() {
 			<div className="dropdown" style={{}}>
 				<div onClick={toggleMenu} className="dropdown-toggle">
 					{isOpen ? (
-						<img src={menuGreen} style={{ width: "100px" }}></img>
+						<img src={menuGreen} style={{ width: "70px" }}></img>
 					) : (
-						<img src={menuWhite} style={{ width: "100px" }}></img>
+						<img src={menuWhite} style={{ width: "70px" }}></img>
 					)}
 				</div>
 				{isOpen && (
