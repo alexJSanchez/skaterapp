@@ -24,8 +24,10 @@ function Time({ State, City }) {
 			timeOfDay = "Good Evening";
 		}
 		const convertedHours = hours % 12 || 12;
+		const isDaytime = hours >= 6 && hours < 18;
 		setDate({
 			hours: convertedHours,
+			isDaytime: isDaytime,
 			minutes: minutes,
 			seconds: seconds,
 			timeOfDay: timeOfDay,
@@ -36,16 +38,22 @@ function Time({ State, City }) {
 	return (
 		<>
 			<div className="flex gap-3 items-center">
-				<img className="w-5 h-5" src={sunIcon} alt="Sun Icon"></img>
+				{date.isDaytime ? (
+					<img className="w-5 h-5" src={sunIcon} alt="Sun Icon"></img>
+				) : (
+					<img className="w-5 h-5" src={moonIcon} alt="Moon Icon"></img>
+				)}
 				<p className="text-grayish inter-text">{date.timeOfDay}</p>
 			</div>
 			<div style={{ display: "flex", flexDirection: "column" }}>
 				<p className=" text-[100px] font-bold">
 					{date.hours}:{date.minutes < 10 ? `0${date.minutes}` : date.minutes}
-					<span className="text-sm">{date.hours > 12 ? `Pm` : "Am"}</span>
-				</p>
-				<p>
-					{State}, {City}
+					<span className="text-sm">
+						{date.convertedHours > 12 ? `Pm` : "Am"}
+					</span>
+					<p className="text-sm">
+						{State}, {City}
+					</p>
 				</p>
 			</div>
 		</>

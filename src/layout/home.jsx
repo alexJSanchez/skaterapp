@@ -56,11 +56,8 @@ function Home({
 					) : (
 						<div></div>
 					)}
-					<div className="opacity-95 text-white py-10 px-6 flex flex-col">
+					<div className="opacity-95 text-white  px-6 flex flex-col">
 						<Time State={State} City={City} />
-						<p>
-							{State}, {City}
-						</p>
 						<div>
 							<div className="flex gap-1">
 								<p>Forcast:</p>
