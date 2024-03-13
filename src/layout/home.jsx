@@ -34,18 +34,18 @@ function Home({
 				{/* Overlay with opacity */}
 				<div className="absolute inset-0 bg-black opacity-50"></div>
 				{/* Content */}
-				<div className="relative text-white gap-4 flex flex-col  justify-between h-full">
-					<div className=" py-10 px-6 ">
-						<div className="flex">
+				<div className="relative text-white gap-4 flex flex-col justify-between h-full">
+					<div className=" py-10 px-6 flex justify-between">
+						<div className="flex flex-col">
 							<p className="opacity-70 text-[13px] text-white">{QuoteJoke}</p>
 							{/* <img
 								className="w-5 h-5"
 								src={iconRefresh}
 								alt="Refresh Icon"
 							></img> */}
-							<Nav />
+							<p className="inter-text text-[14px] mt-1">ChuckNorris</p>
 						</div>
-						<p className="inter-text text-[14px] mt-1">ChuckNorris</p>
+						<Nav />
 					</div>
 
 					{!isUpsideDown ? (

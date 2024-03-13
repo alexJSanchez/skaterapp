@@ -51,11 +51,11 @@ function Time({ State, City }) {
 					<span className="text-sm">
 						{date.convertedHours > 12 ? `Pm` : "Am"}
 					</span>
-					<p className="text-sm">
-						{State}, {City}
-					</p>
 				</p>
 			</div>
+			<p className="text-sm">
+				{State}, {City}
+			</p>
 		</>
 	);
 }
