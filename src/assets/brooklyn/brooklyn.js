@@ -223,6 +223,7 @@ const spots = [
 			2: BAMS2,
 			3: BAMS3,
 		},
+		maps: `https://www.google.com/maps?ll=40.68671,-73.979361&z=17&t=m&hl=en&gl=US&mapclient=embed&q=Lafayette+Ave+%26+Flatbush+Ave+Brooklyn,+NY+11217`,
 	},
 	{
 		name: "BAM 2",
@@ -246,6 +247,7 @@ const spots = [
 			2: BAM22,
 			3: BAM23,
 		},
+		maps: `https://www.google.com/maps?ll=40.695946,-73.984581&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Tillary+St+%26+Flatbush+Ave+Ext+Brooklyn,+NY+11201`,
 	},
 	{
 		name: "Blue Park",
@@ -271,6 +273,7 @@ const spots = [
 			4: BluePark4,
 			5: BluePark5,
 		},
+		maps: `https://www.google.com/maps?ll=40.708625,-73.945125&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Scholes+St+%26+Manhattan+Ave+Brooklyn,+NY+11206`,
 	},
 	{
 		name: "Borough Hall",
@@ -293,6 +296,7 @@ const spots = [
 			1: BoroughHallS1,
 			2: BoroughHallS2,
 		},
+		maps: `https://www.google.com/maps/place/Remsen+St+%26+Court+St,+Brooklyn,+NY+11201/@40.693058,-73.9907116,17z/data=!3m1!4b1!4m10!1m2!2m1!1sRemsen+St+%26+Court+St+Brooklyn,+NY+11201!3m6!1s0x89c25a493dd78851:0xd62c6db7e2f41d12!8m2!3d40.693058!4d-73.9907116!15sCidSZW1zZW4gU3QgJiBDb3VydCBTdCBCcm9va2x5biwgTlkgMTEyMDGSAQxpbnRlcnNlY3Rpb27gAQA!16s%2Fg%2F11hb9lcntf?hl=en&entry=ttu`,
 	},
 	{
 		name: "Brooklyn Army Terminal",
@@ -315,6 +319,7 @@ const spots = [
 			1: BrooklynArmyTerminal1,
 			2: BrooklynArmyTerminal2,
 		},
+		maps: `https://www.google.com/maps?ll=40.646063,-74.024499&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=3770129088718404527`,
 	},
 	{
 		name: "Brooklyn Bridge Park",
@@ -337,6 +342,7 @@ const spots = [
 			2: BrooklynBridgePark2,
 			3: BrooklynBridgePark3,
 		},
+		maps: `https://www.google.com/maps/place/Old+Fulton+St+%26+Furman+St,+Brooklyn,+NY+11201/@40.702887,-73.994786,16z/data=!4m6!3m5!1s0x89c25a30a806de9d:0xba011fe87d4ba9f6!8m2!3d40.7028871!4d-73.9947856!16s%2Fg%2F11gdyrfl8p?hl=en&entry=ttu`,
 	},
 	{
 		name: "Brower Park",
@@ -363,6 +369,7 @@ const spots = [
 			5: BrowerPark5,
 			6: BrowerPark6,
 		},
+		maps: `https://www.google.com/maps?ll=40.673499,-73.943234&z=17&t=m&hl=en&gl=US&mapclient=embed&cid=12143457958383494018`,
 	},
 	{
 		name: "Butter Benches",
@@ -384,6 +391,7 @@ const spots = [
 			0: ButterBenches0,
 			1: ButterBenches1,
 		},
+		maps: `https://www.google.com/maps?ll=40.712912,-73.955054&z=17&t=m&hl=en&gl=US&mapclient=embed&q=Hope+St+%26+Marcy+Ave+Brooklyn,+NY+11211`,
 	},
 	{
 		name: "Cadman Plaza",
@@ -414,6 +422,7 @@ const spots = [
 			9: CadmanPlaza9,
 			10: CadmanPlaza10,
 		},
+		maps: `https://www.google.com/maps?ll=40.697672,-73.990643&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=17897380332242660994`,
 	},
 	{
 		name: "Carroll Manual Pad",
@@ -433,6 +442,7 @@ const spots = [
 			0: CarrolManualPad0,
 			1: CarrolManualPad1,
 		},
+		maps: `https://www.google.com/maps?ll=40.68079,-73.991728&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Union+St+%26+Hoyt+St+Brooklyn,+NY+11231`,
 	},
 	{
 		name: "Chauncey Ledges",
@@ -454,6 +464,7 @@ const spots = [
 			2: ChaunceyLedges2,
 			3: ChaunceyLedges3,
 		},
+		maps: `https://www.google.com/maps/place/Broadway+%26+Chauncey+St,+Brooklyn,+NY+11233/@40.682666,-73.910042,14z/data=!4m6!3m5!1s0x89c25c41ac259931:0xb35851664dff25c8!8m2!3d40.6826659!4d-73.9100416!16s%2Fg%2F11hb5ffzvg?hl=en&entry=ttu`,
 	},
 	{
 		name: "Commodore Barry Park",
@@ -478,6 +489,7 @@ const spots = [
 			3: CommodoreBarryPark3,
 			4: CommodoreBarryPark4,
 		},
+		maps: `https://www.google.com/maps/place/N+Elliott+Pl+%26+Park+Ave,+Brooklyn,+NY+11205/@40.6964011,-73.9773515,17z/data=!3m1!4b1!4m10!1m2!2m1!1sN+Elliott+Pl+%26+Park+Ave+Brooklyn,+NY+11205!3m6!1s0x89c25bca21076433:0x9f2252845de0e482!8m2!3d40.6964011!4d-73.9773515!15sCipOIEVsbGlvdHQgUGwgJiBQYXJrIEF2ZSBCcm9va2x5biwgTlkgMTEyMDWSAQxpbnRlcnNlY3Rpb27gAQA!16s%2Fg%2F11hb2sf0nq?hl=en&entry=ttu`,
 	},
 	{
 		name: "Crown Heights Banks",
@@ -500,6 +512,7 @@ const spots = [
 			1: CrownHeightsBanks1,
 			2: CrownHeightsBanks2,
 		},
+		maps: `https://www.google.com/maps/place/New+York+Ave+%26+Fenimore+St,+Brooklyn,+NY+11225/@40.658881,-73.947532,16z/data=!4m6!3m5!1s0x89c25b657e8f5885:0x3dbae0c744196501!8m2!3d40.6588811!4d-73.9475321!16s%2Fg%2F11gdz_0rw9?hl=en&entry=ttu`,
 	},
 	{
 		name: "Dewey High School",
@@ -528,6 +541,7 @@ const spots = [
 			7: DeweyHighSchool7,
 			8: DeweyHighSchool8,
 		},
+		maps: `https://www.google.com/maps?ll=40.658881,-73.947532&z=16&t=m&hl=en&gl=US&mapclient=embed&q=New+York+Ave+%26+Fenimore+St+Brooklyn,+NY+11225`,
 	},
 	{
 		name: "Expanding Brain Banks",
@@ -548,6 +562,7 @@ const spots = [
 			0: ExpandingBrainBanks0,
 			1: ExpandingBrainBanks1,
 		},
+		maps: `https://www.google.com/maps/place/N+14th+St+%26+Wythe+Ave,+Brooklyn,+NY+11249/@40.723398,-73.956279,18z/data=!4m6!3m5!1s0x89c259431c930e2f:0xd0f50e0a1281022a!8m2!3d40.7233977!4d-73.9562789!16s%2Fg%2F11hb8h9t5n?hl=en&entry=ttu`,
 	},
 	{
 		name: "Fish Gap",
@@ -570,6 +585,7 @@ const spots = [
 			1: FishGap1,
 			2: FishGap2,
 		},
+		maps: `https://www.google.com/maps?ll=40.697761,-73.967743&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Flushing+Ave+%26+Washington+Ave+Brooklyn,+NY+11205`,
 	},
 	{
 		name: "Farragut Ledges",
@@ -592,6 +608,7 @@ const spots = [
 			2: FarragutLedges2,
 			3: FarragutLedges3,
 		},
+		maps: `https://www.google.com/maps?ll=40.699848,-73.982938&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Sands+St+%26+Gold+St+Brooklyn,+NY+11201`,
 	},
 	{
 		name: "Fort Greene Park",
@@ -619,6 +636,7 @@ const spots = [
 			6: FortGreenePark6,
 			7: FortGreenePark7,
 		},
+		maps: `https://www.google.com/maps?ll=40.702608,-73.992566&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Front+St+%26+Dock+St+Brooklyn,+NY+11201`,
 	},
 	{
 		name: "Front Street Ledge",
@@ -642,6 +660,7 @@ const spots = [
 			2: FrontStreetLedge2,
 			3: FrontStreetLedge3,
 		},
+		maps: `https://www.google.com/maps?ll=40.702608,-73.992566&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Front+St+%26+Dock+St+Brooklyn,+NY+11201`,
 	},
 	{
 		name: "Humboldt Street YMCA",
@@ -667,6 +686,7 @@ const spots = [
 			4: HumboldtStreetYMCA4,
 			5: HumboldtStreetYMCA5,
 		},
+		maps: `https://www.google.com/maps/place/Humboldt+St+%26+Boerum+St,+Brooklyn,+NY+11206/@40.706065,-73.941283,16z/data=!4m6!3m5!1s0x89c25bfe9850b4af:0x6158f279bc6b42eb!8m2!3d40.7060649!4d-73.9412826!16s%2Fg%2F11h9_hn2rg?hl=en&entry=ttu`,
 	},
 	{
 		name: "K Bridge Park",
@@ -702,6 +722,7 @@ const spots = [
 			14: KBridgePark14,
 			15: KBridgePark15,
 		},
+		maps: `https://www.google.com/maps/place/Porter+Ave+%26+Cherry+St,+Brooklyn,+NY+11222/@40.724049,-73.936073,16z/data=!4m6!3m5!1s0x89c2594b5367443b:0xbdfd78d4f6a55ab4!8m2!3d40.7240489!4d-73.9360732!16s%2Fg%2F11h9xfdnyy?hl=en&entry=ttu`,
 	},
 	{
 		name: "Mambo Bar",
@@ -725,6 +746,7 @@ const spots = [
 			2: MamboBar2,
 			3: MamboBar3,
 		},
+		maps: `https://www.google.com/maps?ll=40.70797,-73.932411&z=16&t=m&hl=en&gl=US&mapclient=embed&q=100+Morgan+Ave+Brooklyn,+NY+11237`,
 	},
 	{
 		name: "Maria Hernandez Park",
@@ -746,6 +768,7 @@ const spots = [
 			0: MariaHernandezPark0,
 			1: MariaHernandezPark1,
 		},
+		maps: `https://www.google.com/maps/place/Irving+Ave+%26+Starr+St,+Brooklyn,+NY+11237/@40.704398,-73.923834,16z/data=!4m6!3m5!1s0x89c25c1cd6aed457:0xcec9c4c3e4d3fd1b!8m2!3d40.704398!4d-73.923834!16s%2Fg%2F11hb0dqj8p?hl=en&entry=ttu`,
 	},
 	{
 		name: "McCarren Park",
@@ -767,6 +790,7 @@ const spots = [
 			2: McCarrenPark2,
 			3: McCarrenPark3,
 		},
+		maps: `https://www.google.com/maps?ll=40.719833,-73.952968&z=18&t=m&hl=en&gl=US&mapclient=embed&cid=8534682054803051183`,
 	},
 	{
 		name: "McGolrick Park",
@@ -790,6 +814,7 @@ const spots = [
 			3: McGolrickPark3,
 			4: McGolrickPark4,
 		},
+		maps: `https://www.google.com/maps?ll=40.724476,-73.94335&z=17&t=m&hl=en&gl=US&mapclient=embed&cid=5777099863421568414`,
 	},
 	{
 		name: "Polish Park",
