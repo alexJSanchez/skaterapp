@@ -57,6 +57,9 @@ import FedEx6 from "./FedEx/6.jpeg";
 import FedEx7 from "./FedEx/7.jpeg";
 import FedEx8 from "./FedEx/8.jpeg";
 import FedEx9 from "./FedEx/9.jpeg";
+import FiveThenThree0 from "./FiveThenThree/0.jpg";
+import FiveThenThree1 from "./FiveThenThree/1.jpg";
+import FiveThenThree2 from "./FiveThenThree/2.jpg";
 import IBM0 from "./IBMLedges/0.jpeg";
 import IBM1 from "./IBMLedges/1.jpeg";
 import IBM2 from "./IBMLedges/2.jpeg";
@@ -127,6 +130,7 @@ const spots = [
 			5: BellevuePark4,
 			6: BellevuePark5,
 		},
+		maps: `https://www.google.com/maps?ll=40.740416,-73.97909&z=16&t=m&hl=en&gl=US&mapclient=embed&q=2nd+Ave+%26+E+27th+St+New+York,+NY+10016`,
 	},
 	{
 		name: "Big Screen Ledges",
@@ -153,6 +157,7 @@ const spots = [
 			5: BigScreenLedges4,
 			6: BigScreenLedges5,
 		},
+		maps: `https://www.google.com/maps?ll=40.747281,-73.989611&z=18&t=m&hl=en&gl=US&mapclient=embed&q=6th+Ave+%26+W+30th+St+New+York,+NY+10001`,
 	},
 	{
 		name: "Brick 9",
@@ -180,6 +185,7 @@ const spots = [
 			5: Brick5,
 			6: Brick6,
 		},
+		maps: `https://www.google.com/maps?ll=40.752992,-73.96988&z=16&t=m&hl=en&gl=US&mapclient=embed&q=2nd+Ave+%26+E+47th+St+New+York,+NY+10017`,
 	},
 	{
 		name: "Bryant Park",
@@ -209,6 +215,7 @@ const spots = [
 			7: BryantPark7,
 			8: BryantPark8,
 		},
+		maps: `https://www.google.com/maps?ll=40.753483,-73.980889&z=16&t=m&hl=en&gl=US&mapclient=embed&q=W+42nd+St+%26+5th+Ave+New+York,+NY+10036`,
 	},
 	{
 		name: "Car Wash Bump",
@@ -231,6 +238,7 @@ const spots = [
 			0: CarWashBump0,
 			1: CarWashBump1,
 		},
+		maps: `https://www.google.com/maps?ll=40.76486,-73.998046&z=18&t=m&hl=en&gl=US&mapclient=embed&q=W+47th+St+%26+12th+Ave+New+York,+NY+10036`,
 	},
 	{
 		name: "CBS",
@@ -259,6 +267,7 @@ const spots = [
 			7: CBS7,
 			8: CBS8,
 		},
+		maps: `https://www.google.com/maps/place/W+47th+St+%26+12th+Ave,+New+York,+NY+10036/@40.76486,-73.998046,18z/data=!4m6!3m5!1s0x89c2584f015ec627:0xba8e4e260c2e0f85!8m2!3d40.7648602!4d-73.9980458!16s%2Fg%2F11hb3rnf52?hl=en&entry=ttu`,
 	},
 	{
 		name: "Columbus Circle",
@@ -286,6 +295,7 @@ const spots = [
 			5: ColumbusCircle5,
 			6: ColumbusCircle6,
 		},
+		maps: `https://www.google.com/maps?ll=40.767848,-73.981522&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Columbus+Cir+New+York,+NY`,
 	},
 	{
 		name: "Fake Barcelona Ledge",
@@ -305,33 +315,11 @@ const spots = [
 			text: "27th Street and First Avenue in Gramercy / Kips Bay.",
 		},
 		images: {
-			0: ColumbusCircle0,
-			1: ColumbusCircle1,
-			2: ColumbusCircle2,
-		},
-	},
-	{
-		name: "Fake Barcelona Ledge",
-		area: "Midtown",
-		urlPath: "midTown",
-		summary:
-			"New York’s smaller version of the defunct keyhole ledge at MACBA in Barcelona. Backside for regular and not wide enough for tailslides.",
-		bust: {
-			level: 5,
-			status:
-				"You’re not allowed to skate here — obviously. People have been known to get lucky, but “lucky” means five minutes for this spot. There are cameras everywhere, and you’ll typically get one or two tries. Police are sometimes stationed inside and may give you a summons for skating here. They’re usually mean.",
-		},
-
-		location: {
-			latitude: 40.73979432525542,
-			longitude: -73.97667354218774,
-			text: "27th Street and First Avenue in Gramercy / Kips Bay.",
-		},
-		images: {
 			0: FakeBarcelonaLedge0,
 			1: FakeBarcelonaLedge1,
 			2: FakeBarcelonaLedge2,
 		},
+		maps: `https://www.google.com/maps?ll=40.739396,-73.976695&z=16&t=m&hl=en&gl=US&mapclient=embed&q=1st+Ave.+%26+E+27th+St+New+York,+NY+10016`,
 	},
 	{
 		name: "FedEx",
@@ -362,6 +350,7 @@ const spots = [
 			8: FedEx8,
 			9: FedEx9,
 		},
+		maps: `https://www.google.com/maps?ll=40.755352,-73.975444&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Park+Ave+%26+E+47th+St+New+York,+NY+10017`,
 	},
 	{
 		name: "Five Then Three",
@@ -378,7 +367,12 @@ const spots = [
 			longitude: -73.97955745778708,
 			text: "26th Street and 2nd Avenue.",
 		},
-		images: {},
+		images: {
+			0: FiveThenThree0,
+			1: FiveThenThree1,
+			2: FiveThenThree2,
+		},
+		maps: `https://www.google.com/maps/place/2nd+Ave+%26+E+26th+St,+New+York,+NY+10016/@40.739796,-73.979536,16z/data=!4m6!3m5!1s0x89c2590bd62b1a0f:0x73271dad49c4b8c7!8m2!3d40.7397958!4d-73.9795365!16s%2Fg%2F11hb1ddtyx?hl=en&entry=ttu`,
 	},
 	{
 		name: "IBM Ledge",
@@ -396,6 +390,7 @@ const spots = [
 			text: "56th Street and Madison Avenue.",
 		},
 		images: { 0: IBM0, 1: IBM1, 2: IBM2, 3: IBM3 },
+		maps: `https://www.google.com/maps?ll=40.761624,-73.972872&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Madison+Ave+%26+E+56th+St+New+York,+NY+10022`,
 	},
 	{
 		name: "John Jay Step",
@@ -414,6 +409,7 @@ const spots = [
 			text: "59th Street between Tenth Avenue and Eleventh Avenue (closer to Tenth.)",
 		},
 		images: { 0: JohnJayStep0, 1: JohnJayStep1 },
+		maps: `https://www.google.com/maps?ll=40.771425,-73.989978&z=16&t=m&hl=en&gl=US&mapclient=embed&q=570+W+59th+St+New+York,+NY+10019`,
 	},
 	{
 		name: "Paine Webber",
@@ -432,6 +428,7 @@ const spots = [
 			text: "52nd Street and Sixth Avenue.",
 		},
 		images: { 0: PaineWebber0, 1: PaineWebber1, 2: PaineWebber2 },
+		maps: `https://www.google.com/maps/place/6th+Ave+%26+W+52nd+St,+New+York,+NY+10019/@40.761185,-73.979501,16z/data=!4m6!3m5!1s0x89c258f91bcb9a11:0xbdc2696dd3d5334b!8m2!3d40.7611849!4d-73.9795009!16s%2Fg%2F11f315fj_x?hl=en&entry=ttu`,
 	},
 	{
 		name: "Queensboro Bridge Ledges",
@@ -461,6 +458,7 @@ const spots = [
 			8: QueensboroBridgeLedges8,
 			9: QueensboroBridgeLedges9,
 		},
+		maps: `https://www.google.com/maps?ll=40.758675,-73.959744&z=16&t=m&hl=en&gl=US&mapclient=embed&q=York+Ave+%26+E+59th+St+New+York,+NY+10022`,
 	},
 	{
 		name: "Seagram",
@@ -479,6 +477,7 @@ const spots = [
 			text: "52nd Street and Park Avenue.",
 		},
 		images: { 0: Seagram0, 1: Seagram1, 2: Seagram2, 3: Seagram3, 4: Seagram4 },
+		maps: `https://www.google.com/maps?ll=40.758397,-73.972976&z=19&t=m&hl=en&gl=US&mapclient=embed&q=Park+Ave+%26+E+52nd+St+New+York,+NY+10022`,
 	},
 	{
 		name: "Suarez Rail",
@@ -497,6 +496,7 @@ const spots = [
 			text: "The southwest corner of 57th Street and Park Avenue.",
 		},
 		images: { 0: SuarezRail0, 1: SuarezRail1, 2: SuarezRail2, 3: SuarezRail3 },
+		maps: `https://www.google.com/maps?ll=40.761571,-73.970645&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Park+Ave+%26+E+57th+St+New+York,+NY+10022`,
 	},
 	{
 		name: "Times Square",
@@ -521,6 +521,7 @@ const spots = [
 			3: TimesSquare3,
 			4: TimesSquare4,
 		},
+		maps: `https://www.google.com/maps?ll=40.756602,-73.986121&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Broadway+%26+W+43rd+St+New+York,+NY+10036`,
 	},
 	{
 		name: "U.N. Hubba",
@@ -539,6 +540,7 @@ const spots = [
 			text: "47th Street and Second Avenue.",
 		},
 		images: { 0: UNHubba0, 1: UNHubba1, 2: UNHubba2, 3: UNHubba3 },
+		maps: `https://www.google.com/maps?ll=40.752992,-73.96988&z=17&t=m&hl=en&gl=US&mapclient=embed&q=2nd+Ave+%26+E+47th+St+New+York,+NY+10017`,
 	},
 	{
 		name: "Virtual Reality Bump",
@@ -563,6 +565,7 @@ const spots = [
 			4: VirtualRealityBump4,
 			5: VirtualRealityBump5,
 		},
+		maps: `https://www.google.com/maps?ll=40.74524,-73.971499&z=19&t=m&hl=en&gl=US&mapclient=embed&cid=16897989533690370833`,
 	},
 ];
 export default spots;
