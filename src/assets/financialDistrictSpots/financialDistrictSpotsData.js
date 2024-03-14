@@ -155,6 +155,7 @@ const spots = [
 			9: BatteryPark9,
 			10: BatteryPark10,
 		},
+		maps: `https://www.google.com/maps?ll=40.702931,-74.01536&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=13722545436693339154`,
 	},
 	{
 		name: "Battery Park City",
@@ -192,6 +193,7 @@ const spots = [
 			15: BatteryParkCity15,
 			16: BatteryParkCity16,
 		},
+		maps: `https://www.google.com/maps?ll=40.711622,-74.016089&z=18&t=m&hl=en&gl=US&mapclient=embed&q=Battery+Park+City+New+York,+NY`,
 	},
 	{
 		name: "Black Hubba",
@@ -216,6 +218,7 @@ const spots = [
 			2: BlackHubba2,
 			3: BlackHubba3,
 		},
+		maps: `https://www.google.com/maps?ll=40.714535,-74.002462&z=18&t=m&hl=en&gl=US&mapclient=embed&q=65-55+Centre+St+New+York,+NY+10007`,
 	},
 	{
 		name: "Brooklyn Banks",
@@ -242,6 +245,7 @@ const spots = [
 			5: BrooklynBanks5,
 			6: BrooklynBanks6,
 		},
+		maps: `https://www.google.com/maps?ll=40.709501,-74.001659&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Pearl+St+%26+Frankfort+St+New+York,+NY+10038`,
 	},
 	{
 		name: "C-Benches",
@@ -265,6 +269,7 @@ const spots = [
 			1: CBenches1,
 			2: CBenches2,
 		},
+		maps: `https://www.google.com/maps/place/Front+St+%26+Maiden+Ln,+New+York,+NY+10038/@40.705798,-74.005516,16z/data=!4m6!3m5!1s0x89c25a3d908582d9:0xa9aa60291ed0fb8c!8m2!3d40.7057977!4d-74.0055163!16s%2Fg%2F11hb1gwwwn?hl=en&entry=ttu`,
 	},
 	{
 		name: "Chase",
@@ -287,6 +292,7 @@ const spots = [
 			0: Chase0,
 			1: Chase1,
 		},
+		maps: `https://www.google.com/maps?ll=40.707709,-74.010225&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Nassau+St+%26+Pine+St+New+York,+NY+10005`,
 	},
 	{
 		name: "CIA Ledge",
@@ -310,6 +316,7 @@ const spots = [
 			1: CIALedge1,
 			2: CIALedge2,
 		},
+		maps: `https://www.google.com/maps?ll=40.707997,-74.007997&z=16&t=m&hl=en&gl=US&mapclient=embed&q=William+St+%26+Maiden+Ln+New+York,+NY+10038`,
 	},
 	{
 		name: "Courthouse Drop",
@@ -335,6 +342,7 @@ const spots = [
 			3: CourthouseDrop3,
 			4: CourthouseDrop4,
 		},
+		maps: `https://www.google.com/maps?ll=40.713158,-74.004117&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Centre+St+%26+Chambers+St+New+York,+NY+10007`,
 	},
 	{
 		name: "Family Court",
@@ -356,27 +364,7 @@ const spots = [
 			0: FamilyCourt0,
 			1: FamilyCourt1,
 		},
-	},
-	{
-		name: "Family Court",
-		area: "Financial District",
-		urlPath: "financialDistrict",
-		summary: "High marble ledge / manual pad and a four stair.",
-		bust: {
-			level: 3,
-			status:
-				"Night and weekend spot. Courts Police may roll up on you and tell you to leave, or ask for ID if they get a complaint.",
-		},
-
-		location: {
-			latitude: 40.71704387859293,
-			longitude: -74.00206754223524,
-			text: "Lafayette and Franklin Street.",
-		},
-		images: {
-			0: FamilyCourt0,
-			1: FamilyCourt1,
-		},
+		maps: `https://www.google.com/maps?ll=40.716743,-74.002089&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Lafayette+St+%26+Franklin+St+New+York,+NY+10013`,
 	},
 	{
 		name: "Four Seasons",
