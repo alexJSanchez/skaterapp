@@ -388,6 +388,7 @@ const spots = [
 			2: FourSeasons2,
 			3: FourSeasons3,
 		},
+		maps: `https://www.google.com/maps?ll=40.712949,-74.008239&z=18&t=m&hl=en&gl=US&mapclient=embed&q=1+Park+Pl+New+York,+NY+10007`,
 	},
 	{
 		name: "Pine Street Benches",
@@ -413,6 +414,7 @@ const spots = [
 			3: PineStreetBenches3,
 			4: PineStreetBenches4,
 		},
+		maps: `https://www.google.com/maps?ll=40.705548,-74.006913&z=20&t=m&hl=en&gl=US&mapclient=embed&q=Water+St+%26+Pine+St+New+York,+NY+10005`,
 	},
 	{
 		name: "Police Plaza",
@@ -440,6 +442,7 @@ const spots = [
 			5: PolicePlaza5,
 			6: PolicePlaza6,
 		},
+		maps: `https://www.google.com/maps/place/1+Police+Plaza,+1+Police+Plaza+Path,+New+York,+NY+10038/@40.712062,-74.002385,17z/data=!4m6!3m5!1s0x89c25a23eb0bf9b5:0x2fa4861d37eaa439!8m2!3d40.7120619!4d-74.0023853!16s%2Fm%2F04_1kbb?hl=en&entry=ttu`,
 	},
 	{
 		name: "Pyramid Ledges",
@@ -467,6 +470,7 @@ const spots = [
 			5: PyramidLedges5,
 			6: PyramidLedges6,
 		},
+		maps: `https://www.google.com/maps?ll=40.704665,-74.008124&z=18&t=m&hl=en&gl=US&mapclient=embed&q=Water+St+%26+Gouverneur+Ln+New+York,+NY+10005`,
 	},
 	{
 		name: "Seaport",
@@ -493,6 +497,7 @@ const spots = [
 			4: Seaport4,
 			5: Seaport5,
 		},
+		maps: `https://quartersnacks.com/spots/downtown-manhattan/financial-district/south-street-seaport/`,
 	},
 	{
 		name: "State Building",
@@ -515,6 +520,7 @@ const spots = [
 			0: StateBuilding0,
 			1: StateBuilding1,
 		},
+		maps: `https://www.google.com/maps?ll=40.714379,-74.000463&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Worth+St+%26+Baxter+St+New+York,+NY+10013`,
 	},
 	{
 		name: "Veteran’s Plaza",
@@ -543,6 +549,7 @@ const spots = [
 			6: VeteransPlaza6,
 			7: VeteransPlaza7,
 		},
+		maps: `https://www.google.com/maps?ll=40.702966,-74.011516&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Broad+St+%26+Water+St+New+York,+NY+10004`,
 	},
 	{
 		name: "Water Street Benches",
@@ -568,6 +575,7 @@ const spots = [
 			3: WaterStreetBenches3,
 			4: WaterStreetBenches4,
 		},
+		maps: `https://www.google.com/maps/place/Wall+St+%26+South+St,+New+York,+NY+10043/@40.7042755,-74.0063013,17z/data=!3m1!4b1!4m10!1m2!2m1!1sWall+St+%26+South+St+New+York,+NY+10043!3m6!1s0x89c25a3dff02250b:0xb1c94d8cf9a36565!8m2!3d40.7042755!4d-74.0063013!15sCiVXYWxsIFN0ICYgU291dGggU3QgTmV3IFlvcmssIE5ZIDEwMDQzkgEMaW50ZXJzZWN0aW9u4AEA!16s%2Fg%2F11f39d4z_4?hl=en&entry=ttu`,
 	},
 	{
 		name: "World Trade",
@@ -597,6 +605,7 @@ const spots = [
 			7: WorldTrade7,
 			8: WorldTrade8,
 		},
+		maps: `https://www.google.com/maps?ll=40.711012,-74.010779&z=17&t=m&hl=en&gl=US&mapclient=embed&q=Church+St+%26+Dey+St+New+York,+NY+10007`,
 	},
 	{
 		name: "Worth Plaza",
@@ -622,6 +631,7 @@ const spots = [
 			3: WorthPlaza3,
 			4: WorthPlaza4,
 		},
+		maps: `https://quartersnacks.com/spots/downtown-manhattan/city-hall-area/worth-plaza/`,
 	},
 	{
 		name: "Zuccotti Park",
@@ -655,6 +665,7 @@ const spots = [
 			11: ZuccottiPark11,
 			12: ZuccottiPark12,
 		},
+		maps: `https://www.google.com/maps?ll=40.709669,-74.011665&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Liberty+St+%26+Trinity+Pl+New+York,+NY+10006`,
 	},
 ];
 
