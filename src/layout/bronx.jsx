@@ -45,13 +45,19 @@ function Bronx() {
 								/>
 							))}
 						</div>
-						<a href={res.maps}>Google Maps</a>
+
 						<h2 className="text-lg font-semibold text-gray-700">Wanted</h2>
 						<p className="text-gray-600 font-bold text-sm">
 							Status: {res.bust.status}
 						</p>
 						<img src={skateIcon} />
 						<p className=" text-gray-700 font-bold">{res.summary}</p>
+						<a
+							className="text-[1rem] font-bold bg-green-400 rounded-[50px] mt-[10px] py-[5px] px-[20px] "
+							href={res.maps}
+						>
+							SkateHere
+						</a>
 						<div
 							style={{
 								borderStyle: "dotted",
@@ -59,6 +65,7 @@ function Bronx() {
 							}}
 							className="w-full my-4"
 						></div>
+
 						<ImageSlider images={res.images} />
 					</div>
 				))}

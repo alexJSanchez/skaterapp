@@ -41,6 +41,12 @@ function LowerEastSide() {
 						</p>
 						<img src={skateIcon} />
 						<p className=" text-gray-700 font-bold">{res.summary}</p>
+						<a
+							className="text-[1rem] font-bold bg-green-400 rounded-[50px] mt-[10px] py-[5px] px-[20px] "
+							href={res.maps}
+						>
+							SkateHere
+						</a>
 						<div
 							style={{
 								borderStyle: "dotted",
