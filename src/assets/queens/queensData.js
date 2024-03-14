@@ -119,6 +119,7 @@ const spots = [
 			3: AthensPark3,
 			4: AthensPark4,
 		},
+		maps: `https://www.google.com/maps/place/Athens+Square/@40.767786,-73.922332,16z/data=!4m6!3m5!1s0x89c25f47bbf6f085:0x9fdde87dcc38a5ec!8m2!3d40.767786!4d-73.9223319!16s%2Fg%2F1tdmft9l?hl=en&entry=ttu`,
 	},
 	{
 		name: "Broadway Park",
@@ -143,6 +144,7 @@ const spots = [
 			3: BroadwayPark3,
 			4: BroadwayPark4,
 		},
+		maps: `https://www.google.com/maps?ll=40.742181,-73.882658&z=17&t=m&hl=en&gl=US&mapclient=embed&cid=8682584170078370677`,
 	},
 	{
 		name: "Cemetery Curbs",
@@ -171,6 +173,7 @@ const spots = [
 			7: CementaryCurbs7,
 			8: CementaryCurbs8,
 		},
+		maps: `https://quartersnacks.com/spots/queens/cemetery-curbs/`,
 	},
 	{
 		name: "Citi Field Benches",
@@ -194,6 +197,7 @@ const spots = [
 			2: CitiFieldBenches2,
 			3: CitiFieldBenches3,
 		},
+		maps: `https://quartersnacks.com/spots/queens/citi-field-benches/`,
 	},
 	{
 		name: "Con-Edison Banks",
@@ -218,6 +222,7 @@ const spots = [
 			4: ConEdisonBanks4,
 			5: ConEdisonBanks5,
 		},
+		maps: `https://quartersnacks.com/spots/queens/long-island-city-astoria/con-edison-banks/`,
 	},
 	{
 		name: "Flushing Meadows Park",
@@ -249,6 +254,7 @@ const spots = [
 			10: FlushingMeadowsPark10,
 			11: FlushingMeadowsPark11,
 		},
+		maps: `https://www.google.com/maps?ll=40.746389,-73.845068&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Unisphere+Flushing+Meadows-Corona+Park+Corona,+NY+11368`,
 	},
 	{
 		name: "Hillcrest High School",
@@ -271,6 +277,7 @@ const spots = [
 			3: HillcrestHighSchool3,
 			4: HillcrestHighSchool4,
 		},
+		maps: `https://www.google.com/maps/place/160-33+Highland+Ave,+Jamaica,+NY+11432/@40.709836,-73.801598,16z/data=!4m6!3m5!1s0x89c260e75a3b222d:0x970581d3c238b395!8m2!3d40.7098355!4d-73.801598!16s%2Fg%2F11c1glhxdz?hl=en&entry=ttu`,
 	},
 	{
 		name: "Long Island City Waterfront",
@@ -304,6 +311,7 @@ const spots = [
 			12: LongIslandCityWaterfront12,
 			13: LongIslandCityWaterfront13,
 		},
+		maps: `https://www.google.com/maps/place/Center+Blvd+%26+47th+Rd,+Queens,+NY+11109/@40.745546,-73.957208,16z/data=!4m6!3m5!1s0x89c25922374f192b:0x3a1fdeb928de9322!8m2!3d40.7455464!4d-73.9572084!16s%2Fg%2F11f3cf9pz8?hl=en&entry=ttu`,
 	},
 	{
 		name: "JFK Banks",
@@ -331,6 +339,7 @@ const spots = [
 			6: JFKBanks6,
 			7: JFKBanks7,
 		},
+		maps: `https://www.google.com/maps?ll=40.647137,-73.779427&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=9094196901828941244`,
 	},
 	{
 		name: "Mosquito Beach",
@@ -356,6 +365,7 @@ const spots = [
 			5: MosquitoBeach5,
 			6: MosquitoBeach6,
 		},
+		maps: `https://www.google.com/maps?ll=40.738891,-73.940826&z=15&t=m&hl=en&gl=US&mapclient=embed&cid=18268387056151598861`,
 	},
 	{
 		name: "P.S. 239",
@@ -379,6 +389,7 @@ const spots = [
 			2: PS2392,
 			3: PS2393,
 		},
+		maps: `https://www.google.com/maps?ll=40.69943,-73.903833&z=13&t=m&hl=en&gl=US&mapclient=embed&cid=4575922163765943317`,
 	},
 	{
 		name: "Rockaway Rails",
@@ -402,6 +413,7 @@ const spots = [
 			2: RockawayRails2,
 			3: RockawayRails3,
 		},
+		maps: `https://www.google.com/maps?ll=40.585922,-73.823227&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Beach+Channel+Dr+%26+Beach+101st+St+Queens,+NY+11694`,
 	},
 	{
 		name: "Roosevelt Island Ledge",
@@ -424,6 +436,7 @@ const spots = [
 			1: RooseveltIslandLedge1,
 			2: RooseveltIslandLedge2,
 		},
+		maps: `https://www.google.com/maps?ll=40.759904,-73.953211&z=19&t=m&hl=en&gl=US&mapclient=embed&cid=4280205554925988245`,
 	},
 	{
 		name: "The Sombrero",
@@ -448,6 +461,7 @@ const spots = [
 			3: TheSombrero3,
 			4: TheSombrero4,
 		},
+		maps: `https://www.google.com/maps?ll=40.725768,-73.904207&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Borden+Ave+%26+61st+St+Queens,+NY+11378`,
 	},
 	{
 		name: "Vernon-Jackson",
@@ -473,6 +487,7 @@ const spots = [
 			4: VernonJackson4,
 			5: VernonJackson5,
 		},
+		maps: `https://www.google.com/maps?ll=40.744116,-73.953629&z=16&t=m&hl=en&gl=US&mapclient=embed&q=48th+Ave+%26+Vernon+Blvd+Queens,+NY+11101`,
 	},
 ];
 export default spots;
