@@ -65,6 +65,7 @@ const spots = [
 			text: "100th Street and Riverside Drive.",
 		},
 		images: { 0: HundredthStreetBump0, 1: HundredthStreetBump1 },
+		maps: `https://www.google.com/maps/place/Firemen's+Memorial/@40.798611,-73.973333,16z/data=!4m6!3m5!1s0x89c2f62f311a8e8f:0x847dc6fd461820f7!8m2!3d40.7986111!4d-73.9733333!16s%2Fm%2F011v6h4j?hl=en&entry=ttu`,
 	},
 	{
 		name: "Amsterdam Rail",
@@ -83,6 +84,7 @@ const spots = [
 			text: "105th Street and Amsterdam Avenue, next to the school in the park.",
 		},
 		images: { 0: AmsterdamRail0, 1: AmsterdamRail1, 2: AmsterdamRail2 },
+		maps: `https://www.google.com/maps?ll=40.799139,-73.966651&z=16&t=m&hl=en&gl=US&mapclient=embed&q=W+104th+St+%26+Amsterdam+Ave+New+York,+NY+10025`,
 	},
 	{
 		name: "Columbia University",
@@ -111,6 +113,7 @@ const spots = [
 			7: ColumbiaUniversity7,
 			8: ColumbiaUniversity8,
 		},
+		maps: `https://www.google.com/maps?ll=40.806823,-73.961053&z=16&t=m&hl=en&gl=US&mapclient=embed&q=W+116th+St+%26+Amsterdam+Ave+New+York,+NY+10027`,
 	},
 	{
 		name: "Grants Tomb",
@@ -129,6 +132,7 @@ const spots = [
 			text: "122nd Street and Riverside Drive.",
 		},
 		images: { 0: GrantsTomb0, 1: GrantsTomb1, 2: GrantsTomb2, 3: GrantsTomb3 },
+		maps: `https://www.google.com/maps?ll=40.812633,-73.963017&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Riverside+Dr+%26+W+122nd+St+New+York,+NY+10027`,
 	},
 	{
 		name: "Jerry Ledge",
@@ -147,6 +151,7 @@ const spots = [
 			text: "135th Street and the Harlem River bike path. Take 135th all the way east, over the footbridge that goes over Harlem River Drive, and make a right once you’re on the water.",
 		},
 		images: { 0: JerryLedge0, 1: JerryLedge1, 2: JerryLedge2 },
+		maps: `https://www.google.com/maps?ll=40.811273,-73.934425&z=17&t=m&hl=en&gl=US&mapclient=embed&cid=9524545176605412106`,
 	},
 	{
 		name: "Lenox Ledges",
@@ -164,6 +169,7 @@ const spots = [
 			text: "110th Street and Lenox Avenue / Malcolm X Boulevard.",
 		},
 		images: { 0: LenoxLedges0, 1: LenoxLedges1, 2: LenoxLedges2 },
+		maps: `https://www.google.com/maps/place/Malcolm+X+Blvd+%26+Central+Pk+N,+New+York,+NY+10026/@40.798268,-73.952514,16z/data=!4m6!3m5!1s0x89c2f61a375c9281:0x35207d7f81816bcd!8m2!3d40.798268!4d-73.9525143!16s%2Fg%2F11gf0p4s4s?hl=en&entry=ttu`,
 	},
 	{
 		name: "Marcus Garvey Park",
@@ -186,6 +192,7 @@ const spots = [
 			1: MarcusGarveyPark1,
 			2: MarcusGarveyPark2,
 		},
+		maps: `https://www.google.com/maps?ll=40.804426,-73.943763&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=12980880784313359509`,
 	},
 	{
 		name: "Median Ledge",
@@ -204,6 +211,7 @@ const spots = [
 			text: "111th Street and Seventh Avenue / Adam Clayton Powell Jr. Boulevard. It’s in the middle of the street.",
 		},
 		images: { 0: MedianLedge0, 1: MedianLedge1, 2: MedianLedge2 },
+		maps: `https://www.google.com/maps?ll=40.800076,-73.954936&z=16&t=m&hl=en&gl=US&mapclient=embed&q=W+111th+St+%26+Adam+Clayton+Powell+Jr+Blvd+New+York,+NY+10026`,
 	},
 	{
 		name: "The Monument",
@@ -230,6 +238,7 @@ const spots = [
 			5: TheMonument5,
 			6: TheMonument6,
 		},
+		maps: `https://www.google.com/maps/place/Riverside+Dr+%26+W+89th+St,+New+York,+NY+10024/@40.791752,-73.978692,16z/data=!4m6!3m5!1s0x89c25881a1c2d245:0x164217dd73df1dbf!8m2!3d40.791752!4d-73.978692!16s%2Fg%2F11hb8gsm8_?hl=en&entry=ttu`,
 	},
 	{
 		name: "Q Train Ledge",
@@ -253,6 +262,7 @@ const spots = [
 			2: QTrainLedge2,
 			3: QTrainLedge3,
 		},
+		maps: `https://www.google.com/maps?ll=40.784154,-73.947422&z=17&t=m&hl=en&gl=US&mapclient=embed&cid=4670953846268389252`,
 	},
 	{
 		name: "Riverbank State Park",
@@ -277,6 +287,7 @@ const spots = [
 			3: RiverbankStatePark3,
 			4: RiverbankStatePark4,
 		},
+		maps: `https://www.google.com/maps?ll=40.827079,-73.951949&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Riverside+Dr+%26+W+145th+St+New+York,+NY+10031`,
 	},
 	{
 		name: "Supa Bump",
@@ -295,6 +306,7 @@ const spots = [
 			text: "189th Street and Amsterdam Avenue.",
 		},
 		images: { 0: SupaBump0, 1: SupaBump1 },
+		maps: `https://www.google.com/maps?ll=40.853124,-73.927257&z=16&t=m&hl=en&gl=US&mapclient=embed&q=W+189th+St+%26+Amsterdam+Ave+New+York,+NY+10040`,
 	},
 	{
 		name: "T.F. North",
@@ -313,6 +325,7 @@ const spots = [
 			text: "100th Street and First Avenue in the schoolyard.",
 		},
 		images: { 0: TFNorth0, 1: TFNorth1 },
+		maps: `https://www.google.com/maps?ll=40.785812,-73.942853&z=16&t=m&hl=en&gl=US&mapclient=embed&q=1st+Ave.+%26+E+100th+St+New+York,+NY+10029`,
 	},
 ];
 export default spots;

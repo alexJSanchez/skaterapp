@@ -27,6 +27,7 @@ const spots = [
 			3: ABCLedges3,
 			4: ABCLedges4,
 		},
+		maps: `https://www.google.com/maps?ll=40.510353,-74.230497&z=16&t=m&hl=en&gl=US&mapclient=embed&q=555+Page+Ave+Staten+Island,+NY+10307`,
 	},
 ];
 export default spots;
