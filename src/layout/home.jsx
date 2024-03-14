@@ -23,22 +23,23 @@ function Home({
 }) {
 	const [isUpsideDown, setIsUpsideDown] = useState(false);
 	const [popup, setPopup] = useState(true);
-	const [randomCoords, setRandomCoords] = useState({
-		longitude: 0,
-		latitude: 0,
-	});
-	const spotFound = findSpotByName(allSpots, RandomLocation);
+	const [mapUrl, setMapUrl] = useState();
+	const [spotFound, setSpotFound] = useState();
 
 	const { isDaytime } = GetTime();
-	const [createUrl, setCreateUrl] = useState({
-		name: spotFound.name.replace(/\s+/g, ""),
-		url: spotFound.urlPath,
-	});
+
+	useEffect(() => {
+		const foundSpot = findSpotByName(allSpots, RandomLocation);
+		setSpotFound(foundSpot);
+		setMapUrl(foundSpot);
+		console.log(mapUrl, foundSpot);
+	}, []); // Only re-run the effect if RandomLocation changes
+
 	const handlePopup = () => {
 		setPopup(!popup);
 	};
 	const handleImageClick = () => {
-		setIsUpsideDown(!isUpsideDown);
+		setIsUpsideDown((prevIsUpsideDown) => !prevIsUpsideDown);
 	};
 
 	return (
@@ -65,15 +66,13 @@ function Home({
 						</div>
 						<Nav />
 					</div>
-					{!isUpsideDown ? (
+					{isUpsideDown ? null : (
 						<SpotLocator
 							Latitude={Coord.latitude}
 							Longitude={Coord.longitude}
 						/>
-					) : (
-						<div></div>
 					)}
-					{!popup ? (
+					{popup ? null : (
 						<Popup
 							Name={spotFound.name}
 							Star={starIcon}
@@ -82,9 +81,8 @@ function Home({
 							Status={spotFound.bust.status}
 							Summary={spotFound.summary}
 							HandlePopup={handlePopup}
+							Maps={mapUrl.maps}
 						/>
-					) : (
-						<div></div>
 					)}
 					<div className="opacity-95 text-white  px-6 flex flex-col">
 						<Time State={State} City={City} />
@@ -118,9 +116,7 @@ function Home({
 							</button>
 						</div>
 					</div>
-					{!isUpsideDown ? (
-						""
-					) : (
+					{isUpsideDown ? (
 						<div className="lower-tab font-black">
 							<div className="flex justify-between px-10 pt-10 pb-2">
 								<h4 className="text-nowrap">Trick of the day</h4>
@@ -142,22 +138,11 @@ function Home({
 								<h4>event name</h4>
 							</div>
 						</div>
-					)}
+					) : null}
 				</div>
 			</div>
 		</>
 	);
 }
-
-Home.propTypes = {
-	Weather: PropTypes.object.isRequired,
-	City: PropTypes.string.isRequired,
-	State: PropTypes.string.isRequired,
-	Coord: PropTypes.object.isRequired,
-	Trick: PropTypes.string.isRequired,
-	RandomLocation: PropTypes.string.isRequired,
-	QuoteJoke: PropTypes.string.isRequired,
-};
 export default Home;
-
 // <a href={`/${createUrl?.url}#${createUrl?.name}`}>{createUrl.name}</a>//

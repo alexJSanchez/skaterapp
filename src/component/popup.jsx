@@ -3,7 +3,17 @@ import Xicon from "../assets/X.png";
 import ImageSlider from "./slider.jsx";
 import PropTypes from "prop-types";
 
-function Popup({ Name, Bust, Summary, Status, Images, Star, HandlePopup }) {
+function Popup({
+	Name,
+	Bust,
+	Summary,
+	Status,
+	Images,
+	Star,
+	HandlePopup,
+	Maps,
+}) {
+	console.log(`maps in pop up`, Maps);
 	return (
 		<div className="fixed inset-0 flex items-center justify-center text-center bg-black bg-opacity-50 z-50">
 			<div className="bg-white p-4 rounded-lg shadow-lg m-4">
@@ -23,8 +33,13 @@ function Popup({ Name, Bust, Summary, Status, Images, Star, HandlePopup }) {
 				</div>
 				<h2 className="text-lg font-semibold text-gray-700">Wanted</h2>
 				<p className="text-gray-600 font-bold text-sm">Status: {Status}</p>
-
 				<p className="text-gray-700 font-bold">{Summary}</p>
+				<a
+					href={Maps}
+					className="text-[1rem] font-bold bg-green-400 rounded-[50px] mt-[10px] py-[5px] px-[20px] "
+				>
+					SkateHere
+				</a>
 				<div
 					style={{
 						borderStyle: "dotted",
@@ -45,6 +60,7 @@ Popup.propTypes = {
 	Images: PropTypes.objectOf(PropTypes.string).isRequired,
 	Star: PropTypes.string.isRequired,
 	HandlePopup: PropTypes.func.isRequired,
+	Maps: PropTypes.string,
 };
 
 export default Popup;

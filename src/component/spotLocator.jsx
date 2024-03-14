@@ -56,6 +56,7 @@ function SpotLocator({ Latitude, Longitude, IsUpsideDown }) {
 					Status={spotInfo.bust.status}
 					Summary={spotInfo.summary}
 					HandlePopup={PopupHandler}
+					Maps={spotInfo.maps}
 				/>
 			) : (
 				""
