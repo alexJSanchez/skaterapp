@@ -62,6 +62,7 @@ const spots = [
 			1: BondStreetGap1,
 			2: BondStreetGap2,
 		},
+		maps: `https://www.google.com/maps/place/Lafayette+St+%26+Bond+St,+New+York,+NY+10012/@40.726636,-73.994122,16z/data=!4m6!3m5!1s0x89c2598551bed927:0x60d613c038c3b5a3!8m2!3d40.7266358!4d-73.9941216!16s%2Fg%2F11gdvlh7mh?hl=en&entry=ttu`,
 	},
 	{
 		name: "Hudson River Park",
@@ -91,6 +92,7 @@ const spots = [
 			7: HudsonRiverPark7,
 			8: HudsonRiverPark8,
 		},
+		maps: `https://www.google.com/maps?ll=40.735326,-74.010199&z=18&t=m&hl=en&gl=US&mapclient=embed&q=Hudson+River+Greenway+New+York,+NY+10014`,
 	},
 	{
 		name: "Max Palmer Park",
@@ -115,6 +117,7 @@ const spots = [
 			2: MaxPalmerPark2,
 			3: MaxPalmerPark3,
 		},
+		maps: `https://www.google.com/maps?ll=40.721929,-74.005359&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Canal+St+%26+6th+Ave+New+York,+NY+10013`,
 	},
 	{
 		name: "Soho Curbs",
@@ -138,6 +141,7 @@ const spots = [
 			1: SohoCurbs1,
 			2: SohoCurbs2,
 		},
+		maps: `https://www.google.com/maps?ll=40.72232,-73.997156&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Lafayette+St+%26+Spring+St+New+York,+NY+10012`,
 	},
 	{
 		name: "T.F. West",
@@ -160,6 +164,7 @@ const spots = [
 			0: TfWest0,
 			1: TfWest1,
 		},
+		maps: `https://www.google.com/maps?ll=40.72853,-74.002311&z=18&t=m&hl=en&gl=US&mapclient=embed&cid=1004848024358753805`,
 	},
 	{
 		name: "Three Up Three Down",
@@ -184,6 +189,7 @@ const spots = [
 			2: ThreeUpThreeDown2,
 			3: ThreeUpThreeDown3,
 		},
+		maps: `https://www.google.com/maps?ll=40.725205,-74.01127&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Canal+St+%26+West+St+New+York,+NY+10013`,
 	},
 	{
 		name: "Union Square",
@@ -212,6 +218,7 @@ const spots = [
 			6: UnionSquare6,
 			7: UnionSquare7,
 		},
+		maps: `https://www.google.com/maps?ll=40.736251,-73.990309&z=15&t=m&hl=en&gl=US&mapclient=embed&q=Union+Square+New+York,+NY+10003`,
 	},
 	{
 		name: "Washington Square Park",
@@ -239,6 +246,7 @@ const spots = [
 			5: WashingtonSquarePark5,
 			6: WashingtonSquarePark6,
 		},
+		maps: `https://www.google.com/maps?ll=40.730884,-73.997332&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=18041805897612033560`,
 	},
 ];
 export default spots;
