@@ -106,6 +106,7 @@ const spots = [
 			3: BronxCourthouse3,
 			4: BronxCourthouse4,
 		},
+		maps: `https://www.google.com/maps/place/Grand+Concourse+%26+E+161+St,+Bronx,+NY+10452/@40.827414,-73.922860,`,
 	},
 	{
 		name: "Bronx Terminal Mall",
@@ -131,6 +132,7 @@ const spots = [
 			3: BronxTerminalMall3,
 			4: BronxTerminalMall4,
 		},
+		maps: `https://www.google.com/maps/place/Bronx+Terminal+Market+11/@40.82312,-73.929985,16z/data=!3m1!5s0x89c2f5d3f4f42a6d:0x7edf0a3aa8ca6505!4m16!1m9!3m8!1s0x89c2f5d3861af243:0x82496dff91d8eea8!2sBronx+Terminal+Market+11!8m2!3d40.8231201!4d-73.929985!9m1!1b1!16s%2Fg%2F119vr5j0v!3m5!1s0x89c2f5d3861af243:0x82496dff91d8eea8!8m2!3d40.8231201!4d-73.929985!16s%2Fg%2F119vr5j0v?hl=en&entry=ttu`,
 	},
 	{
 		name: "Hunts Point Station",
@@ -154,6 +156,7 @@ const spots = [
 			2: HuntsPointStation2,
 			3: HuntsPointStation3,
 		},
+		maps: `https://www.google.com/maps?ll=40.82095,-73.891616&z=16&t=m&hl=en&gl=US&mapclient=embed&q=E+163rd+St+%26+Hunts+Point+Ave+Bronx,+NY+10459`,
 	},
 	{
 		name: "Jerome Avenue Banks",
@@ -180,6 +183,7 @@ const spots = [
 			5: JeromeAvenueBanks5,
 			6: JeromeAvenueBanks6,
 		},
+		maps: `https://quartersnacks.com/spots/uptown-manhattan/washington-heights-the-bronx/jerome-avenue-banks/`,
 	},
 	{
 		name: "Mosholu Playground Bank",
@@ -201,6 +205,7 @@ const spots = [
 			0: MosholuPlaygroundBank0,
 			1: MosholuPlaygroundBank1,
 		},
+		maps: `https://quartersnacks.com/spots/uptown-manhattan/washington-heights-the-bronx/mosholu-playground-bank/`,
 	},
 	{
 		name: "Ogden Bank to Ledge",
@@ -224,6 +229,7 @@ const spots = [
 			1: OgdenBankToLedge1,
 			2: OgdenBankToLedge2,
 		},
+		maps: `https://www.google.com/maps/place/Merriam+Playground/@40.839523,-73.926981,16z/data=!4m6!3m5!1s0x89c2f424f35a4fb5:0x87d031be55b25c6a!8m2!3d40.8395226!4d-73.9269807!16s%2Fg%2F11h0bl_0p?hl=en&entry=ttu`,
 	},
 	{
 		name: "Tiffany Banks",
@@ -246,6 +252,7 @@ const spots = [
 			2: TiffanyBanks2,
 			3: TiffanyBanks3,
 		},
+		maps: `https://www.google.com/maps/place/E+163rd+St+%26+Tiffany+St,+Bronx,+NY+10459/@40.820996,-73.89491,16z/data=!4m6!3m5!1s0x89c2f5aca86b886b:0x48176fea8488e215!8m2!3d40.8209959!4d-73.8949105!16s%2Fg%2F11gdym90kj?hl=en&entry=ttu`,
 	},
 	{
 		name: "Triangle Park",
@@ -269,6 +276,7 @@ const spots = [
 			2: TrianglePark2,
 			3: TrianglePark3,
 		},
+		maps: `https://quartersnacks.com/spots/uptown-manhattan/washington-heights-the-bronx/triangle-park/`,
 	},
 ];
 export default spots;
