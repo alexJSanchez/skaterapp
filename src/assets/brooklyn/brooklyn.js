@@ -838,6 +838,7 @@ const spots = [
 			3: PolishPark3,
 			4: PolishPark4,
 		},
+		maps: `https://www.google.com/maps?ll=40.720778,-73.945008&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Bayard+St+%26+McGuinness+Blvd+S+Brooklyn,+NY+11222`,
 	},
 	{
 		name: "Pratt",
@@ -858,6 +859,7 @@ const spots = [
 			0: Pratt0,
 			1: Pratt1,
 		},
+		maps: `https://www.google.com/maps?ll=40.68834,-73.96481&z=16&t=m&hl=en&gl=US&mapclient=embed&q=St+James+Pl+%26+Lafayette+Ave+Brooklyn,+NY+11205`,
 	},
 	{
 		name: "Reggaeton Ledges",
@@ -885,6 +887,7 @@ const spots = [
 			6: ReggaetonLedges6,
 			7: ReggaetonLedges7,
 		},
+		maps: `https://www.google.com/maps?ll=40.708674,-73.956305&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Rodney+St+%26+S+5th+St+Brooklyn,+NY+11211`,
 	},
 	{
 		name: "Shell Ledge",
@@ -905,6 +908,7 @@ const spots = [
 			0: ShellLedge0,
 			1: ShellLedge1,
 		},
+		maps: `https://www.google.com/maps?ll=40.652962,-74.002165&z=17&t=m&hl=en&gl=US&mapclient=embed&q=36th+St+%26+5th+Ave+Brooklyn,+NY+11232`,
 	},
 	{
 		name: "Shit Rail",
@@ -927,6 +931,7 @@ const spots = [
 			1: ShitRail1,
 			2: ShitRail2,
 		},
+		maps: `https://www.google.com/maps?ll=40.681738,-73.95858&z=17&t=m&hl=en&gl=US&mapclient=embed&q=Fulton+St+%26+Classon+Ave+Brooklyn,+NY+11238`,
 	},
 	{
 		name: "Slippery Park",
@@ -952,6 +957,7 @@ const spots = [
 			4: SlipperyPark4,
 			5: SlipperyPark5,
 		},
+		maps: `https://www.google.com/maps?ll=40.724049,-73.936073&z=18&t=m&hl=en&gl=US&mapclient=embed&q=Porter+Ave+%26+Cherry+St+Brooklyn,+NY+11222`,
 	},
 	{
 		name: "Stroud Ledges",
@@ -978,6 +984,7 @@ const spots = [
 			5: StroudLedges5,
 			6: StroudLedges6,
 		},
+		maps: `https://www.google.com/maps?ll=40.675076,-73.962142&z=17&t=m&hl=en&gl=US&mapclient=embed&cid=15362342051238250253`,
 	},
 	{
 		name: "Sunset Park",
@@ -1004,6 +1011,7 @@ const spots = [
 			5: SunsetPark5,
 			6: SunsetPark6,
 		},
+		maps: `https://www.google.com/maps/place/7th+Ave+%26+42nd+St,+Brooklyn,+NY+11232/@40.646926,-74.001248,16z/data=!4m6!3m5!1s0x89c25ac8d05b6bef:0x5be025b20194a485!8m2!3d40.646926!4d-74.001248!16s%2Fg%2F11gdsdbcb9?hl=en&entry=ttu`,
 	},
 	{
 		name: "Tekashi Ten",
@@ -1023,6 +1031,7 @@ const spots = [
 			0: TekashiTen0,
 			1: TekashiTen1,
 		},
+		maps: `https://www.google.com/maps?ll=40.701153,-73.938291&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=11360554952348990221`,
 	},
 	{
 		name: "Thomas Greene Park",
@@ -1047,6 +1056,7 @@ const spots = [
 			3: ThomasGreenePark3,
 			4: ThomasGreenePark4,
 		},
+		maps: `https://www.google.com/maps?ll=40.679622,-73.984582&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Degraw+St+%26+3rd+Ave+Brooklyn,+NY+11217`,
 	},
 	{
 		name: "Tompkins Park",
@@ -1071,6 +1081,7 @@ const spots = [
 			3: TompkinsPark3,
 			4: TompkinsPark4,
 		},
+		maps: `https://www.google.com/maps?ll=40.690246,-73.948189&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Marcy+Ave+%26+Lafayette+Ave+Brooklyn,+NY+11216`,
 	},
 	{
 		name: "Williamsburg Monument",
@@ -1100,6 +1111,7 @@ const spots = [
 			9: WilliamsburgMonument9,
 			10: WilliamsburgMonument10,
 		},
+		maps: `https://www.google.com/maps?ll=40.710795,-73.959939&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Roebling+St+%26+S+4th+St+Brooklyn,+NY+11211`,
 	},
 	{
 		name: "Williamsburg Waterfront",
@@ -1127,6 +1139,7 @@ const spots = [
 			6: WilliamsburgWaterfront6,
 			7: WilliamsburgWaterfront7,
 		},
+		maps: `https://www.google.com/maps?ll=40.720234,-73.964134&z=17&t=m&hl=en&gl=US&mapclient=embed&cid=7020681084745643314`,
 	},
 	{
 		name: "Woodhull Hospital",
@@ -1151,6 +1164,7 @@ const spots = [
 			3: WoodhullHospital3,
 			4: WoodhullHospital4,
 		},
+		maps: `https://www.google.com/maps/place/Flushing+Ave+%26+Broadway,+Brooklyn,+NY+11206/@40.700735,-73.941953,18z/data=!4m6!3m5!1s0x89c25bfa1dde9623:0x885c668200287259!8m2!3d40.7007348!4d-73.9419528!16s%2Fg%2F11hb721r81?hl=en&entry=ttu`,
 	},
 ];
 export default spots;
