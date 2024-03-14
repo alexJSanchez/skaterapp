@@ -46,6 +46,7 @@ function Bronx() {
 								/>
 							))}
 						</div>
+						<a href={res.maps}>Google Maps</a>
 						<h2 className="text-lg font-semibold text-gray-700">Wanted</h2>
 						<p className="text-gray-600 font-bold text-sm">
 							Status: {res.bust.status}

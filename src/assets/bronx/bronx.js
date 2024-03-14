@@ -83,6 +83,7 @@ const spots = [
 			14: BronxCourthouse19,
 			15: BronxCourthouse20,
 		},
+		maps: `https://www.google.com/maps/place/Grand+Concourse+%26+E+161+St,+Bronx,+NY+10452/@40.827414,-73.922860,`,
 	},
 	{
 		name: "Middle Earth",
