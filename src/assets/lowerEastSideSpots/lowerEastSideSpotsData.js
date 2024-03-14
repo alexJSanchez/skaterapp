@@ -96,6 +96,7 @@ const spots = [
 			0: AvenueDBumpToBar0,
 			1: AvenueDBumpToBar1,
 		},
+		maps: `https://www.google.com/maps?ll=40.71991,-73.977487&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=13536509911057697961`,
 	},
 	{
 		name: "Broome & Allen",
@@ -118,6 +119,7 @@ const spots = [
 			1: BroomeAndAllen1,
 			2: BroomeAndAllen2,
 		},
+		maps: `https://www.google.com/maps?ll=40.718266,-73.990717&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Allen+St+%26+Broome+St+New+York,+NY+10002`,
 	},
 	{
 		name: "Cherry Street Ledge",
@@ -140,6 +142,7 @@ const spots = [
 			1: CherryStreetLedge1,
 			2: CherryStreetLedge2,
 		},
+		maps: `https://www.google.com/maps?ll=40.711445,-73.985489&z=18&t=m&hl=en&gl=US&mapclient=embed&cid=801546594902789472`,
 	},
 	{
 		name: "Chinatown Double Set",
@@ -161,6 +164,7 @@ const spots = [
 			0: ChinatownDoubleSet0,
 			1: ChinatownDoubleSet1,
 		},
+		maps: `https://www.google.com/maps?ll=40.716045,-74.000248&z=18&t=m&hl=en&gl=US&mapclient=embed&q=37-71+Baxter+St+New+York,+NY+10013`,
 	},
 	{
 		name: "Chinatown Manual Pad",
@@ -183,6 +187,7 @@ const spots = [
 			1: ChinatownManualPad1,
 			2: ChinatownManualPad2,
 		},
+		maps: `https://www.google.com/maps/place/Cherry+St+%26+Catherine+St,+New+York,+NY+10038/@40.710201,-73.996507,18z/data=!4m6!3m5!1s0x89c25a25a1b23383:0x6a5a491ae4e8eb68!8m2!3d40.7102005!4d-73.9965067!16s%2Fg%2F11hb0g4452?hl=en&entry=ttu`,
 	},
 	{
 		name: "Columbus Park",
@@ -208,6 +213,7 @@ const spots = [
 			4: ColumbusPark4,
 			5: ColumbusPark5,
 		},
+		maps: `https://www.google.com/maps?ll=40.713935,-73.999551&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Mulberry+St+%26+Worth+St+New+York,+NY+10013`,
 	},
 	{
 		name: "D7",
@@ -229,6 +235,7 @@ const spots = [
 			1: D71,
 			2: D72,
 		},
+		maps: `https://www.google.com/maps/place/Avenue+D+%26+E+7th+St,+New+York,+NY+10009/@40.723086,-73.976483,16z/data=!4m6!3m5!1s0x89c2597a233ddd39:0x6d8f6a2233c0c8fd!8m2!3d40.7230856!4d-73.9764833!16s%2Fg%2F11f329xnm0?hl=en&entry=ttu`,
 	},
 	{
 		name: "Division Street Triangle",
@@ -250,6 +257,7 @@ const spots = [
 			0: DivisionStreetTriangle0,
 			1: DivisionStreetTriangle1,
 		},
+		maps: `https://www.google.com/maps?ll=40.714295,-73.993983&z=18&t=m&hl=en&gl=US&mapclient=embed&q=Division+St+%26+Eldridge+St+New+York,+NY+10002`,
 	},
 	{
 		name: "Houston Park",
@@ -278,6 +286,7 @@ const spots = [
 			7: HoustonPark7,
 			8: HoustonPark8,
 		},
+		maps: `https://www.google.com/maps?ll=40.723742,-73.991032&z=16&t=m&hl=en&gl=US&mapclient=embed&q=E+Houston+St+%26+Chrystie+St+New+York,+NY+10003`,
 	},
 	{
 		name: "Jacob Riis Projects",
@@ -299,6 +308,7 @@ const spots = [
 			1: JacobRiisProjects1,
 			2: JacobRiisProjects2,
 		},
+		maps: `https://www.google.com/maps?ll=40.726122,-73.974271&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Avenue+D+%26+E+12th+St+New+York,+NY+10009`,
 	},
 	{
 		name: "L Train Curbs",
@@ -321,6 +331,7 @@ const spots = [
 			1: LTrainCurbs1,
 			2: LTrainCurbs2,
 		},
+		maps: `https://www.google.com/maps?ll=40.730426,-73.980365&z=16&t=m&hl=en&gl=US&mapclient=embed&q=E+14th+St+%26+Avenue+A+New+York,+NY+10009`,
 	},
 	{
 		name: "L.E.S. Hubba",
@@ -344,6 +355,7 @@ const spots = [
 			2: LESHubba2,
 			3: LESHubba3,
 		},
+		maps: `https://www.google.com/maps?ll=40.711205,-73.993654&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=13046420135266384478`,
 	},
 	{
 		name: "Lily Pads",
@@ -365,6 +377,7 @@ const spots = [
 			0: LilyPads0,
 			1: LilyPads1,
 		},
+		maps: `https://www.google.com/maps?ll=40.716723,-73.989155&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Grand+St+%26+Essex+St+New+York,+NY+10002`,
 	},
 	{
 		name: "Mural Ledge",
@@ -385,6 +398,7 @@ const spots = [
 			0: MuralLedge0,
 			1: MuralLedge1,
 		},
+		maps: `https://www.google.com/maps?ll=40.71403,-73.981443&z=18&t=m&hl=en&gl=US&mapclient=embed&cid=16299496429676161996`,
 	},
 	{
 		name: "New Seaport",
@@ -409,6 +423,7 @@ const spots = [
 			3: NewSeaport3,
 			4: NewSeaport4,
 		},
+		maps: `https://www.google.com/maps?ll=40.709452,-73.988414&z=17&t=m&hl=en&gl=US&mapclient=embed&cid=18148846631740303931`,
 	},
 	{
 		name: "Pitt Pool",
@@ -435,6 +450,7 @@ const spots = [
 			5: PittPool5,
 			6: PittPool6,
 		},
+		maps: `https://www.google.com/maps?ll=40.720778,-73.981282&z=16&t=m&hl=en&gl=US&mapclient=embed&q=E+Houston+St+%26+Pitt+St+New+York,+NY+10009`,
 	},
 	{
 		name: "Popeye’s Ledge",
@@ -461,6 +477,7 @@ const spots = [
 			5: PopeyesLedge5,
 			6: PopeyesLedge6,
 		},
+		maps: `https://www.google.com/maps?ll=40.715836,-73.994886&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Canal+St+%26+Chrystie+St+New+York,+NY+10002`,
 	},
 	{
 		name: "Seward Park",
@@ -484,6 +501,7 @@ const spots = [
 			2: SewardPark2,
 			3: SewardPark3,
 		},
+		maps: `https://www.google.com/maps?ll=40.714906,-73.989247&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=4882673006477851660`,
 	},
 	{
 		name: "Tompkins Square Park",
@@ -506,6 +524,7 @@ const spots = [
 			1: TompkinsSquarePark1,
 			2: TompkinsSquarePark2,
 		},
+		maps: `https://www.google.com/maps?ll=40.727271,-73.982655&z=16&t=m&hl=en&gl=US&mapclient=embed&q=Avenue+A+%26+E+9th+St+New+York,+NY+10009`,
 	},
 	{
 		name: "Tompkins Middle School Banks",
@@ -527,6 +546,7 @@ const spots = [
 			1: TompkinsMiddleSchoolBanks1,
 			2: TompkinsMiddleSchoolBanks2,
 		},
+		maps: `https://www.google.com/maps?ll=40.72423,-73.9814&z=18&t=m&hl=en&gl=US&mapclient=embed&cid=17606617189924035415`,
 	},
 ];
 

@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import spots from "../Data";
 import starIcon from "../assets/star_fill_icon.png";
