@@ -7,7 +7,7 @@ import Popup from "../component/popup";
 import SpotLocator from "../component/spotLocator";
 import { findSpotByName, allSpots } from "../utils/locationDisplay";
 import GetTime from "../utils/getTime";
-import { Link } from "react-router-dom";
+
 import starIcon from "../assets/star_fill_icon.png";
 import dayBgImage from "../assets/desktop/bg-image-daytime.jpg";
 import nightBgImage from "../assets/desktop/bg-image-nighttime.jpg";
@@ -143,5 +143,15 @@ function Home({
 		</>
 	);
 }
+
+Home.propTypes = {
+	Weather: PropTypes.object.isRequired,
+	City: PropTypes.string.isRequired,
+	State: PropTypes.string.isRequired,
+	Coord: PropTypes.object.isRequired,
+	Trick: PropTypes.string.isRequired,
+	RandomLocation: PropTypes.string.isRequired,
+	QuoteJoke: PropTypes.string.isRequired,
+};
 export default Home;
 // <a href={`/${createUrl?.url}#${createUrl?.name}`}>{createUrl.name}</a>//
