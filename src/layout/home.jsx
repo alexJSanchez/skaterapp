@@ -32,7 +32,6 @@ function Home({
 		const foundSpot = findSpotByName(allSpots, RandomLocation);
 		setSpotFound(foundSpot);
 		setMapUrl(foundSpot);
-		console.log(mapUrl, foundSpot);
 	}, []); // Only re-run the effect if RandomLocation changes
 
 	const handlePopup = () => {

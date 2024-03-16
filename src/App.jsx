@@ -34,9 +34,11 @@ function App() {
 
 	useEffect(() => {
 		setLoading(true); // Set loading to true when starting geolocation lookup
+
 		const fetchData = async () => {
 			try {
-				const quoteKey = "G1kyJrGrI4+J/DcXopZOGw==nUTt7gAjlLQ9nNC3";
+				const ninjaKey = import.meta.env.VITE_NINJA_KEY;
+				const quoteKey = ninjaKey;
 				const url = "https://api.api-ninjas.com/v1/chucknorris";
 				const response = await fetch(url, {
 					method: "GET",
@@ -71,7 +73,7 @@ function App() {
 					})
 				);
 
-				const apiKey = "f5d7f601d3073301b1ec26e017b93446";
+				const apiKey = import.meta.env.VITE_WEATHER_KEY;
 				const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 				const weatherResponse = await fetch(weatherUrl);
 				const weatherData = await weatherResponse.json();
