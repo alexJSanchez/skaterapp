@@ -87,13 +87,17 @@ function Home({
 						<div>
 							<div className="flex gap-1">
 								<p>Forcast:</p>
-								{Weather.forcast.map((res, index) => {
-									return (
-										<p key={index} className="capitalize">
-											{res.description},
-										</p>
-									);
-								})}
+								{Array.isArray(Weather.forcast) ? (
+									Weather.forcast.map((res, index) => {
+										return (
+											<p key={index} className="capitalize">
+												{res.description}
+											</p>
+										);
+									})
+								) : (
+									<p>{Weather.forcast}</p>
+								)}
 							</div>
 							<p>Temp: {Weather.temperature} F</p>
 							<p>Wind: {Weather.wind} Mph</p>
