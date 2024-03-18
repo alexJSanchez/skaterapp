@@ -37,6 +37,22 @@ function App() {
 
 		const fetchData = async () => {
 			try {
+				const ninjaKey = import.meta.env.NINJA_KEY;
+				const quoteKey = ninjaKey;
+				const url = "https://api.api-ninjas.com/v1/chucknorris";
+				const response = await fetch(url, {
+					method: "GET",
+					headers: {
+						"X-Api-Key": quoteKey,
+					},
+				});
+				if (!response.ok) {
+					throw new Error(`http error! status: ${response.status}`);
+				}
+				const quoteData = await response.json();
+				setFunnyQuote(quoteData.joke);
+				localStorage.setItem("quote", quoteData.joke);
+
 				const position = await new Promise((resolve, reject) => {
 					navigator.geolocation.getCurrentPosition(resolve, reject);
 				});
@@ -57,7 +73,7 @@ function App() {
 					})
 				);
 
-				const apiKey = import.meta.env.VITE_WEATHER_KEY;
+				const apiKey = import.meta.env.WEATHER_KEY;
 				const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 				const weatherResponse = await fetch(weatherUrl);
 				const weatherData = await weatherResponse.json();
