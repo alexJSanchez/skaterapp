@@ -37,22 +37,6 @@ function App() {
 
 		const fetchData = async () => {
 			try {
-				const ninjaKey = import.meta.env.VITE_NINJA_KEY;
-				const quoteKey = ninjaKey;
-				const url = "https://api.api-ninjas.com/v1/chucknorris";
-				const response = await fetch(url, {
-					method: "GET",
-					headers: {
-						"X-Api-Key": quoteKey,
-					},
-				});
-				if (!response.ok) {
-					throw new Error(`http error! status: ${response.status}`);
-				}
-				const quoteData = await response.json();
-				setFunnyQuote(quoteData.joke);
-				localStorage.setItem("quote", quoteData.joke);
-
 				const position = await new Promise((resolve, reject) => {
 					navigator.geolocation.getCurrentPosition(resolve, reject);
 				});
