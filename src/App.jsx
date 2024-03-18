@@ -38,12 +38,11 @@ function App() {
 		const fetchData = async () => {
 			try {
 				const ninjaKey = import.meta.env.VITE_NINJA_KEY;
-				const quoteKey = ninjaKey;
 				const url = "https://api.api-ninjas.com/v1/chucknorris";
 				const response = await fetch(url, {
 					method: "GET",
 					headers: {
-						"X-Api-Key": quoteKey,
+						"X-Api-Key": ninjaKey,
 					},
 				});
 				if (!response.ok) {
