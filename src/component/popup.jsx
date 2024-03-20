@@ -1,4 +1,3 @@
-import React from "react";
 import Xicon from "../assets/X.png";
 import ImageSlider from "./slider.jsx";
 import PropTypes from "prop-types";
