@@ -12,111 +12,47 @@ export default function Nav() {
 	};
 	return (
 		<div>
-			<div className="dropdown" style={{}}>
+			<div className="dropdown">
 				<div onClick={toggleMenu} className="dropdown-toggle">
 					{isOpen ? (
-						<img src={menuGreen} style={{ width: "70px" }}></img>
+						<img src={menuGreen} className="w-[70px]"></img>
 					) : (
-						<img src={menuWhite} style={{ width: "70px" }}></img>
+						<img src={menuWhite} className="w-[70px]"></img>
 					)}
 				</div>
 				{isOpen && (
-					<div
-						className="dropdown-menu rounded-lg shadow-md p-4 bg-white"
-						style={{
-							position: "absolute",
-							textAlign: "center",
-							width: "100%",
-							top: "40%",
-							left: "50%",
-							transform: "translate(-50%, -50%)",
-							zIndex: "1000",
-						}}
-					>
+					<div className="absolute rounded-lg shadow-md p-4 z-[1000] text-center translate-x-[-50%] translate-y-[-50%] bg-white w-full top-[40%] left-[50%]">
 						<ul
-							style={{
-								color: "lightblue",
-								listStyle: "none",
-								padding: "10px 0px",
-								fontSize: "25px",
-								display: "flex",
-								flexDirection: "column",
-								gap: "10px",
-							}}
-							className="bg-[url('./assets/griptape.jpg')]"
+							style={{}}
+							className="bg-[url('./assets/griptape.jpg')] no-underline text-[#ADD8E6] pt-3 gap-3 flex flex-col list-none text-[1.6rem]"
 							onClick={() => setIsOpen(false)}
 						>
 							<li>
-								<Link
-									to="/bronx"
-									style={{ textDecoration: "none", color: "lightblue" }}
-								>
-									Bronx
-								</Link>
+								<Link to="/bronx">Bronx</Link>
 							</li>
 							<li>
-								<Link
-									to="/brooklyn"
-									style={{ textDecoration: "none", color: "lightblue" }}
-								>
-									Brooklyn
-								</Link>
+								<Link to="/brooklyn">Brooklyn</Link>
 							</li>
 							<li>
-								<Link
-									to="/financialDistrict"
-									style={{ textDecoration: "none", color: "lightblue" }}
-								>
-									financialDistrict
-								</Link>
+								<Link to="/financialDistrict">financialDistrict</Link>
 							</li>
 							<li>
-								<Link
-									to="/lowerEastSide"
-									style={{ textDecoration: "none", color: "lightblue" }}
-								>
-									lowerEastSide
-								</Link>
+								<Link to="/lowerEastSide">lowerEastSide</Link>
 							</li>
 							<li>
-								<Link
-									to="/midTown"
-									style={{ textDecoration: "none", color: "lightblue" }}
-								>
-									midTown
-								</Link>
+								<Link to="/midTown">midTown</Link>
 							</li>
 							<li>
-								<Link
-									to="/queens"
-									style={{ textDecoration: "none", color: "lightblue" }}
-								>
-									Queens
-								</Link>
+								<Link to="/queens">Queens</Link>
 							</li>
 							<li>
-								<Link
-									to="/statenIsland"
-									style={{ textDecoration: "none", color: "lightblue" }}
-								>
-									Stanten Island
-								</Link>
+								<Link to="/statenIsland">Stanten Island</Link>
 							</li>
 							<li>
-								<Link
-									to="/uptownHarlem"
-									style={{ textDecoration: "none", color: "lightblue" }}
-								>
-									Uptown Harlem
-								</Link>
+								<Link to="/uptownHarlem">Uptown Harlem</Link>
 							</li>
 							<li>
-								<Link
-									to="/westVillageTribeca"
-									style={{ textDecoration: "none", color: "lightblue" }}
-								>
-									West Village Tribeca
-								</Link>
+								<Link to="/westVillageTribeca">West Village Tribeca</Link>
 							</li>
 						</ul>
 					</div>
