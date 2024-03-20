@@ -5,6 +5,11 @@ export default {
 		extend: {
 			backgroundImage: {
 				griptape: "url('./src/assets/griptape.jpg')",
+				menugreen: "url('./src/assets/menugreen.svg')",
+				menuwhite: "url('./src/assets/menuwhite.svg')",
+			},
+			colors: {
+				lightblue: "#ADD8E6",
 			},
 		},
 	},
