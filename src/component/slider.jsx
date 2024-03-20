@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 // Image object where the key is the index and the value is the image location
 // const images = {
