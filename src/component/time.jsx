@@ -33,7 +33,7 @@ function Time({ State, City }) {
 				)}
 				<p className="text-grayish inter-text">{date.timeOfDay}</p>
 			</div>
-			<div style={{ display: "flex", flexDirection: "column" }}>
+			<div className="flex flex-col">
 				<p className=" text-[100px] font-bold">
 					{date.hours}:{date.minutes < 10 ? `0${date.minutes}` : date.minutes}
 					<span className="text-sm">
