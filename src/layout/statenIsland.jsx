@@ -49,13 +49,7 @@ function StatenIsland() {
 						>
 							SkateHere
 						</a>
-						<div
-							style={{
-								borderStyle: "dotted",
-								borderWidth: "1px",
-							}}
-							className="w-full my-4"
-						></div>
+						<div className="w-full my-4 border-dotted border-[1px]"></div>
 						<ImageSlider images={res.images} />
 					</div>
 				))}

@@ -46,7 +46,7 @@ function Home({
 				style={{
 					backgroundImage: `url(${isDaytime ? dayBgImage : nightBgImage})`,
 				}}
-				className="relative bg-[url('./assets/mobile/bg-image-daytime.jpg')] h-screen bg-cover"
+				className="relative h-screen bg-cover"
 			>
 				{/* Overlay with opacity */}
 				<div className="absolute inset-0 bg-black opacity-50"></div>
