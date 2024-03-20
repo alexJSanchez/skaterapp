@@ -2,7 +2,6 @@ import { useState } from "react";
 import menuWhite from "../assets/menuwhite.svg";
 import menuGreen from "../assets/menugreen.svg";
 import { Link } from "react-router-dom";
-import gripTape from "../assets/griptape.jpg";
 
 export default function Nav() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -13,18 +12,25 @@ export default function Nav() {
 	return (
 		<div>
 			<div className="dropdown">
-				<div onClick={toggleMenu} className="dropdown-toggle">
+				<div onClick={toggleMenu} className="dropdown-toggle ">
 					{isOpen ? (
-						<img src={menuGreen} className="w-[70px]"></img>
+						<img
+							className="w-full max-w-16"
+							src={menuGreen}
+							alt="menu bar green "
+						/>
 					) : (
-						<img src={menuWhite} className="w-[70px]"></img>
+						<img
+							className="w-full max-w-16"
+							src={menuWhite}
+							alt="menu bar white "
+						/>
 					)}
 				</div>
 				{isOpen && (
-					<div className="absolute rounded-lg shadow-md p-4 z-[1000] text-center translate-x-[-50%] translate-y-[-50%] bg-white w-full top-[40%] left-[50%]">
+					<div className="absolute rounded-lg shadow-md p-4 z-50 text-center translate-x-[-50%] translate-y-[-45%] bg-white w-full top-[40%] left-[50%]">
 						<ul
-							style={{}}
-							className="bg-[url('./assets/griptape.jpg')] no-underline text-[#ADD8E6] pt-3 gap-3 flex flex-col list-none text-[1.6rem]"
+							className="bg-griptape no-underline text-lightblue pt-3 pb-3 gap-3 flex flex-col list-none text-[1.6rem]"
 							onClick={() => setIsOpen(false)}
 						>
 							<li>
