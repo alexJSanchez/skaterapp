@@ -1,20 +1,17 @@
 const GetTime = () => {
-	let currentTime = new Date();
-	let timeOfDay = "";
-	const hours = currentTime.getHours();
-	const minutes = currentTime.getMinutes();
-	const seconds = currentTime.getSeconds();
-	if (hours >= 0 && hours < 6) {
-		timeOfDay = "Good Morning";
-	} else if (hours >= 6 && hours < 12) {
-		timeOfDay = "Good Morning";
-	} else if (hours >= 12 && hours < 18) {
-		timeOfDay = "Good Afternoon";
-	} else {
-		timeOfDay = "Good Evening";
-	}
-	const convertedHours = hours % 12 || 12;
-	const isDaytime = hours >= 6 && hours < 18;
-	return { minutes, seconds, convertedHours, isDaytime, timeOfDay };
+	const currentTime = new Date();
+	const timeOfDay =
+		currentTime.getHours() < 12 ? "Good Morning" : "Good Afternoon";
+	const formattedTime = currentTime.toLocaleTimeString([], {
+		hour: "numeric",
+		minute: "2-digit",
+		hour12: true,
+	});
+
+	return {
+		currentTime: formattedTime,
+		timeOfDay: timeOfDay,
+	};
 };
+
 export default GetTime;
