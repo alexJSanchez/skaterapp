@@ -2,6 +2,7 @@ import { useState } from "react";
 import menuWhite from "../assets/menuwhite.svg";
 import menuGreen from "../assets/menugreen.svg";
 import { Link } from "react-router-dom";
+import gripTape from "../assets/griptape.jpg";
 
 export default function Nav() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -30,6 +31,7 @@ export default function Nav() {
 				{isOpen && (
 					<div className="absolute rounded-lg shadow-md p-4 z-50 text-center translate-x-[-50%] translate-y-[-45%] bg-white w-full top-[40%] left-[50%]">
 						<ul
+							style={{ backgroundImage: `url(${gripTape})` }}
 							className=" bg-black no-underline text-lightblue pt-3 pb-3 gap-3 flex flex-col list-none text-[1.6rem]"
 							onClick={() => setIsOpen(false)}
 						>
