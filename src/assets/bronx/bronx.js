@@ -135,6 +135,31 @@ const spots = [
 		maps: `https://www.google.com/maps/place/Bronx+Terminal+Market+11/@40.82312,-73.929985,16z/data=!3m1!5s0x89c2f5d3f4f42a6d:0x7edf0a3aa8ca6505!4m16!1m9!3m8!1s0x89c2f5d3861af243:0x82496dff91d8eea8!2sBronx+Terminal+Market+11!8m2!3d40.8231201!4d-73.929985!9m1!1b1!16s%2Fg%2F119vr5j0v!3m5!1s0x89c2f5d3861af243:0x82496dff91d8eea8!8m2!3d40.8231201!4d-73.929985!16s%2Fg%2F119vr5j0v?hl=en&entry=ttu`,
 	},
 	{
+		name: "Grim Spot",
+		area: "The Bronx",
+		urlPath: "bronx",
+
+		summary: "DIY Bank to ledge, Manual pad, box to ledge , Barrier wall ride",
+		bust: {
+			level: 5,
+			status:
+				"skateboarding is permitted at all times, Bridge overpass perfect for rainy days.",
+		},
+		location: {
+			latitude: 40.824667,
+			longitude: -73.930833,
+			text: "151st Street and River Avenue in The Bronx. Behind the Bronx Terminal Mall",
+		},
+		images: {
+			0: GrimSpot0,
+			1: GrimSpot1,
+			2: GrimSpot2,
+			3: GrimSpot3,
+			4: GrimSpot4,
+		},
+		maps: `https://www.google.com/maps/place/40%C2%B049'28.9%22N+73%C2%B055'51.0%22W/@40.824704,-73.9333949,17z/data=!3m1!4b1!4m4!3m3!8m2!3d40.8247!4d-73.93082?entry=ttu`,
+	},
+	{
 		name: "Hunts Point Station",
 		area: "Harlem & The Bronx",
 		urlPath: "bronx",
