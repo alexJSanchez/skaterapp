@@ -26,13 +26,13 @@ function ImageSlider({ images }) {
 	return (
 		<div className="relative w-full h-full object-cover flex align-bottom">
 			<button
-				className="absolute inset-y-0 left-0 opacity-30 hover:opacity-90 flex items-center justify-center w-12 bg-gray-800 bg-opacity-50 text-white"
+				className="absolute inset-y-0 left-0 opacity-40 hover:opacity-90 flex items-center justify-center w-12 bg-gray-800 bg-opacity-70 text-white"
 				onClick={goToPreviousImage}
 			>
 				&lt;
 			</button>
 			<button
-				className="absolute inset-y-0 right-0 opacity-30 hover:opacity-50 flex items-center justify-center w-12 bg-gray-800 bg-opacity-50 text-white"
+				className="absolute inset-y-0 right-0 opacity-40 hover:opacity-90 flex items-center justify-center w-12 bg-gray-800 bg-opacity-70 text-white"
 				onClick={goToNextImage}
 			>
 				&gt;
