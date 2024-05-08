@@ -33,7 +33,10 @@ function Popup({
 				<p className="text-gray-600 font-bold text-sm">
 					<span className="text-red-600">Status:</span> {Status}
 				</p>
-				<p className="text-gray-700 font-bold">{Summary}</p>
+				<p className="text-gray-700 font-bold">
+					<span className="text-red-600">Obstacles</span>
+					{Summary}
+				</p>
 				<a
 					href={Maps}
 					className="text-[1rem] font-bold bg-green-400 rounded-[50px] mt-[10px] py-[5px] px-[20px] "
