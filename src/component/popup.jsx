@@ -14,7 +14,7 @@ function Popup({
 }) {
 	return (
 		<div className="fixed inset-0 flex items-center justify-center text-center bg-black bg-opacity-50 z-50">
-			<div className="bg-white p-4 rounded-lg shadow-lg m-4">
+			<div className="bg-white p-4 rounded-lg shadow-lg my-4 md:mx-40">
 				<div onClick={HandlePopup} className="flex justify-end">
 					<img className="w-4 text-right" src={Xicon} />
 				</div>
