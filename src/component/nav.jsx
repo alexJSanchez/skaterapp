@@ -42,13 +42,13 @@ export default function Nav() {
 								<Link to="/brooklyn">Brooklyn</Link>
 							</li>
 							<li>
-								<Link to="/financialDistrict">financialDistrict</Link>
+								<Link to="/financialDistrict">FinancialDistrict</Link>
 							</li>
 							<li>
-								<Link to="/lowerEastSide">lowerEastSide</Link>
+								<Link to="/lowerEastSide">LowerEastSide</Link>
 							</li>
 							<li>
-								<Link to="/midTown">midTown</Link>
+								<Link to="/midTown">MidTown</Link>
 							</li>
 							<li>
 								<Link to="/queens">Queens</Link>
