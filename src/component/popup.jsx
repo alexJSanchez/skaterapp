@@ -13,8 +13,8 @@ function Popup({
 	Maps,
 }) {
 	return (
-		<div className="fixed inset-0 flex items-center justify-center text-center bg-black bg-opacity-50 z-50">
-			<div className="bg-white p-4 rounded-lg shadow-lg my-4 md:mx-40">
+		<div className="absolute top-0 left-0 right-0 bottom-0 flex w-fit h-fit justify-self-center self-center text-center bg-black bg-opacity-50 z-50">
+			<div className="bg-white p-4 rounded-lg shadow-lg my-4 md:mx-40 self-center ">
 				<div onClick={HandlePopup} className="flex justify-end">
 					<img className="w-4 text-right" src={Xicon} />
 				</div>
