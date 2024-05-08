@@ -13,18 +13,18 @@ export default function Nav() {
 	return (
 		<div>
 			<div className="dropdown">
-				<div onClick={toggleMenu} className="dropdown-toggle ">
+				<div onClick={toggleMenu} className="dropdown-toggle">
 					{isOpen ? (
 						<img
 							className="w-full max-w-16"
 							src={menuGreen}
-							alt="menu bar green "
+							alt="menu bar green"
 						/>
 					) : (
 						<img
 							className="w-full max-w-16"
 							src={menuWhite}
-							alt="menu bar white "
+							alt="menu bar white"
 						/>
 					)}
 				</div>
