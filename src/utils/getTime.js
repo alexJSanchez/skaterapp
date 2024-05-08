@@ -5,7 +5,7 @@ const GetTime = () => {
 	const minutes = currentTime.getMinutes();
 	const seconds = currentTime.getSeconds();
 	if (hours >= 0 && hours < 6) {
-		timeOfDay = "Good Morning";
+		timeOfDay = "Good Night";
 	} else if (hours >= 6 && hours < 12) {
 		timeOfDay = "Good Morning";
 	} else if (hours >= 12 && hours < 18) {
