@@ -181,7 +181,6 @@ const spots = [
 			12: GrimSpot12,
 			13: GrimSpot13,
 			14: GrimSpot14,
-			15: GrimSpot15,
 		},
 		maps: `https://www.google.com/maps/place/40%C2%B049'28.9%22N+73%C2%B055'51.0%22W/@40.824704,-73.9333949,17z/data=!3m1!4b1!4m4!3m3!8m2!3d40.8247!4d-73.93082?entry=ttu`,
 	},
