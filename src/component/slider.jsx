@@ -24,7 +24,7 @@ function ImageSlider({ images }) {
 	};
 
 	return (
-		<div className="relative w-full h-full object-cover flex align-bottom">
+		<div className="relative w-fits h-fit object-cover flex align-bottom">
 			<button
 				className="absolute inset-y-0 left-0 opacity-40 hover:opacity-90 flex items-center justify-center w-12 bg-gray-800 bg-opacity-70 text-white"
 				onClick={goToPreviousImage}
@@ -40,7 +40,7 @@ function ImageSlider({ images }) {
 			<img
 				src={images[currentImageIndex]}
 				alt={`Image ${currentImageIndex + 1}`}
-				className="w-full "
+				className="w-full h-fit"
 			/>
 		</div>
 	);
