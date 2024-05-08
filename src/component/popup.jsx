@@ -30,7 +30,9 @@ function Popup({
 					))}
 				</div>
 				<h2 className="text-lg font-semibold text-gray-700">Wanted</h2>
-				<p className="text-gray-600 font-bold text-sm">Status: {Status}</p>
+				<p className="text-gray-600 font-bold text-sm">
+					<span className="text-red-600">Status:</span> {Status}
+				</p>
 				<p className="text-gray-700 font-bold">{Summary}</p>
 				<a
 					href={Maps}
