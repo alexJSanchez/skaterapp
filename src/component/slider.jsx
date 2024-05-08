@@ -40,7 +40,7 @@ function ImageSlider({ images }) {
 			<img
 				src={images[currentImageIndex]}
 				alt={`Image ${currentImageIndex + 1}`}
-				className="w-full h-fit"
+				className="w-full h-full"
 			/>
 		</div>
 	);
