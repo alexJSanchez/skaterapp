@@ -18,6 +18,10 @@ import BoroughHallS2 from "./BoroughHall/2.jpg";
 import BrooklynArmyTerminal0 from "./BrooklynArmyTerminal/0.jpeg";
 import BrooklynArmyTerminal1 from "./BrooklynArmyTerminal/1.jpeg";
 import BrooklynArmyTerminal2 from "./BrooklynArmyTerminal/2.jpeg";
+import BrooklynArmyTerminal3 from "./BrooklynArmyTerminal/3.jpeg";
+import BrooklynArmyTerminal4 from "./BrooklynArmyTerminal/4.jpeg";
+import BrooklynArmyTerminal5 from "./BrooklynArmyTerminal/5.jpeg";
+import BrooklynArmyTerminal6 from "./BrooklynArmyTerminal/6.jpeg";
 import BrooklynBridgePark0 from "./BrooklynArmyTerminal/0.jpeg";
 import BrooklynBridgePark1 from "./BrooklynArmyTerminal/1.jpeg";
 import BrooklynBridgePark2 from "./BrooklynArmyTerminal/2.jpeg";
@@ -318,6 +322,10 @@ const spots = [
 			0: BrooklynArmyTerminal0,
 			1: BrooklynArmyTerminal1,
 			2: BrooklynArmyTerminal2,
+			3: BrooklynArmyTerminal3,
+			4: BrooklynArmyTerminal4,
+			5: BrooklynArmyTerminal5,
+			6: BrooklynArmyTerminal6,
 		},
 		maps: `https://www.google.com/maps?ll=40.646063,-74.024499&z=16&t=m&hl=en&gl=US&mapclient=embed&cid=3770129088718404527`,
 	},
