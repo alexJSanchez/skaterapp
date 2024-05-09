@@ -1,8 +1,8 @@
-import ABCLedges0 from "./ABCLedges/0.jpg";
-import ABCLedges1 from "./ABCLedges/1.jpg";
-import ABCLedges2 from "./ABCLedges/2.jpg";
-import ABCLedges3 from "./ABCLedges/3.jpg";
-import ABCLedges4 from "./ABCLedges/4.jpg";
+import ABCLedges0 from "./ABCLedges/0.png";
+import ABCLedges1 from "./ABCLedges/1.png";
+import ABCLedges2 from "./ABCLedges/2.png";
+import ABCLedges3 from "./ABCLedges/3.png";
+import ABCLedges4 from "./ABCLedges/4.png";
 
 const spots = [
 	{
