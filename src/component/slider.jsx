@@ -30,10 +30,11 @@ function ImageSlider({ images }) {
 			>
 				&gt;
 			</button>
+
 			<img
 				src={images[currentImageIndex]}
 				alt={`Image ${currentImageIndex + 1}`}
-				className="w-full h-full"
+				className=""
 			/>
 		</div>
 	);
