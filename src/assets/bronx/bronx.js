@@ -18,7 +18,7 @@ import BronxCourthouse16 from "../bronx/BronxCourthouse/16.jpg";
 import BronxCourthouse17 from "../bronx/BronxCourthouse/17.jpg";
 import BronxCourthouse18 from "../bronx/BronxCourthouse/18.jpg";
 import BronxCourthouse19 from "../bronx/BronxCourthouse/19.jpg";
-import BronxCourthouse20 from "../bronx/BronxCourthouse/20.png";
+
 import BronxTerminalMall0 from "../bronx/BronxTerminalMall/0.jpg";
 import BronxTerminalMall1 from "../bronx/BronxTerminalMall/1.jpg";
 import BronxTerminalMall2 from "../bronx/BronxTerminalMall/2.jpg";
@@ -96,7 +96,6 @@ const spots = [
 			12: BronxCourthouse17,
 			13: BronxCourthouse18,
 			14: BronxCourthouse19,
-			15: BronxCourthouse20,
 		},
 		maps: `https://www.google.com/maps/place/Grand+Concourse+%26+E+161+St,+Bronx,+NY+10452/@40.827414,-73.922860,`,
 	},
