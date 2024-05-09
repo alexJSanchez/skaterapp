@@ -21,7 +21,7 @@ function Brooklyn() {
 					<div
 						id={`${res.name.replace(/\s+/g, "")}`}
 						key={index}
-						className="flex flex-col items-center rounded-lg shadow-md p-4 bg-white "
+						className="flex flex-col items-center justify-around rounded-lg shadow-md p-4 bg-white "
 					>
 						<h1 className="text-2xl font-bold text-gray-800 uppercase">
 							{res.name}
