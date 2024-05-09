@@ -37,12 +37,6 @@ function Popup({
 					<span className="text-red-600">Obstacles: </span>
 					{Summary}
 				</p>
-				<button
-					className="bg-blue-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
-					style={{ backgroundColor: "#4285F4" }}
-				>
-					Skate Here
-				</button>
 				<a
 					href={Maps}
 					className="text-[1rem] font-bold bg-green-400 rounded-[50px] mt-[10px] py-[5px] px-[20px] text-blue-900"
