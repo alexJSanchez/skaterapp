@@ -12,7 +12,20 @@ function WestVillageTribeca() {
 	}
 	return (
 		<>
-			<Link to="/">back home</Link>
+			<div
+				style={{
+					position: "fixed",
+					top: 0,
+					left: 0,
+					right: 0,
+					backgroundColor: "white",
+					zIndex: "50",
+				}}
+			>
+				<Link className="static top-0 left-0" to="/">
+					Link Text
+				</Link>
+			</div>
 			<div
 				className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 text-center p-4 "
 				style={{ backgroundImage: `url(${gripTape})` }}
