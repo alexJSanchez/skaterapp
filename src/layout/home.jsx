@@ -54,7 +54,7 @@ function Home({
 				<div className="relative text-white gap-4 flex flex-col justify-between h-full">
 					<div className=" py-10 px-6 flex justify-between">
 						<div className="flex flex-col">
-							<p className="opacity-70 text-[13px] text-white">{QuoteJoke}</p>
+							<p className="opacity-70 text-[24px] text-white">{QuoteJoke}</p>
 							{/* <img
 								className="w-5 h-5"
 								src={iconRefresh}
