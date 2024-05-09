@@ -14,7 +14,7 @@ function WestVillageTribeca() {
 		<>
 			<div className=" fixed top-0 left-0 right-0 text-center bg-white z-50">
 				<Link className="static  top-0 left-0 text-[2rem]" to="/">
-					Return Home
+					~ Return Home ~
 				</Link>
 			</div>
 			<div
