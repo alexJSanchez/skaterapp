@@ -41,10 +41,12 @@ function UptownHarlem() {
 							))}
 						</div>
 						<h2 className="text-lg font-semibold text-gray-700">Wanted</h2>
+						<p className="text-red-600">Status:</p>
 						<p className="text-gray-600 font-bold text-sm">
 							Status: {res.bust.status}
 						</p>
 						<img src={skateIcon} />
+						<p className="text-red-600">Obstacles: </p>
 						<p className=" text-gray-700 font-bold">{res.summary}</p>
 
 						<a
