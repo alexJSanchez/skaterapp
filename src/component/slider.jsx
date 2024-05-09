@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 // Image object where the key is the index and the value is the image location
 // const images = {
@@ -45,5 +46,7 @@ function ImageSlider({ images }) {
 		</div>
 	);
 }
-
+ImageSlider.propTypes = {
+	images: PropTypes.object.isRequired,
+};
 export default ImageSlider;
