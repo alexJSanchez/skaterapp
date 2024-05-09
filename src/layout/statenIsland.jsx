@@ -12,9 +12,13 @@ function StatenIsland() {
 	}
 	return (
 		<>
-			<Link to="/">back home</Link>
+			<div className=" fixed top-0 left-0 right-0 text-center bg-white z-50">
+				<Link className="static  top-0 left-0 text-[2rem]" to="/">
+					~ Return Home ~
+				</Link>
+			</div>
 			<div
-				className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 text-center p-4 "
+				className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 text-center p-4 mt-10"
 				style={{ backgroundImage: `url(${gripTape})` }}
 			>
 				{spots.StatenIsland.map((res, index) => (
