@@ -12,16 +12,7 @@ function WestVillageTribeca() {
 	}
 	return (
 		<>
-			<div
-				style={{
-					position: "fixed",
-					top: 0,
-					left: 0,
-					right: 0,
-					backgroundColor: "white",
-					zIndex: "50",
-				}}
-			>
+			<div className=" fixed top-0 left-0 right-0 bg-white z-50">
 				<Link className="static top-0 left-0" to="/">
 					Link Text
 				</Link>
