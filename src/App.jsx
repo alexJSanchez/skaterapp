@@ -1,8 +1,9 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getTricks, trickList } from "./utils/randomSkateTricks";
 import { getLocations } from "./utils/randomSpot";
 
+import Auth0ProviderWithHistory from "./auth/auth0-provider-with-history";
 import locations from "./Coord";
 import Home from "./layout/home";
 import Bronx from "./layout/bronx";
@@ -151,31 +152,41 @@ function App() {
 				<Loading />
 			) : (
 				// If not loading, render the application components based on the current route
-				<Routes>
-					<Route
-						path="/"
-						element={
-							<Home
-								Weather={weather}
-								City={city}
-								State={locality}
-								Coord={coord}
-								Trick={trick}
-								RandomLocation={randomLocation}
-								QuoteJoke={funnyQuote}
+				<BrowserRouter>
+					<Auth0ProviderWithHistory>
+						<Routes>
+							<Route
+								path="/"
+								element={
+									<Home
+										Weather={weather}
+										City={city}
+										State={locality}
+										Coord={coord}
+										Trick={trick}
+										RandomLocation={randomLocation}
+										QuoteJoke={funnyQuote}
+									/>
+								}
 							/>
-						}
-					/>
-					<Route path="/bronx" element={<Bronx />} />
-					<Route path="/brooklyn" element={<Brooklyn />} />
-					<Route path="/financialDistrict" element={<FinancialDistrict />} />
-					<Route path="/lowerEastSide" element={<LowerEastSide />} />
-					<Route path="/queens" element={<Queens />} />
-					<Route path="/midTown" element={<MidTown />} />
-					<Route path="/statenIsland" element={<StatenIsland />} />
-					<Route path="/uptownHarlem" element={<UptownHarlem />} />
-					<Route path="/westVillageTribeca" element={<WestVillageTribeca />} />
-				</Routes>
+							<Route path="/bronx" element={<Bronx />} />
+							<Route path="/brooklyn" element={<Brooklyn />} />
+							<Route
+								path="/financialDistrict"
+								element={<FinancialDistrict />}
+							/>
+							<Route path="/lowerEastSide" element={<LowerEastSide />} />
+							<Route path="/queens" element={<Queens />} />
+							<Route path="/midTown" element={<MidTown />} />
+							<Route path="/statenIsland" element={<StatenIsland />} />
+							<Route path="/uptownHarlem" element={<UptownHarlem />} />
+							<Route
+								path="/westVillageTribeca"
+								element={<WestVillageTribeca />}
+							/>
+						</Routes>
+					</Auth0ProviderWithHistory>
+				</BrowserRouter>
 			)}
 		</>
 	);
