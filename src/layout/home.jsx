@@ -10,6 +10,7 @@ import GetTime from "../utils/getTime";
 import starIcon from "../assets/star_fill_icon.png";
 import dayBgImage from "../assets/desktop/bg-image-daytime.jpg";
 import nightBgImage from "../assets/desktop/bg-image-nighttime.jpg";
+import AuthenticationButton from "../component/authbutton";
 
 function Home({
 	Weather,
@@ -62,6 +63,7 @@ function Home({
 							></img> */}
 							<p className="inter-text text-[14px] mt-1">ChuckNorris</p>
 						</div>
+						<AuthenticationButton />
 						<Nav />
 					</div>
 					{isUpsideDown ? null : (
