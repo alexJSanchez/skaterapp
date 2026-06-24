@@ -16,13 +16,12 @@ import { getLocations } from "./utils/randomSpot";
 import locations from "./Coord";
 
 function App() {
-	// State for weather, skate trick, geolocation, loading state, etc.
 	const [weather, setWeather] = useState({
 		temperature: "0.00",
 		wind: "0.00",
-		forcast: "forcast",
+		forecast: [],
 	});
-	const [trick, setTrick] = useState(null);
+	const [trick, setTrick] = useState("");
 	const [coord, setCoord] = useState({
 		latitude: null,
 		longitude: null,
@@ -34,10 +33,45 @@ function App() {
 	const [funnyQuote, setFunnyQuote] = useState("");
 
 	useEffect(() => {
-		// Function to fetch data
+		const loadStoredData = () => {
+			const storedWeatherData = localStorage.getItem("weatherData");
+			const storedGeoData = localStorage.getItem("geoData");
+			const storedTrickData = localStorage.getItem("trickData");
+			const storedRandomLocation = localStorage.getItem("randomLocation");
+			const storedQuote = localStorage.getItem("quote");
+
+			if (
+				!storedWeatherData ||
+				!storedGeoData ||
+				!storedTrickData ||
+				!storedRandomLocation ||
+				!storedQuote
+			) {
+				return false;
+			}
+
+			try {
+				const savedWeather = JSON.parse(storedWeatherData);
+				const parsedGeoData = JSON.parse(storedGeoData);
+				const parsedTrickData = JSON.parse(storedTrickData);
+
+				setWeather(savedWeather);
+				setFunnyQuote(storedQuote);
+				setCity(parsedGeoData.city || "City");
+				setLocality(parsedGeoData.locality || parsedGeoData.State || "State");
+				setCoord(parsedGeoData.coord || { latitude: null, longitude: null });
+				setTrick(parsedTrickData.trick || "");
+				setRandomLocation(storedRandomLocation);
+				setLoading(false);
+				return true;
+			} catch (error) {
+				console.error("Error parsing stored app data:", error);
+				return false;
+			}
+		};
+
 		const fetchData = async () => {
 			try {
-				// Fetch a random joke from Chuck Norris API
 				const ninjaKey = import.meta.env.VITE_NINJA_KEY;
 				const url = "https://api.api-ninjas.com/v1/chucknorris";
 				const response = await fetch(url, {
@@ -46,110 +80,88 @@ function App() {
 						"X-Api-Key": ninjaKey,
 					},
 				});
-				if (!response.ok) {
-					throw new Error(`http error! status: ${response.status}`);
-				}
-				const quoteData = await response.json();
-				setFunnyQuote(quoteData.joke);
-				localStorage.setItem("quote", quoteData.joke);
 
-				// Fetch geolocation data using the browser's geolocation API
+				if (!response.ok) {
+					throw new Error(`Chuck Norris API error: ${response.status}`);
+				}
+
+				const quoteData = await response.json();
+				const quote = quoteData.joke || "";
+				setFunnyQuote(quote);
+				localStorage.setItem("quote", quote);
+
 				const position = await new Promise((resolve, reject) => {
 					navigator.geolocation.getCurrentPosition(resolve, reject);
 				});
+
 				const { latitude, longitude } = position.coords;
 				const geoApiUrl = `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`;
 				const geoResponse = await fetch(geoApiUrl);
-				const geoData = await geoResponse.json();
 
-				// Set geolocation and weather data
-				setCity(geoData.city);
-				setLocality(geoData.locality);
-				setCoord({ latitude: geoData.latitude, longitude: geoData.longitude });
+				if (!geoResponse.ok) {
+					throw new Error(`Geolocation API error: ${geoResponse.status}`);
+				}
+
+				const geoData = await geoResponse.json();
+				const normalizedCoord = { latitude, longitude };
+
+				setCity(geoData.city || "City");
+				setLocality(geoData.locality || geoData.principalSubdivision || "State");
+				setCoord(normalizedCoord);
 				localStorage.setItem(
 					"geoData",
 					JSON.stringify({
-						city: geoData.city,
-						locality: geoData.locality,
-						coord: { latitude: geoData.latitude, longitude: geoData.longitude },
+						city: geoData.city || "City",
+						locality: geoData.locality || geoData.principalSubdivision || "State",
+						coord: normalizedCoord,
 					})
 				);
 
-				// Fetch weather data using OpenWeatherMap API
 				const apiKey = import.meta.env.VITE_WEATHER_KEY;
 				const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 				const weatherResponse = await fetch(weatherUrl);
+
+				if (!weatherResponse.ok) {
+					throw new Error(`Weather API error: ${weatherResponse.status}`);
+				}
+
 				const weatherData = await weatherResponse.json();
+				const weatherState = {
+					temperature: weatherData.main?.temp ?? "0.00",
+					wind: weatherData.wind?.speed ?? "0.00",
+					forecast: Array.isArray(weatherData.weather)
+						? weatherData.weather
+						: [],
+				};
 
-				setWeather({
-					temperature: weatherData.main.temp,
-					wind: weatherData.wind.speed,
-					forcast: weatherData.weather,
-				});
-				localStorage.setItem(
-					"weatherData",
-					JSON.stringify({
-						temperature: weatherData.main.temp,
-						wind: weatherData.wind.speed,
-						forcast: weatherData.weather,
-					})
-				);
+				setWeather(weatherState);
+				localStorage.setItem("weatherData", JSON.stringify(weatherState));
 
-				// Set a random skate trick and a random skate spot
 				const chosenTrick = getTricks(trickList);
 				setTrick(chosenTrick);
-				localStorage.setItem(
-					"trickData",
-					JSON.stringify({
-						trick: chosenTrick,
-					})
-				);
-				const chosenRandomLocation = getLocations(locations);
-				const spotName = chosenRandomLocation;
-				setRandomLocation(spotName);
-				localStorage.setItem("randomLocation", spotName);
+				localStorage.setItem("trickData", JSON.stringify({ trick: chosenTrick }));
 
-				setLoading(false); // Set loading to false when all data is fetched
+				const chosenRandomLocation = getLocations(locations);
+				setRandomLocation(chosenRandomLocation);
+				localStorage.setItem("randomLocation", chosenRandomLocation);
+
+				setLoading(false);
 			} catch (error) {
-				console.error("Error fetching geolocation:", error);
-				setLoading(false); // Set loading to false if there's an error
+				console.error("Error fetching app data:", error);
+				setLoading(false);
 			}
 		};
 
-		// Check if weather and geolocation data are stored in local storage, if not, fetch data
-		const storedWeatherData = localStorage.getItem("weatherData");
-		const storedGeoData = localStorage.getItem("geoData");
-		const storeTrickData = localStorage.getItem("trickData");
-		const storeRandomLocations = localStorage.getItem("randomLocation");
-		const storeQuote = localStorage.getItem("quote");
-
-		if (!storedWeatherData || !storedGeoData) {
+		if (!loadStoredData()) {
 			fetchData();
-		} else {
-			// If data is already stored, set state using the stored data
-			setLoading(true);
-			setWeather(JSON.parse(storedWeatherData));
-			const parsedGeoData = JSON.parse(storedGeoData);
-			const parseTrickData = JSON.parse(storeTrickData);
-
-			setFunnyQuote(storeQuote);
-			setCity(parsedGeoData.city);
-			setLocality(parsedGeoData.State);
-			setLocality(parsedGeoData.locality);
-			setCoord(parsedGeoData.coord);
-			setLoading(false);
-			setTrick(parseTrickData.trick);
-			setRandomLocation(storeRandomLocations);
 		}
 	}, []);
 
 	return (
 		<>
 			{loading ? (
-				// If loading, display loading component
 				<Loading />
 			) : (
-				// If not loading, render the application components based on the current route
 				<BrowserRouter>
 					<Routes>
 						<Route
@@ -174,10 +186,7 @@ function App() {
 						<Route path="/midTown" element={<MidTown />} />
 						<Route path="/statenIsland" element={<StatenIsland />} />
 						<Route path="/uptownHarlem" element={<UptownHarlem />} />
-						<Route
-							path="/westVillageTribeca"
-							element={<WestVillageTribeca />}
-						/>
+						<Route path="/westVillageTribeca" element={<WestVillageTribeca />} />
 					</Routes>
 				</BrowserRouter>
 			)}

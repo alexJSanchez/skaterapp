@@ -5,10 +5,15 @@ import { findSpotByName, allSpots } from "../utils/locationDisplay.js";
 import location from "../Coord.js";
 import Popup from "./popup.jsx";
 
-function SpotLocator({ Latitude, Longitude, IsUpsideDown }) {
-	const closestLocation = findClosestLocation(Latitude, Longitude, location);
+function SpotLocator({ Latitude, Longitude }) {
+	const closestLocation =
+		Latitude != null && Longitude != null
+			? findClosestLocation(Latitude, Longitude, location)
+			: null;
 
-	const spotInfo = findSpotByName(allSpots, closestLocation.name);
+	const spotInfo = closestLocation
+		? findSpotByName(allSpots, closestLocation.name)
+		: null;
 
 	const [displayPopup, setDisplayPopup] = useState(false);
 
@@ -16,8 +21,8 @@ function SpotLocator({ Latitude, Longitude, IsUpsideDown }) {
 		setDisplayPopup(!displayPopup);
 	}
 
-	if (!closestLocation) {
-		return <div>....loading</div>;
+	if (!Latitude || !Longitude || !closestLocation || !spotInfo) {
+		return <div>Loading nearest spot...</div>;
 	}
 
 	return (
@@ -37,7 +42,7 @@ function SpotLocator({ Latitude, Longitude, IsUpsideDown }) {
 							<img
 								className="w-5 shadow-md shadow-black"
 								key={index}
-								src={`${starIcon}`}
+								src={starIcon}
 								alt={`Image ${index + 1}`}
 							/>
 						))}
@@ -45,7 +50,7 @@ function SpotLocator({ Latitude, Longitude, IsUpsideDown }) {
 					<h2 className="text-lg font-semibold text-gray-300">Wanted</h2>
 				</div>
 			</div>
-			{displayPopup ? (
+			{displayPopup && (
 				<Popup
 					Name={spotInfo.name}
 					Star={starIcon}
@@ -56,8 +61,6 @@ function SpotLocator({ Latitude, Longitude, IsUpsideDown }) {
 					HandlePopup={PopupHandler}
 					Maps={spotInfo.maps}
 				/>
-			) : (
-				""
 			)}
 		</div>
 	);
